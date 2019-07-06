@@ -1,0 +1,75 @@
+﻿<ecom:ProductPanel runat="server" SkinID="ProductItemInDetailAMP">
+<Content>
+
+    <ecom:ProductJsonLD runat="server" />
+    <h1><ecom:ProduitLibelle runat="server" /></h1>
+    <ecom:AmpProductImagesCarousel runat="server" Height="400" Width="400" CssClass="carousel1" />
+                     <ecom:ProduitAvisPanel runat="server">
+		                    <AvecAvisTemplate>
+                                <div class="fiche-stars">
+                                    <ecom:ProduitAvisResume runat="server" TypeAffichage="SpansAvecClasses"  EtoileComplete="fa fa-star" EtoileVide="fa fa-star-o" EtoileDemi="fa fa-star-half-o" /> <a href="#divAvis" class="fiche-stars-liens"><ecom:ProduitAvisCount runat="server" /> avis donné(s)</a>
+                                </div>
+                            </AvecAvisTemplate>
+                            <SansAvisTemplate>
+                                
+			                </SansAvisTemplate>
+                     </ecom:ProduitAvisPanel>
+                <div class="produit-dispo">
+                  <p class="no-margin">
+                    <ecom:ProductPanel runat="server" AfficherSiNonDispo="false" InlineContent="true"><Content>
+                        <span class="dispo-ok"><i class="fa fa-square"></i>Dispo Web</span>
+                    </Content></ecom:ProductPanel>
+                    <ecom:ProductPanel runat="server" AfficherSiDispo="false" InlineContent="true"><Content>
+                        <span class="dispo-non"><i class="fa fa-square"></i>Non dispo Web</span>
+                    </Content></ecom:ProductPanel>
+                  </p>
+
+                  <ecom:MagasinAssociePanel runat="server" class="no-margin">
+                    <ecom:ProductPanel runat="server" AfficherSiNonDispo="false" AssocierAuMagasin="true" InlineContent="true"><Content>
+                        <span class="dispo-ok"><i class="fa fa-square"></i>Dispo magasin</span>
+                    </Content></ecom:ProductPanel>
+                    <ecom:ProductPanel runat="server" AfficherSiDispo="false" AssocierAuMagasin="true" InlineContent="true"><Content>
+                        <span class="dispo-non"><i class="fa fa-square"></i>Non dispo magasin : <ecom:MagasinAssocieLibelle runat="server" cssclass="weight-normal" /><a href="">Choisir un autre magasin</a></span>
+                    </Content></ecom:ProductPanel>
+                  </ecom:MagasinAssociePanel>
+                </div>
+                <div class="carousel-btn ">
+                  <ecom:ProductPanel runat="server" AfficherSiNonDispo="false" InlineContent="true"><Content>
+                    <ecom:PanierAjouterLink runat="server" 
+                        AddToCartUrl="~/addtocart_AMP.aspx"
+                        cssclass="btn btn-default">Acheter<span class="visible-petit"><br /></span> en ligne</ecom:PanierAjouterLink>
+                    </Content></ecom:ProductPanel>
+
+                    <ecom:ProductPanel runat="server" AfficherSiNonDispo="false" AssocierAuMagasin='true' InlineContent="true"><Content>
+                        <ecom:PanierAjouterLink runat="server" AssocierAuMagasin='true' cssclass="btn btn-primary">Réserver<span class="visible-petit"><br /></span> en magasin</ecom:PanierAjouterLink>
+                        <!--<a href="" class="btn btn-primary">être <span class="visible-petit"><br /></span>averti</a> -->
+                    </Content></ecom:ProductPanel>
+                </div>
+
+    <div class="bg-beige">
+                <h2>Descriptif</h2>
+        <ecom:ProduitDescriptif runat="server" />
+    </div>
+
+    <amp-accordion>
+        <section id="divAvis">
+            <h4>
+                                 <ecom:ProduitAvisPanel runat="server">
+		                    <AvecAvisTemplate>
+                                <div class="fiche-stars">
+                                    <ecom:ProduitAvisResume runat="server" TypeAffichage="SpansAvecClasses"  EtoileComplete="fa fa-star" EtoileVide="fa fa-star-o" EtoileDemi="fa fa-star-half-o" /> <a href="#divAvis" class="fiche-stars-liens"><ecom:ProduitAvisCount runat="server" /> avis donné(s)</a>
+                                </div>
+                            </AvecAvisTemplate>
+                            <SansAvisTemplate>
+			                </SansAvisTemplate>
+                     </ecom:ProduitAvisPanel>
+
+            </h4>
+<div>
+                    <ecom:AvisAffichage runat="server" />
+
+</div>
+        </section>
+    </amp-accordion>
+</Content>
+</ecom:ProductPanel>

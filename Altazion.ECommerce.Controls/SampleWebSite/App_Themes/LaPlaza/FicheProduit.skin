@@ -1,0 +1,492 @@
+﻿
+
+<ecom:ProductPanel runat="server" SkinID="ProductItemInDetail"  InlineContent="false" CssClassSiNonDispo="produit-ecoule">
+    <Content>
+    <div class="content">
+      <section class="main">
+
+
+        <ecom:CampagnePublicite runat="server" TypeOperation="EPubFiche" />
+
+        <asp:HiddenField runat="server" id="hdnLInstance" ClientIdMode="Static" />
+
+        <div class="produit1" id="pnlArticleDetails">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 px-0">
+                <div class="container-img" >
+                    <div id="imgMainProduct">
+                        <div class="bloc-img" style="background:#ffffff;text-align:center">
+                          <%--<a href="" class="share"><i class="fas fa-share-alt"></i></a>--%>
+                          <ecom:ProduitImage runat="server" cssclass="img-fluid" ImageType="Detail"  />
+                        </div>
+                        <ecom:ProduitMultiImagesRepeater runat="server"><ItemTemplate>
+                        <div class="bloc-epuise">
+                           <span>victime de son succès</span>
+                       </div>
+                        <div class="bloc-img d-none d-lg-block" style="background:#ffffff;text-align:center">
+                          <asp:image runat="server" ImageUrl='<%# Eval("doa_url_document")%>' class="img-fluid" />
+                        </div>
+                         </ItemTemplate></ecom:ProduitMultiImagesRepeater>
+                    </div>
+                        <div id="imgInstances">
+                        <ecom:ProduitInstancesRepeater runat="server">
+                        <ItemTemplate>
+                            <ecom:ProductPanel  runat="server" class="img-version-produit" style="display:none"><Content>
+                                <div class="bloc-img" style="background:#ffffff;text-align:center">
+                                <div class="bloc-epuise">
+                                  <span>victime de son succès</span>
+                                 </div>
+                                    <ecom:ProduitImage runat="server" ImageType="Detail" id="pnlImage"  />
+                                </div>
+                            </Content></ecom:ProductPanel>
+                        </ItemTemplate>
+                        </ecom:ProduitInstancesRepeater>
+
+                        <ecom:ProduitInstancesImagesRepeater runat="server">
+                        <ItemTemplate>
+                            <ecom:ProductPanel  runat="server" class="img-version-produit" style="display:none"><Content>
+                                <div class="bloc-img d-none d-lg-block" style="background:#ffffff;text-align:center">
+                                <div class="bloc-epuise">
+                                  <span>victime de son succès</span>
+                                 </div>
+                                    <asp:image runat="server" ImageUrl='<%# Eval("doa_url_document")%>' class="img-fluid" />
+                                </div>
+                            </Content></ecom:ProductPanel>
+                        </ItemTemplate>
+                        </ecom:ProduitInstancesImagesRepeater>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 px-0">
+                <div class="bloc-p-1">
+                  <h1><ecom:ProduitLibelle runat="server" /></h1>
+                <ecom:ProduitTag runat="server" code="PromoFicheProduit" />
+
+                  <div class="choix-q" id="pnlInstances">
+
+                    <ecom:ProduitInstancesRepeater runat="server">
+<ItemTemplate>
+                        <ecom:ProductPanel class="choix" runat="server"><Content>
+                          <span class="radio"></span>
+                          <div class="choix-box">
+                            <div class="bloc-img">
+                              <ecom:ProduitImage runat="server" ImageType="Tiny"  />
+                            </div>
+                            <div class="bloc-txt">
+                              <div class="poids"><ecom:ProduitInstanceDifferentiant1 runat="server" /></div>
+                              <div class="prix">
+                                <div class="prix-normal"><ecom:ProduitPrix runat="server" FormatPrix="{0:0.00}€" /></div>
+                                <div class="prix-promo">
+                                  <span class="barre"><ecom:ProduitPrixHorsPromo runat="server" FormatPrix="{0:0.00}€" /></span>
+                                  <!--<span class="pourcent"><ecom:ProduitPrixHorsPromo runat="server" FormatPrix="{0:0.00}€" /></span>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </Content></ecom:ProductPanel>
+</ItemTemplate>
+                    </ecom:ProduitInstancesRepeater>
+                  </div>
+
+
+                  <div class="bloc-cta">
+                    <div class="choix-qt">
+                      <div class="choix-qt-detail">
+                        <a href="#" class="moins">-</a>  
+                        <span id="qteSelecteur">1</span>
+                        <a href="#" class="plus">+</a>
+                      </div>
+                    </div>
+                    <div class="bt-achat">
+                        <ecom:PanierAjouterScriptLink IdPourSelecteurReference="hdnLInstance" runat="server"
+                            CacherSiNonDispo="false" MultiVersionCssClass="btn btn-primary btn-achat" IdPourQuantite="qteSelecteur"
+                            class="btn btn-primary btn-achat"><img width="25" height="33" src="/App_themes/LaPlaza/img/icon-panier.svg" alt="Mon panier"> ajouter au panier</ecom:PanierAjouterScriptLink> 
+                    </div>
+                  </div>
+                </div>
+                <div class="bloc-p-2">
+                  <div class="desc desc1">
+                    <div class="desc-ligne desc-tech">
+                      <div class="col-md-4 col-sm-12 titre px-0"><h4><span> Description
+                          technique</span></h4>
+                      </div>
+                      <div class="col-md-8 col-sm-12 px-0 detail">
+                        <div class="info">
+                          <p>
+                            <ecom:ProduitDescriptif runat="server" />
+                        </p>
+                      </div>
+                      </div>
+                    </div>
+<%--                    
+    <div class="desc-ligne desc-spe">
+                      <div class="col-md-4 titre px-0"><h2><span> Spécificités</span></h2>
+                      </div>
+                      <div class="col-md-8 px-0 detail">
+                        <div class="info d-flex">
+                          <div class="col-md-4 px-0">
+                            <p>Type d’huile<br />
+                            <b>Vierge</b></p>
+                          </div>
+                          <div class="col-md-4 px-0">
+                            <p>Type d'olives<br />
+                            <b>Ariété</b></p>
+                          </div>
+                          <div class="col-md-4 px-0">
+                            <p>Pression<br />
+                            <b>Filtration</b></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+--%>
+                    <ecom:ProduitAttributsPanel runat="server" AttributeGuid="d1c49ee0-a2f6-4ba2-bb52-22c2d80cff20,d1c49ee0-a2f6-4ba2-bb52-22c2d80cff20,d1c49ee0-a2f6-4ba2-bb52-22c2d80cff20" cssclass="desc-ligne desc-cara">
+                      <div class="col-md-4 titre px-0">
+                        <h4><span> caractéristiques</span></h4>
+                      </div>
+                      <div class="col-md-8 px-0 detail">
+                        <div class="info d-flex">
+                          <div class="col-md-4 px-0">
+<ecom:ProduitAttributTemplate runat="server" AttributeGuid="d1c49ee0-a2f6-4ba2-bb52-22c2d80cff20">
+<Template>
+                            <div class="progress" data-percentage="{0:0}">
+                              <span class="progress-left">
+                                <span class="progress-bar"></span>
+                              </span>
+                              <span class="progress-right">
+                                <span class="progress-bar"></span>
+                              </span>
+                              <div class="progress-value">
+                                <div class="txt">
+                                  Douceur
+                                </div>
+                              </div>
+                            </div>
+</Template></ecom:ProduitAttributTemplate>
+                          </div>
+                          <div class="col-md-4 px-0">
+<ecom:ProduitAttributTemplate runat="server" AttributeGuid="FD317415-C35A-4D0F-B2A5-F2A7C87F9D7A">
+<Template>
+                            <div class="progress" data-percentage="{0:0}">
+                              <span class="progress-left">
+                                <span class="progress-bar"></span>
+                              </span>
+                              <span class="progress-right">
+                                <span class="progress-bar"></span>
+                              </span>
+                              <div class="progress-value">
+                                <div class="txt">
+                                  Amertume
+                                </div>
+                              </div>
+                            </div>
+</Template></ecom:ProduitAttributTemplate>
+                          </div>
+                          <div class="col-md-4 px-0">
+<ecom:ProduitAttributTemplate runat="server" AttributeGuid="B55A1C78-8D09-4616-B09B-FEBDA2537B33">
+<Template>
+                            <div class="progress" data-percentage="{0:0}">
+                              <span class="progress-left">
+                                <span class="progress-bar"></span>
+                              </span>
+                              <span class="progress-right">
+                                <span class="progress-bar"></span>
+                              </span>
+                              <div class="progress-value">
+                                <div class="txt">
+                                  Piquant
+                                </div>
+                              </div>
+                            </div>
+</Template></ecom:ProduitAttributTemplate>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ecom:ProduitAttributsPanel >
+
+
+                  <ecom:ProduitSeoContentPanel runat="server" CodeEmplacement="PRODBLOCOLIVE"><Content>
+                      <div class="seo d-lg-block">
+                        <div class="row mx-0">
+                          <div class="col-md-5 seo-box px-0">
+                            <div class="seo1">
+                              <h2><ecom:ProduitSeoContentTitle runat="server" CodeEmplacement="PRODBLOCOLIVE" /></h2>
+                            </div>
+                          </div>
+                          <div class="col-md-7 seo-box px-0">
+                            <div class="seo2">
+                              <p><ecom:ProduitSeoContent runat="server" CodeEmplacement="PRODBLOCOLIVE" /></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </Content></ecom:ProduitSeoContentPanel>
+                  <div class="desc desc2">
+                    <div class="desc-ligne-content">
+                      <div class=" d-md-none d-sm-block">
+                        <h4 class="title">
+                          <a data-toggle="collapse"  href="#collapse2" >
+                              dimensions & poids<i class="fas fa-chevron-right"></i></a>
+                        </h4>
+                      </div>
+                      <div id="collapse2" class="collapse show">
+                        <div class="desc-ligne">
+                          <div class="col-md-4 titre px-0  d-none d-md-block "><h4><span> dimensions & poids</span></h4>
+                          </div>
+                          <div class="col-md-8 px-0 detail col-sm-12" id="divDimensions">
+<ecom:ProduitInstancesDimensionsRepeater runat="server">
+<ItemTemplate>
+<ecom:ProductPanel runat="server" class="dimensions-versions" style="display:none"><Content>
+                            <ul>
+                              <li>
+                                <span class="lib">Hauteur</span> 
+                                <ecom:ProduitDimensions DimensionAffichee="Hauteur" runat="server" cssclass="infos" Format="{0:0} cm" />
+                              </li>
+                              <li>
+                                <span class="lib"> Largeur </span> 
+                                <ecom:ProduitDimensions DimensionAffichee="Largeur" runat="server" cssclass="infos"  Format="{0:0} cm" />
+                              </li>
+                              <li>
+                                  <span class="lib">Profondeur</span> 
+                                  <ecom:ProduitDimensions DimensionAffichee="Profondeur" runat="server" cssclass="infos"  Format="{0:0} cm" />
+                              </li>
+                              <li>
+                                <span class="lib">Poids </span> 
+                                <ecom:ProduitDimensions DimensionAffichee="PoidsEnKg" runat="server" cssclass="infos"  Format="{0:0.0} kg" />
+                              </li>
+                            </ul>
+</Content></ecom:ProductPanel>
+</ItemTemplate>
+</ecom:ProduitInstancesDimensionsRepeater>
+                          </div>
+                        </div>    
+                      </div>
+                    </div>
+
+<ecom:ProduitSeoContentPanel runat="server"  CodeEmplacement="PRODVALNUTR"><Content>
+                    <div class="desc-ligne-content">
+                      <div class=" d-md-none d-sm-block">
+                        <h4 class="title">
+                          <a data-toggle="collapse"  href="#collapse3">
+                              valeurs nutritionnelles</span><i class="fas fa-chevron-right"></i></a>
+                        </h4>
+                      </div>
+                      <div id="collapse3" class="collapse show ">
+                        <div class="desc-ligne">
+                          <div class="col-md-4 titre px-0 d-none d-md-block "><h4><span> valeurs nutritionnelles<br /><span>
+                              Informations nutritionnelles pour 100 gr</span></span></h4>
+                          </div>
+                          <div class="col-md-8 px-0 detail col-sm-12">
+                            <ecom:ProduitSeoContent runat="server" CodeEmplacement="PRODVALNUTR" />
+                          </div>
+                        </div>    
+                      </div>
+                    </div>
+</Content></ecom:ProduitSeoContentPanel>                    
+                        
+
+<%--
+                    <div class="desc-ligne-content">
+                      <div class=" d-md-none d-sm-block">
+                        <h4 class="title">
+                          <a data-toggle="collapse"  href="#collapse4">
+                            Bon à savoir</span><i class="fas fa-chevron-right"></i></a>
+                        </h4>
+                      </div>
+                      <div id="collapse4" class="collapse show ">
+                        <div class="desc-ligne">
+                          <div class="col-md-4 titre px-0 d-none d-md-block "><h2><span> Bon à savoir</span></h2>
+                          </div>
+                          <div class="col-md-8 px-0 detail col-sm-12">
+                            <ul>
+                              <li>
+                                <span class="lib">Elle soulage différents types de douleurs</span> 
+                              </li>
+                              <li>
+                                <span class="lib">Elle prévient la dégénération mentale</span> 
+                                <span class="infos"></span>
+                              </li>
+                          
+                              <li>
+                                <span class="lib">Elle a des propriétés anti-cancer</span> 
+                                <span class="infos"></span>
+                              </li>
+                              <li>
+                                <span class="lib">Elle combat le diabète</span> 
+                                <span class="infos"></span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>    
+                      </div>
+                    </div>
+--%>
+                  </div>
+                </div>
+              </div>
+            </div>
+<div id="pnlSeoContent" style="display:none">
+            <div class="row d-lg-block" >
+              <div class="col-md-12 px-0">
+                <div class="seo3">
+                  <div class="seo3-content">
+                    <div class="row mx-0">
+                        <ul class="nav nav-pills">
+<ecom:ProduitSeoContentPanel runat="server" cssclass="seo d-none d-lg-block" CodeEmplacement="PRODSEO1"><Content>
+                            <li class="nav-item">
+
+                              <a class="nav-link" data-toggle="tab" href="#menu1"><h3><ecom:ProduitSeoContentTitle runat="server" CodeEmplacement="PRODSEO1" /></h3></a>
+
+                            </li>
+</Content></ecom:ProduitSeoContentPanel>
+<ecom:ProduitSeoContentPanel runat="server" cssclass="seo d-none d-lg-block" CodeEmplacement="PRODSEO2"><Content>
+                            <li class="nav-item">
+
+                              <a class="nav-link" data-toggle="tab" href="#menu2"><h3><ecom:ProduitSeoContentTitle runat="server" CodeEmplacement="PRODSEO2" /></h3></a>
+
+                            </li>
+</Content></ecom:ProduitSeoContentPanel>
+<ecom:ProduitSeoContentPanel runat="server" cssclass="seo d-none d-lg-block" CodeEmplacement="PRODSEO3"><Content>
+                            <li class="nav-item">
+
+                                <a class="nav-link" data-toggle="tab" href="#menu3"><h3><ecom:ProduitSeoContentTitle runat="server" CodeEmplacement="PRODSEO3" /></h3></a>
+
+                              </li>
+</Content></ecom:ProduitSeoContentPanel>
+<ecom:ProduitSeoContentPanel runat="server" cssclass="seo d-none d-lg-block" CodeEmplacement="PRODSEO4"><Content>
+                            <li class="nav-item">
+
+                                <a class="nav-link" data-toggle="tab" href="#menu4"><h3><ecom:ProduitSeoContentTitle runat="server" CodeEmplacement="PRODSEO4" /></h3></a>
+
+                              </li>
+</Content></ecom:ProduitSeoContentPanel>
+                          </ul>
+                          
+                        </ul>
+                    </div>
+                    <div class="row mx-0">
+                      <div class="tab-content">
+                        <ecom:ProduitSeoContentPanel runat="server"  CodeEmplacement="PRODSEO1"><Content>
+<div id="menu1" class="tab-pane active tab-box">
+                          <p><ecom:ProduitSeoContent runat="server" CodeEmplacement="PRODSEO1" /></p>
+</div>
+                        </Content></ecom:ProduitSeoContentPanel>
+                        <ecom:ProduitSeoContentPanel runat="server" CodeEmplacement="PRODSEO2"><Content>
+<div id="menu2" class="tab-pane   tab-box">
+                          <p><ecom:ProduitSeoContent runat="server" CodeEmplacement="PRODSEO2" /></p>
+</div>
+                        </Content></ecom:ProduitSeoContentPanel>
+                        <ecom:ProduitSeoContentPanel runat="server"  CodeEmplacement="PRODSEO3"><Content>
+<div id="menu3" class="tab-pane  tab-box">
+                          <p><ecom:ProduitSeoContent runat="server" CodeEmplacement="PRODSEO3" /></p>
+</div>
+                        </Content></ecom:ProduitSeoContentPanel>
+                        <ecom:ProduitSeoContentPanel runat="server"  CodeEmplacement="PRODSEO4"><Content>
+<div id="menu4" class="tab-pane  tab-box">
+                          <p><ecom:ProduitSeoContent runat="server" CodeEmplacement="PRODSEO4" /></p>
+</div>
+                        </Content></ecom:ProduitSeoContentPanel>
+
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+</div>
+        </div>
+      
+      </section>
+   
+
+<script src="/App_Themes/LaPlaza/js/swipe.js"></script>
+<script>
+    $("#pnlInstances .choix").click(function(e) {
+        $("#pnlInstances .choix").removeClass("active");
+        $("#imgInstances .img-version-produit").hide();
+        $("#divDimensions .dimensions-versions").hide();
+        var itm = $(this);
+        itm.addClass("active");
+
+        var itmInfo = itm.closest("[data-e-instance-guid]");
+        if(itmInfo != null) {
+            var laref = itmInfo.attr("data-e-instance-ref");
+            var leguid = itmInfo.attr("data-e-instance-guid");
+            $("#imgMainProduct").hide();
+            $("#imgInstances div[data-e-instance-guid='" + leguid + "']").show();
+            $("#divDimensions div[data-e-instance-guid='" + leguid + "']").show();
+            $("#hdnLInstance").val(laref);
+        }
+    });
+
+    var nbInstances = $("#pnlInstances .choix").length;
+    if(nbInstances == 3) 
+        $("#pnlInstances").addClass("choix-x3");
+    else
+        $("#pnlInstances").removeClass("choix-x3");
+
+    $(".choix-qt-detail .moins").click(function(e) {
+        var qteCtl = $("#qteSelecteur");
+        var qte = parseInt(qteCtl.text());
+        if(isNaN(qte) || qte <2)
+            qte = 1;
+        else
+            qte--;
+        qteCtl.text(qte);
+        try { e.preventDefault(); } catch(e) { }
+        return false;
+    });
+
+    $(".choix-qt-detail .plus").click(function(e) {
+        var qteCtl = $("#qteSelecteur");
+        var qte = parseInt(qteCtl.text());
+        if(isNaN(qte))
+            qte = 2;
+        else
+            qte++;
+        qteCtl.text(qte);
+        try { e.preventDefault(); } catch(e) { }
+        return false;
+    });
+
+    $("#pnlInstances").find(".choix").each(function(idx) {
+        var itm = $(this);
+        if(idx==0) {
+            itm.click();
+        }
+    });
+
+     $("#pnlSeoContent").find(".nav-item").each(function(idx) {
+              var itm = $(this);
+              var  lnk = itm.find("a.nav-link");
+              var div = itm.find(lnk.attr("href"));
+              if(idx==0) {
+                  //itm.addClass("active");
+                    lnk.addClass("active");
+div.addClass("active");
+              }
+              else {
+                  //itm.removeClass("active");
+lnk.removeClass("active");
+div.removeClass("active"); 
+              } 
+          });
+    
+
+    if($("#pnlSeoContent .nav-link").length>0)
+              $("#pnlSeoContent").show();
+    
+    if(window.innerWidth<500) {
+        $('.collapse').collapse();
+    }
+
+</script>
+
+    </div>
+
+</Content>
+</ecom:ProductPanel>

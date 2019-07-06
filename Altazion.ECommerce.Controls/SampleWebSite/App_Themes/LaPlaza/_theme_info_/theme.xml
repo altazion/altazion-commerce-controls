@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Theme xmlns="http://simplement-e.com/ecommerce/theme/theme.xsd">
+  <Name>La Plaza</Name>
+  <Description>Thème pour la Plaza</Description>
+  <Author>(c) Creo Ignem - 2018</Author>
+
+  <Publicites>
+
+
+
+
+
+
+
+    <Publicite code="CARROUS" libelle="Carrousel Home"
+                 description="Carrousel principal sur la home"
+                 classeClient=""
+                 classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationHtmlPublicite">
+      <Composant>
+        <Entete>
+          <![CDATA[
+       
+          <section class="carousel">
+        <div id="carousel-la-plazza" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+            
+          ]]>
+        </Entete>
+        <Pied>
+          <![CDATA[  
+           <a class="carousel-control-prev" href="#carousel-la-plazza" role="button" data-slide="prev">
+              <i class="fas fa-caret-left"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-la-plazza" role="button" data-slide="next">
+              <i class="fas fa-caret-right"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>    
+        
+      <script type="text/javascript">
+          $("#carousel-la-plazza").find(".carousel-item").each(function(idx) {
+              var itm = $(this);
+              if(idx==0) {
+                  itm.addClass("active");
+              }
+              else {
+                  itm.removeClass("active");
+              } 
+          });
+
+      $(document).ready(function(){
+          $('#carousel-la-plazza').carousel({
+            interval: 4000
+          });
+        });
+
+      </script>               
+]]>
+        </Pied>
+        <Contenu kind="HTML" code="MAIN" libelle="Avec CallToAction">
+          <![CDATA[
+
+      
+          <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-5 offset-xl-1 col-lg-6 offset-lg-1 txt-pub">
+                      <h3>{{Title}}</h3>
+                      <p>
+                      {{Description}}</p>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-5 offset-xl-1 col-lg-6 offset-lg-1 button-pub ">
+                        <a href="{{Url}}" onclick="ga('send', 'event', 'HomeCarrousel', 'clic', '{{Libel_Event}}');" class="btn btn-primary">{{Call_Action}}</a>
+                    </div>
+                </div>
+                <img src="/App_themes/LaPlaza/img/pub.jpg" class="img-fluid" alt="Opération commerciale">
+              </div>
+              
+            </div>
+        
+ 
+             
+        ]]>
+        </Contenu>
+        <Contenu kind="HTML" code="SANS" libelle="SANS CallToAction">
+          <![CDATA[
+
+      
+          <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-5 offset-xl-1 col-lg-6 offset-lg-1 txt-pub">
+                      <h3>{{Title}}</h3>
+                      <p>
+                      {{Description}}</p>
+                  </div>
+                </div>
+                <img src="/App_themes/LaPlaza/img/pub.jpg" class="img-fluid" alt="Opération commerciale">
+              </div>
+              
+            </div>
+        
+ 
+             
+        ]]>
+        </Contenu>
+        <Contenu kind="HTML" code="IMG" libelle="Call To Action + Image">
+          <![CDATA[
+
+      
+          <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-5 offset-xl-1 col-lg-6 offset-lg-1 txt-pub">
+                      <h3>{{Title}}</h3>
+                      <p>
+                      {{Description}}</p>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-5 offset-xl-1 col-lg-6 offset-lg-1 button-pub ">
+                        <a href="{{Url}}" onclick="ga('send', 'event', 'HomeCarrousel', 'clic', '{{Libel_Event}}');" class="btn btn-primary">{{Call_Action}}</a>
+                    </div>
+                </div>
+                <img src="{{ImageUrl}}" class="img-fluid" alt="{{AltImage}}">
+              </div>
+              
+            </div>
+        ]]>
+        </Contenu>
+        
+        <Variable code="Title" kind="HtmlLine" />
+        <Variable code="AltImage" kind="HtmlLine" />
+        <Variable code="Libel_Event" kind="HtmlLine" />
+        <Variable code="Call_Action" kind="HtmlLine" />
+        <Variable code="Description" kind="HtmlBlock" />
+        <Variable code="Url" kind="SearchUrl" />
+        <Variable code="ImageUrl" kind="ImageUrl" />
+      </Composant>
+    </Publicite>
+
+
+    <!--<Publicite code="EPubProdts" libelle="Publicité dans les pages résultats recherche"
+       description="Publicité contextuelle en haut des pages de descente produits"
+       classeClient="Equihira.vNext.Client.Ventes.EditerOperationEPubContextuelle, Equihira.vNext.Client.Ventes"
+       classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationBandeauPublicites" />-->
+
+
+
+
+    <Publicite code="EPubFiche" libelle="Publicité dans la fiche produit"
+       description="Publicité contextuelle en haut de la fiche produit"
+       classeClient="Equihira.vNext.Client.Ventes.EditerOperationEPubContextuelle, Equihira.vNext.Client.Ventes"
+       classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationBandeauPublicites" />
+
+
+
+
+
+  </Publicites>
+
+  <Seo>
+    <Emplacement code="DESCPLAZA" libelle="Bloc de description LaPlaza">
+      <SurTypePage type="Page" />
+    </Emplacement>
+    <Emplacement code="DESCPLAZACOMPL" libelle="Bloc blanc de description LaPlaza">
+      <SurTypePage type="Page" />
+    </Emplacement>
+    <Emplacement code="DESCPLAZANWL" libelle="Bloc explication newsletter sur home">
+      <SurTypePage type="Page" />
+    </Emplacement>
+    <Emplacement code="DESCPLAZAOLIVE" libelle="Bloc explication huile d'olive sur home">
+      <SurTypePage type="Page" />
+    </Emplacement>
+  </Seo>
+
+  <Produits>
+    <Images>
+      <Big width="570" height="480" />
+      <Intermediate width="330" height="280" />
+      <Small width="330" height="280" />
+      <Tiny width="155" height="130" />
+      <Thumbnail width="330" height="280" />
+    </Images>
+  </Produits>
+
+  <Options>
+    <Search classeCssMiseEnAvant="MisEnAvant" nbMiseEnAvant="1" nbProduitsParPage="48" />
+    
+  </Options>
+
+</Theme>

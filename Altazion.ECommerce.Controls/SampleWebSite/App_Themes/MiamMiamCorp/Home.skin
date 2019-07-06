@@ -1,0 +1,150 @@
+﻿
+    <ecom:ThemablePanelControl runat="server" SkinID="HomePagePanel" >
+        <Content>
+
+<script src="/app_themes/miammiamcorp/js/jquery.superslides.min.js"></script>
+
+<%--<ecom:CampagnePublicite runat="server" TypeOperation="Home" />--%>
+
+
+<section id="slides">
+  <div class="slides-container">
+      <div class="slide">
+        <a href="/gourmandises/macarons/page1.htm">
+            <img src="/app_themes/miammiamcorp/img/slider/slide1.jpg" alt="slide" class="">
+              <div class="slide-caption">
+                <div class="container">
+                  <h3 class="hidden-sm hidden-xs"><i class="fa fa-heart"></i><span></span>Aujourd’hui, découvrez</h3>
+                  <h1>NOTRE SELECTION <br />DE MACARONS</h1>
+                </div>
+              </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="/gourmandises/top-ventes/page1.htm">
+            <img src="/app_themes/miammiamcorp/img/slider/topventes.jpg" alt="slide" class="">
+              <div class="slide-caption">
+                <div class="container">
+                  <h3 class="hidden-sm hidden-xs"><i class="fa fa-heart"></i><span></span>En panne d'idée ?</h3>
+                  <h1>NOS MEILLEURES<br />VENTES !</h1>
+                </div>
+              </div>
+          </div>
+        </a>
+  </div><!-- end slides-container -->
+ 
+  <div class="slides-navigation">
+   <a class="prev" href="#"> <i class="fa fa-chevron-left"></i></a>
+   <a class="next" href="#"> <i class="fa fa-chevron-right"></i></a>
+  </div><!-- end slides-navigation --> 
+</section>
+
+
+
+
+<section class="page-block features categoriesPrincipales">
+	<div class="container-fluid wideBG">
+		<div class="col-lg-6 col-md-6 col-sm-12 BGprime"></div>
+        <div class="col-lg-6 col-md-6 col-sm-12 BGsecondary"></div>
+	</div>
+  
+  <div class="container hidden-sm hidden-xs">
+    <div class="row">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <a href="/gourmandises/produits-maison/page1.htm">
+               <h4><small>Produits faits</small>Maison</h4>
+               <p class="hidden-xs hidden-sm">Découvrez nos pâtisseries, viennoiseries et entremets. </p>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12 middleBox">
+            <a href="/gourmandises/confiseries/page1.htm">
+               <h4><small>Verrines et</small>confiseries</h4>
+               <p class="hidden-xs hidden-sm">Bonbons, caramels, chocolats !</p>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12 BGsecondary ">
+            <a href="/gourmandises/traiteur/page1.htm">
+               <h4><small>Produit en</small>traiteur</h4>
+               <p class="hidden-xs hidden-sm">Pour vos petites et grandes faims.</p>
+            </a>
+        </div>
+    </div>
+  </div>
+    <!-- mobile -->
+	<div class="container-fluid hidden-lg hidden-md">
+   	<div class="row">
+       	<div class="col-md-4 col-sm-12 col-xs-12 firstBox">
+            <a href="/gourmandises/produits-maisons/page1.htm">
+               <h4><small>Produit fait </small> Maison</h4><i class="fa fa-chevron-right"></i>
+            </a>
+        </div>
+       	<div class="col-md-4 col-sm-12 col-xs-12 middleBox">
+            <a href="/gourmandises/confiseries/page1.htm">
+               <h4><small>Verrines et </small> confiseries</h4><i class="fa fa-chevron-right"></i>
+            </a>
+        </div>
+       	<div class="col-md-4 col-sm-12 col-xs-12 BGsecondary ">
+            <a href="/gourmandises/traiteur/page1.htm">
+               <h4><small>Produit en </small> traiteur</h4><i class="fa fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="products" class="page-block">
+	<div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12" >
+                <h3><span class="hidden-sm hidden-xs"></span><i class="fa fa-trophy"></i>Les Tops <em>des ventes</em></h3>
+      </div>
+    </div><!-- end row -->
+  </div><!-- end container -->
+  <div class="slides-navigation hidden-md hidden-lg">
+    <a class="prev" href="#"> <i class="fa fa-chevron-left"></i></a>
+    <a class="next" href="#"> <i class="fa fa-chevron-right"></i></a>
+  </div><!-- end slides-navigation -->
+  <div class="container-wide products ">
+    <div class="container">
+      <div id="productList" class="carousel slide clearfix" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators row hidden-sm hidden-xs">
+            <ecom:VitrinesListeProduits runat="server" ProductTemplateSkinID="ProductItemTopVenteHomeOL"
+                TypeAffichage="Flux" CodeVitrine="TOPVENTES" NombreArticles="5" />
+        </ol>
+
+        
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <ecom:VitrinesListeProduits runat="server" ProductTemplateSkinID="ProductItemTopVenteHome"
+                TypeAffichage="Flux" CodeVitrine="TOPVENTES" NombreArticles="5" />
+        </div><!-- end carousel-inner -->
+      </div>
+    </div>
+  </div><!-- end highlightBox -->
+
+    <script language='javascript'>
+        $("#productList OL LI").each(function(idx, obj) {
+            $(this).attr('data-slide-to', idx.toString()); 
+        });
+
+        $("#productList .item").each(function(idx, obj) {
+            if(idx==0)
+                $(this).addClass("active");
+        });
+
+    </script>
+
+</section>
+
+
+
+       </Content>
+    </ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="HomePageAfterContent">
+<Content>
+</Content>
+</ecom:ThemablePanelControl>

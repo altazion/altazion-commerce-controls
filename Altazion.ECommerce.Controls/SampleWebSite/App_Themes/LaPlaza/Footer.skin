@@ -1,0 +1,177 @@
+﻿
+<ecom:ThemablePanelControl SkinID="PageFooterPanel" runat="server">
+<Content>
+
+
+<div class="modal fade modal-ajout-panier show" id="ajout-panier">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="close" data-dismiss="modal">
+                          <span></span>
+                          <span></span>
+                  </div>
+                  <div class="row">
+                  
+                      <div class="col-md-12">
+                          <div class="ajout">
+                              <div class="titre">
+                                  <h3>Vous avez ajouté à votre panier :</h3>
+                              </div>
+
+                              <div class="ligne">
+                                  <div class="bloc1">
+                                      <div class="bloc-img">
+                                        <img title="" src="" alt="" class="img-fluid">
+                                    </div>
+                                  </div>
+                                  <div class="bloc-content-2-3-4">
+                                      <div class="bloc2">
+                                          <span class="libelle"></span><br />
+                                          <span class="poids"></span>
+                                      </div>
+                                      <div class=" bloc3 choix-qt">
+                                          <div class="choix-qt-detail">
+                                              <span>x1</span>
+                                          </div>
+                                      </div>
+                                      <div class="bloc4 prix">
+                                              <div class="prix-promo">
+                                                      <span class="barre"></span>
+                                                  </div>
+                                          <div class="prix-normal"></div>
+                                          
+                                      </div>
+                                  </div>
+                                  
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row cta">
+                      <div class="col-md-4">
+                        <button data-dismiss="modal" class="btn btn-info  btn-50">Continuer le shopping</button>
+                      </div>
+                      <div class="col-md-4 offset-md-4">
+                        <a href="/exec/panier.aspx" class="btn btn-primary  btn-50 ">Voir mon panier</a>
+                      </div>
+                  </div>
+        
+       
+    
+               
+          
+              </div>
+          </div>
+      </div>
+
+<footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3 col-md-6 plaza-desc">
+                <img src="/App_themes/LaPlaza/img/LaPlaza_logo.png" class="img-fluid"  alt="La Plazza">
+                <h3>Le meilleur de l’Espagne,<br /><span>
+                    en direct du producteur !</span></h3>
+                <p>
+                    <ecom:SeoContent runat="server" CodeEmplacement="Footer" DefaultContent="Avec ce site nous souhaitons partager nos découvertes avec un excellent rapport qualité prix. Nous commandons en direct afin d’avoir le circuit le plus court possible entre le producteur et le consommateur : vous. " /></p>
+              </div>
+              <div class="col-lg-6 col-md-12 map">
+                <div class="bloc-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.592905531693!2d3.515782415728647!3d50.3741449794649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf412a6a1d5a2aac1!2sLa+Plaza+-+laplaza.fr!5e0!3m2!1sfr!2sfr!4v1543995803173" 
+                        width="380" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  <div class="bloc-adresse">
+                    <p><b>La plaza</b><br />
+                        Rives Créatives de l'Escaut<br />
+                        80 av. Roland Moreno<br />59410 Anzin
+                    </p>
+                    <p>
+                        <ecom:SiteServiceClientTelephone runat="server" /> </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3  col-md-6 lien-footer">
+                <ul>
+                    <li class="contact">
+                      <a href="/exec/contact.htm">
+                        <span class="bloc-img">
+                          <img src="/App_themes/LaPlaza/img/icon-tel.svg" with="29" height="28" alt="Contactez nous">
+                        </span>
+                        <span class="bloc-txt"><b>Contactez nous</b></span>
+                      </a>
+                    </li>
+                    <li class="news">
+                      <a href="/newsletter.htm">
+                        <span class="bloc-img">
+                          <img src="/App_themes/LaPlaza/img/icon-news.svg" with="30" height="23" alt="Newsletter">
+                        </span>
+                        <span class="bloc-txt"><b>Newsletter</b></span>
+                      </a>
+                    </li>
+                    <li class="liv">
+                      <a href="/qui-sommes-nous-faq.htm#transport">
+                        <span class="bloc-img">
+                          <img src="/App_themes/LaPlaza/img/icon-liv1.svg" with="33" height="29" alt="livraison & retour">
+                        </span>
+                        <span class="bloc-txt">livraison & retour
+                            </span>
+                      </a>
+                    </li>
+                    <li class="secure">
+                      <a href="/qui-sommes-nous-faq.htm#paiement">
+                        <span class="bloc-img">
+                          <img src="/App_themes/LaPlaza/img/icon-secure.svg" with="31" height="30" alt="paiement sécurisé">
+                        </span>
+                        <span class="bloc-txt"> paiement sécurisé
+                          </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/my/">
+                        <span class="bloc-img">
+                          <img src="/App_themes/LaPlaza/img/icon-compte.svg" with="26" height="34" alt="mon compte">
+                        </span>
+                        <span class="bloc-txt" >mon compte</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/qui-sommes-nous-faq.htm">
+                        <span class="bloc-img">
+                          <img src="/App_themes/LaPlaza/img/icon-faq.svg" with="23" height="25" alt="faq">
+                        </span>
+                        <span class="bloc-txt">FAQ</span>
+                      </a>
+                    </li>
+                    
+                </ul>
+                
+                
+              </div>
+          </div>
+      </div>
+
+    </footer>
+    <div class="mention">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 mention-copyright">
+                © laplaza.fr, <span class="cache"><br /></span> huile d'olive, safran, paprika et touron en direct d'Espagne. - <a href="/mentions-legales.htm">Mentions légales 
+</a> - <a href="/conditions-generales-de-vente.htm">CGV 
+</a> - <a href="/vie-privee.htm">Vie privée
+</a> </div>
+            <div class="col-md-6 mention-reseaux">
+                <a href="https://blog.laplaza.fr/"  target="_blank">le blog</a> - 
+                <a href="https://www.facebook.com/LaPlaza.fr/"  target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/laplaza.fr"  target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<!-- Custom JavaScript -->
+		<script src="/App_themes/LaPlaza/js/custom-js.js"></script>
+
+</Content>
+</ecom:ThemablePanelControl>

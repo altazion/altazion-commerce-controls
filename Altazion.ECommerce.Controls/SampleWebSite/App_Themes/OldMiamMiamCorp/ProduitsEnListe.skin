@@ -1,0 +1,100 @@
+﻿
+<ecom:ProduitsEnListe SkinID="ProductItemList" runat="server" TypeAffichage="Flux"
+    RepeatColumns="3" />
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="SearchResultHeader">
+<Content>
+    <h1><ecom:ContexteTitrePage runat="server" cssclass="mainTitle" /></h1>
+
+    <ecom:FilAriane ID="FilAriane1" runat="server" Header="Vous êtes ici : " CssClass="MainBreadcrumb" />
+    <span class="header">Votre sélection :</span>
+    <div class="searchBox">
+        <ecom:RechercheRapide runat="server" GoButtonText="OK" />
+    </div>
+    <div class="facetBox">
+
+    </div>
+
+     <div class="navBox">
+        <div class="res"><strong><ecom:RechercheStatLabel runat="server" Type="NombreArticlesTotal" /> articles</strong> dans cette rubrique</div>
+        <div class="resFilter">
+            <ul>
+    		    <li><ecom:RechercherPremierePage runat="Server" Text="&lt;&lt;" /></li>
+    		    <li><ecom:RechercherPagePrecedente runat="Server" Text="Page pr&eacute;c&eacute;dente &lt;" /></li>
+                <ecom:RechercherPageChoixBasique ID="RechercherPageChoixBasique1" runat="server"
+                    TextSeparator=" " SansConteneur="true" MaxShownItems="10" />        
+                <li><ecom:RechercherPageSuivante runat="Server" Text="&gt; Page suivante" /></li>
+    		    <li><ecom:RechercherDernierePage runat="Server" Text="&gt;&gt;" /></li>
+            </ul>
+            
+            
+            
+        </div>
+    </div>
+
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ProduitMetaTag runat="server" TextSiMisEnAvant2="Nouveauté" />
+
+<ecom:ProductPanel SkinID="ProductItemInList" runat="server" CssClass="">
+<Content>
+    <div class="ProductItemInList">
+            <div class="image">
+                <ecom:ProduitImageLink runat="server" ImageType="Thumb" ImageUrlIfNone="https://egestcom.blob.core.windows.net/data-miam-2/site/theme/miam-no-img.gif" />
+            </div>
+            <div class="libelle">
+                <div class="header">
+                </div>
+
+                <ecom:ProduitLibelleLink runat="server" MaxLength="30" />
+            </div>
+            <div class="attributs">
+                <ecom:ProduitMetaTag runat="server" />
+            </div>
+            <div class="contenu">
+            <ecom:ProduitDescriptif runat="server" maxlength="150" />
+            </div>
+            <div class="prix">
+                <span class="entete">A partir de...</span><br />
+                <ecom:ProduitPrix runat="server" FormatPrix="{0:0.00}€"  CssClass="valeur" CssClassSiPromo="valeurPromo" />
+                <ecom:ProduitPrixHorsPromo runat="server" FormatPrix="{0:0.00}€"  CssClass="valeurOriginale" />
+            </div>
+
+            <div class="moreInfos">
+                <ecom:ProduitLink runat="server" ImageUrl="" Text="Plus d'infos" />
+            </div>
+
+            <div class="clear">
+            </div>
+    </div>
+</Content>
+</ecom:ProductPanel>
+
+<%--
+<ecom:ThemablePanelControl runat="server" SkinID="SearchResultFooter">
+<Content>
+        
+    <div class="nav bot">
+        <div class="res">R&eacute;sultats <ecom:RechercheStatLabel runat="server" Type="IndexDebut" /> &agrave; <ecom:RechercheStatLabel runat="server" Type="IndexFin" /> sur <ecom:RechercheStatLabel runat="server" Type="NombreArticlesTotal" /></div>
+        <div class="resFilter">
+            <ul>
+    		    <li><ecom:RechercherPremierePage runat="Server" Text="&lt;&lt;" /></li>
+    		    <li><ecom:RechercherPagePrecedente runat="Server" Text="Page pr&eacute;c&eacute;dente &lt;" /></li>
+                <ecom:RechercherPageChoixBasique ID="RechercherPageChoixBasique1" runat="server"
+                    TextSeparator=" " SansConteneur="true" MaxShownItems="10" />        
+                <li><ecom:RechercherPageSuivante runat="Server" Text="&gt; Page suivante" /></li>
+    		    <li><ecom:RechercherDernierePage runat="Server" Text="&gt;&gt;" /></li>
+            </ul>
+            
+            <ecom:RechercheTriCombo runat="server" />
+            
+        </div>
+    </div>
+        
+</Content>        
+</ecom:ThemablePanelControl>
+--%>
+
+

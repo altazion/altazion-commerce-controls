@@ -1,0 +1,98 @@
+﻿@charset "UTF-8";
+/* CSS Document 
+Author Name: Saptarang
+Author URI: http://www.saptarang.org
+Themeforest: http://themeforest.net/user/saptarang?ref=saptarang
+Creation Date: 5th March, 2015
+Description: A default stylesheet for Products & Services Landing Page Template, Designed & Developed By Saptarang.
+
+------------ TABLE OF CONTENT ------------
+
+- PRIMARY COLOR
+- SECONDARY
+- LIGHT
+- DARK GREY
+
+*/
+/* ======================= */
+/* ========= PRIMARY ======== */
+/* ======================= */
+a {
+	color: #4a4a4a
+}
+a:hover, a:focus {
+	color: #d4471b
+}
+
+ .price span, h5, h1 span, #subscribe input[type=submit], ul.list-default li:before, .contactInfo p i, .extra i {
+	color: #fa9533;
+}
+#testimonial .quoteImg img, .extra i {
+	border: 5px solid #fa9533;
+}
+
+/* == Background PRIMARY == */
+#slides h3, .btn-primary, .BGprime, h3 span, #productList h2 span, .option li:hover, .btn-primary, .panel-default > .panel-heading h4 a:before, .btn-dark:hover, .contactInfo h1, a.top, .otherProducts li:hover .price, .extra > div:hover i,
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:focus {
+	background-color: #fa9533;
+}
+.contactForm .form-control:focus {
+	-webkit-box-shadow: 0 0 0 5px rgba(250, 149, 51, 0.35);
+	-moz-box-shadow: 0 0 0 5px rgba(250, 149, 51, 0.35);
+	box-shadow: 0 0 0 5px rgba(250, 149, 51, 0.35);
+}
+
+/* == use rgba values here == */
+.BGprime.opaque, #proList li .link a {
+	background-color: rgba(250, 149, 51, 0.9);
+}
+
+/* ======================= */
+/* ======= SECONDARY ======= */
+/* ======================= */
+.otherProducts .price span, #productList .carousel-indicators li.active:before, .contactInfo p:hover i, .main-menu li:hover > a i, .panel-default > .panel-heading h4.active a strong {
+	color: #d4471b;
+}
+#testimonial .comment h6 {
+	border-left: 6px solid #d4471b;
+}
+
+/* == Background SECONDARY == */
+.navbar-default, .BGsecondary, #slides .slides-navigation a, #products .slides-navigation a, #productList .carousel-indicators > li.active img, #productList .carousel-indicators > li:hover img, .option li, .btn-default, .member:hover .info, .panel-default > .panel-heading h4.active a:before, #testimonial .carousel-indicators li.active, .galleryImg > a span, .otherProducts .price {
+	background-color: #d4471b;
+}
+
+/* == use rgba values here == */
+.BGsecondary.opaqueBG, .member .info, #proList li .link a.large {
+	background-color: rgba(212, 71, 27, 0.9);
+}
+
+
+/* ======================= */
+/* ====== LIGHT ======= */
+/* ======================= */
+#testimonial .comment:before {
+	color: #f1ece0;
+}
+
+/* == Background ORANGE == */
+.products {
+	/*background-color: #f1ece0;*/
+}
+
+
+/* ======================= */
+/* =====  DARK GREY  ===== */
+/* ======================= */
+html, body, div, pe, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fieldset, blockquote, cite, input, select, textarea, button, section, article, aside, header, footer, nav, h1, h2, h3, h4, h6, .phone small {
+	color: #4a4a4a;
+}
+
+/* == Background Color4 == */
+.BGthird, #slides .slide .slide-caption .container h3 span, h3, .BGdark, .phone:hover .BGsecondary, .btn:hover, .middleBox, .grid figure, .btn-dark, .galleryImg, .social ul li a i {
+	background-color: #4a4a4a;
+}
+nav.nav, header.BGdark, .btn:hover {
+	background-color: #333 !important;
+}

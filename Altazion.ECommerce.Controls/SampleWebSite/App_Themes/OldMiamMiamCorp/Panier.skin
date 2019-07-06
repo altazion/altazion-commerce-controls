@@ -1,0 +1,104 @@
+﻿
+<ecom:PanierProduitsGrid runat="Server" SkinID="CartDetailsGridView" AlternatingRowStyle-CssClass="couleur" ShowHeader="true" CssClass="LeDetailPanier">
+  <Columns>
+    <ecom:PanierProduitImageField CssClass="image" TypeImage="Tiny" />
+    <ecom:PanierProduitLibelleEtRefField CssClass="libelle" Separateur="<br/>" CssClassLibelle="bold"   />
+    <ecom:PanierProduitField CssClass="prix" Field="PrixUnitaireTtc"  TextePrixZero="OFFERT" Format="###,##0.00€"/>
+    <ecom:PanierLabelField CssClass="" Text="x"  />
+    <ecom:PanierQuantiteModifiableField CssClass="quantite" Mode="PerteFocus" />
+    <ecom:PanierProduitField CssClass="total" Field="MontantTtc" Format="###,##0.00€"/>
+    <ecom:PanierProduitCommandLink CssClass="suppr EffacerPanier" Command="removeall" text="X"/>
+  </Columns>
+  <EmptyDataTemplate>
+        <div class="emptyCart">Aucun article dans le panier</div>
+  </EmptyDataTemplate>
+</ecom:PanierProduitsGrid>
+
+<ecom:PanierAvantagesGrid runat="server" SkinID="CartDetailsGridView" ShowHeader="false" RowStyle-CssClass="LesAvantagesPanier">
+  <Columns>
+    <ecom:PanierProduitImageField CssClass="image" />
+    <ecom:PanierProduitField CssClass="libelle" Field="Libelle" />
+    <ecom:PanierProduitField CssClass="total" ColumnSpan="5" Field="MontantTtc" TextePrixZero="OFFERT" Format="###,##0.00€" />    
+  </Columns>
+</ecom:PanierAvantagesGrid>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="PanierTotalGeneral" RenderWithNoTag="true" >
+  <Content>
+
+			<div class="montant_total">
+				<div class="mont_1"><span class="mont_1">Montant Total</span><br />
+					<span class="note">(avec frais de livraison)</span></div>
+				<div class="mont_2">
+				<ecom:PanierMontant runat="server" /><span class="euro">&euro;</span>
+				
+				</div>
+			</div>
+        <br class="clear" />        			
+
+  </Content> 
+</ecom:ThemablePanelControl>
+
+<ecom:AvantageLabel runat="server" TextIfActive="Code actif : <em>{0}</em>." TextIfInactive="Vous possedez un code avantage ?" />
+
+<ecom:ThemablePanelControl runat="server" SkinID="LivraisonChoixHeader" RenderWithNoTag="true" >
+  <Content>
+  		    <div class="liv_montant"><ecom:LivraisonMontant runat="Server" Format="###,##0.00€" /></div>
+            
+			<div class="liv_titre"><b>Livraison</b>  <br />
+			<span class="details">Livraison uniquement en France m&eacute;tropolitaine et Corse</span></div>
+  </Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="LivraisonChoixFooter" RenderWithNoTag="true" >
+  <Content>
+           
+  </Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl  runat="server" SkinID="PanierLigneTransporteur" RenderWithNoTag="true">
+<Content>
+		<tr class="recap_mode">
+		<td class="image"></td>
+		<td class="libelle" colspan="4">
+					<span class="bold">Frais de livraison</span> <br /><span class="mode"><ecom:LivraisonLibelle runat="server"/></span></td>
+					<td class="total"><ecom:LivraisonMontant runat="server" Format="0.00 &euro;" />
+					</td><td class="suppr">&nbsp;
+					</td>
+		</tr>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="PanierCommandes" RenderWithNoTag="true">
+    <Content>
+        <div id="PanierCommandes">
+            <div id="PanierCommandesContinuer">
+                <ecom:ContinuerAchatsLink runat="server" Text="Continuer vos achats" NavigateUrl="~/"
+                    ID="lnkContinuerAchats" SkinID="PanierContinuerAchats" />
+            </div>
+            <div id="PanierCommandesTerminer">
+                <ecom:CommandeConfirmerLink runat="server" FinishPage="~/Exec/Process/ConfirmationCommande.aspx"
+                    ID="btnConfirmer" LoginPage="~/Exec/Process/login.aspx" Text="Commander"
+                    SkinID="PanierConfirmerCommande" />
+            </div>
+        </div>
+
+        <div class="clear">
+        </div>
+
+        <div class="pubsPanier">
+            <div class="leftPub">
+                <ecom:CampagnePublicite runat="server" Format="NonStandard"  TypeOperation="CARTLEFT"
+                    DefaultImage="pub-mag-1.png" DefaultNavigateUrl="~/magasins/"
+                 DefaultMimeType="Image" />
+            </div>
+            <div class="rightPub">
+                <ecom:CampagnePublicite runat="server" Format="NonStandard"  TypeOperation="CARTRIGHT" 
+                    DefaultImage="pub-mag-2.png" DefaultNavigateUrl="~/magasins/"
+                    DefaultMimeType="Image" />
+            </div>
+        </div>
+    </Content>
+</ecom:ThemablePanelControl>

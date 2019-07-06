@@ -1,0 +1,217 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="BodyStartHeader"
+            RenderWithNoTag="true">
+
+<Content>
+
+<ecom:NoCookiePanel runat="server" id="pnlCookies" class="cookies navbar-fixed-bottom">
+		<div class="cookies-content container">
+            <div class="row">
+
+                <div class="col-md-10 col-xs-12">
+                <p class="titre">Utilisation des cookies</p>
+		                <p style="color:#ffffff; margin: 0px 0px 7px; width: 96%;line-height:1em">En poursuivant votre navigation sur laplaza.fr, vous acceptez l'utilisation de cookies pour vous proposer des publicitées ciblées et/ou réaliser des mesures d'audience de notre site.  <a href="/vie-privee.htm" class="btn-link"> En savoir plus </a>
+                        </p>
+                </div>
+            
+             
+
+                <div class="col-xs-12 col-md-2 cookies-ok-button" style="padding-top:3rem">
+		                <ecom:SetCookieLink runat="server" id="lnkCookies" class="btn btn-primary">   
+                            Accepter
+		                </ecom:SetCookieLink>
+		                </div>
+            </div>
+        </div>
+
+
+
+        <!-- evol/2 -->
+
+</ecom:NoCookiePanel>
+
+
+        <ecom:PanierJavascriptData runat="server" ID="hdnPanierResume" />
+
+<header class="top1">
+			<div class="barre-noire">
+				<div class="container">
+					<div class="d-flex justify-content-between row">
+							<div class="col-md-4">
+<ecom:PanelPageSpecifique runat="server"  VisibiliteParDefaut="true" SaufPour="HomePage">
+<strong><ecom:SiteNom runat="server" /></strong> : <ecom:SiteSlogan runat="server" />
+</ecom:PanelPageSpecifique>
+							</div>
+              <div class="d-flex align-items-center  barre-noire-item col-md-8 justify-content-end">
+										<div class="tel ">
+                        <i class="icon fas fa-phone fa-flip-horizontal "></i> <ecom:SiteServiceClientTelephone runat="server" />
+										</div>
+										<div class="mail">
+                        <i class="icon far fa-envelope"></i> Email, 
+											<a href="/exec/contact.htm">cliquez ici</a>
+                    </div>
+                    <div class="port">
+                        Paiement sécurisé, Frais de port offerts à partir de 60€ d'achats
+                    </div>
+							</div>
+					  </div>
+				</div>
+      </div>
+      <div class="nav-main">
+			  <div class="container">
+          <div class="row">
+            <div class="col-7 px-0 d-flex">
+              <div class="brand nav-main-item align-items-center d-flex ">
+                <a href="/">
+                  <img src="/App_themes/LaPlaza/img/LaPlaza_logo.png" class="img-fluid"  alt="La Plazza">
+                </a>
+              </div>
+              <div class="menu nav-main-item  align-items-center d-flex ">
+ <a href="/#vitrineHuileOlive" class="menu-item">
+                    <span class="menu-img">
+                        <img src="/App_themes/LaPlaza/img/icon-olive.svg"  alt="Huile d'olive">
+                    </span>
+                    <span class="menu-txt">
+                      Huile d'olive
+                    </span>
+                </a>
+                <a href="/#vitrineSafran" class="menu-item ">
+                    <span class="menu-img">
+                        <img src="/App_themes/LaPlaza/img/icon-safran.svg"   alt="safran">
+                    </span>
+                    <span class="menu-txt">
+                        Safran
+                    </span>
+                </a>
+                <a href="/#vitrinePaprika" class="menu-item ">
+                        <span class="menu-img">
+                            <img src="/App_themes/LaPlaza/img/icon-paprika.svg"   alt="Paprika">
+                        </span>
+                        <span class="menu-txt">
+                            Paprika
+                        </span>
+    
+                </a>
+                <a href="/#vitrineTuron" class="menu-item ">
+                      <span class="menu-img">
+                          <img src="/App_themes/LaPlaza/img/icon-turon.svg"   alt="Turon">
+                      </span>
+                      <span class="menu-txt">
+                          Touron
+                      </span>
+                </a>
+              </div>
+            </div>
+            <div class="col-5 px-0 d-flex justify-content-end">
+              <div class="search nav-main-item  align-items-center d-flex">
+                <div class="form-search" style="visibility:hidden">
+                    <input type="text"  placeholder="Rechercher"/>
+                    <a href=""> <img src="/App_themes/LaPlaza/img/icon-loupe.svg" alt="Rechercher">  </a>
+                </div>
+              </div>
+              
+              <div class="menu-panier nav-main-item  align-items-center d-flex">
+                  <a href="/my" class="menu-item">
+                      <span class="menu-img">
+                          <img src="/App_themes/LaPlaza/img/icon-compte.svg"  alt="Mon compte">
+                      </span>
+                      <span class="menu-txt">
+                        Mon compte
+                      </span>
+                  </a>
+                  <a href="/exec/panier.htm" class="menu-item">
+                      <span class="menu-img">
+                          <img src="/App_themes/LaPlaza/img/icon-panier.svg"  alt="Mon panier">
+                          <ecom:PanierQuantiteLibelle runat="server" cssclass="nb-article" data-ekind="CartQuantity" />
+                      </span>
+                      <span class="menu-txt">
+                        Mon panier
+                      </span>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+		<header class="top2 Navmain" id="Navmain">
+      <div class="fond-noir"></div>
+			<div class="container-fluid px-0 d-flex justify-content-between align-items-center">
+				<div class="menu-icon menu-icon-cross nav-button">
+					<span></span>
+        </div>
+        <div class="brand">
+          <a href="/">
+            <img src="/App_themes/LaPlaza/img/LaPlaza_logo.png" class="img-fluid"  width="118" height="52" alt="La Plaza">
+          </a>
+        </div>
+        <div class="panier-search">
+            <a href="" class="menu-item" style="visibility:hidden">
+                <span class="menu-img">
+                    <img src="/App_themes/LaPlaza/img/icon-loupe.svg"  width="26" height="26" alt="Recherche">
+                </span>
+              
+            </a>
+            <a href="/exec/panier.htm" class="menu-item">
+                <span class="menu-img">
+                    <img src="/App_themes/LaPlaza/img/icon-panier.svg" width="21" height="28" alt="Mon panier">
+                    <ecom:PanierQuantiteLibelle runat="server" cssclass="nb-article" data-ekind="CartQuantity" />
+                </span>
+            </a>
+        </div>
+      </div>
+      <nav class="nav-mobile">
+        <div class="promo-nav-mobile">
+          <ul>
+
+            <li class="niv1">
+              <a href="/#vitrineHuileOlive">
+                <span class="bloc-img"><img src="/App_themes/LaPlaza/img/icon-olive.svg" height="34" width="38" alt="Huile d'olive"></span>
+                <span>Huile d’olive</span>
+              </a>
+            </li>
+            <li class="niv1">
+              <a href="/#vitrineSafran">
+                <span class="bloc-img"><img src="/App_themes/LaPlaza/img/icon-safran.svg" height="33" width="31" alt="Safran AOP"></span>
+                <span>Safran</span>
+              </a>
+            </li>
+            <li class="niv1">
+              <a href="/#vitrinePaprika">
+                <span class="bloc-img"><img src="/App_themes/LaPlaza/img/icon-paprika.svg" height="34" width="35" alt="Paprika"></span>
+                <span>Paprika</span>
+              </a>
+            </li>
+            <li class="niv1">
+              <a href="/#vitrineTuron">
+                <span class="bloc-img"><img src="/App_themes/LaPlaza/img/icon-turon.svg" height="31" width="35" alt="Turon"></span>
+                <span>Touron</span>
+              </a>
+            </li>
+            <li class="niv2 active">
+              <a href="/">
+                <span class="bloc-img"><img src="/App_themes/LaPlaza/img/icon-accueil.svg" height="21" width="23" alt="La Plaza"></span>
+                <span>Accueil</span>
+              </a>
+            </li>
+            <li class="niv2">
+              <a href="/my">
+                <span class="bloc-img"><img src="/App_themes/LaPlaza/img/icon-compte2.svg" height="21" width="18" alt="Mon compte"></span>
+                <span>Mon compte</span>
+              </a>
+            </li>
+
+            <li class="niv2">
+              <a href="/exec/contact.htm">
+                <span class="bloc-img"><img src="/App_themes/LaPlaza/img/icon-tel-2.svg" height="24" width="17" alt="Contactez-nous"></span>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+</Content>
+
+</ecom:ThemablePanelControl>

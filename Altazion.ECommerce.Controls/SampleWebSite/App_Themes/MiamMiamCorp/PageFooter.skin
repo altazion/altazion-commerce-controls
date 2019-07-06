@@ -1,0 +1,60 @@
+﻿<ecom:ThemablePanelControl SkinID="PageFooterPanel" runat="server">
+<Content>
+<!--START COPYRIGHT-->
+<div class="clear">
+</div>
+
+<footer id="copyright" class="footer1 page-block-small BGthird">
+  <div class="container "> 
+    <div class="row">
+      <div class="col-md-3 footer-bloc footer-service">
+        <h6>Nos services</h6>
+        <ul>
+          <li><a href="/pagecontenu.htm"><i class="fa fa-chevron-right"></i> Nos services</a></li> 
+          <li><a href="/pagecontenu.htm"><i class="fa fa-chevron-right"></i> Les services plus</a></li> 
+          <li><a href="/pagecontenu.htm"><i class="fa fa-chevron-right"></i> Contactez-nous</a></li> 
+          <li><a href="/pagecontenu.htm"><i class="fa fa-chevron-right"></i> Tout sur l’entreprise</a></li> 
+        </ul>
+      </div>
+      <div class="col-md-3 footer-bloc footer-plus hidden-sm hidden-xs">
+        <h6>Site de démonstration</h6>
+        <p>
+          le site miam-miam-corp est une démonstration des fonctionnalités de la solution pour le commerce digital <a href='http://commerce-hub.io'>Commerce-hub</a>.
+          <br />Toutes les opérations, y compris le passage de commande et le paiement sont factices.</p>
+      </div>
+      <div class="col-md-3 footer-bloc footer-social">
+        <h6>Réseaux sociaux</h6>
+        <div class="social">
+        <ul class="list-inline">
+              <li><a href="/pagecontenu.htm" data-toggle="tooltip" title="Follow Us on Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li ><a href="/pagecontenu.htm" data-toggle="tooltip" title="Follow Us on Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="/pagecontenu.htm" data-toggle="tooltip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+      </div>
+      <div class="col-md-3  footer-contact">
+        <h6>Contactez nous</h6>
+        <a href="/contact.htm" class="footer-mail"><i class="fa fa-envelope"></i><span class="hidden-sm hidden-xs">Par mail</span></a>
+        <a href="/contact.htm" class="footer-contact2"><i class="fa fa-phone"></i><span class="hidden-sm hidden-xs">Par téléphone</span></a>
+      </div>
+    
+            
+    </div><!-- end row -->
+  </div><!-- end container -->
+</footer>
+<p class="mentions"><a href="http://commerce-hub.io">Commerce-hub</a> © 2015-2016. Tous droits réservés</p>
+<!--END COPYRIGHT--> 
+
+<a href="#ancre" class="top"><i class="fa fa-arrow-up fa-lg"></i></a>
+
+<script src="/app_themes/miammiamcorp/js/bootstrap.min.js"></script>
+<script src="/app_themes/miammiamcorp/js/wow.min.js"></script> 
+<script src="/app_themes/miammiamcorp/js/placeholders.js"></script>
+
+<script src="/app_themes/miammiamcorp/js/jquery.prettyPhoto.js"></script> 
+<script src="/app_themes/miammiamcorp/js/custom.js"></script>
+<script src="/app_themes/miammiamcorp/js/master.js"></script>
+
+
+</Content>
+                            </ecom:ThemablePanelControl>

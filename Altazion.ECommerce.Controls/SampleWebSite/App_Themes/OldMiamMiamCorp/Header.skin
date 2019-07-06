@@ -1,0 +1,109 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="BodyStartHeader">
+<Content>
+
+    <div class="demoSiteWarning" style="display:none">
+        le site www.miam-miam-corp.com n'est pas un vrai site e-commerce : il s'agit du site de démonstration de simplement-e.com, solutions de gestion
+        commerciale, e-commerce, points de ventes et CRM.
+    </div>
+
+    <div id="divPopupAjoutPanierFond" style="display:none">
+    </div>
+    <div id="divPopupAjoutPanier" style="display:none">
+        <div class="erreurPanier"><span></span></div>
+        <div class="ligneAjoutee">
+            <span class="libelle"></span>
+            <span class="qte"></span>
+            <span class="puTtc"></span>
+        </div>
+        <div class="actions">
+            <a href="#" id="divPopupAjoutPanierFermer" class="continuer">Continuer mes achats</a>
+            <a href="/exec/panier.aspx" class="terminer">Valider ma commande</a>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        E.Panier.setOnSignalerAjoutLigneHandler(function(ligne, erreurPanier) {
+                if(erreurPanier!=null) {
+                    $("#divPopupAjoutPanier .erreurPanier span").text(erreurPanier.Message);
+                }
+                else {
+                    $("#divPopupAjoutPanier .erreurPanier span").text("");
+                }
+                $("#divPopupAjoutPanier .ligneAjoutee span.libelle").text(ligne.Libelle);
+                $("#divPopupAjoutPanier .ligneAjoutee span.qte").text(ligne.Quantite);
+                $("#divPopupAjoutPanier .ligneAjoutee span.puTtc").html(ligne.PrixFormate);
+
+                $("#divPopupAjoutPanierFond").show();
+                $("#divPopupAjoutPanier").show();
+            });
+
+        $("#divPopupAjoutPanierFond").click(function(e) {
+                $("#divPopupAjoutPanierFond").hide();
+                $("#divPopupAjoutPanier").hide();
+        });
+        $("#divPopupAjoutPanierFermer").click(function(e) {
+                $("#divPopupAjoutPanierFond").hide();
+                $("#divPopupAjoutPanier").hide();
+                return false;
+        });
+    </script>
+
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl SkinID="PageHeaderPanel" runat="server">
+    <Content>
+        <div class="Top">
+            <div class="Logo">
+                <ecom:PanelPageSpecifique ID="pnlLogoHome" runat="server" VisibiliteParDefaut="false"
+                    SaufPour="HomePage">
+                    <h1>
+                        <ecom:SiteHomePageLink runat="server">
+                        <ecom:SiteNom runat="server" /></ecom:SiteHomePageLink></h1>
+                </ecom:PanelPageSpecifique>
+                <ecom:PanelPageSpecifique ID="pnlLogoAutres" runat="server" VisibiliteParDefaut="true"
+                    SaufPour="HomePage">
+                    <p>
+                        <ecom:SiteHomePageLink runat="server">
+                        <ecom:SiteNom runat="server" /></ecom:SiteHomePageLink></p>
+                </ecom:PanelPageSpecifique>
+            </div>
+
+            <div class="Right">
+                
+                    <div class="ResumePanier">
+
+                        <div id="Cart">
+                            <ecom:PanierResume ID="PanierResume2" runat="server" Format="<span class='black'>{nombre:0}</span> article(s) dans votre panier" />
+                        </div>
+
+                        <asp:Panel runat="server" class="Contenu" id="ContenuCartSmall">
+                        </asp:Panel>
+                </div>
+                <div class="links">
+                    <asp:HyperLink CssClass="Aide" ID="lnkAide" runat="Server" Text="Aide"
+                        NavigateUrl="~/aide/" />&nbsp;|&nbsp;
+                
+                    <ecom:ClickNMortarHomeLink CssClass="Magasins" ID="lnkMagasins" runat="Server" Text="Nos magasins&nbsp;|&nbsp;" />
+                
+                    <asp:HyperLink CssClass="Aide" ID="lnkNewsletter" runat="Server" Text="Newsletter"
+                        NavigateUrl="~/newsletter.aspx" />
+                        &nbsp;|&nbsp;
+                    <ecom:CompteAccesLink CssClass="EspaceClient" ID="lnkCompte" runat="Server" Text="Votre compte" />
+                    &nbsp;&nbsp;
+                   </div>
+            </div>
+
+            <div class="menu">
+                <ul>
+                <li><asp:Hyperlink runat="server" NavigateUrl="~/" Text="Accueil" /></li>
+                <li><asp:Hyperlink runat="server" NavigateUrl="~/gourmandises/patisseries/page1.htm" Text="Pâtisseries" /></li>
+                <li><asp:Hyperlink runat="server" NavigateUrl="~/gourmandises/viennoiseries/page1.htm" Text="Viennoiseries" /></li>
+                <li><asp:Hyperlink runat="server" NavigateUrl="~/gourmandises/confiseries/page1.htm" Text="Confiseries" /></li>
+                </ul>
+
+            </div>
+        </div>
+    </Content>
+</ecom:ThemablePanelControl>

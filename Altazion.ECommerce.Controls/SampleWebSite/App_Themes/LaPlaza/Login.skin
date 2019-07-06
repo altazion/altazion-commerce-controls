@@ -1,0 +1,191 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="LoginProcessHeader">
+<Content>
+            <div class="chemin">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <div class="bloc-action">
+                                <a href="/Exec/panier.htm"><i class="fas fa-arrow-left"></i></a>
+                                <p>Identification</p>
+                            </div>
+                            <ul class="order-steps steps-4">
+                                <li class="active active-past">
+                                    <a href="/exec/panier.htm">
+                                        <span class="nbr">1</span>
+                                        <span class="nbrInfo">Commande</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="">
+                                        <span class="nbr">2</span>
+                                        <span class="nbrInfo">Identification</span>
+                                    </a> 
+                                </li>
+                                <li>
+                                    <span class="nbr">3</span>
+                                    <span class="nbrInfo">Livraison</span>
+                                </li>
+                                <li>
+                                    <span class="nbr">
+                                            4
+                                        </span>
+                                        <span class="nbrInfo">Paiement
+
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+</Content>
+</ecom:ThemablePanelControl>
+<ecom:ThemablePanelControl runat="server" SkinID="LoginContent">
+<Content>
+    <div class="content">
+        <section class="main">
+            <div class="contenu-log">
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                            <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="log-content creer">
+                                            <div class="bloc-log">
+                                                <h2>Créer un compte</h2>
+                                                <div class="creer-p">
+                                                    <p><b>NOUVEAU CLIENT</b><br />
+                                                            Créer un compte pour suivre et gérer vos commandes, retrouver toutes vos informations personnelles et vos articles favoris
+                                                    </p>
+                                                </div>
+                                                <a href="#" data-target="#creer-compte" data-toggle="modal" class="btn btn-50 btn-primary btn-block btn-ombre">créer un compte</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+        
+                                </div>
+            
+
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="log-content">
+                                    <div class="bloc-log">
+                                        <h1>Déjà client ?</h1>
+                                        <ecom:LoginPanel runat="server" />
+                                    </div>
+                                </div>
+                            </div>
+<%--
+                            <div class="row justify-content-center reseaux">
+                                <div class="log-content">
+                                    <div class="bloc-log">
+                                        <h2>Ou connexion via</h2>
+                                        <div class="row">
+                                            <div class="col px-0">
+                                                <a href="" class="facebook">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                <span> FACEBOOK</span>
+                                                </a>
+                                            </div>
+                                            <div class="col  px-0">
+                                                <a href="" class="Paypal">
+                                                    <i class="fab fa-paypal"></i>
+                                                    <span>PAYPAL</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>--%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="modal fade" id="creer-compte">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close" data-dismiss="modal">
+                        <span></span>
+                        <span></span>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <lpz:saisieadresse runat="server" />
+                        <a href="#" id="lnkCreationValider" class="btn btn-primary">Créer mon compte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript'>
+        SaisieAdresse(true, "#lnkCreationValider", function (adresse) {
+            $("#divChoixLivraison").addClass("loading");
+
+            var nl = "";
+                if ($("#rdoNewsletters1").is(":checked"))
+                    nl += "7";
+           
+                E.Customer.creerClient(adresse.email, adresse.password, adresse.civilite, adresse.nom, adresse.prenom, adresse.adresse1,
+                        adresse.adresse2, adresse.cp, adresse.ville, "FRA", adresse.telephone, adresse.mobile,
+                        nl, function () {
+                            var s = E.InternalTools.getParameterByName("ReturnUrl");
+                            if (s == "") {
+								s = E.InternalTools.getParameterByName("returnurl");
+							}
+							if (s == "")								
+                                s = "/exec/process/ConfirmationCommande.aspx";
+                            else
+                                s = decodeURIComponent(s);
+                            window.location.href = s;
+                        }, function () {
+                            $("#divErreurCreation").show();
+                           ReactiverSaisieAdresse(false);
+                        }, "#lnkCreationValider");
+
+
+            return false;
+        });
+    </script>
+
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:CustomerLogin runat="server" RenderOuterTable="false" 
+failuretext="<span class='erreur'>Veuillez vérifier vos identifiants</span>"
+>
+<LayoutTemplate>
+    <asp:Panel runat="server" DefaultButton="LoginLinkButton" cssclass="Identif-form">
+
+                                        <div class="form-50 bot-space-for-error">
+                                            <asp:TextBox TextMode="email" ValidationGroup="LoginBox" id="UserName" runat="server" placeholder="Votre email" />
+                                            <asp:RequiredFieldValidator  Display="Dynamic" runat="server" ValidationGroup="LoginBox" id="UserNameRequired" ControlToValidate="UserName">
+             <div class="id-erreur id-erreur-login id-erreur-usermanquant">
+                  <p class="no-margin"> Votre <span class="orange"><b>e-mail</b></span> est invalide.</p>
+              </div>
+            </asp:RequiredFieldValidator>
+                                        </div>
+                                        <div class="form-50 bot-space-for-error">
+											<asp:Textbox TextMode="Password" runat="server" ValidationGroup="LoginBox" id="Password" placeholder="Votre mot de passe" />
+ <asp:RequiredFieldValidator  Display="Dynamic" runat="server" ValidationGroup="LoginBox" id="PasswordRequired" ControlToValidate="Password">
+             <div class="id-erreur id-erreur-login id-erreur-pwdmanquant">
+                  <p class="no-margin"> Votre <span class="orange"><b>mot de passe</b></span> est invalide.</p>
+              </div>
+            </asp:RequiredFieldValidator>
+                                        </div>
+                                        <a href="/exec/PerteMotDePasse.htm" class="mdp-perdu">Mot de passe perdu</a>
+                                        <asp:LinkButton runat="server" CommandName="Login" Id="LoginLinkButton" ValidationGroup="LoginBox" cssclass="btn btn-50 btn-primary btn-block btn-ombre">valider & continuer</asp:LinkButton>
+                <asp:Literal id="FailureText" runat="server"></asp:Literal>
+
+    </asp:Panel>
+</LayoutTemplate>
+</ecom:CustomerLogin>
+
+
+

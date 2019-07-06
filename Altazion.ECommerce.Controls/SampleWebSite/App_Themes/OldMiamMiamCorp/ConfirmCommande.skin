@@ -1,0 +1,90 @@
+﻿<ecom:ThemablePanelControl  SkinID="ValidationHeader" runat="server" >
+ <Content>
+ <h1><span>paiement</span></h1>
+          </Content>
+                </ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl  runat="server" SkinID="RecapLivraisonValidation">
+<Content>
+    <h2 class="etape1">Votre Livraison</h2>
+    <div class="RecapLivraison">
+        <div class="mode">
+            <span class="enteteTransporteur">Livraison</span>
+            <ecom:LivraisonLibelle ID="LivraisonLibelle1" runat="server" CssClass="transporteur" /><br />
+            <span class="enteteDate">prévue le </span>
+            <ecom:LivraisonDelai ID="LivraisonDelai1" runat="server" CssClass="date" Format="dd MMMM" />
+        </div>
+        <div class="blocAdresse">
+            <span class="entete">à l'adresse suivante : </span>
+            <div class="detail">
+                <ecom:AdresseAffichage runat="server" ID="pnlAdresseLivraison" Editable="true" TypeAdresse="AdresseLivraison" />
+            </div>
+        </div>
+
+            <a class="modifier" href="/exec/process/ChoixLivraison.aspx">Choisir une autre adresse</a>
+
+    </div>
+    <div class="RecapFacturation">
+        <span class="entete">Adresse de facturation</span>
+        <div class="detail">
+            <ecom:AdresseAffichage runat="server" ID="pnlAdresseFacturation" Editable="true"
+            TypeAdresse="AdresseFacturation" />
+        </div>
+
+        <a class="modifier" href="/exec/process/ChoixFacturation.aspx">Facturer à une autre adresse</a>
+
+    </div>
+
+    <div class="clear">
+    </div>
+
+    <h2 class="etape2">Vos produits</h2>
+
+</Content>
+</ecom:ThemablePanelControl>
+
+ <ecom:ThemablePanelControl runat="server" SkinID="ReglementPanelValidation">
+    <Content>
+        <h2 class="etape3">Votre règlement</h2>
+        <div class="ValidationReglements">
+            <ecom:ReglementsSelection runat="server" ID="pnlReglements" />
+        </div>
+    </Content>
+</ecom:ThemablePanelControl>
+
+
+            <ecom:ThemablePanelControl runat="server" SkinID="AdressePanelRecu">
+                <Content>
+<h2 class="etape1">Votre Livraison</h2>
+    <div class="RecapLivraison">
+        <div class="mode">
+            <span class="enteteTransporteur">Livraison</span>
+            <ecom:LivraisonLibelle ID="LivraisonLibelle1" runat="server" CssClass="transporteur" /><br />
+            <span class="enteteDate">prévue le </span>
+            <ecom:LivraisonDelai ID="LivraisonDelai1" runat="server" CssClass="date" Format="dd MMMM" />
+        </div>
+        <div class="blocAdresse">
+            <span class="entete">à l'adresse suivante : </span>
+            <div class="detail">
+                <ecom:AdresseAffichage runat="server" ID="pnlAdresseLivraison" Editable="true" TypeAdresse="AdresseLivraison" />
+            </div>
+        </div>
+
+
+    </div>
+    <div class="RecapFacturation">
+        <span class="entete">Adresse de facturation</span>
+        <div class="detail">
+            <ecom:AdresseAffichage runat="server" ID="pnlAdresseFacturation" Editable="true"
+            TypeAdresse="AdresseFacturation" />
+        </div>
+
+
+    </div>
+
+    <div class="clear">
+    </div>
+
+    <h2 class="etape2">Vos produits</h2>
+                </Content>
+            </ecom:ThemablePanelControl>

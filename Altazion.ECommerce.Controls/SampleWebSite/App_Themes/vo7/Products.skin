@@ -1,0 +1,72 @@
+﻿<ecom:ProductPanel runat="server"  SkinID="ProductItemInList" cssclass="prod" cssclasssinondispo="prod prod-non-dispo" >
+<Content>
+
+
+
+                <div class="prod-hover ">
+                    <!--<div class="filtre-taille">
+                      <p>
+                        <button class="btn-taille" type="button" >
+                          <span>39</span>
+                        </button>
+                        <button class="btn-taille indispo" type="button" >
+                              <span>40</span>
+                        </button>
+                        <button class="btn-taille" type="button" >
+                                  <span>41</span>
+                        </button>
+                        <button class="btn-taille indispo" type="button" >
+                                      <span>42</span>
+                        </button>
+                        <button class="btn-taille" type="button" >
+                                          <span>43</span>
+                        </button> <button class="btn-taille" type="button" >
+                            <span>44</span>
+                        </button> <button class="btn-taille" type="button" >
+                            <span>45</span>
+                                                </button>
+                          </button> <button class="btn-taille" type="button" >
+                                                  <span>46</span>
+                          </button>
+                      </p>
+                  </div>-->
+                </div>
+              
+                <div class="bloc-img">
+<!--
+                  <div class="couleur">
+                      <span style="background:#fff"></span>
+                  </div>
+-->
+                  <ecom:ProduitImageLink runat="server" cssclass="img-fluid" ImageType="Detail" />
+                </div>
+                <div class="bloc-txt">
+                  <div class="avis">
+                   
+                  </div>
+                  <div class="libelle"><ecom:ProduitLibelleLink runat="server" cssclass="lien-prod" />
+                  </div>
+                  <div class="prix "><ecom:ProduitPrix runat="server" FormatPrix="{0:0.00}€" /></p><span class="prix-promo"></span> 
+                  </div>
+                </div>
+              
+
+
+<!--
+<div class="col-md-4 px-2">
+                      <div class="bloc-prod">
+                        <ecom:ProduitLink runat="server" cssclass="lien-prod"></ecom:ProduitLink>
+                        <div class="avis"></div>
+                        <div class="bloc-image">
+                          <ecom:ProduitImage runat="server" cssclass="img-fluid" TypeImage="Petite" />
+                        </div>
+                        <div class="bloc-txt">
+                          <h3><ecom:ProduitLibelle runat="server" /></h3>
+                          <p class="price"><span> à partir de</span>
+<ecom:ProduitPrix runat="server" class="price-detail" FormatPrix="{0:0.00}€" /></p>
+                        </div>
+                      </div>
+                    </div>
+-->
+</Content>
+</ecom:ProductPanel>

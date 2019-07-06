@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altazion.ECommerce.Controls", "Altazion.ECommerce.Controls\Altazion.ECommerce.Controls.csproj", "{A0D86925-434B-4552-84C0-994403A5E51D}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SampleWebSite", "SampleWebSite\", "{53390275-4F41-40D5-B226-D71163E117CA}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{a0d86925-434b-4552-84c0-994403a5e51d}|Altazion.ECommerce.Controls.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61806"
+		Debug.AspNetCompiler.PhysicalPath = "SampleWebSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61806\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61806"
+		Release.AspNetCompiler.PhysicalPath = "SampleWebSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61806\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61806"
+		SlnRelativePath = "SampleWebSite\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0D86925-434B-4552-84C0-994403A5E51D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0D86925-434B-4552-84C0-994403A5E51D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0D86925-434B-4552-84C0-994403A5E51D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0D86925-434B-4552-84C0-994403A5E51D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53390275-4F41-40D5-B226-D71163E117CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53390275-4F41-40D5-B226-D71163E117CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53390275-4F41-40D5-B226-D71163E117CA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{53390275-4F41-40D5-B226-D71163E117CA}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5471BBBF-C157-45F5-B346-FC71F80C8D2E}
+	EndGlobalSection
+EndGlobal

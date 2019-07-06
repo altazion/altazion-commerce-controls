@@ -1,0 +1,46 @@
+﻿
+<ecom:ThemablePanelControl SkinID="ProductItemListBeforeAMP" runat="server">
+<Content>
+    <h1><ecom:ContexteTitrePage runat="server" /></h1>
+        <div class="searchHeader">
+        <label>Page : </label><ecom:RechercherPageChoixBasique CssClass="pagination" PourPageAmp="true"
+         MaxShownItems="6" runat="server" CssClassSelectedItem="selected" />
+
+        
+            <button on="tap:filters-lightbox" role="button"
+                
+                tabindex="0">Filtrer</button>
+        </div>
+
+
+<amp-lightbox id="filters-lightbox"
+      layout="nodisplay">
+    <div class="lightbox" 
+        tabindex="0">
+
+        <button on="tap:filters-lightbox.close"
+        role="button">X</button>
+
+         <ecom:RechercheCritere runat="Server" Titre="Par saveur" 
+                            CacherSiSelectionne="true" AfficherSelection="false"
+                            TypeAffichage="Liste" 
+                            TypeSelection="Importance"
+                            ImportanceMinimum="300"
+                            NombreLignes="5000"
+                            CacherSiVide="true"
+                            PourPageAmp="true"
+                            TypeCritere="Custom" CritereGuid="866EA818-D711-4680-99CF-9D57CAB392FF"	/>
+        
+
+    </div>
+  </amp-lightbox>
+
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl SkinID="ProductItemListAfterAMP" runat="server">
+<Content>
+
+</Content>
+</ecom:ThemablePanelControl>
+

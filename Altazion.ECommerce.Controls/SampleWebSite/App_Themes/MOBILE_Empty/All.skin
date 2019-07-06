@@ -1,0 +1,32 @@
+﻿<ecom:ThemablePanelControl SkinID="PageHeaderPanel" runat="server">
+<Content>
+<ecom:SiteHomePageLink runat="server"><ecom:SiteNom runat="server" /></ecom:SiteHomePageLink>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="HomePagePanel">
+<Content>
+
+    <div class="zone2">
+        <h2 class="pageTitle">Découvrez nos solutions</h2>
+        <p class="pageSubtitle">pour le commerce on-line et off-line</p>
+        <ul>
+        <li class="gestion-commerciale">
+        <p class="puce" ><span>gestion commerciale</span></p><h3>Gestion commerciale</h3><p class="description">Vous souhaitez optimiser et simplifier la gestion de votre activité.</p>
+        <asp:Hyperlink runat="server" NavigateUrl="~/gestion-commerciale/"><span>En savoir plus</span></asp:Hyperlink>
+        </li>
+        <li class="points-de-vente"><asp:Hyperlink runat="server" NavigateUrl="~/points-de-vente/">
+        <p class="puce" ><span>points de vente</span></p><h3>Commerce traditionnel</h3><p class="description">Vous avez un ou plusieurs magasin(s) de détail et souhaitez une solution de gestion intégrée.</p></asp:Hyperlink></li>
+        <li class="e-commerce"><asp:Hyperlink runat="server" NavigateUrl="~/e-commerce/">
+        <p class="puce" ><span>e-commerce</span></p><h3>Commerce en ligne</h3><p class="description">Vous souhaitez vous lancer dans la vente en ligne ou faire évoluer votre site e-commerce.</p></asp:Hyperlink></li>
+        <li class="crm"><asp:Hyperlink runat="server" Enabled="false" NavigateUrl="~/crm/">
+        <p class="puce" ><span>points de vente</span></p><h3>relation clients</h3><p class="description">Module disponible début 2012 !</p></asp:Hyperlink></li>
+        </ul>
+    </div>
+
+    <div class="clear">
+    </div>
+
+</Content>
+</ecom:ThemablePanelControl>

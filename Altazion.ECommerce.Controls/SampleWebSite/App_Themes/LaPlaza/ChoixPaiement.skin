@@ -1,0 +1,409 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="ConfirmationCommandeContentPaiement" >
+<Content>
+
+    <script src="/tools/knockout-2.2.0.js"></script>
+ <div class="chemin">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <div class="bloc-action">
+                                <a href="/Exec/Process/ConfirmationCommande.aspx"><i class="fas fa-arrow-left"></i></a>
+                                <p>Paiement</p>
+                            </div>
+                            <ul class="order-steps steps-4">
+                                <li class="active active-past">
+                                    <a href="/exec/panier.aspx">
+                                        <span class="nbr">1</span>
+                                        <span class="nbrInfo">Commande</span>
+                                    </a>
+                                </li>
+                                <li active class="active active-past">
+                                    <a href="/Exec/Process/ConfirmationCommande.aspx">
+                                        <span class="nbr">2</span>
+                                        <span class="nbrInfo">Identification</span>
+                                    </a> 
+                                </li>
+                                <li active class="active active-past">
+                                    <a href="/Exec/Process/ConfirmationCommande.aspx">
+                                        <span class="nbr">3</span>
+                                        <span class="nbrInfo">Livraison</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <span class="nbr">
+                                            4
+                                        </span>
+                                        <span class="nbrInfo">Paiement
+
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    <div class="content">
+        <section class="main">
+           
+            <div class="contenu-paiement">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 mon-panier">
+                            <h2>Votre panier</h2>
+                            <div class="bloc-mon-panier">
+                                <ecom:PanierLignes runat="server" ShowAs="Repeater" AssociesMagasin="false" Type="Produit" IsEditable="false" />
+                                <ecom:PanierLignes runat="server" ShowAs="Repeater" AssociesMagasin="false" Type="FraisDePort" IsEditable="false" />
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-7 choix-reg choix-paiement"> 
+                            <div class="choix-reg">
+                                <h2>Choisir votre mode de paiement</h2>
+
+                                <ecom:ReglementsSelection runat="server" />
+                            </div>
+
+                                   
+                                
+                        </div>
+
+                            
+
+                    </div>
+                </div>
+            </div>
+        </section>
+   
+    </div>
+
+    <div class="modal fade modal-changer-adresse" id="changer-adresse">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close" data-dismiss="modal">
+                        <span></span>
+                        <span></span>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="mes-adresses">
+                            <div class="titre titre-header">
+                                <h3>Mes adresses</h3>
+                            </div>
+                            <div class="box-adresse" data-bind="ifnot: adresses == null">
+                                <div class="adresse" data-bind="foreach: adresses">
+                                    <div class="bloc-mon-adresse">
+                                        <p class="nom-brand"><span data-bind="text: Nom"></span></p>
+                                        <p><span data-bind="text: Adresse"></span><br><span data-bind="text: CP"></span> <span data-bind="    text: Ville"></span>
+                                        </p> 
+
+                                         <a href="#" class="btn btn-primary btn-40" data-bind="attr: { 'data-e-adc-guid': Guid }, click: setLivraison">Choisir cette adresse
+                                        </a>
+                                        
+                                    </div> 
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="ajout">
+                            <div class="titre ">
+                                <h3>Ajouter une nouvelle adresse</h3>
+                            </div>
+                            <div class="form">
+                                
+                                    <lpz:saisieadresse runat="server" />
+                                    
+                                   
+                                    <div class="cta-modal">
+                                        <a href="#" id="lnkCreationValider" class="btn btn-primary">
+                                             Valider & continuer
+                                        </a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      
+     
+  
+             
+        
+            </div>
+        </div>
+    </div>
+
+<script>
+        
+
+ $(document).ready(function () {
+        var dataAdresseLiv = { adresses: ko.observableArray() };
+        ko.applyBindings(dataAdresseLiv, $("#divChoixLivraisonBackground").get()[0]);
+        $.ajax({ url: "/api/process/nui?action=getadresseslivraison", cache: false }).done(function (data) {
+            dataAdresseLiv.adresses(data);
+        }).fail(function (e) {
+        });
+
+        $("#lnkModifierAdr").click(function () {
+            $("#divChoixLivraisonBackground").fadeIn("fast", function () {
+                $("#divChoixLivraison").fadeIn();
+            });
+            return false;
+        });
+
+
+        $("#acceptCgv").change(function() {
+                changeCGV();
+            });
+        var isChecked = $("#acceptCgv").is(":checked");
+        if(isChecked) 
+            $("#lnkSuivant").removeAttr("disabled");
+        else
+            $("#lnkSuivant").attr("disabled", "disabled");
+
+        SaisieAdresse(false, "#lnkCreationValider", function (adresse) {
+            $("#divChoixLivraison").addClass("loading");
+           
+                E.Customer.creerClient(adresse.email, adresse.password, adresse.civilite, adresse.nom, adresse.prenom, adresse.adresse1,
+                        adresse.adresse2, adresse.cp, adresse.ville, "FRA", adresse.telephone, adresse.mobile,
+                        nl, function () {
+                            var s = E.InternalTools.getParameterByName("ReturnUrl");
+                            if (s == "") {
+								s = E.InternalTools.getParameterByName("returnurl");
+							}
+							if (s == "")								
+                                s = "/exec/process/ConfirmationCommande.aspx";
+                            else
+                                s = decodeURIComponent(s);
+                            window.location.href = s;
+                        }, function () {
+                            $("#divErreurCreation").show();
+                           ReactiverSaisieAdresse(false);
+                        }, "#lnkCreationValider");
+
+
+            return false;
+        });
+
+    });
+
+    function setLivraison(data) {
+        $("#divChoixLivraison").addClass("loading");
+        $("#divChoixLivraisonBackground a").attr("disabled", "disabled");
+        var g = data.Guid;
+        $.ajax({ url: "/api/process/nui?action=setadresselivraison&id=" + g, cache: false }).done(function () {
+            $("#divChoixLivraison").removeClass("loading");
+            document.location.reload();
+        }).fail(function (e) {
+            $("#divChoixLivraison").removeClass("loading");
+            $("#divChoixLivraisonBackground a").removeAttr("disabled");
+            window.alert("Impossible de modifier votre adresse pour le moment, veuillez ré-essayer dans quelques instants");
+        });
+    }
+
+    function changeCGV() {
+        $("#lnkSuivant").attr("disabled", "disabled");
+        var isChecked = $("#acceptCgv").is(":checked");
+        if(isChecked) {
+            $.ajax({url : '/api/process/addtag?tag=CGV', cache:false}).always(function() {
+                $("#lnkSuivant").removeAttr("disabled");
+            });
+        }
+        else {
+            $("#lnkSuivant").attr("disabled", "disabled");
+            $.ajax({url : '/api/process/removetag?tag=CGV', cache:false}).always(function() {
+                $("#lnkSuivant").attr("disabled", "disabled");
+            });
+        }
+    }
+        
+
+</script>
+<style>
+.TypeReglement .choix-paiement-ligne {
+    margin: 10px 0px;
+}
+    .TypeReglement .choix-paiement-ligne .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 0;
+        height: 6rem;
+        padding: 0 3rem;
+        font-size: 1.5rem;
+        color: #0d0d0d;
+        border: 0.3rem solid #0d0d0d;
+        background: transparent;
+    }
+    .TypeReglement a {
+        color: #0d0d0d;
+        text-decoration: none;
+        background-color: transparent;
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+body .confirm-commande-step-paiement .choix-reg .TypeReglement {
+    background: unset;
+    padding: unset;
+}
+    body .confirm-commande-step-paiement .choix-reg .TypeReglement .choix-paiement-ligne {
+        background: #FFF;
+        padding: 3rem 1rem;
+        position: relative;
+        background: #f2f2f2;
+        border: 0.2rem solid #dee2e6;
+    }
+.choix-paiement-ligne .butt1.brain img {
+    width: 50px;
+    border: 1px solid #b7b4b4;
+}
+
+.choix-paiement-ligne.MRselected {
+    background: #fff !important;
+    border-color: #1d1d1d !important;
+}
+
+.choix-paiement-ligne.MRselected span.radio {
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 0px 2px #1d1d1d;
+    -moz-box-shadow: 0px 0px 0px 2px #1d1d1d;
+    box-shadow: 0px 0px 0px 2px #1d1d1d;
+}
+
+.choix-paiement-ligne span.radio {
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #f2f2f2;
+    -webkit-box-shadow: 0px 0px 0px 2px #dee2e6;
+    -moz-box-shadow: 0px 0px 0px 2px #dee2e6;
+    box-shadow: 0px 0px 0px 2px #dee2e6;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: calc(50% - 0.8rem);
+    left: -1rem;
+    margin-bottom: 1rem;
+}
+
+.choix-paiement-ligne.MRselected span.radio::before {
+    background: #e6a312;
+}
+
+.choix-paiement-ligne span.radio::before {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #f2f2f2;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: .2rem;
+    right: .2rem;
+    content: "";
+}
+@media (max-width: 767.98px) {
+        body .confirm-commande-step-paiement .container .choix-reg .TypeReglement {
+            padding: unset;
+        }
+        body .confirm-commande-step-paiement .container .choix-reg .TypeReglement .choix-paiement-ligne {
+            padding: 3rem 2rem;
+        }
+}
+</style>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="ModeReglementBraintreeFerme">
+    <Content>
+        <div class="choix-paiement-ligne row">
+<span class="radio"></span>
+            <div class="col-md-8">
+                <h3>
+                    <ecom:ReglementOuvrirLinkButton ID="ReglementChoixLinkButton1" runat="server" CssClass="butt1 brain">
+                    <img border="0" src="/App_Themes/LaPlaza/img/logo-cb-1.jpg" alt=""/> <i></i> Paiement par carte bancaire
+                    </ecom:ReglementOuvrirLinkButton>
+                </h3>
+            </div>
+<div class="col-md-4">
+            <ecom:ReglementOuvrirLinkButton ID="ReglementChoixLinkButton2" runat="server" CssClass="btn"> Choisir</ecom:ReglementOuvrirLinkButton>
+        </div>
+        </div>
+    </Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="ModeReglementBraintreeOuvert">
+    <Content>
+        <div class="choix-paiement-ligne mode-reg MRselected">
+<span class="radio"></span>
+            <h3>
+                <ecom:ReglementFermerLinkButton ID="ReglementFermerLinkButton1" runat="server" CssClass="butt1 orange brain">                      
+                    <img border="0" src="/App_Themes/LaPlaza/img/logo-cb-1.jpg" alt=""/><span class="orange icon-radio-checked"></span> Paiement par carte bancaire <span class="small">(paiement sécurisé)</span>
+                </ecom:ReglementFermerLinkButton>
+            </h3>              
+            <p style='margin-bottom:0'>Montant à règler : <ecom:PanierMontantNonRegle runat="server" CssClass="Montant" Format="{0:0.00}&euro;" /></p>       
+<section>
+<div id="dropin-container"></div>
+<div id="checkout-message"></div>
+<button id="submit-button" class="btn btn-primary btn-50">Payer</button>
+</section>
+<div class="modal fade" id="brainTreeModal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body" id="brainTreeModalBody">                                    
+</div>
+</div>
+</div>
+</div>
+</div>                    
+</Content>
+</ecom:ThemablePanelControl>
+
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="ModeReglementPaypalFerme">
+<Content>                       
+<div class="choix-paiement-ligne row">
+<span class="radio"></span>
+<div class="col-md-8">
+<h3>
+<ecom:ReglementOuvrirLinkButton ID="ReglementChoixLinkButton1" runat="server" CssClass="butt1">
+<img border="0" src="/App_Themes/vo7/imgs/p-pay.png" alt=""  style="margin-right: -30px"/><i></i> Paypal </h3>
+</ecom:ReglementOuvrirLinkButton>
+</div><dic class="col-md-4">
+<ecom:ReglementOuvrirLinkButton ID="ReglementChoixLinkButton2" runat="server" CssClass="btn"> Choisir</ecom:ReglementOuvrirLinkButton>
+</div>
+</div>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="ModeReglementPaypalOuvert">
+<Content>
+<div class="choix-paiement-ligne row MRselected">
+<span class="radio"></span>
+            <div class="col-md-8">
+<h3>
+<ecom:ReglementFermerLinkButton ID="ReglementFermerLinkButton1" runat="server" CssClass="butt1 orange">                      
+<!--<span class="orange icon-radio-checked"></span> Paiement CB Sécurisé avec PayPal <img border="0" src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" width="86" height="23" alt=""/>    -->         
+<img border="0" src="/App_Themes/vo7/imgs/p-pay.png" alt="" style="margin-right: -30px;"/> <span class="orange icon-radio-checked"></span> Paypal        
+</ecom:ReglementFermerLinkButton>
+</h3>
+<p style="font-size: 1.3rem">En choisissant ce mode de règlement vous allez être redirigé vers le site Paypal</p>
+</div>
+<div class="col-md-4">
+                        <ecom:ReglementChoisirLinkButton runat="server" ID="ReglementChoisirLinkButton1" CssClass="btn"
+                            Text="Payer" /></div>
+</div>
+</Content>
+</ecom:ThemablePanelControl>

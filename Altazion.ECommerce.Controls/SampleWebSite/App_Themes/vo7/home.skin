@@ -1,0 +1,42 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="HomePagePanel" >
+<Content>
+
+    <div class="content">
+      <section class="main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 px-0 choix-sport">
+              <a href="/fr/vo7sport/univers-sport.htm">
+                <img class="img-fluid bg-sport" src="/app_themes/vo7/imgs/bg-home-vo7sport.jpg" alt="vo7sport">
+                <img class="img-fluid logo-sport" src="/app_themes/vo7/imgs/logo-home-sport.png" alt="vo7sport">
+              </a>
+              <div class="bloc-txt d-none  d-md-block">
+                <p>Des tenues élégantes et des pièces casual<br /><b>
+                    au style moderne sport</b></p>
+                <a class="btn btn-primary btn-75" style="padding-top:2rem" href="/fr/vo7sport/univers-sport.htm">shop now</a>
+              </div>
+            </div>
+            <div class="col-md-6 px-0 choix-sport">
+                <a href="/fr/vo7/univers-streetchic.htm">
+                  <img class="img-fluid bg-sport" src="/app_themes/vo7/imgs/bg-home-vo7.jpg" alt="vo7 Legend">
+                  <img class="img-fluid logo-sport" src="/app_themes/vo7/imgs/logo-home.png" alt="vo7 Legend">
+                </a>
+                <div class="bloc-txt d-none d-md-block">
+                  <p>Des looks business, casual et athleisure<br /><b>
+                    pour une garde-robe moderne irréprochable</b></p>
+                      <a class="btn btn-primary btn-75" style="padding-top:2rem" href="/fr/vo7/univers-streetchic.htm">shop now</a>
+                </div>
+            </div>
+          </div>
+
+        </div>
+        
+
+
+
+      </section>
+     
+    </div>
+
+</Content>
+</ecom:ThemablePanelControl>

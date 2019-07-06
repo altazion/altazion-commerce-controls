@@ -1,0 +1,23 @@
+﻿body
+{
+background:#F5F5F5;
+}
+
+a
+{
+	color:#E64120;
+}
+
+a:hover
+{
+	color:#F39919;
+}
+
+
+/* le header */
+#PageHeader .Top .Logo A
+{
+	width:250px;
+	height:100px;
+	background:url(images/logo_250_100.gif);
+}

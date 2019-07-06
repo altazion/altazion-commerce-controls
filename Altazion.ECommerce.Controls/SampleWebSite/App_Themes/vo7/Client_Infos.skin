@@ -1,0 +1,53 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="ClientsCompteContentHeader">
+<Content>
+    <section class="main">
+        <div class="container-fluid">
+            <div class="row compte-row justify-content-center">
+                <div class="container">
+                    <div class="row">
+
+                      <div class="col-md-4 col-lg-3 px-0
+                      menu-compte compte-bloc-2">
+                        <ul>
+                            <li >
+                                <a href="/my/">Accueil mon compte</a>
+                            </li>
+                            <li class="active">
+                                <a href="/my/compte.htm">Mon mot de passe</a>
+                            </li>
+                            <li>
+                                <a href="/my/adresses.htm">Mon carnet d’adresses</a>
+                            </li>
+                            <li >
+                                <a href="/my/commandes.aspx">
+                                Mes commandes</a>
+                            </li>
+                            <li><a href="/newsletter.aspx">Newsletter</a></li>
+
+                            <li><ecom:LoginStatus runat="server" LogoutPageUrl="~/" LogoutText="se deconnecter" LogoutAction="Redirect" /></li>
+                        </ul>
+                      </div>
+                        <div class="col-md-8 col-lg-9 compte-bloc-1 px-0">
+                            <div class="titre"><a href="#" class="accueil-home d-md-none"><i class="fas fa-arrow-left"></i></a>
+                                <h1>Vos informations personnelles</h1>
+                            </div>
+                            <div class="histo">
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="ClientsCompteContentFooter">
+<Content>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<asp:LinkButton runat="server" SkinID="CompteMotDePasseChange" class="btn btn-75 btn-md-55" />

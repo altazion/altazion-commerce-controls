@@ -1,0 +1,391 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="LoginContent">
+<Content>
+
+
+<!-- FIL D'ARIANE -->
+<section id="ariane" class="fil hidden-xs hidden-sm">
+  <div class="container">
+    <div class="row">
+      <a href="#">Accueil</a>
+      <i class="fa fa-chevron-right"></i>
+      <a href="/exec/panier.aspx">Votre panier</a>
+      <i class="fa fa-chevron-right"></i>
+      <a href="/exec/process/login.aspx" class="active">Identification</a>
+    </div>
+  </div>
+</section>
+<!-- END ARIANE -->
+
+
+<section class="page-b page-process">
+  <div class="container">
+    <div class="row page-b-titre">
+      <h1 class="rouge">Identification
+        <div class="trait"></div>
+      </h1>
+    </div>
+  </div>
+</section>
+
+<section class="page-process">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" id="divIdentifie">
+        <div class="Identif Identif-deja">
+          <div class="id-erreur id-erreur-titre" style="display:none">
+                <a href="#" class="id-erreur-close"><i class="fa fa-times-circle"></i></a>
+                <span class="sad orange">:(</span>
+                <p class="no-margin"> <span class="orange">Attention !</span><br />Veuillez vérifier votre saisie</p>
+
+
+           </div>
+          <h2>J'ai déjà un compte</h2>
+          <ecom:CustomerLogin runat="server" />
+        <div class="Identif Identif-facebook">
+          <h2 class="ou">ou</h2>
+          <div class="btn-cta">
+            <ecom:FacebookLoginLink runat="server" cssclass="btn btn-default pull-right  facebook">Me connecter avec Facebook<i class="fa fa-facebook hidden-xs"></i></ecom:FacebookLoginLink>
+            <ecom:PaypalLoginLink runat="server" cssclass="btn btn-default pull-right paypal">Me connecter avec Paypal<i class="fa fa-paypal hidden-xs"></i></ecom:PaypalLoginLink>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="col-md-6" id="divNouveauCompte">
+            <ecom:ThemablePanelControl runat="server" SkinID="LoginContentNew" />        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="LoginContentNew">
+<Content>
+
+<div class="Identif  Identif-new">
+<div class="id-erreur id-erreur-titre" style="display:none">
+                <a href="#" class="id-erreur-close"><i class="fa fa-times-circle"></i></a>
+                <span class="sad orange">:(</span>
+                <p class="no-margin"> <span class="orange">Attention !</span><br />Une erreur est survenue </p>
+           </div>
+          <h2>Je suis nouveau client</h2>
+          <div class="Identif-form" id="divCreerCompte">
+           <div class="Identif-ligne">
+              <label>Civilité<sup>*</sup>:</label>
+              <div class="Identif-select">
+                <div class="select-syle"> 
+                  <select data-adressechamp="civilite"> 
+                    <option selected="selected">M.</option>
+                    <option>Mme.</option>
+                    <option>---</option>
+                    <option>Association</option>
+                    <option>SARL</option>
+                    <option>SA</option>
+                    <option>EURL</option>
+                  </select> <i class="fa fa-chevron-down rouge"></i>
+                </div>
+              </div>
+            </div>
+
+           
+             
+            <div class="Identif-ligne">
+              <label>Nom<sup>*</sup> :</label>
+              <div class="form-input">
+                <input type="text" placeholder="" data-adressechamp="nom">
+                    <div class="id-erreur id-erreur-creercompte id-erreur-nomvide" style="display:none" data-adresseerreur="nomvide">
+                        <i class="fa fa-chevron-right orange pull-right"></i>
+                        <i class="fa fa-chevron-left orange pull-left"> </i>
+                        <p class="no-margin"> <span class="orange">Vérifier saisir <b>votre nom.</b></span><br />Cette information est obligatoire.</p>
+                        <p class="erreur-mobile">!</p>
+                    </div>
+              </div>
+            </div>
+            <div class="Identif-ligne">
+              <label>Prénom :</label>
+              <div class="form-input">
+                <input type="text" placeholder="" data-adressechamp="prenom">
+              </div>
+            </div>
+
+            <div class="Identif-ligne">
+              <label>E-mail<sup>*</sup> :</label>
+              <div class="form-input" >
+                <input type="email" placeholder="ex : pierre@domaine.fr" data-adressechamp="email">
+                    <div class="id-erreur id-erreur-creercompte id-erreur-emailvide" style="display:none" data-adresseerreur="emailvide">
+                        <i class="fa fa-chevron-right orange pull-right"></i>
+                        <i class="fa fa-chevron-left orange pull-left"> </i>
+                        <p class="no-margin"> <span class="orange">Vérifier saisir <b>votre e-mail.</b></span><br />Cette information est obligatoire.</p>
+                        <p class="erreur-mobile">!</p>
+                    </div>
+                    <div class="id-erreur id-erreur-creercompte id-erreur-emailvide" style="display:none" data-adresseerreur="emailinvalide">
+                        <i class="fa fa-chevron-right orange pull-right"></i>
+                        <i class="fa fa-chevron-left orange pull-left"> </i>
+                        <p class="no-margin"> <span class="orange">Vérifier vérifier <b>votre e-mail.</b></span><br />Son format est invalide.</p>
+                        <p class="erreur-mobile">!</p>
+                    </div>
+              </div>
+            </div>
+            <div class="Identif-ligne">
+              <label>Mot de passe<sup>*</sup> :</label>
+              <div class="form-input" >
+                <input type="password" placeholder="" data-adressechamp="motdepasse">
+                    <div class="id-erreur id-erreur-creercompte id-erreur-motdepassevide" style="display:none" data-adresseerreur="motdepassevide">
+                        <i class="fa fa-chevron-right orange pull-right"></i>
+                        <i class="fa fa-chevron-left orange pull-left"> </i>
+                        <p class="no-margin"> <span class="orange">Vérifier saisir <b>votre mot de passe.</b></span><br />Cette information est obligatoire.</p>
+                        <p class="erreur-mobile">!</p>
+                    </div>
+              </div>
+            </div>
+
+            <div class="Identif-ligne">
+              <label>Adresse<sup>*</sup> :</label>
+              <div class="form-input">
+                <input type="text" placeholder="" data-adressechamp="adresse">
+                    <div class="id-erreur id-erreur-creercompte id-erreur-adressevide" style="display:none" data-adresseerreur="adressevide">
+                        <i class="fa fa-chevron-right orange pull-right"></i>
+                        <i class="fa fa-chevron-left orange pull-left"> </i>
+                        <p class="no-margin"> <span class="orange">Vérifier saisir <b>votre adresse.</b></span><br />Cette information est obligatoire.</p>
+                        <p class="erreur-mobile">!</p>
+                    </div>
+              </div>
+            </div>
+            <div class="Identif-ligne">
+              <label>Adresse 2<sup>*</sup> :</label>
+              <div class="form-input">
+                <input type="text" placeholder=""  data-adressechamp="adresse2">
+              </div>
+            </div>
+            <div class="Identif-ligne">
+              <label>Code postal<sup>*</sup> :</label>
+              <div class="form-input">
+                <input type="text" placeholder=""  data-adressechamp="codepostal">
+                    <div class="id-erreur id-erreur-creercompte id-erreur-codepostal" style="display:none" data-adresseerreur="codepostal">
+                        <i class="fa fa-chevron-right orange pull-right"></i>
+                        <i class="fa fa-chevron-left orange pull-left"> </i>
+                        <p class="no-margin"> <span class="orange">Vérifier vérifier <b>votre code postal.</b></span><br />Son format est invalide.</p>
+                        <p class="erreur-mobile">!</p>
+                    </div>
+                    <div class="id-erreur id-erreur-creercompte id-erreur-codepostalvide" style="display:none" data-adresseerreur="codepostalvide">
+                        <i class="fa fa-chevron-right orange pull-right"></i>
+                        <i class="fa fa-chevron-left orange pull-left"> </i>
+                        <p class="no-margin"> <span class="orange">Vérifier saisir <b>votre code postal.</b></span><br />Cette information est obligatoire.</p>
+                        <p class="erreur-mobile">!</p>
+                    </div>
+ <div class="id-erreur id-erreur-creercompte id-erreur-codepostalvide" style="display:none" data-adresseerreur="codepostalrefuse">
+                        <i class="fa fa-chevron-right orange pull-right"></i>
+                        <i class="fa fa-chevron-left orange pull-left"> </i>
+                        <p class="no-margin"> <span class="orange">Ce <b>votre code postal.</b></span><br /> ne peut pas être livré.</p>
+                        <p class="erreur-mobile">!</p>
+                    </div>
+              </div>
+            </div>
+            <div class="Identif-ligne">
+              <label>Ville<sup>*</sup> :</label>
+              <div class="form-input">
+                <input type="text" placeholder=""  data-adressechamp="ville">
+                    <div class="id-erreur id-erreur-creercompte id-erreur-villevide" style="display:none" data-adresseerreur="villevide">
+                        <i class="fa fa-chevron-right orange pull-right"></i>
+                        <i class="fa fa-chevron-left orange pull-left"> </i>
+                        <p class="no-margin"> <span class="orange">Vérifier saisir <b>votre ville.</b></span><br />Cette information est obligatoire.</p>
+                        <p class="erreur-mobile">!</p>
+                    </div>
+              </div>
+            </div>
+            <div class="Identif-ligne">
+              <label>Téléphone<sup>*</sup> :</label>
+              <div class="form-input">
+                <input type="text" placeholder="" data-adressechamp="telephone">
+                    <div class="id-erreur id-erreur-creercompte id-erreur-telephonevide" style="display:none" data-adresseerreur="telephonevide">
+                        <i class="fa fa-chevron-right orange pull-right"></i>
+                        <i class="fa fa-chevron-left orange pull-left"> </i>
+                        <p class="no-margin"> <span class="orange">Vérifier saisir <b>votre téléphone OU votre mobile.</b></span><br />Au moins l'un des deux numéros doit être saisi.</p>
+                        <p class="erreur-mobile">!</p>
+                    </div>
+                    <div class="id-erreur id-erreur-creercompte id-erreur-telephone" style="display:none" data-adresseerreur="telephone">
+                        <i class="fa fa-chevron-right orange pull-right"></i>
+                        <i class="fa fa-chevron-left orange pull-left"> </i>
+                        <p class="no-margin"> <span class="orange">Vérifier vérifier <b>votre numéro.</b></span><br />Son format est invalide.</p>
+                        <p class="erreur-mobile">!</p>
+                    </div>
+              </div>
+            </div>
+            <div class="Identif-ligne">
+              <label>Mobile<sup>*</sup> :</label>
+              <div class="form-input">
+                <input type="text" placeholder="" data-adressechamp="mobile">
+                    <div class="id-erreur id-erreur-creercompte id-erreur-mobile" style="display:none" data-adresseerreur="mobile">
+                        <i class="fa fa-chevron-right orange pull-right"></i>
+                        <i class="fa fa-chevron-left orange pull-left"> </i>
+                        <p class="no-margin"> <span class="orange">Vérifier vérifier <b>votre numéro de mobile.</b></span><br />Son format est invalide.</p>
+                        <p class="erreur-mobile">!</p>
+                    </div>
+              </div>
+            </div>
+            <div class="Identif-ligne btn-cta">
+                <a id="lnkCreerCompte" class="btn btn-default pull-right valider" href="#">Validez et continuez<i class="fa fa-chevron-right"></i></a>
+            </div>
+            <input type="hidden" data-adressechamp="guid" />
+            <div class="clear"></div>
+          </div>
+        </div>       
+
+<script type="text/javascript">
+
+    E.Customer.initSaisieAdresse(true, "#divCreerCompte", "#lnkCreerCompte", function(adresse) {
+
+        E.Customer.creerClient(adresse.email, adresse.password, adresse.civilite, adresse.nom, adresse.prenom, adresse.adresse1,
+                        adresse.adresse2, adresse.cp, adresse.ville, "FRA", adresse.telephone, adresse.mobile,
+                        "", function () {
+                            var s = E.InternalTools.getParameterByName("ReturnUrl");
+                            if (s == "") {
+								s = E.InternalTools.getParameterByName("returnurl");
+							}
+							if (s == "")								
+                                s = "/exec/process/ConfirmationCommande.aspx";
+                            else
+                                s = decodeURIComponent(s);
+                            window.location.href = s;
+                        }, function () {
+                            $("#divErreurCreation").show();
+                            E.Customer.ReactiverSaisieAdresse(false);
+                        }, "#lnkCreerCompte");
+
+    }, null, function() {
+        var hasError = false;
+        $.each($("*[data-adresseerreur]"), function (idx, obj) {
+            if ($(this).is(":visible")) {
+                hasError = true;
+                $(this).closest(".Identif-ligne").addClass("erreur-active");
+            }
+            else {
+                var div = $(this).closest(".Identif-ligne");
+                var hasInDiv = false;
+                div.find("*[data-adresseerreur]").each(function(idx, obj) {
+                    if ($(this).is(":visible")) {
+                        hasInDiv=true;
+                    }
+                });
+                if(!hasInDiv)
+                    $(this).closest(".Identif-ligne").removeClass("erreur-active");
+            }
+        });
+        if(hasError) {
+            $("#divIdentifie").addClass("Identif-erreur-hide");
+            $("#divNouveauCompte").addClass("Identif-erreur-show");
+            $("#divNouveauCompte .id-erreur-titre").show();
+        }
+        else {
+            $("#divIdentifie").removeClass("Identif-erreur-hide");
+            $("#divNouveauCompte").removeClass("Identif-erreur-show");
+            $("#divNouveauCompte .id-erreur-titre").hide();
+        }
+    });
+
+    $("#divNouveauCompte .id-erreur-close").click(function() {
+        $.each($("input[data-adressechamp]"), function (idx, obj) {
+            $(this).closest(".Identif-ligne").removeClass("erreur-active");
+        });
+
+        $.each($("*[data-adresseerreur]"), function (idx, obj) {
+            $(this).hide();
+        });
+
+        $("#divIdentifie").removeClass("Identif-erreur-hide");
+        $("#divNouveauCompte").removeClass("Identif-erreur-show");
+        $("#divNouveauCompte .id-erreur-titre").hide();
+        return false;
+    });
+
+    $("#divIdentifie .id-erreur-close").click(function() {
+        $(".id-erreur-loginImpossible").empty();
+        $(".id-erreur-loginImpossible").hide();
+        Page_ClientValidate('NotExistingGroup');
+        return false;
+    });
+
+    function checkErreur() {
+        var b =false;
+        $(".id-erreur-login").each(function(idx, obj) {
+            if($(this).is(":visible")) {
+                b =true;
+                $(this).closest(".Identif-ligne").addClass("erreur-active");
+            }
+            else
+                $(this).closest(".Identif-ligne").removeClass("erreur-active");
+        });
+
+        if(b) {
+            $("#divIdentifie").addClass("Identif-erreur-show");
+            $("#divIdentifie .id-erreur-titre").show();
+            $("#divIdentifie .id-erreur").show();
+            $("#divNouveauCompte").addClass("Identif-erreur-hide");
+        }
+        else {
+            $("#divIdentifie").removeClass("Identif-erreur-show");
+            $("#divIdentifie .id-erreur-titre").hide();
+            $("#divNouveauCompte").removeClass("Identif-erreur-hide");
+        }
+    }
+
+    setInterval(checkErreur, 25);
+    checkErreur();
+</script>
+
+
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:CustomerLogin runat="server" RenderOuterTable="false"
+             failuretext='<div class="id-erreur id-erreur-login id-erreur-loginImpossible">
+                  <i class="fa fa-chevron-right orange pull-right"></i>
+                  <i class="fa fa-chevron-left orange pull-left"> </i>
+                 <p class="no-margin"> <span class="orange">Veuillez vérifiez <b>vos identifiants</b></span><br />Impossible de vous connecter.</p>
+                  <p class="erreur-mobile">!</p></div>'>
+<LayoutTemplate>
+    <div class="Identif-form">
+        <div class="Identif-ligne">
+            <label>Email :</label>
+            <div class="form-input">
+            <asp:TextBox TextMode="email" ValidationGroup="LoginBox" id="UserName" runat="server" placeholder="ex : pierre@domaine.fr" />
+            <asp:RequiredFieldValidator  Display="Dynamic" runat="server" ValidationGroup="LoginBox" id="UserNameRequired" ControlToValidate="UserName">
+             <div class="id-erreur id-erreur-login id-erreur-usermanquant">
+                  <i class="fa fa-chevron-right orange pull-right"></i>
+                  <i class="fa fa-chevron-left orange pull-left"> </i>
+                  <p class="no-margin"> <span class="orange">Vérifier votre <b>e-mail.</b></span><br />Son format est incorect.</p>
+                  <p class="erreur-mobile">!</p>
+              </div>
+            </asp:RequiredFieldValidator>
+            </div>
+        </div>
+        <div class="Identif-ligne">
+            <label>Mot de passe :</label>
+            <div class="form-input">
+            <asp:Textbox TextMode="Password" runat="server" ValidationGroup="LoginBox" id="Password" class="TextBox" /><br />
+            <asp:RequiredFieldValidator  Display="Dynamic" runat="server" ValidationGroup="LoginBox" id="PasswordRequired" ControlToValidate="Password">
+             <div class="id-erreur id-erreur-login id-erreur-pwdmanquant">
+                  <i class="fa fa-chevron-right orange pull-right"></i>
+                  <i class="fa fa-chevron-left orange pull-left"> </i>
+                  <p class="no-margin"> <span class="orange">Vérifier votre <b>mot de passe.</b></span><br />Son format est incorect.</p>
+                  <p class="erreur-mobile">!</p>
+              </div>
+            </asp:RequiredFieldValidator>
+
+            </div>
+        </div>
+        <div class="Identif-ligne">
+            <a href="/motdepasseperdu.htm" class="pass-oubli gris-clair">Mot de passe perdu</a>
+        </div>
+        <div class="Identif-ligne btn-cta">
+            <asp:LinkButton runat="server" CommandName="Login" ValidationGroup="LoginBox" cssclass="btn btn-default pull-right valider">Validez et continuez<i class="fa fa-chevron-right"></i></asp:linkbutton>
+        </div>
+                <asp:Literal id="FailureText" runat="server"></asp:Literal>
+        <div class="clear"></div>
+        </div>
+    </div>
+</LayoutTemplate>
+</ecom:CustomerLogin>

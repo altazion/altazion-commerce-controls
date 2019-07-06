@@ -1,0 +1,53 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="ContactFormHeader">
+<Content>
+<div class="content">
+    <section class="main">
+        <div class="contact-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Contactez nous !</h1>
+
+</Content>
+</ecom:ThemablePanelControl>
+
+ <ecom:ThemablePanelControl runat="server" SkinID="ContactContentFooter">
+<Content>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+</Content>
+</ecom:ThemablePanelControl>
+
+
+                    <ecom:ThemablePanelControl runat="server" SkinID="ContactOkMessage">
+                        <Content>
+
+<div class="content">
+    <section class="main">
+        <div class="contact-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Contactez nous !</h1>
+
+                        <p>Merci pour votre message, nous revenons vers vous le plus vite possible.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+                        </Content>
+                    </ecom:ThemablePanelControl>
+
+
+
+<asp:LinkButton SkinID="ContactFormSubmit" runat="server" CssClass="btn btn-primary"
+                            Text="Envoyer" />

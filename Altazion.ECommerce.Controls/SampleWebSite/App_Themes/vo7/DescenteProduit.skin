@@ -1,0 +1,149 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="SearchResultHeaderUniquementBarre">
+<Content>
+
+         
+
+</Content>
+</ecom:ThemablePanelControl>
+
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="SearchResultHeader">
+<Content>
+
+    <div class="content">
+      <section class="main">
+        <div class="container-fluid">
+          
+            <ecom:RechercheContexteEntete runat="server" />
+
+          <div class="row desc-action"><!--debut barre action-->
+            <div class="col-md-12">
+              <div class="desc-action-contain ">
+                <div class="barre-bt">
+                    <a data-toggle="collapse" id="btnFiltres" data-target="#filtre"  href="#"
+                        class="btn btn-noir btn-65 btn-md-55"><img src="/app_themes/vo7/imgs/icon-filtre.svg " width="32" height="32">  filtres</a>
+                    <div class="box-select">
+                   
+                      <ecom:RechercheTriCombo 
+LibellePourPrixCroissant = "Tri : du - cher au + cher"
+LibellePourPrixDecroissant = "Tri : du + cher au - cher"
+runat="server" cssclass="select-desc js-states form-control "  style="width:100%"/>
+<!--<option value="position:asc" selected="selected">Trier par</option><option value="price:asc">Le moins cher</option><option value="price:desc">Le plus cher</option><option value="name:asc">De A à Z</option><option value="name:desc">De Z à A</option><option value="quantity:desc">En Stock</option><option value="reference:asc">Référence : croissante</option><option value="reference:desc">Référence : décroissante</option> </select>-->
+
+                    </div>
+
+                   
+                </div>
+                 
+
+                <div id="filtre" class="collapse filtre">
+                  <div class="filtre-box">
+
+                 
+                    <div class="filtre-item">
+                      <!--<div class="filtre-taille">
+                          <p><span class="label">Par taille :</span>
+                            <button class="btn-taille" type="button" >
+                              <span>39</span>
+                            </button>
+                            <button class="btn-taille" type="button" >
+                                  <span>40</span>
+                            </button>
+                            <button class="btn-taille active" type="button" >
+                                      <span>41</span>
+                            </button>
+                            <button class="btn-taille" type="button" >
+                                          <span>42</span>
+                            </button>
+                            <button class="btn-taille" type="button" >
+                                              <span>43</span>
+                            </button> <button class="btn-taille" type="button" >
+                                                  <span>44</span>
+                                                </button> <button class="btn-taille" type="button" >
+                                                    <span>45</span>
+                                                    </button>
+                                                  </button> <button class="btn-taille" type="button" >
+                                                      <span>46</span>
+                             </button>
+                          </p>
+                      </div>-->
+                      <div class="filtre-couleur">
+
+                        <ecom:RechercheCritere runat="Server" Titre="Par couleur :" 
+                            CacherSiSelectionne="true" AfficherSelection="false"
+                            TypeAffichage="Liste" 
+                            TypeSelection="Importance"
+                            ImportanceMinimum="300"
+                            NombreLignes="5000"
+                            CacherSiVide="true"
+                            TypeCritere="Custom" CritereGuid="D0C03523-4B94-48D9-AB42-A5567E3B66AF"	/>
+
+<!--                            <button class="btn-couleur" type="button" style="background:#0d0d0d">
+                              </button>
+                              <button class="btn-couleur" type="button"  style="background:#938b8a">
+                              </button>
+                              <button class="btn-couleur" type="button"  style="background:#fff">
+                              </button>
+                              <button class="btn-couleur" type="button"  style="background:#8c6a44">
+                              </button> 
+                            
+                              <button class="btn-couleur " type="button"  style="background:#a7d955">
+                                </button>
+-->
+</p>
+                      </div>
+
+                    </div>
+                    <div class="filtre-valid">
+                        <!--<button class="btn btn-filter btn-65 btn-md-55">Filtrer</button>-->
+                        <a href="#" id="btnCloseFiltres" data-target="#filtre" data-toggle="collapse"  class="btn btn-65 btn-md-55 btn-gris btn-close-filtre ">×</a>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div><!--fin barre action-->
+
+
+
+          <div class="row list-prod"><!--debut liste produits-->
+            <div class="col-md-12">
+				
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="SearchResultFooter">
+<Content>
+        
+ </div>
+
+
+           
+          </div><!--fin liste produits-->
+
+
+
+
+
+
+        
+
+
+          
+
+
+        </div>
+     
+      </section>
+
+</div>            
+
+<script>
+   
+
+
+</script>
+
+</Content>
+</ecom:ThemablePanelControl>

@@ -1,0 +1,186 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="ConfirmationCommandeContent" >
+<Content>
+
+    <!-- FIL D'ARIANE -->
+    <section id="ariane" class="fil hidden-xs hidden-sm">
+      <div class="container">
+        <div class="row">
+          <a href="#">Accueil</a>
+          <i class="fa fa-chevron-right"></i>
+          <a href="/exec/panier.aspx">Votre panier</a>
+          <i class="fa fa-chevron-right"></i>
+          <a href="/exec/process/login.aspx">Identification</a>
+          <i class="fa fa-chevron-right"></i>
+          <a href="/exec/process/confirmationcommande.aspx" class="active">Livraison</a>
+        </div>
+      </div>
+    </section>
+    <!-- END ARIANE -->
+
+    <section class="page-b page-process">
+      <div class="container">
+        <div class="row page-b-titre">
+          <h1 class="rouge ">Je valide ma livraison
+            <div class="trait hidden-xs"></div>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+
+
+<section class="Paiement page-process">
+  <ecom:PanierPanelMagasinAssocie runat="server" cssclass="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="triangle-process hidden-sm hidden-xs"></div>
+        <div class="Verif-panier">
+          <div class="icon-panier">
+            <span class="icon-2 bg-orange blanc"></span>
+          </div>
+          <h2 >Vérification du panier<br /><span>Réservation en magasin</span></h2>
+          <div class="panier-table">
+            <ecom:PanierLignes runat="server" ShowAs="Repeater" AssociesMagasin="true" Type="Produit" IsEditable="false" />
+            <div class="panier-ligne-liv ">
+              <div class="col-md-12 ">
+                <p class="no-margin ">Vos articles seront dans votre magasin : <ecom:MagasinAssocieLibelle runat="server" /></p>
+              </div>
+              <div class="clear"></div>
+           </div>
+            <div class="panier-ligne-total ">
+              <div class="col-md-12">
+                <p class="prix-total">
+                  Total à régler en magasin : <ecom:PanierTotalLabel runat="server" Format="0.00€" AssocieMagasin="true" Cssclass="orange"/>
+                </p>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <!--fin verif panier magasin-->
+      </div>
+
+      <div class="col-md-6 ">
+        <div class="bg-orange Verif-mag">
+          <h2>vérifier ma réservation</h2>
+          <div class="Verif-mag-ligne">
+            <div class="Verif-ad-1">
+              <ecom:MagasinAssocieLibelle runat="server" /><br />
+              <ecom:MagasinAssocieAdresse runat="server" /><br />
+              <ecom:MagasinAssocieCP runat="server" /> <ecom:MagasinAssocieVille runat="server" />
+            </div>
+            <div class="Verif-ad-2">
+            <p>              
+              <ecom:MagasinAssocieTel runat="server" Format="<i class='fa fa-phone blanc'></i>{0}<br />"  />
+              <ecom:MagasinAssocieGoogleMapLink runat="server" Text="<span class='icon-5 blanc'></span>Voir sur Google Map" Target="_blank" /> 
+            </p>
+            </div>  
+            <div class="clear"></div>      
+          </div>
+          <div class="Verif-mag-ligne">
+            <div class="Verif-ad-lib">
+              Nom de la personne qui retire le colis :
+            </div>
+            <div class="Verif-ad-nom">
+              <p><ecom:PanierNomLivraison runat="server" /></p>
+              <a href="">Changer de nom</a>
+            </div>  
+            <div class="clear"></div>         
+            </div>
+            <div class="Verif-ad-eresa">
+                Réglement de votre e-resa
+             </div>
+            <div class="Verif-ad-reglement">
+                 <!--<a href="" class="active">-->
+                 <i class="fa fa-asterisk"></i> A régler en magasin
+                <!--
+                </a>
+                <a href=""><i></i> A régler maintenant par CB</a>
+                -->
+            </div>
+            </div>
+        </div>
+      </div>
+    </ecom:PanierPanelMagasinAssocie>
+</section>
+
+
+
+<section class="Paiement page-process">
+  <ecom:PanierPanelSansMagasinAssocie runat="server" cssclass="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="triangle-process hidden-sm hidden-xs"></div>
+        <div class="Verif-panier">
+          <div class="icon-panier">
+            <span class="icon-1 bg-rouge blanc"></span>
+          </div>
+          <h2 >Vérification du panier<br /><span>Achats en ligne</span></h2>
+          <div class="panier-table">
+            <ecom:PanierLignes runat="server" ShowAs="Repeater" AssociesMagasin="false" Type="Produit" IsEditable="false" />
+            <div class="panier-ligne-liv ">
+              <div class="col-md-9 col-sm-9 col-xs-8">
+                <p class="no-margin"><b><ecom:LivraisonMode runat="server" /></b> - le <ecom:LivraisonDelai runat="server" /></p>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-4 prix-total">
+                <ecom:LivraisonMontant runat="server" format="0.00€" />
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="panier-ligne-total ">
+              <div class="col-md-12">
+                <p class="prix-total">
+                  Total à régler en ligne : <ecom:PanierTotalLabel runat="server" Format="0.00€" AssocieMagasin="false" Cssclass="rouge"/>
+                </p>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 ">
+        <div class="bg-rouge Verif-web">
+          <h2>vérification ma livraison</h2>
+          <div class="Verif-mag-ligne">
+            <div class="Verif-ad-1">
+              <span>Facturation</span><br />
+                <ecom:AdresseChoisie runat="server" RenderAs="InlineWithBr" TypeAdresse="AdresseFacturation"  />
+            </div>
+            <div class="Verif-ad-2">
+              <a href="#" class="btn btn-info pull-right valider">Changer l’adresse
+              <br />
+              de facturation<i class="fa fa-chevron-right"></i></a>
+            </div>  
+            <div class="clear"></div>      
+          </div>
+          <div class="Verif-web-ligne">
+            <div class="Verif-ad-1">
+              <span>LIVRAISON</span><br />
+                <ecom:AdresseChoisie runat="server" RenderAs="InlineWithBr" TypeAdresse="AdresseLivraison"  />
+            </div>
+            <div class="Verif-ad-2">
+              <a href="#" class="btn btn-info pull-right valider">Changer l’adresse
+              <br />
+              de livraison<i class="fa fa-chevron-right"></i></a>
+            </div>  
+            <div class="clear"></div>      
+          </div>
+        </div>
+      </div>
+    </div>
+  </ecom:PanierPanelSansMagasinAssocie>
+</section>
+
+<section class="container Livraison-cta">
+  <ecom:ProcessTypePanierPanel runat="server" AfficherSiPanierMagasin="false" class="btn-cta">
+    <a href="confirmationcommande2.aspx" class="btn btn-gris-fonce pull-right valider">Valider ma livraison<i class="fa fa-chevron-right"></i></a>
+  </ecom:ProcessTypePanierPanel>
+  <ecom:ProcessTypePanierPanel runat="server" AfficherSiPanierMagasin="true" AfficherSiPanierCommande="false" class="btn-cta">
+    <ecom:ValiderCommandeEResaLink runat="server" cssclass="btn btn-gris-fonce pull-right valider">Valider ma réservation<i class="fa fa-chevron-right"></i></ecom:ValiderCommandeEResaLink>
+  </ecom:ProcessTypePanierPanel>
+</section>
+
+
+
+</Content>
+</ecom:ThemablePanelControl>

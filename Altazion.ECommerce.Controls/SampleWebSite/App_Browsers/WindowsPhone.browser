@@ -1,0 +1,18 @@
+﻿<!--
+    You can find existing browser definitions at
+    <windir>\Microsoft.NET\Framework\<ver>\CONFIG\Browsers
+-->
+<browsers>
+    <gateway id="WindowsPhone" parentID="IEMobile">
+        <identification>
+            <userAgent match="Windows\s+Phone\s" />
+        </identification>
+
+      <capabilities>
+        <capability name="mobileDeviceModel"               value="WindowsPhone" />
+        <capability name="isMobileDevice"                  value="true" />
+        <capability name="canInitiateVoiceCall"            value="true" />
+      </capabilities>
+
+    </gateway>
+</browsers>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="CPointSoftware.ECommerce.Site.api.ThemingService" CodeBehind="ThemingService.svc.cs" %>

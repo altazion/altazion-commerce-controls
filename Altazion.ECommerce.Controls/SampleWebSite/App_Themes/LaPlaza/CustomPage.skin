@@ -1,0 +1,23 @@
+﻿<ecom:ThemablePanelControl  SkinID="CustomPageBeforeContent" runat="server">
+<Content>
+<div class="content">
+    <section class="main">
+        <div class="custom-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl  SkinID="CustomPageAfterContent" runat="server">
+<Content>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</Content>
+</ecom:ThemablePanelControl>

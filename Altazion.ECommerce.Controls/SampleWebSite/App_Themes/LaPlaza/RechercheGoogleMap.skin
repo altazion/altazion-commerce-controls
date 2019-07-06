@@ -1,0 +1,154 @@
+﻿<ecom:ThemablePanelControl runat="server"  SkinID="RechercheGoogleMapPage">
+<Content>
+
+<script>
+    $(document).ready(function () {
+        $('#txtCodePostal').val($("#hdnCodePostalPanier").val());
+        initRechercheGoogleMap('#txtCodePostal','#errorCodePostal','#btDoSearch','', getDetailMapAffichage);
+    });
+        
+    function getDetailAffichage(btn, plv) {
+        getDetail(plv);
+        
+        var divAdrRls = $(btn).closest('.adresse-relais');
+
+
+        if(divAdrRls.hasClass('relais-active')){
+            divAdrRls.removeClass('relais-active');
+            $('#rgmContent').removeClass('detail-relais-active');
+            $('.detail-relais').hide();
+            $('#masque-detail').hide();
+
+        }else{
+            $('.adresse-relais').removeClass('relais-active');
+            divAdrRls.addClass('relais-active');
+            $('#rgmContent').addClass('detail-relais-active');
+            $('.detail-relais').show();
+            $('#masque-detail').show();
+        }
+    }
+
+    function getDetailMapAffichage(pt) {
+        getDetail(pt.Guid);
+
+        $('#rgmContent').addClass('detail-relais-active');
+        $('.detail-relais').show();
+        
+    }
+
+    function showMap(){
+        $('#relaisMap').addClass('active');
+        $('#btRelaisMap').addClass('active');
+        $('#relaisList').removeClass('active');
+        $('#btRelaisList').removeClass('active');
+    }
+    
+    function hideMap(){
+        $('#rgmContent').removeClass('detail-relais-active');
+        $('.detail-relais').hide();
+        $('#relaisList').addClass('active');
+        $('#btRelaisList').addClass('active');
+        $('#relaisMap').removeClass('active');
+        $('#btRelaisMap').removeClass('active');
+    }
+
+</script>
+
+<div class="modal fade modal-changer-adresse modal-choix-relais" id="choix-relais">
+    <div class="modal-dialog">
+        <div class="modal-content" id="rgmContent">
+            <div class="masque" style="display: none" id="masque-detail"></div>
+            <div class="close" data-dismiss="modal">
+                    <span></span>
+                    <span></span>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 mes-adresses">
+                    <div class="">
+                        <div class="titre titre-header">
+                            <h3>choisir un point relais</h3>
+                        </div>
+                        <div class="box-adresse">
+        
+                            <div class="search nav-main-item  align-items-center d-flex">
+                                <div class="form-search">
+                                    <ecom:PanierLivraisonCodePostalHidden runat="server" ClientIdMode="Static" id="hdnCodePostalPanier" />
+                                    <input id="txtCodePostal" type="text" placeholder="Rechercher Code Postal">
+                                    <span class="errorCodePostal" id="errorCodePostal" style='display: none'></span>
+                                    <a  href="#" id="btDoSearch" style="margin-top: 0"> <img src="/App_Themes/LaPlaza/img/icon-loupe.svg" alt="">  </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-relais" style="display: none" data-bind="with: detail">
+                        <div class="adresse">
+                            <p><b data-bind='text: Nom'></b><br />
+                                <span data-bind='html: Adresse'></span><br />
+                                <span data-bind='text: CP'></span>&nbsp;<span data-bind='text: Ville'></span></p>
+                            <p> <i class="fas fa-phone"></i><span data-bind='text: Telephone'></span> </p>
+                            <p><i class="fas fa-map-marker-alt"></i> <a href="">Voir Google map</a></p>
+                        </div>
+                        <div class="horaire">
+                            <p>HORAIRES D'OUVERTURES</p>
+                            <div class="table">
+                                <table data-bind="foreach: Horaires">
+                                        <tr>
+                                            <td class="jour"><span data-bind="text: Jour"></span></td>
+                                            <td><span data-bind="text: DebutPeriode1"></span><span data-bind="text: FinPeriode1 == ''? '' : ' - ' + FinPeriode1"></span><span data-bind="text: DebutPeriode2 == ''? '' : ' /// ' + DebutPeriode2"></span><span data-bind="text: FinPeriode2 == ''? '' : ' - ' + FinPeriode2"></span></td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="cta" style="display: block;"><button class="btn btn-primary btn-ombre btn-40 btn-block" data-bind="click: function(){setPointLivraisonRelais(Guid)}">choisir ce relais</button></div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="ajout recherche">
+                        <div class="titre">
+                            <a class="relais-tab active" href="#" id="btRelaisList" onclick="hideMap()">
+                                <img src="/App_Themes/LaPlaza/img/icon-list.svg" alt="" height="28"> Liste
+                            </a>
+                            <a class="relais-tab" href="#" id="btRelaisMap" onclick="showMap()"><img src="/App_Themes/LaPlaza/img/icon-map.svg" alt="" height="28"> Carte</a>
+                        </div>
+                        <div class="tab-content">
+                            
+                            <div class="tab-pane active " id="relaisList" data-bind="visible: points() != null && points().length > 0">
+                                
+                                <div data-bind="foreach: points">
+                                    <div class="adresse-relais">
+                                        <div class="picto">
+                                            <img src="/App_Themes/LaPlaza/img/icon-liv-relais.svg" alt="" width="70">
+                                        </div>
+                                        <div class="relais-info">
+                                            <div class="ligne">
+                                                <div class="adresse">
+                                                    <p><b data-bind='text: Nom'></b><br />
+                                                        <span data-bind='html: Adresse'></span><br />
+                                                        <span data-bind='text: CP'></span>&nbsp;<span data-bind='text: Ville'></span></p>
+                                                </div>
+                                            </div>
+                                            <div class="ligne">
+                                                <div class="plus hidden-sm">
+                                                    <a href="" data-bind="click: function(){getDetailAffichage(event.target, Guid)}">Détails</a>
+                                                </div>
+                                                <div class="cta" style="display: block;"><button class="btn btn-primary btn-ombre btn-40" data-bind="click: function(){setPointLivraisonRelais(Guid)}">Choisir</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane container" id="relaisMap">
+                                <ecom:GoogleMap runat="server" CssClass="map-points-relais" ApiKey="AIzaSyD9ThPHYy9YT_-DI8Fs5lzwj7sIF3-3HPE" MoreInitJavascript="initGlobalMap(map);" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</Content>
+</ecom:ThemablePanelControl>

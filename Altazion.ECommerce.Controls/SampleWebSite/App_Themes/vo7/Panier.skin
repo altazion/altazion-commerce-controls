@@ -1,0 +1,258 @@
+﻿
+<ecom:ThemablePanelControl  runat="server" SkinID="PanierVide">
+<Content>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12 panier-vide">
+                    <span class='title'>Votre panier est vide</span><br /><br />
+                    <a href="/" class="btn btn-primary">Retour à la boutique</a>
+            </div>
+        </div>
+    </div>
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="PanierMessageErreur">
+<Content>
+ 
+        <div class="row panier-content panier-erreur">
+            <div class="col-md-12 panier-erreur">
+    <p class="Erreur">
+        <ecom:PanierErreurLibelle ID="PanierErreurLibelle1" runat="server" />
+    </p>
+    <p class="Lien">
+        <ecom:PanierErreurLink ID="PanierErreurLink1" runat="server" />
+    </p>
+            </div>
+        </div>
+ </Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="PanierContentHeader">
+<Content>
+
+    <section class="main">
+        <div class="container-fluid">
+            <div class=" page-main ">
+
+
+                <div class="row ariane justify-content-center">
+                    <div class="col-12 col-xl-6 col-lg-7  px-0 ">
+                        <ul class="row">
+                            <li class="active  col-4 px-0">
+                                <a href="">
+                                    <span class="nbrInfo ">1- commande</span>
+                                </a>
+                            </li>
+                            <li class=" col-4 px-0">
+                                    <span class="nbrInfo">2- Adresse</span>
+                            </li>
+                            <li class="col-4 px-0 ">
+                                <span class="nbrInfo">3 - paiement</span>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="PanierGlobalFooter">
+<Content>
+            </div>
+        </div>
+    </section>
+   
+</Content>
+        </ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="PanierDetailFull">
+<Content>
+        <div class="row panier-content justify-content-center">
+                    <div class="col-lg-7 col-xl-7 col-12 px-0 panier-left">
+                        <div class="titre">
+                            <h2>Ma commande</h2>
+                        </div>
+                        <div class="tableau-panier">
+                            <div class="ligne-th ligne">
+                                <div class="bloc1">
+                                    <div class="bloc-img">
+                                        Article
+                                    </div>
+                                </div>
+                                <div class="bloc-content-2-3-4">
+                                    <div class="bloc2"></div>
+                                    <div class="bloc2-2">
+                                        Prix unitaire
+                                    </div>
+                                    <div class=" bloc3 choix-qt">
+                                        Quantité
+                                    </div>
+                                    <div class="bloc4 prix">
+                                        Montant total
+                                    </div>
+                                </div>
+                            </div>
+                            <ecom:PanierLignes runat="server" ShowAs="Repeater" AssociesMagasin="false" Type="Produit" />
+ </div>
+<!--                        <div class="titre">
+                            <h2>Suggéré pour vous</h2>
+                        </div>
+                        <div class="tableau-sugg">
+                            <div class="ligne">
+                                <div class="bloc1">
+                                    <div class="bloc-img">
+                                        <a href=""><img src="/app_themes/vo7/imgs/prod1.jpg" alt="" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                                <div class="bloc-content-2-3-4">
+                                    <div class="bloc2">
+                                        <div class="sugg-libelle">
+                                            <h3 class="libelle"><a href="">Lorem ipsum dolor sit ame</a></h3>
+                                            <span class="prix-normal">11.50€</span>
+                                        </div>
+                                        <div class="sugg-action">
+                                            <form action="">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <i class="helper"></i>
+                                                        Je souhaite ajouter ce produit à ma commande
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                        <div class="retour">
+                            <button data-dismiss="modal" class="btn btn-noir  btn-45"><i class="fas fa-arrow-left"></i> Retour</button>
+                        </div>
+                    </div>          
+                    <div class="col-lg-4 col-xl-3 col-12 panier-right">
+                        <h2>Récapitulatif</h2>
+                        <div class="recap">
+                            <div class="bloc-promo">
+                                <div class="promo-entree">
+                                    <div class="libelle">
+                                        <p>Avez vous un code promotionnel ?</p>
+                                    </div>
+                                    <div class="form-40  bt">
+                                        <div class="AvantageSaisie">    
+                                            <input  placeholder="Votre code" class="TextBox">
+                                            <a  href="">OK</a> <span class="erreur" style="color:Firebrick;"></span>    
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recap-detail">
+<ecom:PanierRemisesPanel runat="server">
+
+                                <div class="recap-ligne">
+                                    <span class="libel">Vos achats</span>
+                                    <ecom:PanierTotalHorsRemise runat="server" Format="0.00€" AssocieMagasin="false" IgnorerFraisDePort="true" Cssclass="valeur"/>
+                                </div>
+                                <div class="recap-ligne">
+                                    <span class="libel">Vos Remises</span>
+                                    <ecom:PanierTotalRemise runat="server" Format="0.00€" AssocieMagasin="false" IgnorerFraisDePort="true" Cssclass="valeur"/>
+                                </div>
+</ecom:PanierRemisesPanel>
+                                <div class="recap-ligne total">
+                                    <span class="libel">Total</span>
+                                    <ecom:PanierTotalLabel runat="server" Format="0.00€" AssocieMagasin="false" IgnorerFraisDePort="true" Cssclass="valeur"/>
+                                </div>
+                                
+                            </div>
+                            <ecom:CommandeConfirmerLink runat="server" class="btn btn-75 btn-lg-55 ">
+                                    passer la commande
+                            </ecom:CommandeConfirmerLink>
+                
+                        </div>
+
+                    <ecom:CampagnePublicite  runat="server" TypeOperation="RASSUR"  />
+
+                    </div>
+                    
+                </div>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="CartDetailsRepeaterItemUneditable">
+<Content>
+    <div class="ligne">
+                            <div class="bloc1">
+                              <div class="bloc-img">
+                                <ecom:PanierProduitImage PanierTypeImage="Intermediate" runat="server"  Cssclass="img-fluid" DoNotLink="true" />
+                              </div>
+                            </div>
+                            <div class="bloc-content-2-3-4">
+                              <div class="bloc2">
+                                <h3 class="libelle"><ecom:PanierProduitLabel runat="server" Field="Libelle" /></h3>
+                                <span class="taille">Taille : <ecom:PanierProduitLabel cssclass="poids" runat="server" Field="Differentiant1"/></span>
+                              </div>
+                              <div class="bloc2-2">
+                                <ecom:PanierProduitLabel runat="server" Field="PrixUnitaireTtc" Format="0.00€" />
+                              </div>
+                              <div class=" bloc3 choix-qt">
+                                <div class="choix-qt-detail">
+                                  <ecom:PanierProduitLabel cssclass="qt-nb" runat="server" Field="Quantite" Format="0" /> 
+                                </div>
+                              </div>
+                              <div class="bloc4 prix">
+                                <div class="prix-promo">
+                      <span class="pourcent"><ecom:PanierProduitLabel runat="server" Field="PctPromo" CssClassSiPromo="pourcent" Format="'-'0\%" /></span>
+                                </div>
+                                <div class="prix-normal">
+                                  <ecom:PanierProduitLabel runat="server" Field="Montant" Format="0.00€" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="CartDetailsRepeaterItem">
+<Content>
+                            <div class="ligne">
+                                <div class="bloc1">
+                                    <div class="bloc-img">
+                                        <ecom:PanierProduitImage PanierTypeImage="Intermediate" runat="server"  Cssclass="img-fluid" DoNotLink="true" />
+                                    </div>
+                                </div>
+                                <div class="bloc-content-2-3-4">
+                                    <div class="bloc2">
+                                        <h3 class="libelle"><ecom:PanierProduitLabel runat="server" Field="Libelle" /></h3>
+                                        <span class="taille">Taille : <ecom:PanierProduitLabel cssclass="poids" runat="server" Field="Differentiant1"/></span>
+                                      
+                                        <ecom:PanierProduitCommandLinkButton runat="server" CommandName="removeall" cssclass="supp">Supprimer</ecom:PanierProduitCommandLinkButton>
+                                    </div>
+                                    <div class="bloc2-2">
+                                        <ecom:PanierProduitLabel runat="server" Field="PrixUnitaireTtc" Format="0.00€" />
+                                    </div>
+                                    <div class=" bloc3 choix-qt">
+                                        <div class="choix-qt-detail">
+                                            <ecom:PanierProduitCommandLinkButton runat="server" CommandName="removeone" alt="moins" cssclass="plus">-</ecom:PanierProduitCommandLinkButton>
+                                            <ecom:PanierProduitLabel cssclass="qt-nb" runat="server" Field="Quantite" Format="0" /> 
+                                            <ecom:PanierProduitCommandLinkButton runat="server" CommandName="addone" alt="plus" cssclass="plus">+</ecom:PanierProduitCommandLinkButton>
+                                        </div>
+                                    </div>
+                                    <div class="bloc4 prix">
+                                        <div class="prix-promo">
+                                            <!--<span class="barre">14.00€</span>-->
+                                            <span class="pourcent"><ecom:PanierProduitLabel runat="server" Field="PctPromo" CssClassSiPromo="pourcent" Format="'-'0\%" /></span>
+                                        </div>
+                                        <div class="prix-normal">
+                                            <ecom:PanierProduitLabel runat="server" Field="Montant" Format="0.00€" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+</Content>
+        </ecom:ThemablePanelControl>

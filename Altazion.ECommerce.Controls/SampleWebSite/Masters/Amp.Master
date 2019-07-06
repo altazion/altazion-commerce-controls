@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Amp.master.cs" Inherits="CPointSoftware.ECommerce.Site.Masters.Amp" %>
+
+<!DOCTYPE html>
+
+<html amp>
+<head runat="server">
+    <meta charset="utf-8">
+    <ecom:OpenGraphMeta runat="server" />
+    <ecom:MetaRobots runat="server" />
+    <ecom:CanonicalLink runat="server" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+
+    <ecom:AmpBoilerplate runat="server" />
+
+    <title></title>
+
+
+        <ecom:ThemablePanelControl ID="ThemablePanelControl2" runat="server" SkinID="AmpHeadPanel"
+        RenderWithNoTag="true" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+
+</head>
+<body>
+
+    <asp:ContentPlaceHolder ID="BodyStartPlaceHolder" runat="server">
+        <ecom:ThemablePanelControl ID="ThemablePanelControl7" runat="server" SkinID="AmpBodyStartHeader"
+            RenderWithNoTag="true" />
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="BodyFooterPlaceHolder" runat="server">
+        <ecom:ThemablePanelControl ID="pgfr" SkinID="AmpBodyFooter" runat="server" RenderWithNoTag="true" />
+    </asp:ContentPlaceHolder>
+
+
+    <ecom:Koostodes runat="server" />
+
+
+
+</body>
+</html>

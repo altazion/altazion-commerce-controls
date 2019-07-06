@@ -1,0 +1,167 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="SearchResultHeader">
+<Content>
+
+
+<section id="ariane" class="fil hidden-xs hidden-sm">
+  <div class="container">
+    <div class="row">
+      <ecom:FilAriane runat="server" Separator="<i class='fa fa-chevron-right'></i>" LastItemCssClass="active" />
+    </div>
+  </div>
+</section>
+
+
+
+<section class="descente">
+
+  <div class="m-desc-list-top hidden-md hidden-lg container-fluid">
+    <div class="m-filtre">
+    <p>Filtrer <i class="fa fa-chevron-down"></i></p> 
+    </div>
+    <div class="desc-list-top ">
+       <h1>Produit fait <span>MAISON</span></h1>
+            <div class="clear"></div>
+    </div>
+  </div>
+
+<div class="container">
+    <div class="row">
+
+
+
+    <div class="col-md-3 filtre hidden-sm hidden-xs" >
+        <div class="row">
+
+
+          <p class="titre">Filtrer par :</p>
+          
+                <ecom:RechercheResume runat="server" TypeAffichage="Flux" />
+          
+            <ecom:RechercheCritereSegmentation runat="Server" Titre="Par catégorie" 
+                            CacherSiVide="true"
+                            AfficherSelection="false" TypeAffichage="Liste"
+                            AfficherLienRetour="false">
+                <HeaderTemplate>
+                    <div class="filtre-bloc">
+                    <span class="filtre-plus"> <i class="fa fa-plus-square-o"></i></span>
+                    <div class="filtre-top">
+                    <a href="#"><h3 class="">
+                        Catégorie</h3></a>
+                </HeaderTemplate>
+                <FooterTemplate>
+                    </div>
+                </div>
+
+                </FooterTemplate>
+                <ItemTemplate>
+                        <li>
+                            <i class="liste"></i>
+                                <ecom:RechercherSegmentHyperLink ID="RechercherSegmentHyperLink1" runat="server" />
+                            </li>
+                </ItemTemplate>
+            </ecom:RechercheCritereSegmentation>
+
+            <ecom:RechercheCritere runat="Server" Titre="Par saveur" 
+                            CacherSiSelectionne="true" AfficherSelection="false"
+                            TypeAffichage="Liste" 
+                            TypeSelection="Importance"
+                            NombreLignes="5000"
+                            CacherSiVide="true"
+                            NombreLignesAvantPopup="30"
+                            TypeCritere="Custom" CritereGuid="866EA818-D711-4680-99CF-9D57CAB392FF">
+                <HeaderTemplate>
+                    <div class="filtre-bloc">
+                    <span class="filtre-plus"> <i class="fa fa-plus-square-o"></i></span>
+                    <div class="filtre-top">
+                    <a href="#"><h3 class="">
+                        Saveur</h3></a>
+                </HeaderTemplate>
+                <FooterTemplate>
+                    </div>
+                    </div>
+                </FooterTemplate>
+                <ItemTemplate>
+                    <li><i class="liste"></i><ecom:RechercheCritereHyperLink runat="server" /></li>
+                </ItemTemplate>
+                </ecom:RechercheCritere>
+ <!--           
+          
+          </div>
+          <div class="filtre-bloc selected">
+            <span class="filtre-plus"> <i class="fa fa-plus-square-o"></i></span>
+            <div class="filtre-top">
+                <a href="#">
+                  <h3>
+                    <i class="fa fa-dot-circle-o"></i>14 parts
+                  </h3>
+                </a>
+            </div>
+          </div>
+         
+          <div class="filtre-bloc selected">
+            <span class="filtre-plus"> <i class="fa fa-plus-square-o"></i></span>
+            <div class="filtre-top">
+                <a href="#">
+                  <h3>
+                    <i class="fa fa-dot-circle-o"></i>Ronde
+                  </h3>
+                </a>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+
+
+
+      <div class="col-md-9 col-sm-12 desc-list">
+        <div class="desc-list-top hidden-xs hidden-sm ">
+          <h1><ecom:ContexteTitrePage runat="server" /></h1>
+          <nav>
+            
+
+            <ecom:RechercherPageChoixBasique CssClass="pagination" MaxShownItems="6" runat="server" CssClassSelectedItem="selected" />
+          </nav>
+          <p><ecom:RechercheStatLabel runat="server" Type="NombreArticlesTotal" /> produit(s)  |  Page <ecom:RechercheStatLabel runat="server" Type="PageActuelle" />/<ecom:RechercheStatLabel runat="server" Type="NombrePages" /></p>
+          <div class="clear"></div>
+        </div>
+
+<div class="desc-list-content row">
+
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="SearchResultFooter">
+<Content>
+
+           </div>
+      </div> <!-- fin de la desc-list -->
+   </div> <!-- fin de row -->
+  </div> <!-- fin de container -->
+
+</section> <!-- fin de la section class="descente" -->
+
+<div class="clear">
+</div>
+
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="RechercheResumeItem">
+    <Content>
+
+
+    <div class="filtre-bloc selected">
+<span class="filtre-plus"> <i class="fa fa-plus-square-o"></i></span><div class="filtre-top">
+
+<ecom:RechercherRetirerCritereLink ID="lnkRetirer" runat="server" SkinID="RechercheResumeItem"
+                Format="<h3><i class='fa fa-dot-circle-o'></i>{valeur}</h3>" />
+        
+    </div>
+
+        </div>
+
+
+  </Content>
+</ecom:ThemablePanelControl>

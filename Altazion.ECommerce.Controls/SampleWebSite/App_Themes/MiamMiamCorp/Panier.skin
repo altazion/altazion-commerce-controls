@@ -1,0 +1,286 @@
+﻿
+<ecom:ThemablePanelControl runat="server" SkinID="PanierVide">
+<Content>
+    <div class="container">
+        <div class="row empty-cart">
+            <p>Votre panier est vide</p>
+            <h2>Découvrez nos produits les plus vendus</h2>
+            <ecom:VitrinesListeProduits runat="server" ProductTemplateSkinID="ProductItemSuggestion"
+                TypeAffichage="Flux" CodeVitrine="TOPVENTES" NombreArticles="4" />
+        </div>
+    </div>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="PanierDetailFull">
+<Content>
+
+<section class="Panier-mag page-process">
+  <ecom:PanierPanelMagasinAssocie runat="server" cssclass="container">
+    <div class="row panier-header">
+      <div class="col-md-9 col-xs-12 col-sm-12">
+        <div class="icon-panier">
+          <span class="icon-2 bg-orange blanc"></span>
+        </div>
+        <h2 class="orange no-margin">Réservation en magasin</h2>
+        <p class="no-margin hidden-xs">( Articles à retirer et à réglér directement en magasin )</p>
+      </div>
+      <div class="col-md-3 hidden-xs hidden-sm btn-cta">
+            <ecom:CommandeConfirmerLink runat="server" FinishPage="~/Exec/Process/ConfirmationCommande.aspx"
+            LoginPage="~/Exec/Process/login.aspx" cssclass="btn btn-default pull-right"
+            SkinID="PanierConfirmerCommande">
+            Valider mon panier <i class="fa fa-chevron-right"></i></ecom:CommandeConfirmerLink>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panier-table">
+            <ecom:PanierLignes runat="server" ShowAs="Repeater" AssociesMagasin="true" Type="Produit" />
+
+          <div class="panier-ligne-liv row">
+            <div class="col-md-12 case-1">
+              <p class="no-margin panier-liv-mag-info">Vos articles seront disponibles dans votre magasin sous 3h : <ecom:MagasinAssocieLibelle runat="server" /></p><ecom:MagasinAssocieLink runat="server" Target="_blank" cssclass="btn btn-info pull-right" >voir le magasin<i class="fa fa-chevron-right"></i></ecom:MagasinAssocieLink>
+            </div>
+          </div>
+          <div class="panier-ligne-total row">
+            <div class="col-md-12">
+              <p class="prix-total">
+                Total à régler en magasin <!--(ou en ligne) -->:<ecom:PanierTotalLabel runat="server" Format="0.00€" AssocieMagasin="true" Cssclass="orange"/></p>
+              </div>
+            </div>
+
+
+        </div>
+      </div>
+    </div>
+  </ecom:PanierPanelMagasinAssocie>
+</section>
+<section class="Panier-web page-process">
+ <ecom:PanierPanelSansMagasinAssocie runat="server" cssclass="container">
+    <div class="row panier-header">
+      <div class="col-md-9">
+        <div class="icon-panier">
+          <span class="icon-1 bg-rouge blanc"></span>
+        </div>
+        <h2 class="rouge no-margin">Achat en ligne</h2>
+        <p class=" no-margin hidden-xs">(Articles à régler en ligne. Choisissez un mode de réglement ci-dessous)</p>
+      </div>
+      <div class="col-md-3">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panier-table">
+            <ecom:PanierLignes runat="server" ShowAs="Repeater" AssociesMagasin="false" Type="Produit" />
+
+            <div class="panier-ligne-liv panier-ligne-liv-web row">
+                <div class="col-md-6 case-1">
+                    <div class="liv-visu hidden-xs hidden-sm"><i class="fa fa-check"></i><i class="fa fa-truck "></i>
+        </div>
+                    <p class="libelle">Choisissez votre livraison
+                    </p>
+                    <p class="dispo">(Livraison uniquement en France métropolitaine et Corse)</p>
+      </div>
+                <div class="col-md-4">
+                    <div class="select-syle"> 
+                        <ecom:LivraisonChoix runat="server" />
+                    <i class="fa fa-chevron-down rouge"></i>
+    </div>
+                </div>
+                <div class="col-md-2 case-4 prix-total">
+                    <ecom:PanierFraisPortLabel runat="server" CssClass="rouge" Format="0.00€" TexteSiVide="-" />
+                </div>
+            </div>
+
+<div class="panier-ligne-total row">
+            <div class="col-md-5 avantage">
+              <div class="form-input">
+                <ecom:AvantageSaisieCode ID="AvantageSaisieCode1" runat="server" PlaceHolder="Vous avez un code avantage ?" GoButtonCssClass="btn btn-default" />                
+              </div>
+            </div>
+            <div class="col-md-7">
+              <p class="prix-total clear">
+                Total à régler en ligne :<ecom:PanierTotalLabel runat="server" Format="0.00€" AssocieMagasin="false" Cssclass="rouge"/></p>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </ecom:PanierPanelSansMagasinAssocie>
+
+</section>
+
+
+
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:AvantageLabel runat="server" TextIfActive="Code avantage actif : {0}." TextIfInactive="Code avantage : " />
+
+<ecom:ThemablePanelControl runat="server" SkinID="PanierCommandes" RenderWithNoTag="true">
+                        <Content>
+                            <div class="PanierCommandes container">
+        <div class="btn-cta">
+                                <div class="PanierCommandesContinuer">
+                <ecom:ContinuerAchatsLink cssclass="btn btn-gris pull-left hidden-xs" runat="server" Text="Continuer vos achats" NavigateUrl="~/"
+                    ID="lnkContinuerAchats" SkinID="PanierContinuerAchats">
+                    <i class="fa fa-chevron-left "></i>Continuer mes achats 
+                </ecom:ContinuerAchatsLink>
+                                </div>
+                                <div class="PanierCommandesTerminer">
+                                    <ecom:CommandeConfirmerLink cssclass="btn btn-default pull-right" runat="server" FinishPage="~/Exec/Process/ConfirmationCommande.aspx"
+                    ID="btnConfirmer" LoginPage="~/Exec/Process/login.aspx"
+                    SkinID="PanierConfirmerCommande">
+                    Valider mon panier <i class="fa fa-chevron-right"></i>
+                </ecom:CommandeConfirmerLink>
+            </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </Content>
+                    </ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="CartDetailsRepeaterItemUneditable">
+<Content>
+
+<div class="panier-ligne">
+              <div class="col-md-4 col-sm-5 col-xs-8 case-1">
+                <p class="libelle">
+                  <ecom:PanierProduitLink runat="server" Field="Libelle" />
+                </p>
+              </div>
+              <div class="col-md-4 col-sm-3  hidden-xs case-3 prix">
+                <div class="prix-promo">
+                  <ecom:PanierProduitLabel runat="server" Field="PctPromo" CssClassSiPromo="bg-orange pourcent" />
+                  <br />
+                  <ecom:PanierProduitLabel runat="server" Field="PrixUnitaireTtcHorsRemise" CssClassSiPromo="orange reduc" />
+                </div>
+                <div class="prix-effectif">
+                  <ecom:PanierProduitLabel runat="server" Field="PrixUnitaireTtc" Format="0.00€" /> 
+                </div>
+              </div>
+              <div class="col-md-1  col-sm-2 hidden-xs case-2">
+                <div class="quantite-verif">
+                 <ecom:PanierProduitLabel runat="server" Field="Quantite" Format="0" /> 
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-2 col-xs-4 case-4 prix-total">
+                <ecom:PanierProduitLabel runat="server" Field="MontantTtc" CssClass="orange" Format="0.00€" />
+              </div>
+            </div>
+
+    
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="CartDetailsRepeaterItem">
+<Content>
+
+
+<div class="panier-ligne row">
+            <div class="col-md-6 col-sm-5 col-xs-5 case-1">
+              <div class="pull-left hidden-xs hidden-sm">
+                <ecom:PanierProduitImage runat="server" />
+              </div>
+              <p class="libelle"><ecom:PanierProduitLink runat="server" Field="Libelle" /></p>
+              <p class="dispo"><span class="dispo-ok"><i class="fa fa-square"></i>Disponible</span></p>
+            </div>
+            <div class="col-md-2  col-sm-2 col-xs-4 case-2">
+              <div class="quantite">
+                <ecom:PanierProduitCommandLinkButton runat="server" CommandName="addone" cssclass="plus">
+                <i class="fa fa-plus"></i></ecom:PanierProduitCommandLinkButton>
+                <ecom:PanierProduitLabel runat="server" Field="Quantite" Format="0" /> 
+                <ecom:PanierProduitCommandLinkButton runat="server" CommandName="removeone" cssclass="moins"><i class="fa fa-minus"></i>
+                </ecom:PanierProduitCommandLinkButton>
+              </div>
+            </div>
+             <div class="col-md-2 col-sm-3  hidden-xs case-3 prix">
+              <div class="prix-promo">
+                <ecom:PanierProduitLabel runat="server" Field="PctPromo" CssClassSiPromo="bg-orange pourcent" />
+                <br />
+                <ecom:PanierProduitLabel runat="server" Field="PrixUnitaireTtcHorsRemise" CssClassSiPromo="orange reduc" />
+                
+              </div>
+              <div class="prix-effectif">
+                <ecom:PanierProduitLabel runat="server" Field="PrixUnitaireTtc" Format="0.00€" /> 
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-3 case-4 prix-total">
+              <ecom:PanierProduitLabel runat="server" Field="MontantTtc" CssClass="orange" Format="0.00€" />
+              <ecom:PanierProduitCommandLinkButton runat="server" CommandName="removeall" cssclass="remove"><i class="fa fa-remove"></i></ecom:PanierProduitCommandLinkButton>
+            </div>
+          </div>
+
+
+    
+</Content>
+</ecom:ThemablePanelControl>
+
+
+ <ecom:ThemablePanelControl runat="server" SkinID="PanierHeader">
+<Content>               
+    <!-- FIL D'ARIANE -->
+    <section id="ariane" class="fil hidden-xs hidden-sm">
+      <div class="container">
+        <div class="row">
+          <a href="/">Accueil</a>
+          <i class="fa fa-chevron-right"></i>
+          <a href="/exec/panier.htm" class="active">Votre panier</a>
+        </div>
+      </div>
+    </section>
+    <!-- END ARIANE -->
+
+    <section class="page-b page-process">
+      <div class="container">
+        <div class="row page-b-titre">
+          <h1 class="rouge">Votre Panier
+            <div class="trait"></div>
+          </h1>
+        </div>
+      </div>
+    </section>
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:LivraisonChoix runat="server" Mode="Combo" />
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="PanierGlobalFooter">
+<Content>
+
+<section class="page-b rassurance bg-beige hidden-sm hidden-xs" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-1 col-md-10">
+        <div class="row">
+
+          <div class="col-md-4 rass-liv">
+            <i class="fa fa-truck icone-rassurance"></i>
+            <h3>Livraison OFFERTE</h3>
+            <p>Dès 25€ d’achat</p>
+          </div>
+          <div class="col-md-4 rass-retour">
+            <i class="fa fa-reply icone-rassurance"></i>
+            <h3>Echanges et retours</h3>
+            <p>Gratuit en magasin</p>
+          </div>
+          <div class="col-md-4 rass-secu">
+            <i class="fa fa-lock icone-rassurance"></i>
+            <h3>Paiement à l’expédition</h3>
+            <p>100% sécurisé</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</Content>
+</ecom:ThemablePanelControl>

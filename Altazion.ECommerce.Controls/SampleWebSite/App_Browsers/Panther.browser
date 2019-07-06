@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<browsers>
+  <browser id="PantherCDN" parentID="Mozilla">
+    <identification>
+      <userAgent match="Panther" />
+    </identification>
+
+    <capabilities>
+      <capability name="browser" 				value="Panther CDN" />
+      <capability name="isColor"              value="true" />
+      <capability name="activexcontrols"     value="false" />
+      <capability name="backgroundsounds"    value="true" />
+      <capability name="cookies"             value="true" />
+      <capability name="css1"                value="true" />
+      <capability name="css2"                value="true" />
+      <capability name="ecmascriptversion"   value="1.2" />
+      <capability name="frames"              value="true" />
+      <capability name="javaapplets"         value="true" />
+      <capability name="javascript"          value="true" />
+      <capability name="jscriptversion"      value="5.0" />
+      <capability name="msdomversion"        value="${majorversion}${minorversion}" />
+      <capability name="supportsCallback"    value="true" />
+      <capability name="supportsFileUpload"  value="true" />
+      <capability name="supportsMultilineTextBoxDisplay" value="true" />
+      <capability name="supportsMaintainScrollPositionOnPostback" value="true" />
+      <capability name="supportsVCard"       value="true" />
+      <capability name="supportsXmlHttp"     value="true" />
+      <capability name="tables"              value="true" />
+      <capability name="tagwriter"           value="System.Web.UI.HtmlTextWriter" />
+      <capability name="vbscript"            value="true" />
+      <capability name="w3cdomversion"       value="1.0" />
+      <capability name="xml"                 value="true" />
+
+    </capabilities>
+  </browser>
+
+  <browser id="PantherCDNIE" parentID="PantherCDN">
+    <identification>
+      <header name="X-User-Agent" match="MSIE" />
+    </identification>
+
+    <capabilities>
+      <capability name="browser" value="Panther CDN (IE)" />
+      <capability name="isColor"              value="true" />
+      <capability name="activexcontrols"     value="true" />
+      <capability name="backgroundsounds"    value="true" />
+      <capability name="cookies"             value="true" />
+      <capability name="css1"                value="true" />
+      <capability name="css2"                value="true" />
+      <capability name="ecmascriptversion"   value="1.2" />
+      <capability name="frames"              value="true" />
+      <capability name="javaapplets"         value="true" />
+      <capability name="javascript"          value="true" />
+      <capability name="jscriptversion"          value="5.6" />
+      <capability name="msdomversion"        value="${majorversion}${minorversion}" />
+      <capability name="supportsCallback"    value="true" />
+      <capability name="supportsFileUpload"  value="true" />
+      <capability name="supportsMultilineTextBoxDisplay" value="true" />
+      <capability name="supportsMaintainScrollPositionOnPostback" value="true" />
+      <capability name="supportsVCard"       value="true" />
+      <capability name="supportsXmlHttp"     value="true" />
+      <capability name="tables"              value="true" />
+      <capability name="tagwriter"           value="System.Web.UI.HtmlTextWriter" />
+      <capability name="vbscript"            value="true" />
+      <capability name="w3cdomversion"       value="1.0" />
+      <capability name="xml"                 value="true" />
+
+    </capabilities>
+  </browser>
+
+</browsers>

@@ -1,0 +1,97 @@
+﻿<ecom:ProductPanel runat="server"  SkinID="ProductItemInList">
+<Content>
+     <div class="col-md-4 col-sm-6">
+            
+            <div class="bloc-produit">
+           <div class="tag1">
+<ecom:ProduitMetaTag NumeroOrdreTag="1" runat="server" CssClass="tag1" />
+</div>
+              <div class="image">
+                  <ecom:ProduitImageLink runat="server" CssClass="lien-image" ImageType="Intermediaire" />
+              </div>
+              <div class="txt">
+                
+
+                <ecom:ProduitLibelleLink runat="server" format="<h2>{0}</h2>"/>
+                <div class="desc-price"><ecom:ProduitPrix runat="server" FormatPrix="{0:0.00}€"  FormatSiMultiTarif="à partir de {0:0.00}€" />
+                    <p class="dispo">
+                        <ecom:ProductPanel runat="server" AfficherSiNonDispo="false" InlineContent="true"><Content>
+                                <span class="dispo-ok"><i class="fa fa-square"></i>Dispo Web</span>
+                        </Content></ecom:ProductPanel>
+                        <ecom:ProductPanel runat="server" AfficherSiDispo="false" InlineContent="true"><Content>
+                                <span class="dispo-non"><i class="fa fa-square"></i>Dispo Web</span>
+                        </Content></ecom:ProductPanel>
+
+                        <ecom:ProductPanel runat="server" AfficherSiNonDispo="false" AssocierAuMagasin="true" InlineContent="true"><Content>
+                                <span class="dispo-ok"><i class="fa fa-square"></i>Dispo Mag</span>
+                        </Content></ecom:ProductPanel>
+                        <ecom:ProductPanel runat="server" AfficherSiDispo="false" AssocierAuMagasin="true" InlineContent="true"><Content>
+                                <span class="dispo-non"><i class="fa fa-square"></i>Dispo Mag</span>
+                        </Content></ecom:ProductPanel>
+
+                    </p>
+              </div>
+            </div>
+          </div>
+</Content>
+</ecom:ProductPanel>
+
+<ecom:ProductPanel runat="server"  SkinID="ProductItemTopVenteHomeOL" InlineContent="true">
+<Content>
+    <li data-target="#productList"><ecom:ProduitImage  ImageType="Intermediaire" runat="server" CssClass="img-responsive" /></li>
+</Content>
+</ecom:ProductPanel>
+
+<ecom:ProductPanel runat="server"  SkinID="ProductItemTopVenteHome" InlineContent="true">
+<Content>
+     <div class="item">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="galleryImg">
+                <ecom:ProduitImage runat="server" CssClass="img-responsive" ImageType="Intermediaire" />
+                <ecom:ProduitLink runat="server" />
+                <!--<a href="img/img1-large.jpg" rel="prettyPhoto[gallery1]" title="Service"><span><i class="fa fa-search-plus"></i></span></a>-->
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12 serviceInfo">
+            
+            <h2><ecom:ProduitLibelle runat="server" /></h2>
+            
+            <div class="price"><ecom:ProduitPrix runat="server" FormatPrix="{0:0.00}€"  FormatSiMultiTarif="à partir de {0:0.00}€" />
+            </div>
+            <div class="hidden-sm hidden-xs">
+                <ecom:ProduitDescriptif runat="server" />
+            </div>
+            <div class="carousel-btn hidden-sm hidden-xs">
+                <a href="" class="btn btn-primary">réserver en magasin</a>
+                <a href="" class="btn btn-default">Achetez en ligne</a>
+            </div>
+            
+        </div>
+    </div>
+</Content>
+</ecom:ProductPanel>
+
+<ecom:ProductPanel runat="server"  SkinID="ProductItemSuggestion">
+<Content>
+    <div class="col-md-3 col-sm-6">
+        <div class="bloc-produit">
+            <div class="image">
+                <ecom:ProduitImage runat="server" CssClass="img-responsive" ImageType="Intermediaire" />
+                <ecom:ProduitLink runat="server" />
+            </div>
+            <div class="txt">
+            <a href="#"><h2><ecom:ProduitLibelle runat="server" /></h2></a>
+            <p class="desc-price"><ecom:ProduitPrix runat="server" FormatPrix="{0:0.00}€"  FormatSiMultiTarif="à partir de {0:0.00}€" /></p>
+            <p class="dispo">
+                <ecom:ProductPanel runat="server" AfficherSiNonDispo="false" InlineContent="true"><Content>
+                        <span class="dispo-ok"><i class="fa fa-square"></i>Dispo Web</span>
+                </Content></ecom:ProductPanel>
+                <ecom:ProductPanel runat="server" AfficherSiNonDispo="false" AssocierAuMagasin="true" InlineContent="true"><Content>
+                        <span class="dispo-ok"><i class="fa fa-square"></i>Dispo Mag</span>
+                </Content></ecom:ProductPanel>
+            </p>
+            </div>
+        </div>
+    </div>
+</Content>
+</ecom:ProductPanel>

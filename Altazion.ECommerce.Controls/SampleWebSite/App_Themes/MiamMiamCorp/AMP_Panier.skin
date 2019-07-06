@@ -1,0 +1,10 @@
+﻿<ecom:ProductPanel runat="server" SkinID="ProductItemAddedAMP">
+<Content>
+    <ecom:AmpProduitImage  LinkType="Aucun" runat="server" CssClass="lien-image" ImageType="Intermediaire" height="400" width="400" />
+    L'article <b>
+        <ecom:ProduitLibelle runat="server" /></b> a bien été ajouté à votre panier
+
+    <ecom:ContinuerAchatsLink PourPageAmp="true" runat="server">Continuer vos achats</ecom:ContinuerAchatsLink>
+    <a href='/exec/panier.htm'>Voir votre panier</a>
+</Content>
+</ecom:ProductPanel>

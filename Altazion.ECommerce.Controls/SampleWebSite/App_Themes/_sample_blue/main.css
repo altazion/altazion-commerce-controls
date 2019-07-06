@@ -1,0 +1,143 @@
+﻿body
+{
+	margin:0;
+	padding:0;
+	font-family:Arial, Tahoma, Verdana, Sans-Serif;
+	font-size:14px;
+}
+
+.Watermark
+{
+	color:gray;
+}
+
+TD
+{
+	
+}
+
+#FullContent
+{
+	width:740px;
+	position:relative;
+	left:50%;
+	margin-left:-370px;
+}
+
+#PageHeader
+{
+	background:#265787;
+	font-size:12px;
+	color:White;
+	margin-top : 5px;
+	height:30px;
+	vertical-align:middle;
+	padding:15px 10px 10px 10px;
+	font-weight:bold;
+}
+
+#PageHeader A
+{
+	font-weight:normal;
+	text-decoration:none;
+	color:White;
+}
+
+#PageHeader DIV 
+{
+	display:inline;
+}
+
+#PageHeader UL 
+{
+	display:inline;
+	list-style-type:none;
+	margin:0px 0px 0px 35px;
+}
+
+#PageHeader LI 
+{
+	display:inline;
+	width:100px;
+	margin:0px;
+}
+
+#PageHeader #Cart
+{
+	margin:0 35px 0 0;
+}
+
+#PageHeader #Cart .CartItemCount
+{
+	margin:0 5px 0 10px;
+}
+
+#PageHeader #Cart .CartAmount 
+{
+	margin:0 5px 0 10px;
+}
+#PageHeader #Cart .CartAmount A
+{
+	color:#FEC058!important;
+}
+
+
+#PageHeader #Account
+{
+	padding:0 35px 0 35px;
+	border-left:solid 1px white;
+	border-right:solid 1px white;
+}
+
+
+#PageHeader #SearchBox
+{
+	margin:0 0 0 35px;
+}
+
+#PageHeader #SearchBox INPUT
+{
+	vertical-align:middle;
+}
+
+#ShopHeader
+{
+	width:740px;
+	height:220px;
+	background-position:left top;
+	margin:5px 0 0 0;
+	background-image:url(bannierelogo.jpg);
+	padding:0;
+	text-align:right;
+}
+
+#ShopHeader SPAN, #ShopHeader SPAN TABLE, #ShopHeader SPAN TABLE TD, #ShopHeader SPAN TABLE TD IMG
+{
+	display:block;
+	float:right;
+	padding:0;
+	margin:0;
+}
+
+#ShopCategories
+{
+	background:#5576A2;
+	color:White;
+	margin-top : 5px;
+	height:40px;
+	vertical-align:middle;
+}
+
+#ShopCategories UL 
+{
+	display:inline;
+	list-style-type:none;
+	margin:0px 0px 0px 35px;
+}
+
+#ShopCategories LI 
+{
+	display:inline;
+	width:100px;
+	margin:0px;
+}

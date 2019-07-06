@@ -1,0 +1,25 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="NewsletterSubscribeHeader">
+<Content>
+<h3>Inscrivez vous à la newsletters</h3>
+<p>Obtenez les dernières news sur nos solutions : nouveautés, conseils, actualités, dans votre boîte e-mail une fois par mois.</p>
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="NewsletterUnsubscribeHeader">
+<Content>
+<h3>DéiInscrivez vous de la newsletter</h3>
+<p>Vous souhaitez ne plus recevoir nos newsletter ? Désinscrivez-vous ci-dessous (la mise à jour de votre statut peut prendre quelques heures).</p>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+        <asp:LinkButton runat="server" SkinID="NewsletterInscriptionOkButton" cssclass="button" />
+        <asp:LinkButton runat="server" SkinID="NewsletterDesinscriptionOkButton" cssclass="button" />
+
+
+    <ecom:ThemablePanelControl SkinID="NewsletterChangeEtatHeader" runat="server">
+        <Content>
+            <h3>
+                Vos abonnements newsletter</h3>
+        </Content>
+    </ecom:ThemablePanelControl>

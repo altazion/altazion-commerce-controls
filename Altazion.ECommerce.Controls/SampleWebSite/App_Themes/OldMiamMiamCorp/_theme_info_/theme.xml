@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Theme xmlns="http://simplement-e.com/ecommerce/theme/theme.xsd">
+  <Name>Miam-Miam Corp : thème de démonstration</Name>
+  <Description>Theme de démonstration</Description>
+  <Author>(c) CPoint - 2009 - 2010</Author>
+  <Thumbnail>thumb_1.png</Thumbnail>
+  <Thumbnail>thumb_2.png</Thumbnail>
+  <Banner background="Dark">banner.png</Banner>
+</Theme>

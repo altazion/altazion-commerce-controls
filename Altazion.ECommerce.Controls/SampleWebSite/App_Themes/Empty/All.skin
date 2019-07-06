@@ -1,0 +1,341 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="HeadThemablePanel" RenderWithNoTag="true">
+<Content>
+    <meta name="viewport" content="width=1000" />
+	<meta name="msapplication-starturl" content="./" />
+    <meta name="msapplication-TileImage" content="https://egestcom.blob.core.windows.net/simplementesite/logo_bleu_144.png" />
+    <meta name="msapplication-TileColor" content="#0171c2"/>
+	<meta name="application-name" content="simplement-e" />
+	<meta name="msapplication-tooltip" content="solutions pour le commerce intégré" />
+	<meta name="apple-mobile-web-app-title" content="simplement-e">
+
+
+</Content>
+</ecom:ThemablePanelControl>
+
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="BodyStartHeader" RenderWithNoTag="true">
+<Content>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+
+<ecom:ThemablePanelControl SkinID="PageHeaderPanelLogo" runat="server">
+<Content>
+<ecom:SiteHomePageLink runat="server"><ecom:SiteNom runat="server" /></ecom:SiteHomePageLink>
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl  SkinID="PageHeaderPanelCentre" runat="server">
+<Content>
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl SkinID="PageHeaderPanelFin" runat="server">
+<Content>
+    <div class="accesClient">
+        <asp:hyperlink runat="server" navigateurl="~/my/">
+            <span class="puce"><span>accès client</span></span>
+            <span class="title">Déja client ?</span>
+            <span class="action">connexion</span>
+        </asp:Hyperlink>
+    </div>
+
+    <div class="liensHaut">
+        <ul>
+        <li class="contact"><a href="/exec/contact.aspx">contactez nous</a></li>
+        <li class="demo"><a href="/exec/contact.aspx">demande de démo</a></li>
+        </ul>
+    </div>
+
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl SkinID="PageHeaderPanelBar" runat="server">
+<Content>
+    <div class="clear">
+    </div>
+   
+
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl SkinID="PageMainZoneHeaderPanel" runat="server">
+<Content>
+    <ecom:PanelPageSpecifique runat="server" VisibiliteParDefaut="true"
+        SaufPour="HomePage" CssClass="breadcrumb">
+
+    </ecom:PanelPageSpecifique>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="ClientsAllPagesHeader">
+<Content>
+    <div class="clear">      </div>     <div class="clientMenu">          <ul id="menu-header" class="menu">              <li class="clientMenu-item-home"><a href="/my">Votre compte</a></li>               <li class="clientMenu-item-devis"><a href="/my/isv/licences.htm">Votre gestion commerciale</a></li>               <li class="clientMenu-item-devis"><a href="/my/devis.htm">Vos devis</a></li>               <li class="clientMenu-item-devis last"><a href="/my/factures.htm">Vos factures</a></li>           </ul>      </div>  
+</Content>
+</ecom:ThemablePanelControl>
+
+ <ecom:ThemablePanelControl runat="server" SkinID="LicenceClientHomeMy">
+<Content>
+    <div class="isvLicenceHome">
+        <div class="isvLicenceHomeMain">
+            <p class="libelle"><ecom:IsvLicenceLibelle runat="server" /></p>
+            <p class="code"><span class="entete">Votre numéro de licence : </span><ecom:IsvLicenceCode runat="server" cssClass="value" /></p>
+            <p class="install">Mode : <ecom:SimplementETypeInstallation runat="server" /> / Expire le : <ecom:IsvLicenceDateFinValidite runat="server" />
+        </div>
+        <div class="isvLicenceHomeMore">
+            <ecom:IsvLicenceGarantiePanel runat="server" AfficheSiEncoreGaranti="false" CssClass="isvLicenceHomeHorsGarantie">
+                <ecom:IsvLicenceDateFinGarantie runat="server" TextSiExpire="Maintenance évolutive terminée" />
+            </ecom:IsvLicenceGarantiePanel>
+            <ecom:IsvLicenceGarantiePanel runat="server" AfficheSiPlusGaranti="false" CssClass="isvLicenceHomeEnGarantie">
+                Maintenance évolutive jusqu'au <ecom:IsvLicenceDateFinGarantie runat="server" />
+            </ecom:IsvLicenceGarantiePanel>
+
+            <div class="ivsLicenceHomeAddIns">
+                <a href="/my/isv/licences.htm">Plus de détails</a>
+            </div>
+        </div>
+
+        <div class="isvLicenceHomeDownload">
+            <ecom:IsvLicenceLienInstallationClient runat="server" Text="Installer un nouveau poste" />
+        </div>
+    </div>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="ClientsHomeHeader">
+            <Content>
+                       
+            </Content>
+        </ecom:ThemablePanelControl>    
+ <ecom:ThemablePanelControl runat="server" SkinID="ClientsHome">
+<Content>
+   <ecom:IsvListeLicencesClient runat="server" LicenceTemplateSkinId="LicenceClientHomeMy" />
+
+            <div class="clear">
+        </div>
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="HomePagePanel">
+<Content>
+
+    
+
+
+    <div class="zone1">
+        <div class="img">
+            <img src="https://egestcom.blob.core.windows.net/simplementesite/theme/images/home-haut-ecommerce.jpg" id="homeImgECom" />
+            <img src="https://egestcom.blob.core.windows.net/simplementesite/theme/images/home-haut-crm.jpg" id="homeImgCrm" style="display:none;" />
+            <img src="https://egestcom.blob.core.windows.net/simplementesite/theme/images/home-haut-pos.jpg" id="homeImgPos" style="display:none;" />
+        </div>
+
+        <div class="selector">
+            <a href="#" id="lnkZone1Choix3"></a>
+            <a href="#" id="lnkZone1Choix2" class="selected"></a>
+            <a href="#" id="lnkZone1Choix1"></a>
+            <div class="choisi">commerce en ligne</div>
+        </div>
+
+        <script type="text/javascript">
+            var autoAvance = -1;
+            
+            $("#lnkZone1Choix1").click( function() {
+                setAutoAvance("lnkZone1Choix2");
+                $(".zone1 .selector A").removeClass("selected");
+                $(this).addClass("selected");
+                $(".zone1 .img img").hide();
+                $("#homeImgPos").show();
+                $(".zone1 .selector .choisi").html("commerce traditionnel");
+                $(".zone1 .plus").attr("href", "/points-de-vente/");
+                return false;
+            });
+
+            $("#lnkZone1Choix3").click( function() {
+                setAutoAvance("lnkZone1Choix1");
+                $(".zone1 .selector A").removeClass("selected");
+                $(this).addClass("selected");
+                $(".zone1 .img img").hide();
+                $("#homeImgCrm").show();
+                $(".zone1 .selector .choisi").html("gestion commerciale");
+                $(".zone1 .plus").attr("href", "/gestion-commerciale/");
+                return false;
+            });
+
+            $("#lnkZone1Choix2").click( function() {
+                setAutoAvance("lnkZone1Choix3");
+                $(".zone1 .selector A").removeClass("selected");
+                $(this).addClass("selected");
+                $(".zone1 .img img").hide();
+                $("#homeImgECom").show();
+                $(".zone1 .selector .choisi").html("commerce en ligne");
+                $(".zone1 .plus").attr("href", "/e-commerce/");
+                return false;
+            });
+
+            autoAvance =  setAutoAvance("lnkZone1Choix3");
+
+            function setAutoAvance(element) {
+                if(autoAvance != undefined && autoAvance !=-1){
+                    clearTimeout(autoAvance);
+                    autoAvance = -1;
+                }
+
+                autoAvance = setTimeout(function() {
+                    $("#" + element).click();
+                }, 5000);
+            }
+        </script>
+
+        <a class="plus" href="/e-commerce/">
+        </a>
+
+    </div>
+
+
+    <div class="zone2">
+        <p>lancez vous <em>facilement</em> dans le e-commerce et gérez votre activité</p>
+    </div>
+
+    <div class="clear">
+    </div>
+
+    <div class="zone3">
+       <h2>Découvrir</h2>
+        <ul>
+            <li class="saas"><a href="/solutions.htm#licence">Mode autonome</a></li>
+            <li class="saas"><a href="/solutions.htm#saas">Mode hébergé</a></li>
+            <li class="solution"><a href="/decouverte.htm">Notre solution</a></li>
+            <li class="fonctionnalite"><a href="/fonctionnalites.htm">Fonctionnalités</a></li>
+            <li class="avantages"><a href="/avantages.htm">Avantages</a></li>
+
+        </ul>
+    </div>
+
+    <div class="zone4">
+       <h2>Actualités</h2>
+        <ul>
+            <li class="col1"></li>
+            <li class="col2"></li>
+            <li class="col3"></li>
+            <li class="col4"></li>
+            <li class="col5"></li>
+            <li class="col6"></li>
+        </ul>
+    </div>
+
+         <div class="clear">
+    </div>
+
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl SkinID="PageFooterPanel" runat="server">
+<Content>
+
+    <div class="pageContainer">
+    <div class="grid_3">
+
+    </div>
+    <div class="last_3">
+        <p class="entete">
+            Simplement-e</p>
+        <p class="slogan">
+            Solution intégrée de gestion du commerce online et offline, gestion-commerciale,
+            e-commerce, caisses, points de ventes et relation clients.
+        </p>
+        Retrouvez-nous sur 
+        <a target="_blank" href="http://twitter.com/simplement_e">twitter</a>,
+        <a rel="publisher" target="_blank" href="https://plus.google.com/117099240955680084563">Google+</a>,
+        <a target="_blank" href="http://tumblr.simplement-e.com">TumblR</a> et
+        <a target="_blank" href="http://www.facebook.com/pages/Simplement-E/191311167564543">Facebook</a> 
+    </div>
+</div>
+<div class="clear">
+</div>
+
+
+
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl SkinID="CustomPageBeforeContent" runat="server" >
+<Content>
+    <div class="rightColumn">
+        
+    </div>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl SkinID="CustomPageAfterContent" runat="server" >
+<Content>
+    <div class="clear">
+
+    </div>
+</Content>
+</ecom:ThemablePanelControl>
+
+<asp:Login runat="server" InstructionText="Saisissez vos identifants pour vous connecter à votre espace client"
+    InstructionTextStyle-CssClass="Instructions" TitleText="Vous êtes déjà client ?" TitleTextStyle-CssClass="Title"
+    TextBoxStyle-CssClass="TextBox" CheckBoxStyle-CssClass="CheckBox" UserNameLabelText="E-mail :"
+    PasswordRecoveryText="Mot de passe perdu ?" PasswordRecoveryUrl="~/Exec/PerteMotDePasse.aspx">
+</asp:Login>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="LoginBoxHeader">
+<Content>
+<ecom:FacebookLoginLink runat="server" ID="lnkFacebook">connexion par facebook</ecom:FacebookLoginLink>
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="LoginSimpleHeader">
+    <Content>
+    </Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="LoginBoxFooter">
+    <Content>
+<%--
+    <h4>Vous pouvez aussi vous connecter via :</h4>
+    <ecom:FacebookLoginLink runat="server" CssClass="facebookLogin">connexion par facebook</ecom:FacebookLoginLink>
+--%>
+    </Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl SkinID="LeftColumnPanel" runat="server">
+<Content>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="LoginCreationBoxHeader">
+<Content>
+</Content>
+</ecom:ThemablePanelControl>
+<ecom:ThemablePanelControl runat="server" SkinID="LoginCreationBox"><Content>
+<div class="LoginRight">
+<h3>Découvrez nos solutions </h3>
+<p>Vous n'êtes pas encore client ? Découvrez ce que nos solutions pour le commerce intégré peuvent faire pour vous :</p>
+        <div class="ciblesSimplementE">
+            <ul>
+<%--            <li class="cible1"><asp:Hyperlink runat="server" navigateurl="~/pour-ecommerce.htm"><span class="puce">&nbsp;</span><span class='title'>E-commerçants</span><span class="description">Vous souhaitez vous lancer dans la vente en ligne ou faire évoluer votre site e-commerce.</span></asp:Hyperlink></li>
+            <li class="cible2"><asp:Hyperlink runat="server" navigateurl="~/pour-pme.htm"><span class="puce"></span><span class='title'>Petites &amp; moyennes entreprises</span><span class="description">Vous êtes une PME ou une TPE et souhaitez gérer efficacement votre activité.</span></asp:Hyperlink></li>
+            <li class="cible3"><asp:Hyperlink runat="server" navigateurl="~/pour-commerce.htm"><span class="puce"></span><span class='title'>Commerces de détail</span><span class="description">Vous avez un ou plusieurs magasin(s) de détail et souhaitez une solution de gestion intégrée.</span></asp:Hyperlink></li>*
+--%>
+            <li class="cible1"><asp:Hyperlink runat="server" navigateurl="~/atouts/pour-ecommerce.htm"><span class="puce">&nbsp;</span><span class='title'>E-commerçants</span><span class="description">Vous souhaitez vous lancer dans la vente en ligne ou faire évoluer votre site e-commerce.</span></asp:Hyperlink></li>
+            <li class="cible2"><asp:Hyperlink runat="server" navigateurl="~/atouts/pour-pme.htm"><span class="puce"></span><span class='title'>Petites &amp; moyennes entreprises</span><span class="description">Vous êtes une PME ou une TPE et souhaitez gérer efficacement votre activité.</span></asp:Hyperlink></li>
+            <li class="cible3"><asp:Hyperlink runat="server" navigateurl="~/atouts/pour-commerce.htm"><span class="puce"></span><span class='title'>Commerces de détail</span><span class="description">Vous avez un ou plusieurs magasin(s) de détail et souhaitez une solution de gestion intégrée.</span></asp:Hyperlink></li>
+            </ul>
+        </div>
+</div>
+
+<div class="clear">
+</div>
+</Content></ecom:ThemablePanelControl>
+<ecom:ThemablePanelControl runat="server" SkinID="LoginCreationBoxFooter" />

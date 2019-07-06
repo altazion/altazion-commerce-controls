@@ -1,0 +1,67 @@
+﻿
+<ecom:ThemablePanelControl SkinID="AmpBodyStartHeader" runat="server">
+<Content>
+
+<amp-sidebar id='sidebar'
+      layout="nodisplay"
+      side="right">
+        <a on='tap:sidebar.close' class="close-sidebar" role="button">X</a>
+        <div class='main-menu'>
+            <ul>
+            <li><a href="/default.amp">Retour à l'accueil</a></li>
+            </ul>
+            <h4>PRODUITS</h4>
+            <ul>
+                <li><a href="/gourmandises/gourmandises/produits-maisons/page1.amp">Faits maison</a></li>
+                <li><a href="/gourmandises/gourmandises/confiseries/page1.amp">Confiseries</a></li>
+                <li><a href="/gourmandises/gourmandises/traiteur/page1.amp">Produits traiteur</a></li>
+            </ul>
+            <h4>COMPTE</h4>
+            <ul>
+                <li><a href="/my/">Votre compte</a></li>
+            </ul>
+            <h4>SERVICES</h4>
+            <ul>
+                <li><a href="/pages/livraison.amp">Livraison</a></li>
+                <li><a href="/pages/paiementsecurise.amp">Paiement sécurisé</a></li>
+            </ul>
+        </div>
+  </amp-sidebar>
+    <header id="top">
+        <div class=" logo">
+            <a href='/default.amp' role="button" title="Miam-Miam-Corp Menu"></a>
+        </div>
+
+        <ecom:MagasinAssociePanel runat="server" cssclass="Top-mag" CacherSiAssocieMagasin="true">
+<p>
+              <a href="/magasins/">
+                    <b>Choisissez votre</b><br>magasin préféré
+              </a>
+</p>
+        </ecom:MagasinAssociePanel>
+
+        <ecom:MagasinAssociePanel runat="server" cssclass="Top-mag" CacherSiNonAssocieMagasin="true">
+<p>
+            <ecom:MagasinAssocieLink  runat="server">
+                <b>VOTRE MAGASIN</b><br />
+                <ecom:MagasinAssocieVille runat="server" /></p>
+            </ecom:MagasinAssocieLink>
+</p>
+        </ecom:MagasinAssociePanel>
+        <div class="Top-panier">
+            <ecom:PanierResume AsLink="true" CSSclass="Top-panier-content" runat="server" Format="<p><b>Panier</b><br />{amount:0.00€}</p>" /> 
+        </div>
+
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" on='tap:sidebar.open'>
+                <i class='fa fa-bars'></i>
+              </button>
+        </div>
+                  
+      </nav>
+
+
+    </header>
+</Content>
+</ecom:ThemablePanelControl>

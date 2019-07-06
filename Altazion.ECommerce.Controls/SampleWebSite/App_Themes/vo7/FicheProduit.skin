@@ -1,0 +1,477 @@
+﻿<ecom:ProductPanel runat="server" SkinID="ProductItemInDetail" CssClassSiNonDispo="produit-non-dispo epuise" InlineContent="false">
+<Content>
+
+<asp:HiddenField runat="server" id="hdnLInstance" ClientIdMode="Static" />
+
+  <section class="main">
+      <div class="container-fluid">
+        <div class=" prod1"><!--debut produit top-->
+          <div  class="row prod1-box justify-content-md-center">
+            <div class="col-xl-7 col-lg-6 prod-img">
+              <div class="titre-mobile">
+                  <div class="bloc-txt">
+                     <!-- <div class="avis">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(2)</span>
+                      </div>-->
+                      <h1 class="libelle"> <ecom:ProduitLibelle runat="server" /></h1>
+                      <div class="prix ">
+                        <ecom:ProduitPrix runat="server" FormatPrix="{0:0.00}€" />
+                        <ecom:ProduitPrixHorsPromo runat="server" class="prix-promo"  FormatPrix="{0:0.00}€" />
+                      </div>
+                    </div>
+              </div>
+         
+              <div class="rupture">
+                <div>
+                <span class="tete">:(</span><span>Victime de son succès !</span></div>
+               </div> 
+
+
+              <div class="img-plus share new">
+                <!--Carousel Wrapper-->
+                <!--<img src="/app_themes/vo7/imgs/new-sport.png" alt="" class="new-img">-->
+              
+
+                <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+                  <!--Slides-->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active img-principale">
+                      
+                      <ecom:ProduitImage runat="server" class="d-block w-100" ImageType="Detail"  />
+                      <!--<a href="" class="share"><i class="fas fa-share-alt"></i></a>-->
+
+                    </div>
+                    
+<!--                    <div class="carousel-item">
+                      <img class="d-block w-100"  src="/app_themes/vo7/imgs/prod4.jpg"  alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100"  src="/app_themes/vo7/imgs/prod5.jpg"  alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100"  src="/app_themes/vo7/imgs/prod2.jpg"  alt="Fore slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100"  src="/app_themes/vo7/imgs/prod3.jpg"  alt="Fore slide">
+                    </div>
+-->
+                    <ecom:ProduitMultiImagesRepeater runat="server"><ItemTemplate>
+                        <div class="carousel-item">
+                        <asp:image runat="server" ImageUrl='<%# Eval("doa_url_document")%>' class="d-block w-100" />
+                        </div>
+                    </ItemTemplate></ecom:ProduitMultiImagesRepeater>
+
+
+                  </div>
+                  <!--/.Slides-->
+                  <!--Controls-->
+                  <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+				  <!--/.Controls-->
+				  <ol class="carousel-indicators mobile_images">
+                        <li class="mobile_image_clickable" data-target="#carousel-thumb" data-slide-to=''><ecom:ProduitImage runat="server" class="d-block w-100" ImageType="Detail"  /></li>
+                    <ecom:ProduitMultiImagesRepeater runat="server"><ItemTemplate>
+                        <li class="mobile_image_clickable" data-target="#carousel-thumb" data-slide-to=''><asp:image runat="server" ImageUrl='<%# Eval("doa_url_document")%>' class="d-block w-100 img-fluid" /></li>
+                    </ItemTemplate></ecom:ProduitMultiImagesRepeater>
+                   </ol>
+
+  <!--                <ol class="carousel-indicators">
+                    <li data-target="#carousel-thumb" data-slide-to="0" class="active"><img class="d-block w-100" src="/app_themes/vo7/imgs/prod1.jpg" class="img-fluid"></li>
+                    <li data-target="#carousel-thumb" data-slide-to="1"><img class="d-block w-100"  src="/app_themes/vo7/imgs/prod4.jpg"class="img-fluid"></li>
+                    <li data-target="#carousel-thumb" data-slide-to="2"><img class="d-block w-100"  src="/app_themes/vo7/imgs/prod5.jpg"class="img-fluid"></li>
+                    <li data-target="#carousel-thumb" data-slide-to="3"><img class="d-block w-100"  src="/app_themes/vo7/imgs/prod2.jpg"class="img-fluid"></li>
+                    <li data-target="#carousel-thumb" data-slide-to="4"><img class="d-block w-100"  src="/app_themes/vo7/imgs/prod3.jpg"class="img-fluid"></li>
+                  </ol>
+-->
+                </div>
+                <!--/.Carousel Wrapper-->
+              </div>
+            </div>
+            <div class="col-lg-4 col-xl-3 prod-desc px-0">
+              <div class="bloc-desc">
+                <div class="bloc-txt d-none d-lg-block">
+                  <!--<div class="avis">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(2)</span>
+                  </div>-->
+                  <h1 class="libelle"> <ecom:ProduitLibelle runat="server" /></h1>
+                  <div class="prix ">
+                    <ecom:ProduitPrix runat="server" FormatPrix="{0:0.00}€" />
+                    <ecom:ProduitPrixHorsPromo runat="server" class="prix-promo" FormatPrix="{0:0.00}€" />
+                  </div>
+                </div>
+                
+               
+
+<ecom:ProductPanel runat="server" AfficherSiGenerique="true"  AfficherSiNonGenerique="false" ><Content>
+<div class="pointure">
+                  <div class="titre">
+                    <h3>choisir une taille</h3>
+                   <!-- <a href="" class="guide-a">Guide des tailles</a> -->
+                  </div>
+                  <div class="filtre-taille" id="divChoixTaille">
+
+                    <ecom:ProduitInstancesRepeater runat="server" OrderBySize="true">
+                        <ItemTemplate>
+                            <ecom:ProductPanel class="instance-item" CssClassSiNonDispo="instance-item taille-non-dispo" runat="server"><Content>                                
+                                <button class="btn-taille" type="button"><ecom:ProduitInstanceDifferentiant1 runat="server" /></button>
+                            </Content></ecom:ProductPanel>
+                        </ItemTemplate>
+                    </ecom:ProduitInstancesRepeater>
+                  </div>
+                  <p class="pointure-non-dispo">
+                    <a href="">Votre taille n'est pas disponible ?</a>
+                  </p>
+                </div>
+ <a href='#divChoixTaille' class='btn btn-primary btn-achat' id='btnChoisirTaille' style='display:none'> <svg viewBox="-6 130.3 377.3 511.1">
+                    <g>
+                      <path d="M371.3,632.3l-30.6-343.6c-0.4-4.3-4-7.6-8.3-7.6H275v-58.5c0-50.9-41.4-92.3-92.3-92.3s-92.3,41.4-92.3,92.3v58.5H32.9c-4.3,0-7.9,3.3-8.3,7.6L-6,632.3c-0.2,2.3,0.6,4.7,2.2,6.4c1.6,1.7,3.8,2.7,6.2,2.7H363c2.3,0,4.6-1,6.2-2.7C370.8,636.9,371.5,634.6,371.3,632.3z M107.1,222.5c0-41.7,33.9-75.6,75.6-75.6c41.7,0,75.6,33.9,75.6,75.6v58.5H107.1V222.5zM11.5,624.6l29.1-326.9h49.8V317c0,4.6,3.7,8.4,8.4,8.4s8.4-3.7,8.4-8.4v-19.2h151.1V317c0,4.6,3.7,8.4,8.4,8.4s8.4-3.7,8.4-8.4v-19.2h49.8l29.1,326.9H11.5z"/>
+                      <polygon points="245.6,578.8 270.4,578.8 320.1,552.5 295.3,552.5  "/>
+                      <path d="M239.2,537.8v10.4h89.2c9.1-5.6,6.8-10.4-5.7-10.4H239.2z"/>
+                      <path d="M222.1,537.8h-97.3l-36,29.5l-35.7-29.2H31.5L76.9,574c0,0,5.4,4.6,11.8,4.6c6.1,0,12.5-5.3,12.5-5.3l30.9-25.1h81.5c2.7,0,2.7,1.5,2.7,1.5v18.1c0,1.5-2.6,1.5-2.6,1.5h-60.1c-2.5,0-2.6-1.6-2.6-1.6v-14.6h-16.4v19.4c0,3.4,4.8,6.2,10.8,6.2h76.7c10.8,0,10.8-6.9,10.8-6.9v-27.9C232.8,540.6,228,537.8,222.1,537.8z"/>
+                    </g>
+                  </svg>
+                  Choisissez votre taille</a>
+                <ecom:PanierAjouterScriptLink IdPourSelecteurReference="hdnLInstance" runat="server" ClientIdMode='Static' id='btnAjoutPanier'
+                            CacherSiNonDispo="false" MultiVersionCssClass="btn btn-primary btn-achat"  style='display:none'
+                            class="btn btn-75 btn-md-55">
+                
+                  <svg viewBox="-6 130.3 377.3 511.1">
+                    <g>
+                      <path d="M371.3,632.3l-30.6-343.6c-0.4-4.3-4-7.6-8.3-7.6H275v-58.5c0-50.9-41.4-92.3-92.3-92.3s-92.3,41.4-92.3,92.3v58.5H32.9c-4.3,0-7.9,3.3-8.3,7.6L-6,632.3c-0.2,2.3,0.6,4.7,2.2,6.4c1.6,1.7,3.8,2.7,6.2,2.7H363c2.3,0,4.6-1,6.2-2.7C370.8,636.9,371.5,634.6,371.3,632.3z M107.1,222.5c0-41.7,33.9-75.6,75.6-75.6c41.7,0,75.6,33.9,75.6,75.6v58.5H107.1V222.5zM11.5,624.6l29.1-326.9h49.8V317c0,4.6,3.7,8.4,8.4,8.4s8.4-3.7,8.4-8.4v-19.2h151.1V317c0,4.6,3.7,8.4,8.4,8.4s8.4-3.7,8.4-8.4v-19.2h49.8l29.1,326.9H11.5z"/>
+                      <polygon points="245.6,578.8 270.4,578.8 320.1,552.5 295.3,552.5  "/>
+                      <path d="M239.2,537.8v10.4h89.2c9.1-5.6,6.8-10.4-5.7-10.4H239.2z"/>
+                      <path d="M222.1,537.8h-97.3l-36,29.5l-35.7-29.2H31.5L76.9,574c0,0,5.4,4.6,11.8,4.6c6.1,0,12.5-5.3,12.5-5.3l30.9-25.1h81.5c2.7,0,2.7,1.5,2.7,1.5v18.1c0,1.5-2.6,1.5-2.6,1.5h-60.1c-2.5,0-2.6-1.6-2.6-1.6v-14.6h-16.4v19.4c0,3.4,4.8,6.2,10.8,6.2h76.7c10.8,0,10.8-6.9,10.8-6.9v-27.9C232.8,540.6,228,537.8,222.1,537.8z"/>
+                    </g>
+                  </svg>
+                  ajoutez au panier
+                </ecom:PanierAjouterScriptLink>
+</Content></ecom:ProductPanel>
+
+<ecom:ProductPanel runat="server" AfficherSiNonGenerique="true" AfficherSiGenerique="false"><Content>
+                <ecom:PanierAjouterScriptLink runat="server" ClientIdMode='Static' id='btnAjoutPanier'
+                            CacherSiNonDispo="false" MultiVersionCssClass="btn btn-primary btn-achat"  
+                            class="btn btn-75 btn-md-55">
+                
+                  <svg viewBox="-6 130.3 377.3 511.1">
+                    <g>
+                      <path d="M371.3,632.3l-30.6-343.6c-0.4-4.3-4-7.6-8.3-7.6H275v-58.5c0-50.9-41.4-92.3-92.3-92.3s-92.3,41.4-92.3,92.3v58.5H32.9c-4.3,0-7.9,3.3-8.3,7.6L-6,632.3c-0.2,2.3,0.6,4.7,2.2,6.4c1.6,1.7,3.8,2.7,6.2,2.7H363c2.3,0,4.6-1,6.2-2.7C370.8,636.9,371.5,634.6,371.3,632.3z M107.1,222.5c0-41.7,33.9-75.6,75.6-75.6c41.7,0,75.6,33.9,75.6,75.6v58.5H107.1V222.5zM11.5,624.6l29.1-326.9h49.8V317c0,4.6,3.7,8.4,8.4,8.4s8.4-3.7,8.4-8.4v-19.2h151.1V317c0,4.6,3.7,8.4,8.4,8.4s8.4-3.7,8.4-8.4v-19.2h49.8l29.1,326.9H11.5z"/>
+                      <polygon points="245.6,578.8 270.4,578.8 320.1,552.5 295.3,552.5  "/>
+                      <path d="M239.2,537.8v10.4h89.2c9.1-5.6,6.8-10.4-5.7-10.4H239.2z"/>
+                      <path d="M222.1,537.8h-97.3l-36,29.5l-35.7-29.2H31.5L76.9,574c0,0,5.4,4.6,11.8,4.6c6.1,0,12.5-5.3,12.5-5.3l30.9-25.1h81.5c2.7,0,2.7,1.5,2.7,1.5v18.1c0,1.5-2.6,1.5-2.6,1.5h-60.1c-2.5,0-2.6-1.6-2.6-1.6v-14.6h-16.4v19.4c0,3.4,4.8,6.2,10.8,6.2h76.7c10.8,0,10.8-6.9,10.8-6.9v-27.9C232.8,540.6,228,537.8,222.1,537.8z"/>
+                    </g>
+                  </svg>
+                  ajoutez au panier
+                </ecom:PanierAjouterScriptLink>
+</Content></ecom:ProductPanel>
+
+              </div>
+              
+              <ecom:CampagnePublicite  runat="server" TypeOperation="RASSUR"  />
+
+      <div class="couleur bloc-desc-2">
+                <h2>
+                  <a href="#couleur" class="prod-a collapsed" data-toggle="collapse">Couleurs disponibles <i class="fas fa-caret-down"></i></a>
+                </h2>
+                <div id="couleur" class="collapse bloc-desc-3">
+                  <div class="bloc-desc-3-content">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-3  col-4 px-2 couleur-item">
+                        <a href="#"  class="active"><ecom:ProduitImage runat="server" class="img-fluid" ImageType="Intermediaire"  /><ecom:ProduitLibelle runat="server" /></a>
+                      </div>
+<ecom:ProduitsAssociesRepeater runat="server" typeAssociation="variation">
+    <ItemTemplate>
+                      <div class="col-lg-4 col-md-3  col-4 px-2 couleur-item">
+                        <ecom:ProduitAssocieLink runat="server"><ecom:ProduitAssocieImage runat="server" ImageType="Intermediaire" cssclass="img-fluid" /><ecom:ProduitAssocieLibelle runat="server" /></ecom:ProduitAssocieLink>
+                      </div>
+</ItemTemplate>
+</ecom:ProduitsAssociesRepeater>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+
+
+         <div id="accordion">
+                <div class="bloc-desc-2 descriptif">
+                  <h2>
+                    <a class="prod-a" data-toggle="collapse" href="#collapseOne">description <i class="fas fa-caret-down"></i></a>
+                  </h2>
+                  <div id="collapseOne" class="collapse show bloc-desc-3" data-parent="#accordion">
+                    <div class="bloc-desc-3-content">
+                      <p>
+                        <ecom:ProduitDescriptif runat="server" />
+                      </p>
+                    <ul>
+                        <ecom:ProduitAttributRepeater runat="server">
+                        <ItemTemplate>
+                            <li>
+                                <ecom:ProduitAttributRepeaterItemField runat="server" cssclass="libelle" />
+                                <ecom:ProduitAttributRepeaterItemField runat="server" cssclass="valeur"  DataKind="valeur" />
+                            </li>
+                        </ItemTemplate>
+                        </ecom:ProduitAttributRepeater>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--<div class="bloc-desc-2 avis-client">
+                  <h2>
+                    <a class="prod-a collapsed" data-toggle="collapse" href="#collapseTrois">
+                      <span>
+                        avis client
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(2)</span>
+                      </span>
+                      <i class="fas fa-caret-down"></i>
+                    </a>
+                  </h2>
+                  <div id="collapseTrois" class="collapse bloc-desc-3 " data-parent="#accordion">
+                    <div class="bloc-desc-3-content ">
+                      <div class="bloc-avis">
+                        <div class="titre">
+                          <div class="etoile">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="name">Par Lorenzo</span>
+                          </div>
+                          <span class="time">Le 13 Fév. à 19:56</span>
+                        </div>
+                        <div class="avis">
+                          <p>
+                            «Ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te»
+                          </p>
+                        </div>
+                      </div>
+                      <div class="bloc-avis">
+                        <div class="titre">
+                          <div class="etoile">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="name">Par Lorenzo</span>
+                          </div>
+                          <span class="time">Le 13 Fév. à 19:56</span>
+                        </div>
+                        <div class="avis">
+                          <p>
+                            «Ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te»
+                          </p>
+                        </div>
+                      </div>
+                      <div class="bloc-avis">
+                        <div class="titre">
+                          <div class="etoile">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="name">Par Lorenzo</span>
+                          </div>
+                          <span class="time">Le 13 Fév. à 19:56</span>
+                        </div>
+                        <div class="avis">
+                          <p>
+                            «Ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te»
+                          </p>
+                        </div>
+                      </div>
+                      <div class="bloc-avis">
+                        <div class="titre">
+                          <div class="etoile">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="name">Par Lorenzo</span>
+                          </div>
+                          <span class="time">Le 13 Fév. à 19:56</span>
+                        </div>
+                        <div class="avis">
+                          <p>
+                            «Ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te»
+                          </p>
+                        </div>
+                      </div>
+                      <div class="bloc-btn">
+                        <button class="btn btn-45">Voir + d'avis</button>
+                        <button class="btn btn-45 btn-noir">rédiger un avis</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+-->
+
+                <div class="bloc-desc-2 descriptif">
+                  <h2>
+                    <a class="prod-a collapsed" data-toggle="collapse" href="#collapseFore">Dimension & poids <i class="fas fa-caret-down"></i></a>
+                  </h2>
+                  <div id="collapseFore" class="collapse bloc-desc-3" data-parent="#accordion">
+                    <div class="bloc-desc-3-content">
+                      <ul>
+                        <li>
+                          <span class="libelle">Poids</span>
+                            <ecom:ProduitDimensions DimensionAffichee="PoidsEnKg" runat="server" cssclass="valeur" Format="{0:0} kg" />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+<!--
+                <div class="bloc-desc-2 descriptif">
+                  <h2>
+                    <a class="prod-a collapsed" data-toggle="collapse" href="#collapseFive">Livraison et retours gratuits <i class="fas fa-caret-down"></i></a>
+                  </h2>
+                  <div id="collapseFive" class="collapse bloc-desc-3" data-parent="#accordion">
+                    <div class="bloc-desc-3-content">
+                      <p>
+                        Lorem ispum.
+                      </p>
+                      <ul>
+                        <li>
+                          <span class="libelle">Matière intérieure</span>
+                          <span class="valeur">Tissu</span>
+                        </li>
+                        <li>
+                          <span class="libelle">Matière ecterieure</span>
+                          <span class="valeur">Cuir</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--fin  produit top-->
+        <!--début suggestion-->
+
+<div class="prod2">
+    <div class="row prod-suggere list-prod">
+        <div class="col-md-12 titre">
+            <h2>vous aimerez aussi</h2>
+        </div>
+        <div class="col-md-12">
+            <ecom:produitsassociesrepeater runat="server" typeassociation="CROSS SELL">
+                <ItemTemplate>
+                    <div class="prod ">
+                        <div class="bloc-img">
+                            <ecom:ProduitAssocieLink runat="server"><ecom:ProduitAssocieImage runat="server" ImageType="Intermediaire" cssclass="img-fluid" /></ecom:ProduitAssocieLink>
+                        </div>
+                        <div class="bloc-txt">
+                            <div class="avis"></div>
+                            <div class="libelle">
+                            <ecom:ProduitAssocieLink runat="server"><ecom:ProduitAssocieLibelle runat="server" /></ecom:ProduitAssocieLibelle></ecom:ProduitAssocieLink>
+                            </div>
+                            <div class="prix ">
+<ecom:ProduitAssocieLink runat="server"><ecom:ProduitAssociePrix runat="server"></ecom:ProduitAssociePrix></ecom:ProduitAssocieLink>
+							</div>
+                        </div>
+                    </div>
+                </ItemTemplate>
+            </ecom:produitsassociesrepeater>
+        </div>
+    </div>
+</div>
+
+
+<!--fin suggestion-->
+<!--
+        <div class="row Marque-fr justify-content-end">
+          <div class="Marque-fr-1 col-lg-5">
+            <div class="bloc-txt">
+              <h2 class="trait">Marque Française</h2>
+              <p>
+                <h5>
+                  Lorem ipsum dolor sit amet
+                </h5>
+                Onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniaLorem ipsum dolor sit amet, consectetur adipiscing .
+              </p>
+              <p>
+                Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius.
+              </p>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+-->
+        <!--fin encart Marque fr-->
+      </div>
+    </div>
+</section>
+
+<style>
+.mobile_images {
+z-index: 1;
+}
+</style>
+<ecom:ProductPanel runat="server" AfficherSiGenerique="true"  AfficherSiNonGenerique="false"><Content>
+<script type="text/javascript">
+if ($('.mobile_image_clickable').length > 0){
+    $('.mobile_image_clickable').each(function(index){
+        if (index == 0)
+            $(this).addClass("active");
+        $(this).attr("data-slide-to", index)
+    }); 
+}
+    $(".instance-item button").click(function(e) {
+        $(".instance-item button").removeClass("selected");
+        var itm = $(this);
+        itm.addClass("selected");
+        var itmInfo = itm.closest("[data-e-instance-guid]");
+        if(itmInfo != null) {
+            var laref = itmInfo.attr("data-e-instance-ref");
+            var leguid = itmInfo.attr("data-e-instance-guid");
+            $("#hdnLInstance").val(laref);
+            $("#hdnLInstance").change();
+        }
+    });
+
+    $("#hdnLInstance").change(function(e) {
+        var itm = $(this);
+        var val = itm.val();
+        if(val==null || val==""){
+            $("#btnAjoutPanier").hide();
+            $("#btnChoisirTaille").show();
+        }
+        else {
+            $("#btnChoisirTaille").hide();
+            $("#btnAjoutPanier").show();
+        }
+    });
+
+    $("#hdnLInstance").change();
+
+</script>
+</Content></ecom:ProductPanel>
+</Content>
+</ecom:ProductPanel>

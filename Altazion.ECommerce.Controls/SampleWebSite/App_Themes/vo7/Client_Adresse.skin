@@ -1,0 +1,141 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="CarnetAdressesFacturationHeader">
+<Content>
+    <section class="main">
+        <div class="container-fluid">
+            <div class="row compte-row justify-content-center">
+                <div class="container">
+                    <div class="row">
+
+                      <div class="col-md-4 col-lg-3 px-0
+                      menu-compte compte-bloc-2">
+                        <ul>
+                            <li >
+                                <a href="/my/">Accueil mon compte</a>
+                            </li>
+                            <li>
+                                <a href="/my/compte.htm">Mon mot de passe</a>
+                            </li>
+                            <li  class="active">
+                                <a href="/my/adresses.htm">Mon carnet d’adresses</a>
+                            </li>
+                            <li>
+                                <a href="/my/commandes.aspx">
+                                Mes commandes</a>
+                            </li>
+                            <li><a href="/newsletter.aspx">Newsletter</a></li>
+
+                            <li><ecom:LoginStatus runat="server" LogoutPageUrl="~/" LogoutText="se deconnecter" LogoutAction="Redirect" /></li>
+                        </ul>
+                      </div>
+                        <div class="col-md-8 col-lg-9 compte-bloc-1 px-0">
+                            <div class="titre"><a href="#" class="accueil-home d-md-none"><i class="fas fa-arrow-left"></i></a>
+                                <h1>carnet d'adresse</h1>
+                            </div>
+                            
+<div class="col-md-6">
+<div class="ad-contain">
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="ClientsAdressesContentFooter">
+<Content>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</Content>
+</ecom:ThemablePanelControl>
+
+                <ecom:ThemablePanelControl runat="server" SkinID="CarnetAdressesLivraisonHeader">
+                    <Content>
+                    </div>
+                      </div>
+                        <div class="col-md-6">
+                            <div class="ad-contain">
+                    </Content>
+                </ecom:ThemablePanelControl>
+
+
+                <ecom:ThemablePanelControl runat="server" SkinID="CarnetAdressesLivraisonFooter">
+                    <Content>
+                    </div>
+                      </div>
+                       
+                    </Content>
+                </ecom:ThemablePanelControl>
+
+ <ecom:CarnetAdressesFacturationRepeater  runat="server"
+                    SkinID="CarnetAdressesFacturation" >
+                    <ItemTemplate>
+                                <div class="ad-bloc-box">
+                                    <div class="ad-bloc">
+                                        <div class="adresse1 adresse1-choisi">
+                                            <div class="ad-choix">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <asp:Checkbox runat="server" type="checkbox" Checked='<%#Eval("adr_par_defaut")%>'  style="point-events:none" /><i class="helper"></i>Mon adresse de facturation
+                                                    </label>
+                                                </div>
+                                                <div class="ad-detail">
+                                                    <p><span class="libelle"><asp:Literal runat="server" Text='<%#Eval("adr_nom")%>' /></span><br />
+                                                        <asp:Literal runat="server" Text='<%#Eval("adr_adresse")%>' /><br />
+                                    <asp:Literal runat="server" Text='<%#Eval("adr_cp")%>' />
+                                    <asp:Literal runat="server" Text='<%#Eval("adr_ville")%>' /><br />
+                                                        <asp:Literal  runat="server" Text='<%#Eval("adr_tel")%>' />
+<asp:Literal runat="server" Text='<%#Eval("adr_mobile")%>' />
+   </p> 
+                                                </div>
+                                            </div>
+                                            <div class="ad-action">
+                                                <!--<a  href="#" data-toggle="modal" data-target="#modif-adresse" >Modifier</a>-->
+                                                    <ecom:AdresseSuppressionLink CommandName="Supprimer"
+                                                        AdresseGuid='<%#Eval("adr_guid")%>' runat="server"><span>Supprimer</span>
+                                                    </ecom:AdresseSuppressionLink>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </ItemTemplate>
+                </ecom:CarnetAdressesFacturationRepeater>
+
+ <ecom:CarnetAdressesLivraisonRepeater  runat="server"
+                    SkinID="CarnetAdressesLivraison" >
+                    <ItemTemplate>
+                                <div class="ad-bloc-box">
+                                    <div class="ad-bloc">
+                                        <div class="adresse1 adresse1-choisi">
+                                            <div class="ad-choix">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <asp:Checkbox runat="server" type="checkbox" Checked='<%#Eval("adr_par_defaut")%>' style="point-events:none" /><i class="helper"></i>Mon adresse de Livraison
+                                                    </label>
+                                                </div>
+                                                <div class="ad-detail">
+                                                    <p><span class="libelle"><asp:Literal runat="server" Text='<%#Eval("adr_nom")%>' /></span><br />
+                                                        <asp:Literal runat="server" Text='<%#Eval("adr_adresse")%>' /><br />
+                                    <asp:Literal runat="server" Text='<%#Eval("adr_cp")%>' />
+                                    <asp:Literal runat="server" Text='<%#Eval("adr_ville")%>' /><br />
+                                                        <asp:Literal  runat="server" Text='<%#Eval("adr_tel")%>' />
+<asp:Literal runat="server" Text='<%#Eval("adr_mobile")%>' />
+   </p> 
+                                                </div>
+                                            </div>
+                                            <div class="ad-action">
+                                                <!--<a  href="#" data-toggle="modal" data-target="#modif-adresse" >Modifier</a>-->
+                                                    <ecom:AdresseSuppressionLink CommandName="Supprimer"
+                                                        AdresseGuid='<%#Eval("adr_guid")%>' runat="server"><span>Supprimer</span>
+                                                    </ecom:AdresseSuppressionLink>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </ItemTemplate>
+                </ecom:CarnetAdressesLivraisonRepeater>

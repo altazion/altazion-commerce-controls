@@ -1,0 +1,142 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="HomePagePanel" >
+<Content>
+
+    <div class="content">
+      
+      <ecom:CampagnePublicite runat="server" TypeOperation="CARROUS"  />
+
+      <section class="main">
+        <div class="produit-home ">
+          <div class="container">
+            	<h1><strong><ecom:SiteNom runat="server" /></strong> : <ecom:SiteSlogan runat="server" /></h1>
+              <div class="huile">
+                <h2 class="row px-2" id="vitrineHuileOlive"><ecom:VitrineLibelle runat="server" CodeVitrine="HOMEHUILES" /></h2>
+                <div class="row">
+
+                    <ecom:VitrinesListeProduits ID="huiles" runat="server" CodeVitrine="HOMEHUILES"
+                        ProductTemplateSkinID="ProduitSurLaHome"
+                        NombreArticles="10" TypeAffichage="Flux" />
+  
+                </div>
+              </div>
+              <div class="huile">
+                <h2 class="row px-2" id="vitrineTuron"><ecom:VitrineLibelle runat="server" CodeVitrine="HOMETURON" /></h2>
+                <div class="row">
+                   
+                                     <ecom:VitrinesListeProduits ID="touron" runat="server" CodeVitrine="HOMETURON"
+                        ProductTemplateSkinID="ProduitSurLaHome"
+                        NombreArticles="10" TypeAffichage="Flux" />
+                </div>
+              </div>
+              <div class="huile">
+                <h2 class="row px-2" id="vitrinePaprika"><ecom:VitrineLibelle runat="server" CodeVitrine="HOMEPAPRIKA" /></h2>
+                <div class="row">
+                   
+                                     <ecom:VitrinesListeProduits ID="paprika" runat="server" CodeVitrine="HOMEPAPRIKA"
+                        ProductTemplateSkinID="ProduitSurLaHome"
+                        NombreArticles="10" TypeAffichage="Flux" />
+                </div>
+              </div>
+              <div class="safran">
+                <h2 class="row px-2" id="vitrineSafran"><ecom:VitrineLibelle runat="server" CodeVitrine="HOMESAFRAN" /></h2>
+                <div class="row">
+                   
+                                     <ecom:VitrinesListeProduits ID="safran" runat="server" CodeVitrine="HOMESAFRAN"
+                        ProductTemplateSkinID="ProduitSurLaHome"
+                        NombreArticles="10" TypeAffichage="Flux" />
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-seo">
+        <div class="container">
+          <div class="row seo">
+            <div class="col-md-6 seo-box px-0">
+              <div class="seo1">
+                <img class="seo-logo img-fluid" src="/App_themes/LaPlaza/img/LaPlaza_logo-blanc.png" alt="La Plaza" />
+                <ecom:SeoContent runat="server" CodeEmplacement="DESCPLAZA" />
+              </div>
+            </div>
+            <div class="col-md-6 seo-box px-0">
+              <div class="seo2">
+                <ecom:SeoContent runat="server" CodeEmplacement="DESCPLAZACOMPL" />
+              </div>
+            </div>
+          </div>
+          <div class="row footer-1">
+              <div class="col-md-4 news footer-1-seo">
+                <h4 class="titre">
+                    <ecom:SeoContentTitle runat="server" CodeEmplacement="DESCPLAZANWL" DefaultContent="Newsletter" />
+                </h4>
+                <p>                
+                    <ecom:SeoContent runat="server" CodeEmplacement="DESCPLAZANWL" />
+                </p>
+
+                <div class="form-60  bt">
+                    <input type="text" id='txtInscriptionNL' placeholder="votre e-mail">
+                    <a href="#" id="lnkInscriptionNL" class="bt-rond">GO</a>
+                </div>
+<%--                <div class="form-50  bt">
+                    <input type="text" placeholder="Rechercher">
+                    <a href="" class="bt-rond">INSCRIPTION</a>
+                </div>
+                <div class="form-40  bt">
+                    <input type="text" placeholder="Rechercher">                    <a href="" class="bt-rond">GO</a>
+
+                </div>
+                <div class="form-60  ">
+                    <input type="text" placeholder="Rechercher">
+                </div>
+                <div class="form-50  ">
+                    <input type="text" placeholder="Rechercher">
+                </div>
+                <div class="form-40  ">
+                    <input type="text" placeholder="Rechercher">
+                </div>
+--%>
+              </div>
+              <div class="col-md-4 reseaux footer-1-seo">
+                <h4 class="titre">
+                  Suivez-nous
+                </h4>
+                <div class="lien-reseaux">
+                  <a href="https://www.facebook.com/LaPlaza.fr/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/laplaza.fr" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+              </div>
+              <div class="col-md-4 footer-1-seo huile">
+                <h4 class="titre">
+                    <ecom:SeoContentTitle runat="server" CodeEmplacement="DESCPLAZAOLIVE" DefaultContent="Huile d’olive d’Espagne" />
+                </h4>
+                <p><ecom:SeoContent runat="server" CodeEmplacement="DESCPLAZAOLIVE" /><br />
+                
+                    </p>
+              </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+<script async>
+    $("#txtInscriptionNL").keypress(function(e) {
+        if(e.which==13) {
+            $("#lnkInscriptionNL").click();
+            e.preventDefault();
+            return false;                                    
+        }                                    
+    });
+
+    $("#lnkInscriptionNL").click(function(e) {
+        $("#lnkInscriptionNL").attr("disabled","disabled");
+        var txt = $("#txtInscriptionNL").val();
+        document.location = "/newsletter.htm?action=abonner&email=" + encodeURIComponent(txt);
+        e.preventDefault();
+        return false;
+    });
+</script>
+
+
+</Content>
+</ecom:ThemablePanelControl>

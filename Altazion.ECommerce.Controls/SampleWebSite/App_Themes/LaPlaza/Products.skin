@@ -1,0 +1,20 @@
+﻿<ecom:ProductPanel runat="server"  SkinID="ProduitSurLaHome" InlineContent="true">
+<Content>
+<div class="col-md-4 px-2">
+                      <div class="bloc-prod">
+                        <ecom:ProduitLink runat="server" cssclass="lien-prod"></ecom:ProduitLink>
+                        <div class="avis"></div>
+                        <div class="bloc-image">
+                          <ecom:ProduitImage runat="server" cssclass="img-fluid" TypeImage="Petite" />
+                        </div>
+                        <div class="bloc-txt">
+                          <h3><ecom:ProduitLibelle runat="server" /></h3>
+                          <%--<p class="desc">Existe en 70 cl, 5 litres...</p>--%>
+                          <p class="price"><span> à partir de</span>
+<ecom:ProduitPrix runat="server" class="price-detail" FormatPrix="{0:0.00}€" /></p>
+                        </div>
+                      </div>
+                    </div>
+
+</Content>
+</ecom:ProductPanel>

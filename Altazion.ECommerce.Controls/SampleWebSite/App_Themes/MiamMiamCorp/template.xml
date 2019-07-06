@@ -1,0 +1,12 @@
+<Template mode="exlusive" rjs_id="2" site_code="MMC">
+  <Description>
+    <Libelle>Le thème de miam-miam</Libelle>
+    <Image></Image>
+  </Description>
+
+  <AnimationCommerciale>
+    <Publicite code="HOMEPAGE" libelle="Publicité home-page" mode="Template" template_id="{E2B8882E-9DF9-478A-9A40-BA16E6485EFF}" />
+    <Publicite code="FOOTER" libelle="1er bloc dans le footer" mode="HtmlContent" />
+    <Publicite code="PANIER" libelle="Publicité dans le panier" mode="ImageLink" />
+  </AnimationCommerciale>
+</Template>

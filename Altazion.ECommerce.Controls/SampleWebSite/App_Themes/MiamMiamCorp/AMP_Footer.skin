@@ -1,0 +1,10 @@
+﻿
+<ecom:ThemablePanelControl SkinID="AmpBodyFooter" runat="server">
+<Content>
+      <div class="col-md-3  footer-contact">
+        <h6>Contactez nous</h6>
+        <a href="/contact.htm" class="footer-mail"><i class="fa fa-envelope"></i><span class="hidden-sm hidden-xs">Par mail</span></a>
+        <a href="/contact.htm" class="footer-contact2"><i class="fa fa-phone"></i><span class="hidden-sm hidden-xs">Par téléphone</span></a>
+      </div>
+</Content>
+</ecom:ThemablePanelControl>

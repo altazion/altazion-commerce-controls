@@ -1,0 +1,17 @@
+﻿<!--
+    You can find existing browser definitions at
+    <windir>\Microsoft.NET\Framework\<ver>\CONFIG\Browsers
+-->
+<browsers>
+  <gateway id="BlackBerry" parentID="Safari">
+    <identification>
+      <userAgent match="BlackBerry" />
+    </identification>
+
+    <capabilities>
+      <capability name="mobileDeviceModel"               value="BlackBerry" />
+      <capability name="isMobileDevice"                  value="true" />
+      <capability name="canInitiateVoiceCall"            value="true" />
+    </capabilities>
+  </gateway>
+</browsers>

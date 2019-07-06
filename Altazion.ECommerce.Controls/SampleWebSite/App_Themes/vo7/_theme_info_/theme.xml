@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Theme xmlns="http://simplement-e.com/ecommerce/theme/theme.xsd">
+  <Name>La Plaza</Name>
+  <Description>Thème pour VO7</Description>
+  <Author>(c) Creo Ignem - 2018</Author>
+
+  <Publicites>
+    
+    <Publicite code="CAHMCHIC" libelle="Carrousel Home StreetChic"
+                 description="Carrousel principal sur home-univers Chic"
+                 classeClient=""
+                 classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationHtmlPublicite">
+      <Composant>
+        <Entete>
+          <![CDATA[
+       
+        <div class="container-fluid">
+          <div class="row"><!--debut caroussel-->
+            <div class="col-md-12 carousel-container">
+                <div id="slider" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+            
+          ]]>
+        </Entete>
+        <Pied>
+          <![CDATA[  
+</div>
+                                  <!-- Left and right controls -->
+                        <a class="carousel-control-prev " href="#slider" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#slider" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+            </div>
+          </div><!--fin caroussel-->
+          </div>
+          
+ <script type="text/javascript">
+          $("#slider").find(".carousel-item").each(function(idx) {
+              var itm = $(this);
+              if(idx==0) {
+                  itm.addClass("active");
+              }
+              else {
+                  itm.removeClass("active");
+              } 
+          });
+
+      $(document).ready(function(){
+          $('#slider').carousel({
+            interval: 4000
+          });
+        });
+
+      </script>                         
+          
+]]>
+        </Pied>
+        <Contenu kind="HTML" code="MAIN" libelle="Publicité">
+          <![CDATA[
+ 
+<div class="carousel-item">
+  <div class="caroussel-img">
+    <img src="{{ImageUrl}}" alt="" class="img-fluid">
+  </div>
+  <div class="caroussel-txt">
+    <div class="caroussel-position">
+      <p>{{Description}}</p>
+      <h1>{{Title}}</h1>
+      <a href="{{Url}}" class="btn btn-primary  btn-75 btn-sm-55">{{Call_Action}}</a>
+    </div>
+  </div>                             
+</div>
+        ]]>
+        </Contenu>
+
+        <Contenu kind="HTML" code="NOTEXT" libelle="Sans Texte">
+          <![CDATA[
+ 
+<div class="carousel-item no-text">
+  <div class="caroussel-img">
+    <img src="{{ImageUrl}}" alt="" class="img-fluid">
+  </div>
+  <div class="caroussel-txt">
+    <div class="caroussel-position">
+      <p>{{Description}}</p>
+      <h1>{{Title}}</h1>
+      <a href="{{Url}}" class="btn btn-primary  btn-75 btn-sm-55">{{Call_Action}}</a>
+    </div>
+  </div>                             
+</div>
+        ]]>
+        </Contenu>
+        
+        <Variable code="Title" kind="HtmlLine" />
+        <Variable code="Call_Action" kind="HtmlLine" />
+        <Variable code="Description" kind="HtmlBlock" />
+        <Variable code="ImageUrl" kind="ImageUrl" />
+        <Variable code="Url" kind="SearchUrl" />
+      </Composant>
+    </Publicite>
+
+    <Publicite code="MEA1CHIC" libelle="Mise en avant 1 StreetChic"
+             description="Première mise en avant sur home-univers"
+             classeClient=""
+             classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationHtmlPublicite">
+      <Composant>
+        <Entete>
+          <![CDATA[
+       
+        <div class="container-fluid">
+          <div class="row Mea"><!--debut Mise en avant 1-->
+            
+          ]]>
+        </Entete>
+        <Pied>
+          <![CDATA[  
+          </div>
+        </div>
+]]>
+        </Pied>
+        <Contenu kind="HTML" code="MAIN" libelle="Publicité">
+          <![CDATA[
+ 
+        <div class="Mea-1 col-md-12">
+              <div class="Mea-1-box" style="background: url('{{BackgroundImageUrl}}') no-repeat center center;">
+                <div class="Mea-txt">
+                  <h2>{{Title}}</h2>
+                  <p>{{Description}}</p>
+                  <a href="{{Url}}" class="btn btn-blanc  btn-75 btn-md-60 btn-sm-55">{{Call_Action}}</a>
+                </div>
+                <a href="{{Url}}" class="Mea-prod new">
+                  <img src="{{ImageUrl}}" class="img-fluid" alt="{{Title}}" />
+                </a>
+              </div>
+            </div>
+        ]]>
+        </Contenu>
+
+        <Variable code="Title" kind="HtmlLine" />
+        <Variable code="Call_Action" kind="HtmlLine" />
+        <Variable code="Description" kind="HtmlBlock" />
+        <Variable code="Url" kind="SearchUrl" />
+        <Variable code="ImageUrl" kind="ImageUrl" />
+        <Variable code="BackgroundImageUrl" kind="ImageUrl"/>
+      </Composant>
+    </Publicite>
+
+
+    <Publicite code="CATEGCHIC" libelle="Catégories StreetChic"
+         description="Catégories sur home-univers StreetChic"
+         classeClient=""
+         classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationHtmlPublicite">
+      <Composant>
+        <Entete>
+          <![CDATA[
+       
+            <div class="container-fluid">
+        <div class="row categorie">
+            
+          ]]>
+        </Entete>
+        <Pied>
+          <![CDATA[  
+          </div>
+        </div>
+]]>
+        </Pied>
+        <Contenu kind="HTML" code="MAIN" libelle="Publicité">
+          <![CDATA[
+ 
+       <div class="col-lg-3 col-md-6 col-sm-6 px-0 cat-item cat-item-1" style="background:url('{{ImageUrl}}')"> <a href="{{Url}}">
+                    <button class="btn btn-blanc btn-ombre btn-75 btn-md-60  btn-sm-55"> {{Title}} </button> </a> </div>
+        ]]>
+        </Contenu>
+
+        <Variable code="Title" kind="HtmlLine" />
+        <Variable code="ImageUrl" kind="ImageUrl" />
+        <Variable code="Url" kind="SearchUrl" />
+      </Composant>
+    </Publicite>
+
+    <Publicite code="MEA2CHIC" libelle="Mise en avant 2 StreetChic"
+         description="Mise en avant double sur home-univers"
+         classeClient=""
+         classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationHtmlPublicite">
+      <Composant>
+        <Entete>
+          <![CDATA[
+       
+        <div class="container-fluid">
+          <div class="row vitrine"><!--debut Lien 2 vitrines-->
+            
+          ]]>
+        </Entete>
+        <Pied>
+          <![CDATA[  
+          </div>
+        </div>
+]]>
+        </Pied>
+        <Contenu kind="HTML" code="MAIN" libelle="Publicité">
+          <![CDATA[
+ 
+        <div class="vitrine-1 col-md-6">
+              <a href="{{Url}}" class="bloc-img">
+                <img class="img-fluid" src="{{ImageUrl}}" alt="{{Title}}" />
+              </a>
+              <div class="bloc-txt">
+                <h2 class="trait">{{Title}}</h2>
+                <p>{{Description}}</p>
+              </div>
+            </div>
+        ]]>
+        </Contenu>
+
+        <Variable code="Title" kind="HtmlLine" />
+        <Variable code="Call_Action" kind="HtmlLine" />
+        <Variable code="ImageUrl" kind="ImageUrl" />
+        <Variable code="Description" kind="HtmlBlock" />
+        <Variable code="Url" kind="SearchUrl" />
+      </Composant>
+    </Publicite>
+
+    <Publicite code="MEA3CHIC" libelle="Mise en avant bas StreetChic"
+         description="Les mises en avant du bas dans la partie Street Chic"
+         classeClient=""
+         classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationHtmlPublicite">
+      <Composant>
+        <Entete>
+          <![CDATA[
+       
+        <div class="container-fluid">
+            
+          ]]>
+        </Entete>
+        <Pied>
+          <![CDATA[  
+        </div>
+]]>
+        </Pied>
+        <Contenu kind="HTML" code="BLOG" libelle="Type blog">
+          <![CDATA[
+ 
+          <div class="row lien-blog justify-content-end" style="background: url('{{BackgroundImageUrl}}') no-repeat center center;"><!--debut Lien blog-->
+            <div class="vitrine-1 col-xl-3 col-lg-5">
+              <div class="bloc-txt">
+                <h2 class="trait">{{Title}}</h2>
+                <p><h5>{{SubTitle}}</h5>
+                    {{Description}}.</p>
+                <a href="{{Url}}" class="btn btn-blanc ">{{Call_Action}}</a>
+              </div>
+            </div>
+            <div class="col-1"></div>
+          </div><!--Fin Lien blog-->
+
+]]>
+        </Contenu>
+        <Contenu kind="HTML" code="VIDEO" libelle="Type video">
+          <![CDATA[
+ 
+          <div class="row lien-video" style="background: url('{{BackgroundImageUrl}}') no-repeat center center;">
+              <!--debut Lien video-->
+              <div class="lien-video-1">
+                  <div class="bloc-txt">
+                      <h2 class="trait">{{Title}}</h2>
+                      <p>
+                          <h5>{{SubTitle}}</h5>
+                           {{Description}}
+                      </p>
+                      <button class="btn btn-blanc " type="button" onclick="window.open('{{YoutubeUrl}}?modestbranding=1&rel=0', 'blank')">{{Call_Action}}</button>
+                  </div>
+
+                  <iframe class="bloc-video" src="{{YoutubeUrl}}?modestbranding=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  
+              </div>
+
+          </div><!--Fin Lien video-->         
+
+]]>
+        </Contenu>
+        <Variable code="Title" kind="HtmlLine" />
+        <Variable code="SubTitle" kind="HtmlLine" />
+        <Variable code="ImageUrl" kind="ImageUrl" />
+        <Variable code="Call_Action" kind="HtmlLine" />
+        <Variable code="Description" kind="HtmlBlock" />
+        <Variable code="Url" kind="SearchUrl" />
+        <Variable code="BackgroundImageUrl" kind="ImageUrl"/>
+      </Composant>
+    </Publicite>
+
+    <Publicite code="CAHMSPORT" libelle="Carrousel Home Sport"
+             description="Carrousel principal sur home-univers sport"
+             classeClient=""
+             classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationHtmlPublicite">
+      <Composant>
+        <Entete>
+          <![CDATA[
+       
+        <div class="container-fluid">
+          <div class="row"><!--debut caroussel-->
+            <div class="col-md-12 carousel-container">
+                <div id="slider" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+            
+          ]]>
+        </Entete>
+        <Pied>
+          <![CDATA[  
+</div>
+                                  <!-- Left and right controls -->
+                        <a class="carousel-control-prev " href="#slider" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#slider" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+            </div>
+          </div><!--fin caroussel-->
+          </div>
+          
+<script type="text/javascript">
+          $("#slider").find(".carousel-item").each(function(idx) {
+              var itm = $(this);
+              if(idx==0) {
+                  itm.addClass("active");
+              }
+              else {
+                  itm.removeClass("active");
+              } 
+          });
+
+      $(document).ready(function(){
+          $('#slider').carousel({
+            interval: 4000
+          });
+        });
+
+      </script>           
+]]>
+        </Pied>
+        <Contenu kind="HTML" code="MAIN" libelle="Publicité">
+          <![CDATA[
+ 
+<div class="carousel-item">
+  <div class="caroussel-img">
+    <img src="{{ImageUrl}}" alt="{{Title}}" class="img-fluid">
+  </div>
+  <div class="caroussel-txt">
+    <div class="caroussel-position">
+      <p>{{Description}}</p>
+      <h1>{{Title}}</h1>
+      <a href="{{Url}}" class="btn btn-primary  btn-75 btn-sm-55">{{Call_Action}}</a>
+    </div>
+  </div>                             
+</div>
+        ]]>
+        </Contenu>
+
+        <Contenu kind="HTML" code="NOTEXT" libelle="Sans Texte">
+          <![CDATA[
+ 
+<div class="carousel-item no-text">
+  <div class="caroussel-img">
+    <img src="{{ImageUrl}}" alt="{{Title}}" class="img-fluid">
+  </div>
+  <div class="caroussel-txt">
+    <div class="caroussel-position">
+      <p>{{Description}}</p>
+      <h1>{{Title}}</h1>
+      <a href="{{Url}}" class="btn btn-primary  btn-75 btn-sm-55">{{Call_Action}}</a>
+    </div>
+  </div>                             
+</div>
+        ]]>
+        </Contenu>
+
+        <Variable code="Title" kind="HtmlLine" />
+        <Variable code="ImageUrl" kind="ImageUrl" />
+        <Variable code="Call_Action" kind="HtmlLine" />
+        <Variable code="Description" kind="HtmlBlock" />
+        <Variable code="Url" kind="SearchUrl" />
+      </Composant>
+    </Publicite>
+
+    <Publicite code="MEA1SPORT" libelle="Mise en avant 1 Sport"
+             description="Première mise en avant sur home-univers sport"
+             classeClient=""
+             classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationHtmlPublicite">
+      <Composant>
+        <Entete>
+          <![CDATA[
+       
+        <div class="container-fluid">
+          <div class="row Mea"><!--debut Mise en avant 1-->
+            
+          ]]>
+        </Entete>
+        <Pied>
+          <![CDATA[  
+          </div>
+        </div>
+]]>
+        </Pied>
+        <Contenu kind="HTML" code="MAIN" libelle="Publicité">
+          <![CDATA[
+ 
+        <div class="Mea-1 col-md-12">
+              <div class="Mea-1-box" style="background: url('{{BackgroundImageUrl}}') no-repeat center center;">
+                <div class="Mea-txt">
+                  <h2>{{Title}}</h2>
+                  <p>{{Description}}</p>
+                  <a href="{{Url}}" class="btn btn-blanc  btn-75 btn-md-60 btn-sm-55">{{Call_Action}}</a>
+                </div>
+                <a href="" class="Mea-prod new">
+                  <!--<img src="node_modules/img/new-sport.png" alt="" class="new">-->
+                  <img src="{{ImageUrl}}" class="img-fluid" alt="{{Title}}">
+                  </a>
+              </div>
+            </div>
+        ]]>
+        </Contenu>
+
+        <Variable code="Title" kind="HtmlLine" />
+        <Variable code="ImageUrl" kind="ImageUrl" />
+        <Variable code="Call_Action" kind="HtmlLine" />
+        <Variable code="Description" kind="HtmlBlock" />
+        <Variable code="Url" kind="SearchUrl" />
+        <Variable code="BackgroundImageUrl" kind="ImageUrl"/>
+      </Composant>
+    </Publicite>
+
+    <Publicite code="MEA2SPORT" libelle="Mise en avant 2 Sport"
+         description="Mise en avant double sur home-univers sport"
+         classeClient=""
+         classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationHtmlPublicite">
+      <Composant>
+        <Entete>
+          <![CDATA[
+       
+        <div class="container-fluid">
+          <div class="row vitrine"><!--debut Lien 2 vitrines-->
+            
+          ]]>
+        </Entete>
+        <Pied>
+          <![CDATA[  
+          </div>
+        </div>
+]]>
+        </Pied>
+        <Contenu kind="HTML" code="MAIN" libelle="Publicité">
+          <![CDATA[
+ 
+        <div class="vitrine-1 col-md-6">
+              <a href="{{Url}}" class="bloc-img">
+                <img class="img-fluid" src="{{ImageUrl}}" alt="{{Title}}">
+              </a>
+              <div class="bloc-txt">
+                <h2 class="trait">{{Title}}</h2>
+                <p>{{Description}}</p>
+              </div>
+            </div>
+        ]]>
+        </Contenu>
+
+        
+        
+        <Variable code="Title" kind="HtmlLine" />
+        <Variable code="ImageUrl" kind="ImageUrl" />
+        <Variable code="Call_Action" kind="HtmlLine" />
+        <Variable code="Description" kind="HtmlBlock" />
+        <Variable code="Url" kind="SearchUrl" />
+      </Composant>
+    </Publicite>
+
+
+    <Publicite code="CATEGSPORT" libelle="Catégories Sport"
+     description="Catégories sur home-univers Sport"
+     classeClient=""
+     classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationHtmlPublicite">
+      <Composant>
+        <Entete>
+          <![CDATA[
+       
+            <div class="container-fluid">
+        <div class="row categorie">
+            
+          ]]>
+        </Entete>
+        <Pied>
+          <![CDATA[  
+          </div>
+        </div>
+]]>
+        </Pied>
+        <Contenu kind="HTML" code="MAIN" libelle="Publicité">
+          <![CDATA[
+ 
+       <div class="col-lg-3 col-md-6 col-sm-6 px-0 cat-item cat-item-1" style="background:url('{{ImageUrl}}')"> <a href="{{Url}}">
+                    <button class="btn btn-blanc btn-ombre btn-75 btn-md-60  btn-sm-55"> {{Title}} </button> </a> </div>
+        ]]>
+        </Contenu>
+
+        <Variable code="Title" kind="HtmlLine" />
+        <Variable code="ImageUrl" kind="ImageUrl" />
+        <Variable code="Url" kind="SearchUrl" />
+      </Composant>
+    </Publicite>
+
+    <Publicite code="MEA3SPORT" libelle="Mise en avant bas Sport"
+             description="Les mises en avant du bas dans la partie sport"
+             classeClient=""
+             classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationHtmlPublicite">
+      <Composant>
+        <Entete>
+          <![CDATA[
+       
+        <div class="container-fluid">
+          
+            
+          ]]>
+        </Entete>
+        <Pied>
+          <![CDATA[  
+          
+        </div>
+]]>
+        </Pied>
+        <Contenu kind="HTML" code="BLOG" libelle="Type blog">
+          <![CDATA[
+ 
+          <div class="row lien-blog justify-content-end" style="background: url('{{BackgroundImageUrl}}') no-repeat center center;"><!--debut Lien blog-->
+            <div class="vitrine-1 col-xl-3 col-lg-5">
+              <div class="bloc-txt">
+                <h2 class="trait">{{Title}}</h2>
+                <p><h5>{{SubTitle}}</h5>
+                    {{Description}}</p>
+                <a href="{{Url}}" class="btn btn-blanc ">{{Call_Action}}</a>
+              </div>
+            </div>
+            <div class="col-1"></div>
+          </div><!--Fin Lien blog-->
+
+]]>
+        </Contenu>
+        <Contenu kind="HTML" code="VIDEO" libelle="Type video">
+          <![CDATA[
+ 
+          <div class="row lien-video" style="background: url('{{BackgroundImageUrl}}') no-repeat center center;">
+              <!--debut Lien video-->
+              <div class="lien-video-1">
+                  <div class="bloc-txt">
+                      <h2 class="trait">{{Title}}</h2>
+                      <p>
+                          <h5>{{SubTitle}}</h5>
+                           {{Description}}
+                      </p>
+                      <button class="btn btn-blanc " type="button" onclick="window.open('{{YoutubeUrl}}?modestbranding=1&rel=0', 'blank')">{{Call_Action}}</button>
+                  </div>
+
+                  <iframe class="bloc-video" src="{{YoutubeUrl}}?modestbranding=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  
+              </div>
+
+          </div><!--Fin Lien video-->         
+
+]]>
+        </Contenu>
+        <Variable code="Title" kind="HtmlLine" />
+        <Variable code="SubTitle" kind="HtmlLine" />
+        <Variable code="ImageUrl" kind="ImageUrl" />
+        <Variable code="Call_Action" kind="HtmlLine" />
+        <Variable code="Description" kind="HtmlBlock" />
+        <Variable code="Url" kind="SearchUrl" />
+        <Variable code="BackgroundImageUrl" kind="ImageUrl"/>
+      </Composant>
+    </Publicite>
+
+    <Publicite code="RASSUR" libelle="Rassurance"
+             description="Rassurance"
+             classeClient=""
+             classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationHtmlPublicite">
+      <Composant>
+        <Entete>
+          <![CDATA[
+       
+<div class="rassurance">
+
+          
+            
+          ]]>
+        </Entete>
+        <Pied>
+          <![CDATA[  
+          
+        </div>
+]]>
+        </Pied>
+        <Contenu kind="HTML" code="SIMPL" libelle="Rassurance simple">
+          <![CDATA[
+ 
+<div>
+                  <img src="{{ImageUrl}}" alt="" width="20">
+                  <p>
+                    {{Texte}}
+                  </p>
+                </div>
+]]>
+        </Contenu>
+
+        <Variable code="Texte" kind="HtmlLine" />
+        <Variable code="ImageUrl" kind="ImageUrl" />
+      </Composant>
+    </Publicite>
+    
+                
+
+    <Publicite code="HOMEMY" libelle="Publicité home compte client"
+         description="Publicité en haut de la première page du compte client"
+         classeClient=""
+         classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationHtmlPublicite">
+      <Composant>
+        <Entete>
+          <![CDATA[
+                           <div class="row">
+                      <div class="compte-pub col-12 px-0">
+            
+          ]]>
+        </Entete>
+        <Pied>
+          <![CDATA[  
+                      </div>
+                    </div>
+]]>
+        </Pied>
+        <Contenu kind="HTML" code="MAIN" libelle="Publicité">
+          <![CDATA[
+ 
+                        <a href="{{Url}}">
+                            <img class="img-fluid d-none d-md-block" src="{{UrlImageDesktop}}" alt="{{Title}}">
+                            <img class="img-fluid d-md-none" src="{{UrlImageMobile}}" alt="{{Title}}">
+                        </a>
+        ]]>
+        </Contenu>
+
+        <Variable code="Title" kind="HtmlLine" />
+        <Variable code="UrlImageDesktop" kind="ImageUrl" />
+        <Variable code="UrlImageMobile" kind="ImageUrl" />
+        <Variable code="Url" kind="SearchUrl" />
+      </Composant>
+    </Publicite>
+
+  </Publicites>
+   
+  <Seo>
+
+  </Seo>
+
+  <Produits>
+    
+    <Images>
+      <Big width="820" height="615" />
+      <Intermediate width="440" height="330" />
+      <Small width="100" height="75" />
+      <Tiny width="140" height="105" />
+    </Images>
+    
+    
+  </Produits>
+
+  <Options>
+    <Search classeCssMiseEnAvant="MisEnAvant" nbMiseEnAvant="1" nbProduitsParPage="48" />
+    
+  </Options>
+
+</Theme>

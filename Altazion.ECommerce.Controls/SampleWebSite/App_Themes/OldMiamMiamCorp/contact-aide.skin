@@ -1,0 +1,43 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="ContactHeader">
+<Content>
+
+
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="ContactContentHeader">
+<Content>
+
+    <div class="container_16">
+        <div class="grid_10 prefix_4">
+
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="ContactFormHeader">
+<Content>
+            <h1>Formulaire de contact</h1>
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="ContactContentFooter">
+<Content>
+
+    </div> <%-- fin du grid_10 démarré dans le header" --%>
+
+    <div class="clear"></div>
+
+    </div> <%-- fin du container_16 démarré dans le header" --%>
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="ContactOkMessage">
+<Content>
+    <h1>Votre message a bien été enregistré.</h1>
+    <p class="MessageOk">
+        
+    </p>
+
+</Content>
+</ecom:ThemablePanelControl>

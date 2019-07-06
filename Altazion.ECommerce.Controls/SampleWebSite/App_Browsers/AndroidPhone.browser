@@ -1,0 +1,29 @@
+﻿<!--
+    You can find existing browser definitions at
+    <windir>\Microsoft.NET\Framework\<ver>\CONFIG\Browsers
+-->
+<browsers>
+  <gateway id="Android" parentID="Safari">
+    <identification>
+      <userAgent match="Android" />
+    </identification>
+
+    <capabilities>
+      <capability name="mobileDeviceModel"               value="Android" />
+      <capability name="isMobileDevice"                  value="false" />
+      <capability name="canInitiateVoiceCall"            value="false" />
+    </capabilities>
+  </gateway>
+
+  <gateway id="AndroidPhone" parentID="Android">
+    <identification>
+      <userAgent match="Mobile" />
+    </identification>
+    <capabilities>
+      <capability name="mobileDeviceModel"               value="Android" />
+      <capability name="isMobileDevice"                  value="true" />
+      <capability name="canInitiateVoiceCall"            value="true" />
+    </capabilities>
+  </gateway>
+
+</browsers>

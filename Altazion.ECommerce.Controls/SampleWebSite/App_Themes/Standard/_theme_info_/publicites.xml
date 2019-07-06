@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Publicites xmlns="http://simplement-e.com/ecommerce/theme/publicites.xsd">
+  <Publicite code="Header" libelle="Publicité entête" description="Publicité dans l'entête de la page (760x115)" 
+             classeClient="Equihira.vNext.Client.Ventes.EditerOperationEPubContextuelle, Equihira.vNext.Client.Ventes" 
+             classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationBandeauPublicites" >
+    <Exemple mimeType="image/jpeg" facetUrl="~/App_Themes/Standard/_theme_info_/samplePubHeader.gif" />
+  </Publicite>
+
+  <Publicite code="HomePage" libelle="Publicité Page d'accueil" description="Publicité grand format dans la home page (1200x600)"
+             classeClient="Equihira.vNext.Client.Ventes.EditerOperationEPubContextuelle, Equihira.vNext.Client.Ventes"
+             classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationBandeauPublicites" >
+    <Exemple mimeType="image/jpeg" facetUrl="~/App_Themes/Standard/_theme_info_/samplePubHomeCentral.jpg" />
+  </Publicite>
+
+</Publicites>

@@ -1,0 +1,627 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="BodyStartHeader"
+            RenderWithNoTag="true">
+
+<Content>
+<span id="ancre"></span>
+
+<script type="text/html" id="suggestProduct">
+    <a class="Flou Exactundefined" data-bind='attr:{href: "#"}'>
+        <img data-bind="attr:{src:Image}" />
+        <span class="sugg-txt"><span data-bind="text:Label"></span></span>
+    </a>
+</script>
+
+<!---->
+<div class="contain-suggest" id="suggestDiv" style='display:none'>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="sugg-prod" data-bind="visible: E.Suggest.hasElements(elements, 'Products')">
+                <h2><span>produits</span></h2>
+                <div data-bind="template:{name:'suggestProduct', foreach: E.Suggest.get(elements, 'Products')}">
+                  
+                </div>
+                <a class="Voir-prod" id="lnkLancerRechercheToutProduit" href="#">VOIR TOUS LES PRODUITS</a>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+<div class="popup-header-magasin-incitation" style="display:none">
+
+  <div class="pop pop-incitation bg-rouge">
+    <div class="pop-triangle hidden-xs"></div>
+    <img src="/app_themes/miammiamcorp/img/france-incitation.png" alt="">
+    <h2><span>Consulter, réserver et retirer</span><br />directement en magasin</h2>
+    <p>Choissisez le magasin le plus proche de chez vous et retirez vos articles directement en magasin</p>
+    <a class="btn btn-info" href="#"><i class="fa fa-chevron-right"> </i>Je trouve mon magasin</a>
+  </div>
+
+
+</div>
+
+<div class="popup-header-magasin-recap" style="display:none">
+<div class="pop pop-fiche-mag bg-rouge">
+    <div class="pop-triangle hidden-xs"></div>
+    <div class="row pop-detail-mag col-sm-8 col-md-12">
+      <div class="adresse-mag col-md-6">
+        <p class="no-margin"><b><ecom:MagasinAssocieLibelle runat="server"  class="nom" /></b><br />
+          <ecom:MagasinAssocieAdresse runat="server"  /><br />
+          <ecom:MagasinAssocieCP runat="server" /> <ecom:magasinAssocieVille runat="server"  />
+      </div>
+      <div class="adresse-mag-btn col-md-6">
+        <ecom:MagasinAssocieLink runat="server" cssclass="btn-voir-fiche"><i class="fa fa-chevron-right rouge"> </i>Voir la fiche<br />du magasin</ecom:MagasinAssocieLink>
+      </div>
+    </div>
+    <div class="pop-action-mag col-sm-4 col-md-12">
+      <a class="popup-mag-change-mag" href="#"><i class="fa fa-chevron-right orange"> </i>Changer de magasin</a><br />
+      <a class="popup-mag-clear-mag" href="#"><i class="fa fa-chevron-right orange"> </i>Supprimer le magasin sélectionné</a>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<ecom:PanelPageSpecifique runat="server"  VisibiliteParDefaut="true" SaufPour="Process">
+
+<header id="top"  class="hidden-sm hidden-xs">
+   <div class="alert alert-info alert-demo alert-dismissible" role="alert">
+    <script type="text/javascript">
+            var ck = Cookies.get('_ok_demo');
+            if(ck!=null && ck=="true")
+                $("#body").addClass("margetop");
+            $(document).ready(function(){
+                $(".butt").click(function(){
+                    $("#body").addClass("margetop");
+                    Cookies.set('_ok_demo', "true");
+                    return false;
+                });
+                
+                ck = Cookies.get('magasin_incitation');
+                if(ck==null || ck=="") {
+                    var btn = $(".Top-mag-a-fullwidth");
+                    if(btn.is(":visible")) {
+                        $(".popup-header-magasin-incitation").show();
+                        btn.addClass("popupIncitation");
+                        setTimeout(function() {
+                            if($(".choose-magasin-notchosen-a:hover").length==0) {
+                                $(".popup-header-magasin-incitation").fadeOut();
+                                btn.removeClass("popupIncitation");
+                            }
+                        }, 7500);
+                    }
+                    Cookies.get('magasin_incitation', 'true');
+                }
+            });
+            
+        </script>
+    <a href="#" class="close butt" > Fermer ce bandeau</a>
+    <strong>[site de démo]   </strong>Miam-Miam est un site de démonstration utilisant la solution de vente en ligne <a href="http://commerce-hub.io">Commerce-Hub</a>.
+  </div>
+  <div class="container">
+    <div class="row">
+          <div class="col-md-2 col-sm-12 col-xs-12 logo">
+                <a title="Retour à l'accueil" href="/">
+               </a>
+          </div>
+          <div class="col-md-10 col-sm-12 col-xs-12 rightnav">
+            <div class="row">
+
+              <nav class="navbar navbar-default">
+                  <div class="container-fluid">
+                 
+                    <div class="collapse navbar-collapse" >
+                      <div class="row searchZone">
+                        <ecom:RechercheRapide runat="server" cssclass="form-row col-md-4 Top-Search" 
+                            TextBoxCssClass="form-control" GoButtonCssClass="btn-search" PlaceHolder="Rechercher"
+                            GoButtonText="<span class='icon-4 blanc'></span>" />
+                        <div class="col-md-2  Top-Service">
+                          <a href="/my/" class="Top-client"><span class="icon-8"></span><b>COMPTE CLIENT</b></a>
+                          <a href="/contact.htm" class="Top-contact"><span class="icon-7"></span>CONTACT</a>
+                          
+                        </div>
+                        <ecom:MagasinAssociePanel runat="server" cssclass="col-md-3 Top-mag " CacherSiAssocieMagasin="true">                        
+                          <a href="#" class="Top-mag-a Top-mag-a-fullwidth choose-magasin-a choose-magasin-notchosen-a">
+                            <div class="Icon-mag"><span class="blanc icon-2"></span>
+                            </div>
+                            <div class="Top-mag-content">
+                              <p>
+                                Consulter, réserver<br />
+                                et retirer <b>EN MAGASIN</b></p>
+                            </div>
+                          </a>
+                        </ecom:MagasinAssociePanel>
+                        <ecom:MagasinAssociePanel runat="server" cssclass="col-md-3 Top-mag" CacherSiNonAssocieMagasin="true">                        
+                          <ecom:MagasinAssocieLink runat="server" class="Top-mag-a Top-mag-a-fullwidth choose-magasin-chosen-a">
+                            <div class="Icon-mag"><span class="blanc icon-2"></span>
+                            </div>
+                            <div class="Top-mag-content">
+                              <p>
+                                <b>VOTRE MAGASIN</b><br />
+                                <ecom:MagasinAssocieLibelle runat="server" /></p>
+                            </div>
+                          </ecom:MagasinAssocieLink>
+                        </ecom:MagasinAssociePanel>
+                        <div class="col-md-3 Top-panier" id="TopPanierLink">
+                          <a href="/exec/panier.aspx" class="Top-mag-a" >
+                            <div class="Icon-panier">
+                              <span class="blanc icon-1"></span>
+                            </div>                             
+                            <ecom:PanierResume AsLink="false" CSSclass="Top-panier-content" runat="server" Format="<p><b>MON PANIER</b><br />{amount:0.00€} ({nombre:0} articles)</p>" /> 
+                          </a>
+                          <ecom:PanierJavascriptData runat="server" ID="hdnPanierResume" />
+                            <div class="popup-header-panier" 
+                                    id="TopPanierPopup">
+                                  <div class="pop pop-panier bg-rouge" >
+                                    <div class="pop-triangle hidden-xs"></div>
+                                    <div class="pop-detail-mag"  data-bind="with: data">
+                                      <div class="vide" data-bind="ifnot: Lignes.length > 0">
+                                          <div class="pop-panier-detail">
+                                            <h3>Votre panier est vide</h3>
+                                          </div>
+                                      </div>
+                                      <div class="contenu" data-bind="if: Lignes.length > 0">
+                                          <div class="pop-panier-detail" data-bind="visible: $root.lignesMagasins().length > 0">
+                                            <h3>Réservation en magasin</h3>
+                                            <ul data-bind="foreach: $root.lignesMagasins()">
+                                              <li class="pop-panier-ligne row">
+                                                <ul>
+                                                  <li class="libelle col-md-7 col-sm-8 col-xs-8"><span data-bind="text: Libelle"></span></li>
+                                                  <li class="quantite col-md-2 col-sm-2 col-xs-1"><span data-bind="text: Quantite"></span></li>
+                                                  <li class="prix col-md-3 col-sm-2 col-xs-3"><span data-bind="html: PrixFormate"></span></li>
+                                                </ul>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                          <div class="pop-panier-detail" data-bind="visible: $root.lignesWeb().length > 0">
+                                            <h3>Commande en ligne</h3>
+                                            <ul data-bind="foreach: $root.lignesWeb">
+                                                <li class="pop-panier-ligne row">
+                                                <ul>
+                                                  <li class="libelle col-md-7 col-sm-8 col-xs-8"><span data-bind="text: Libelle"></span></li>
+                                                  <li class="quantite col-md-2 col-sm-2 col-xs-1"><span data-bind="text: Quantite"></span></li>
+                                                  <li class="prix col-md-3 col-sm-2 col-xs-3"><span data-bind="html: PrixFormate"></span></li>
+                                                </ul>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="pop-action-panier">
+                                      <a href="/exec/panier.aspx" class="btn btn-info"><i class="fa fa-chevron-right"> </i>accéder au panier</a>
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                        </div>
+
+                         <script type="text/javascript">
+
+                            $(document).ready(function () {
+                                E.Panier.setupPanierPopupResume('TopPanierPopup', 'TopPanierLink');
+                                var timeoutPopupMag = -1;
+                                var timeoutPopupMagDetail = -1;
+
+                                E.CrossCanal.initPopup('popupChoixMagasin', 5);
+                                $(".choose-magasin-notchosen-a").hover(function(e) {
+                                    if (timeoutPopupMag >= 0) {
+                                        clearTimeout(timeoutPopupMag);
+                                        timeoutPopupMag = -1;
+                                    }
+                                    var btn = $(".Top-mag-a-fullwidth");
+                                    if(btn.is(":visible")) {
+                                        $(".popup-header-magasin-incitation").show();
+                                        btn.addClass("popupIncitation");   
+                                    }                              
+                                }, function (e) {
+                                    timeoutPopupMag = setTimeout(function () {
+                                        if($(".choose-magasin-notchosen-a:hover").length==0 && $(".popup-header-magasin-incitation:hover").length==0) {
+                                            var btn = $(".Top-mag-a-fullwidth");
+                                            $(".popup-header-magasin-incitation").fadeOut();
+                                            btn.removeClass("popupIncitation");
+                                        }
+                                    }, 250);
+                                });
+
+                                $(".choose-magasin-chosen-a").hover(function(e) {
+                                    if (timeoutPopupMag >= 0) {
+                                        clearTimeout(timeoutPopupMagDetail);
+                                        timeoutPopupMagDetail = -1;
+                                    }
+                                    var btn = $(".Top-mag-a-fullwidth");
+                                    if(btn.is(":visible")) {
+                                        $(".popup-header-magasin-recap").show();
+                                        btn.addClass("popupIncitation");   
+                                    }                              
+                                }, function (e) {
+                                    timeoutPopupMagDetail = setTimeout(function () {
+                                        if($(".choose-magasin-notchosen-a:hover").length==0 && $(".popup-header-magasin-recap:hover").length==0) {
+                                            var btn = $(".Top-mag-a-fullwidth");
+                                            $(".popup-header-magasin-recap").fadeOut();
+                                            btn.removeClass("popupIncitation");
+                                        }
+                                    }, 250);
+                                });
+
+                                $(".popup-header-magasin-incitation").hover(function(e) {
+                                }, function (e) {
+                                    timeoutPopupMag = setTimeout(function () {
+                                        if($(".choose-magasin-notchosen-a:hover").length==0 && $(".popup-header-magasin-incitation:hover").length==0) {
+                                            var btn = $(".Top-mag-a-fullwidth");
+                                            $(".popup-header-magasin-incitation").fadeOut();
+                                            btn.removeClass("popupIncitation");
+                                        }
+                                    }, 250);
+                                });
+
+                                $(".popup-header-magasin-recap").hover(function(e) {
+                                }, function (e) {
+                                    timeoutPopupMagDetail = setTimeout(function () {
+                                        if($(".choose-magasin-notchosen-a:hover").length==0 && $(".popup-header-magasin-incitation:hover").length==0) {
+                                            var btn = $(".Top-mag-a-fullwidth");
+                                            $(".popup-header-magasin-incitation").fadeOut();
+                                            btn.removeClass("popupIncitation");
+                                        }
+                                    }, 250);
+                                });
+
+                                function chooseMagasin() {
+                                    E.CrossCanal.clearPopup();
+                                    var btn = $(".Top-mag-a-fullwidth");
+                                    $(".popup-header-magasin-incitation").fadeOut();
+                                    btn.removeClass("popupIncitation");
+                                    $(".fond-noir").show();
+                                    $(".popup-header-magasin-choix").fadeIn(function() {
+                                        $(".popup-header-magasin-choix .form-input input").focus();
+                                    });
+                                    $(".popup-header-magasin-choix .error").hide();
+                                    $(".popup-header-magasin-choix .form-input input").val("");
+                                
+                                }
+
+                                $(".choose-magasin-notchosen-a").click(function(e) {
+                                    chooseMagasin();
+                                    return false;
+                                });
+                                $(".popup-header-magasin-incitation a.btn-info").click(function(e) {
+                                    chooseMagasin();
+                                    return false;
+                                });
+                                $(".popup-mag-change-mag").click(function(e) {
+                                    var btn = $(".Top-mag-a-fullwidth");
+                                    $(".popup-header-magasin-recap").fadeOut();
+                                    btn.removeClass("popupIncitation");
+                                    chooseMagasin();
+                                    return false;
+                                });
+                                $(".popup-mag-clear-mag").click(function(e) {
+                                    E.CrossCanal.clearSelectedStore(true);
+                                    document.location.reload();
+                                    return false;
+                                });
+
+
+                                $(".popup-header-magasin-choix .cancel-button").click(function(e) {
+                                    var t = E.CrossCanal.dataPopupMagasin.items();
+                                    if(t != null) {
+                                        E.CrossCanal.clearPopup();
+                                        $(".popup-header-magasin-choix .form-input input").val("");
+                                        $(".popup-header-magasin-choix .form-input input").focus();
+                                    }
+                                    else {
+                                        $(".popup-header-magasin-choix").fadeOut('fast', function() { 
+                                            $(".fond-noir").hide();
+                                        });
+                                    }
+                                    $(".popup-header-magasin-choix .error").hide();
+                                    return false;
+                                });
+
+                                $(".popup-header-magasin-choix .form-input").keypress(function(e) {
+                                    if(e.which==13) {
+                                        $(".popup-header-magasin-choix .form-input a").click();
+                                    }
+                                    $(".popup-header-magasin-choix .error").hide();
+                                });
+                                
+
+                                $(".popup-header-magasin-choix .form-input a").click(function(e) {
+                                    $(".popup-header-magasin-choix .error").hide();
+                                    var c = $(".popup-header-magasin-choix .form-input input").val();
+                                    var rg = /0[1-9]\d{3}|([1]|[3-8])\d{4}|2[0-9|A|B|a|b]\d{3}|9[0-5]\d{3}/;
+                                    if(c.length==2) {
+                                        E.CrossCanal.getForZone(c, function(data) {
+
+                                        }, function() { 
+
+                                        });
+                                    }
+                                    else {
+                                        if (!rg.test(c) || RegExp.rightContext != "") {
+                                            $(".popup-header-magasin-choix .error").show();
+                                        }
+                                        else {
+                                            E.CrossCanal.getForZipCode('FRA',c, function(data) {
+
+                                            }, function() { 
+
+                                            });
+                                        }
+                                    }
+                                    return false;
+                                });
+
+                                $(".popup-header-magasin-choix .geoloc a").click(function(e) {
+                                    E.CrossCanal.getForGeoLoc(function(data) {
+
+                                    }, function() { 
+
+                                    });
+                                    return false;
+                                });
+
+                            });
+
+
+
+                        </script>
+
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+          </div>
+        </div><!-- end row -->
+  </div><!-- end container -->
+</header>
+
+
+<div id="top2" class="hidden-md hidden-lg alert alert-info alert-demo alert-dismissible" role="alert"
+  >
+    <a href="#" class="close butt"> Fermer ce bandeau</a>
+    <strong>[site de démo] </strong> - opérations factices
+</div>
+<header id="top" class="hidden-md hidden-lg">
+	<div class="container">
+      <div class="logo">
+                <a title="Retour à l'accueil" href="/"></a>
+      </div>
+      <ecom:MagasinAssociePanel runat="server" cssclass="Top-mag" CacherSiAssocieMagasin="true">
+              <a href="#" class="Top-mag-a choose-magasin-a choose-magasin-notchosen-a">
+                <div class="Icon-mag"><span class="icon-2"></span>
+                </div>
+                <div class="Top-mag-content">
+                   <p>
+                    <b>Choisissez votre</b><br>
+                    magasin préféré</p>
+                </div>
+              </a>
+      </ecom:MagasinAssociePanel>
+<ecom:MagasinAssociePanel runat="server" cssclass="Top-mag" CacherSiNonAssocieMagasin="true">
+              <ecom:MagasinAssocieLink runat="server" class="Top-mag-a choose-magasin-a choose-magasin-chosen-a">
+                <div class="Icon-mag"><span class="icon-2"></span>
+                </div>
+                <div class="Top-mag-content">
+                    <p>
+                                <b>VOTRE MAGASIN</b><br />
+                                <ecom:MagasinAssocieVille runat="server" /></p>
+                </div>
+              </ecom:MagasinAssocieLink>
+      </ecom:MagasinAssociePanel>
+
+      <div class="Top-panier">
+              <a href="/exec/panier.aspx" class="Top-mag-a">
+                <div class="Icon-panier">
+                  <span class="icon-1"></span>
+                    <ecom:PanierQuantiteLibelle runat="server" cssclass="Top-panier-chiffre" />
+                </div>
+<ecom:PanierResume AsLink="false" CSSclass="Top-panier-content" runat="server" Format="<p><b>Panier</b><br />{amount:0.00€}</p>" /> 
+              </a>
+      </div>
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+        </div>
+                  
+      </nav>
+        <div class="collapse navbar-collapse searchZone" id="menu">
+            <ecom:RechercheRapide runat="server" cssclass="form-row col-md-4 Top-Search" 
+                            TextBoxCssClass="form-control" GoButtonCssClass="btn-search" PlaceHolder="Rechercher"
+                            GoButtonText="<span class='icon-4 blanc'></span>" />
+            <ul class="">
+              <li><a href="/my/"><span class="icon-8"></span>Espace client</a></li>
+              <li><a href="/contact.htm"><span class="icon-7"></span>Contactez-nous</a></li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+	</div><!-- end container -->
+</header>
+</ecom:PanelPageSpecifique>
+
+
+<ecom:PanelPageSpecifique runat="server"  VisibiliteParDefaut="false" SaufPour="Process">
+
+<!-- START HEADER -->
+<header id="top"  class="hidden-sm hidden-xs">
+   <div class="alert alert-info alert-demo alert-dismissible" role="alert">
+    <script type="text/javascript">
+            var ck = Cookies.get('_ok_demo');
+            if(ck!=null && ck=="true")
+                $("#body").addClass("margetop");
+            $(document).ready(function(){
+                $(".butt").click(function(){
+                    $("#body").addClass("margetop");
+                    Cookies.set('_ok_demo', "true");
+                    return false;
+                });
+
+                ck = Cookies.get('magasin_incitation');
+                if(ck==null || ck=="") {
+                    var btn = $(".Top-mag-a-fullwidth");
+                    if(btn.is(":visible")) {
+                        $(".popup-header-magasin-incitation").show();
+                        btn.addClass("popupIncitation");
+                        setTimeout(function() {
+                            $(".popup-header-magasin-incitation").fadeOut();
+                            btn.removeClass("popupIncitation");
+                        }, 5000);
+                    }
+                    Cookies.get('magasin_incitation', 'true');
+                }
+            });
+            
+        </script>
+    <a href="#" class="close butt" > Fermer ce bandeau</a>
+    <strong>[site de démo]   </strong>Miam-Miam est un site de démonstration utilisant la solution de vente en ligne <a href="http://commerce-hub.io/">Commerce-Hub</a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-sm-12 col-xs-12 logo">
+        <a title="Retour à l'accueil" href="/"></a>
+      </div>
+      <div class="col-md-10 col-sm-12 col-xs-12 header-process ">
+        <div class="row">
+          <div class="col-md-3"><ecom:ProcessStepLink TypePage="Panier" runat="server" NavigateUrl="~/exec/panier.aspx" CssClassIfCurrent="active">1.<span> Votre panier</span></ecom:ProcessStepLink><span class="icon-6"></span></div>
+          <div class="col-md-3"><ecom:ProcessStepLink TypePage="Panier" runat="server" NavigateUrl="~/exec/process/login.aspx" CssClassIfCurrent="active">2.<span> Identificaton</span></ecom:ProcessStepLink><span class="icon-6"></span></div>
+          <div class="col-md-3"><ecom:ProcessStepLink TypePage="Recap" runat="server" NavigateUrl="~/exec/process/ConfirmationCommande.aspx" CssClassIfCurrent="active">3.<span> Livraison</span></ecom:ProcessStepLink><span class="icon-6"></span></div>
+          <div class="col-md-3 "><ecom:ProcessStepLink TypePage="Recap" runat="server" NavigateUrl="~/exec/process/ConfirmationCommande2.aspx" CssClassIfCurrent="active">4.<span> Paiement</span></ecom:ProcessStepLink></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- END HEADER -->
+
+<!-- START HEADER mobile -->
+<div id="top2" class="hidden-md hidden-lg alert alert-info alert-demo alert-dismissible" role="alert"
+  >
+    <a href="#" class="close butt"> Fermer ce bandeau</a>
+    <strong>[site de démo]</strong> - opérations factices
+</div>
+<header id="top" class="hidden-md hidden-lg">
+
+  <div class="container">
+      <div class="logo col">
+        <a title="Retour à l'accueil" href="/"></a>
+      </div>
+      <div class="panier-process-header">
+        <ecom:ProcessStepLink TypePage="Panier" runat="server" NavigateUrl="~/exec/panier.aspx" CssClassIfCurrent="active">
+          <span class="rond">1</span><span class="hidden-xs panier-process-header-p">Panier</span>
+        </ecom:ProcessStepLink>
+        <span class="icon-6"></span>
+        <ecom:ProcessStepLink TypePage="Panier" runat="server" NavigateUrl="~/exec/process/login.aspx" CssClassIfCurrent="active">
+            <span class="rond">2</span><span class="hidden-xs panier-process-header-p">Identification</span>
+        </ecom:ProcessStepLink>
+        <span class="icon-6"></span>
+        <ecom:ProcessStepLink TypePage="Recap" runat="server" NavigateUrl="~/exec/process/ConfirmationCommande.aspx" CssClassIfCurrent="active">
+        <span class="rond">3</span><span class="hidden-xs panier-process-header-p">Livraison</span>
+        </ecom:ProcessStepLink>
+        <span class="icon-6"></span>
+        <ecom:ProcessStepLink TypePage="Recap" runat="server" NavigateUrl="~/exec/process/ConfirmationCommande2.aspx" CssClassIfCurrent="active">
+        <span class="rond">4</span><span class="hidden-xs panier-process-header-p">Paiement</span>
+        </ecom:ProcessStepLink>
+      </div> 
+  </div>
+</header>
+<!-- END HEADER -->
+
+</ecom:PanelPageSpecifique>
+
+
+
+<div class="popup-header-magasin-choix" id="popupChoixMagasin">
+<div class="pop pop-mag">
+    <div class="row titre">
+      <div class="col-md-12">
+        <div class="Icon-mag ">
+          <span class="blanc icon-2"></span>
+        </div>
+        <h2><span>Choisissez</span><br />votre magasin</h2>
+      </div>
+      
+    </div>
+    <div class="row  pop-search-mag" >
+      <div class="col-md-12 col-sm-12" data-bind='visible: items()==null'>
+        <p class="trouvez rouge  no-margin">Trouvez le magasin le plus proche</p>
+        <div class="triangle-trouvez hidden-xs"></div>
+        <div class="page-b-cta row">
+          <div class="col-md-12">
+            <p class="icon"><span class="icon-4"></span>Indiquez votre code postal  </p>
+            <div class="form-input">
+              <input type="text"  placeholder="Votre code postal, ville" autocomplete="off">
+              <a href="#" class="btn btn-default">OK</a>
+              <span class='error' style='display:none'>Code postal invalide</span>
+            </div>
+            
+          </div>
+          <div class="col-md-12">
+            <p class="icon"><span class="icon-3"></span>Ou utilisez la géolocalisation</p>
+            <div class="geoloc">
+              <a href="#" class="btn btn-default">Activer la <span class="visible-xxs"><br /></span> géolocalisation <i class="fa fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+
+
+
+
+        <div class="row pop-list-mag" data-bind='if: items()!=null'>
+          <ul data-bind='foreach:items'>
+            <li class="pop-ligne-mag">
+              <ul>
+                <li class="col-md-6 col-sm-6">
+                  <p class='magasin'><span class="icon-5 rouge"></span><b data-bind='html: Libelle'></b><br />
+                      <span data-bind='html: Adresse'></span><br />
+                      <span data-bind='text: CodePostal'></span> <span data-bind='text: Ville'></span><br />
+                      Tel : <span data-bind='text: Telephone'></span><br />
+                  </p>
+                </li>
+                <li class="col-md-6 pop-choix-mag col-sm-6" >
+                  <a href="#" data-bind='click:E.CrossCanal.selectStore' class="btn btn-primary pull-right">Je choisi<span class="hidden-xs"><br /></span> ce magasin</a>
+                </li>
+                <li class="clear"></li>
+              </ul>
+            </li>
+          </ul>
+        </div> 
+
+
+
+
+
+
+    </div>
+    <a href="#" class="btn btn-gris pull-left cancel-button"><i class="fa fa-chevron-left"> </i> Annuler</a>
+     
+
+    <div class="clear"></div>
+  </div>
+
+
+</div>
+
+<div class="fond-noir" style="display:none"></div>
+
+
+<script type="text/javascript">
+    E.Suggest.init("#suggestDiv",".searchZone input[type=search]");
+</script>
+
+
+</Content>
+
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl SkinID="PageHeaderPanel" runat="server">
+
+<Content>
+</Content>
+
+</ecom:ThemablePanelControl>

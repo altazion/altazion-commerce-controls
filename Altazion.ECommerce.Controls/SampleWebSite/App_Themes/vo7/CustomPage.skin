@@ -1,0 +1,16 @@
+﻿<ecom:ThemablePanelControl  SkinID="CustomPageBeforeContent" runat="server">
+<Content>
+<div class="content">
+    <section class="main">
+        <div class="custom-page container-fluid">
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl  SkinID="CustomPageAfterContent" runat="server">
+<Content>
+            </div>
+    </section>
+</div>
+</Content>
+</ecom:ThemablePanelControl>

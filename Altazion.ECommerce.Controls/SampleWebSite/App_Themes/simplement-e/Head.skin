@@ -1,0 +1,9 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="HeadStylesPanel">
+<Content>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cabin:400,500' rel='stylesheet' type='text/css'>
+
+</Content>
+</ecom:ThemablePanelControl>
+        

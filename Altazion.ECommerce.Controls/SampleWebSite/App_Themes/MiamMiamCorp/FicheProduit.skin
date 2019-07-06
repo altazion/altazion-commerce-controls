@@ -1,0 +1,242 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="ProductPageBeforeContent">
+<Content>
+    <script type="text/javascript" src="/tools/rateit/jquery.rateit.min.js"></script>
+    <link rel="stylesheet" href="/tools/rateit/rateit.css" />
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ProductPanel runat="server" SkinID="ProductItemInDetail">
+    <Content>
+
+    <ecom:ProductJsonLD runat="server" />
+
+    <section class="fiche ">
+      <div class="container">
+        <div class="row">
+          <div class="contenu-fiche">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+
+              <div class="row fiche-img">
+                <div class="fiche-niv1 hidden-md hidden-lg">
+                     <ecom:ProduitAvisPanel runat="server">
+		                    <AvecAvisTemplate>
+                                <div class="fiche-stars">
+                                    <ecom:ProduitAvisResume runat="server" TypeAffichage="SpansAvecClasses"  EtoileComplete="fa fa-star" EtoileVide="fa fa-star-o" EtoileDemi="fa fa-star-half-o" /> <a href="#divAvis" class="fiche-stars-liens"><ecom:ProduitAvisCount runat="server" /> avis donné(s)</a>
+                                </div>
+                            </AvecAvisTemplate>
+                            <SansAvisTemplate>
+                                <div class="fiche-stars">
+                                    <a href="#divAvis" class="fiche-stars-lien-empty"> Soyez le premier à donner votre avis </a>
+                                </div>
+			                </SansAvisTemplate>
+                     </ecom:ProduitAvisPanel>
+                     <h1><ecom:ProduitLibelle runat="server" /></h1>            
+                </div>
+                <div class="galleryImg">
+                    <ecom:ProduitImage runat="server" CssClass="img-responsive" ImageType="Detail" />
+                  
+                  <!--<a href="img/img1-large.jpg" rel="prettyPhoto[gallery1]" title="Service"><span><i class="fa fa-search-plus"></i></span></a>-->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 ">
+              <div class="row">
+                <div class="fiche-niv1 hidden-sm hidden-xs">
+                    <ecom:ProduitAvisPanel runat="server">
+                        <AvecAvisTemplate>
+                            <div class="fiche-stars">
+                            <ecom:ProduitAvisResume runat="server" TypeAffichage="SpansAvecClasses"  EtoileComplete="fa fa-star" EtoileVide="fa fa-star-o" EtoileDemi="fa fa-star-half-o" /> <a href="#divAvis" class="fiche-stars-liens"><ecom:ProduitAvisCount runat="server" /> avis donné(s)</a>
+                            </div>
+                         </AvecAvisTemplate>
+                         <SansAvisTemplate>
+                            <div class="fiche-stars">
+                                <a href="#divAvis" class="fiche-stars-lien-empty"> Soyez le premier à donner votre avis </a>
+                            </div>
+			             </SansAvisTemplate>
+                     </ecom:ProduitAvisPanel>
+                  <h1><ecom:ProduitLibelle runat="server" /></h1>
+                  <div class="produit-caract">
+
+                 <ecom:ProduitAttributPanel runat="server" 
+				    AttributeGuid="{6820CFC6-A9CA-4E5A-8B33-3C59A6F3BB52}"
+				    VisibleSiVide="false"
+				    CssClass="produit-caract1">
+                        <span class="saveur">Saveur</span> <i class="fa fa-chevron-right"></i> 
+			            <ecom:ProduitAttributValeur runat="server" TexteSiVide="-" AttributeGuid="{6820CFC6-A9CA-4E5A-8B33-3C59A6F3BB52}" />
+	           	</ecom:ProduitAttributPanel>
+
+                  </div>
+                </div>
+                <!--
+                  <div class="produit-quant clear">
+                  <p class="titre no-margin">Sélectionner votre quantité</p>
+                  <a href="" class="quantite active"><i class="hidden-md hidden-lg fa fa-chevron-down gris"></i>
+                    <p class="text-quant no-margin">4 parts : <span class="rouge">9.99€</p>
+                    <p class="text-minim no-margin">(soit 2.49€ la part)</p> 
+                  </a>
+                  <a href="" class="quantite hidden-xs hidden-sm ">
+                    <p class="text-quant no-margin">6 parts : <span class="rouge">14.94€</p>
+                    <p class="text-minim no-margin">(soit 2.49€ la part)</p>
+                  </a>
+                  <a href="" class="quantite hidden-xs hidden-sm">
+                    <p class="text-quant no-margin">8 parts : <span class="rouge">19.92€</p>
+                    <p class="text-minim no-margin">(soit 2.49€ la part)</p>
+                  </a>
+                  <div class="clear"></div>
+                </div>
+                -->
+                <div class="produit-dispo">
+                  <p class="no-margin">
+                    <ecom:ProductPanel runat="server" AfficherSiNonDispo="false" InlineContent="true"><Content>
+                        <span class="dispo-ok"><i class="fa fa-square"></i>Dispo Web</span>
+                    </Content></ecom:ProductPanel>
+                    <ecom:ProductPanel runat="server" AfficherSiDispo="false" InlineContent="true"><Content>
+                        <span class="dispo-non"><i class="fa fa-square"></i>Non dispo Web</span>
+                    </Content></ecom:ProductPanel>
+                  </p>
+
+                  <ecom:MagasinAssociePanel runat="server" class="no-margin">
+                    <ecom:ProductPanel runat="server" AfficherSiNonDispo="false" AssocierAuMagasin="true" InlineContent="true"><Content>
+                        <span class="dispo-ok"><i class="fa fa-square"></i>Dispo magasin</span>
+                    </Content></ecom:ProductPanel>
+                    <ecom:ProductPanel runat="server" AfficherSiDispo="false" AssocierAuMagasin="true" InlineContent="true"><Content>
+                        <span class="dispo-non"><i class="fa fa-square"></i>Non dispo magasin : <ecom:MagasinAssocieLibelle runat="server" cssclass="weight-normal" /><a href="">Choisir un autre magasin</a></span>
+                    </Content></ecom:ProductPanel>
+                  </ecom:MagasinAssociePanel>
+                </div>
+          
+                <div class="carousel-btn ">
+                  <ecom:ProductPanel runat="server" AfficherSiNonDispo="false" InlineContent="true"><Content>
+                    <ecom:PanierAjouterScriptLink runat="server" cssclass="btn btn-default">Acheter<span class="visible-petit"><br /></span> en ligne</ecom:PanierAjouterScriptLink>
+                    </Content></ecom:ProductPanel>
+
+                    <ecom:ProductPanel runat="server" AfficherSiNonDispo="false" AssocierAuMagasin='true' InlineContent="true"><Content>
+                        <ecom:PanierAjouterScriptLink runat="server" AssocierAuMagasin='true' cssclass="btn btn-primary">Réserver<span class="visible-petit"><br /></span> en magasin</ecom:PanierAjouterScriptLink>
+                        <!--<a href="" class="btn btn-primary">être <span class="visible-petit"><br /></span>averti</a> -->
+                    </Content></ecom:ProductPanel>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+            <div class="clear"><br /></div>
+
+     </div>
+     <div class="fiche-layout-small bg-beige">
+        <div class="container">
+            <div class="fiche-contenu-niveau2">
+              <div class="col-md-8 descriptif">
+                <h2>Descriptif</h2>
+                <ecom:ProduitDescriptif runat="server" />
+                <ecom:ProduitAttributPanel runat="server" 
+										AttributeGuid="{0969D3FE-B00C-461C-8A5C-53190E4BE498}"
+										VisibleSiVide="false"
+										CssClass="produit-caract1">		
+                <h2 style="margin-top:20px;">Composition</h2>
+                    <p>
+                    <ecom:ProduitAttributValeur runat="server" TexteSiVide="" AttributeGuid="{0969D3FE-B00C-461C-8A5C-53190E4BE498}" />
+                    </p>
+                </ecom:ProduitAttributPanel>
+              </div>
+              <div class="col-md-4 allergene">
+                <h2>Produits allergènes</h2>
+                <p class="no-margin">Ce produit peut contenir des traces de :
+                </p>
+                <ul class="liste">
+                  <li><i class="fa fa-chevron-right"></i> lactose</li>
+                  <li><i class="fa fa-chevron-right"></i> gluten</li>
+                  <li><i class="fa fa-chevron-right"></i> arachide</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin contenu fiche produit -->
+
+    <!--début contenu suggestions 
+    <section class="suggest fiche-layout">
+      <div class="container">
+        <i class="fa fa-heart icone-produit bg-orange"></i>
+        <h1 class="center">Vous aimerez aussi</h1>
+        <div class="suggest-produit">
+
+          <ecom:ProduitSuggestions runat="server" MaxItemsCount="4">
+            <ItemTemplate>
+                <ecom:ProductPanel runat="server" SkinID="ProductItemSuggestion" />
+            </ItemTemplate>
+          </ecom:ProduitSuggestions>
+        </div>
+      </div>
+    </section>
+-->
+
+      
+        <ecom:ProduitAvisPanel runat="server">
+		    <AvecAvisTemplate>
+                <!--début contenu avis client -->
+                <section class="avis fiche-layout bg-beige" id="divAvis">
+                  <div class="container">
+                    <i class="fa fa-star icone-produit bg-orange"></i>
+                    <h1 class="center">Les avis clients</h1>
+
+
+                    <p class="center avis-intro">Note des internautes sur <ecom:ProduitLibelle runat="server" /> : <b><ecom:ProduitAvisResume runat="server" TypeAffichage="Texte"  TextFormat="{0:0.0}" />/5</b>  | Nombre d’avis : <b>
+                        <ecom:ProduitAvisCount runat="server" /></b>
+                    </p>
+                    <div class="avis-contenu col-md-10 col-md-offset-1">
+                    
+                        <ecom:AvisAffichage runat="server" />
+
+                   
+                    </div>
+                    <div class="avecAvis" id="saisie-avis">
+                        <ecom:AvisSaisie runat="server" />
+                    </div>
+                    <script type="text/javascript">
+                        $(document).ready(function() {
+                            $("#lnkAjouterAvis").click(function() {
+                                $(".SaisieAvis").show();
+                                return true;
+                            });
+                        });
+                    </script>
+                  </div>
+                </section>
+
+
+		    </AvecAvisTemplate>
+
+			<SansAvisTemplate>
+
+			</SansAvisTemplate>
+        </ecom:ProduitAvisPanel>
+
+
+</Content>
+</ecom:ProductPanel>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="AvisDetails">
+<Content>
+    <div class="avis-niv1">
+            <div class="avis-name">
+                <div class="fiche-stars">
+                    <ecom:AvisNote runat="server" TypeAffichage="SpansAvecClasses"  
+                        EtoileComplete="fa fa-star" EtoileVide="fa fa-star-o" EtoileDemi="fa fa-star-half-o" />
+                </div>
+                <p class="no-margin"><ecom:AvisNom runat="server" /></p>         
+            </div>
+            <div class="avis-txt">
+                <div class="triangle"></div>
+                <p><ecom:AvisMessage runat="server" />
+                </p>
+            </div>
+        </div>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+ <asp:LinkButton runat="server" SkinID="SaisieAvisEnregistrerBouton"
+    CssClass="btn btn-default"
+    Text="Déposer votre avis" />

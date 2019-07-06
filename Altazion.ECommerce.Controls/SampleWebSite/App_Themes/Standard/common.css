@@ -1,0 +1,222 @@
+﻿body {
+font:normal normal 12px/normal Arial, Helvetica, sans-serif;
+height:100%;
+margin:auto;
+width:100%;
+}
+
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,form,fieldset,p{
+margin:0;
+padding:0;
+}
+
+a
+{
+	text-decoration:none;
+}
+
+a:hover
+{
+	text-decoration:underline;	
+}
+
+/* les classes générales (erreurs, warning, etc) */
+.validationError
+{
+	color:#B22222;
+}
+
+/* les warning destinés aux opérateurs */
+div.attentionAdminCampagne
+{
+	clear: both;
+    float: left; 
+    color: white; 
+    background: #FF8C00; 
+    width: 100%; 
+    height: 20px;
+    padding:15px;
+    text-align:center;
+}
+
+div.attentionAutreCompte
+{
+	clear: both;
+    float: left; 
+    color: white; 
+    background: #B22222; 
+    width: 100%; 
+    height: 20px;
+    padding:15px;
+    text-align:center;
+}
+
+div.attentionAutreCompte A,
+div.attentionAutreCompte A:hover,
+div.attentionAdminCampagne A,
+div.attentionAdminCampagne A:hover
+ {
+ 	color:White;
+ 	font-weight:bold;
+ }
+
+/* le placement général */
+
+#FullContent
+{
+	width:1200px;
+	left:50%;
+	margin-left:-600px;
+	position:relative;
+}
+
+
+/* le header */
+#PageHeader
+{
+
+}
+
+#PageHeader .Top
+{
+	height:115px;
+}
+
+#PageHeader .Top .Logo
+{
+	margin-top:10px;
+	float:left;
+}
+
+#PageHeader .Top .Logo A
+{
+	display:block;
+}
+
+#PageHeader .Top .Logo span
+{
+	display:none;
+}
+
+#PageHeader .Top .Publicite
+{
+	width:760px;
+	height:115px;
+	float:left;
+	overflow:hidden;
+	margin:0px 15px 0px 15px;
+}
+
+#PageHeader .Top .Right
+{
+	float:right;
+	padding:60px 15px 0px 0px;
+}
+#PageHeader .Right A
+{
+	display:block;
+	width:100px;
+}
+
+#PageHeader .Bar
+{
+	clear:both;
+	background:#292929;
+	border:solid 1px #090909;
+	color:#efefef;
+}
+
+#PageHeader .Bar #Cart
+{
+	float:right;
+	padding:5px 10px;
+}
+
+#PageHeader .Bar #Cart UL
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#PageHeader .Bar #Cart UL LI,
+#PageHeader .Bar #Cart UL LI DIV
+{
+	display:inline;
+	margin:0;	
+} 
+
+#PageHeader .Bar #Cart UL LI.CartItemCount
+{
+}
+
+#PageHeader .Bar #Cart UL LI.CartItemCount DIV
+{
+	padding-left:3px;
+}
+
+#PageHeader .Bar #Cart UL LI.CartAmount
+{
+	display:none;
+}
+
+#PageHeader .Bar .RechercheRapide
+{
+	margin:5px 10px;
+}
+
+#PageHeader .Bar .RechercheRapide P
+{
+	display:inline;
+}
+
+#PageHeader .Bar .RechercheRapide .text
+{
+	background:#2C2C2C;
+	color:#dcdcdc;
+	font-size:smaller;
+	border:solid 1px #494949;
+	margin-right:5px;
+	padding:0px 3px
+}
+
+#PageHeader .Bar .RechercheRapide A
+{
+	font-size:smaller;
+	color:#dcdcdc;
+	text-transform:uppercase;
+	border:solid 1px #494949;
+	padding:0px 4px;
+}
+
+#PageHeader .Bar .RechercheRapide A:hover
+{
+	color:#494949;
+	background:#ffffff;
+	border:solid 1px #dcdcdc;
+	text-decoration:none;
+}
+
+#PageHeader .Bottom
+{
+	clear:both;
+}
+
+/* le footer */
+#PageFooter
+{
+	margin:10px 0px 25px 0px;
+	border-top:1px dotted #999999;
+	padding:10px 0px 25px 0px;
+}
+/* le contenu */
+#PageMiddle
+{
+	min-height:500px;
+}
+
+/* les produits en liste */
+
+/* les produits en fiche */
+
+/* le panier */

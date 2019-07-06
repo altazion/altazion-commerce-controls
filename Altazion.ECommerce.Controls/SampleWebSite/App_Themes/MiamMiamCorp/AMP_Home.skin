@@ -1,0 +1,60 @@
+﻿
+<ecom:ThemablePanelControl SkinID="HomePagePanelAMP" runat="server">
+<Content>
+
+
+
+    <amp-carousel id="hero-images"
+      width="400"
+      height="300"
+      layout="responsive"
+      type="slides"
+        class="home-slider"
+      autoplay>
+        <a href="/gourmandise/confiseries/autres/ref-000014.htm">
+            <amp-img 
+                src="/app_themes/miammiamcorp/img/slider/slide1.jpg"
+                    layout="fill" height='600' width='1920' alt="slide">
+            </amp-img>
+          <div class="slide-caption">
+            <div class="container">
+              <h1>LES MACARONS<br />AU CHOCOLAT</h1>
+            </div>
+          </div>
+        </a>
+ <a href="/gourmandise/confiseries/autres/ref-000014.htm">
+            <amp-img 
+                src="/app_themes/miammiamcorp/img/slider/slide2.jpg"
+                    layout="fill" height='600' width='1920' alt="slide">
+            </amp-img>
+          <div class="slide-caption">
+            <div class="container">
+              <h1>LES MACARONS<br />AU CHOCOLAT 2</h1>
+            </div>
+          </div>
+        </a>
+    </amp-carousel>
+<div class="clear"></div>
+
+	<section class="categoriesPrincipales">
+   	<ul>
+       	<li>
+            <a href="/gourmandises/produits-maisons/page1.amp">
+               <h4><small>Produit fait </small> Maison</h4><i class="fa fa-chevron-right"></i>
+            </a>
+        </li>
+       	<li>
+            <a href="/gourmandises/confiseries/page1.amp">
+               <h4><small>Verrines et </small> confiseries</h4><i class="fa fa-chevron-right"></i>
+            </a>
+        </li>
+       	<li>
+            <a href="/gourmandises/traiteur/page1.amp">
+               <h4><small>Produit en </small> traiteur</h4><i class="fa fa-chevron-right"></i>
+            </a>
+        </li>
+    </ul>
+</section>
+
+</Content>
+</ecom:ThemablePanelControl>

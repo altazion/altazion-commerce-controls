@@ -1,0 +1,55 @@
+/*======= STEEL BLUE =======*/
+.first-section, .about, .services, .portfolio, .news, .contact {
+background-color:steelBlue;
+background-image: -moz-radial-gradient(center center, circle cover, steelBlue 0%, #003561 100%);
+background-image: -webkit-radial-gradient(center center, circle cover, steelBlue 0%, #003561 100%);
+background-image: -o-radial-gradient(center center, circle cover, steelBlue 0%, #003561 100%);
+background-image: -ms-radial-gradient(center center, circle cover, steelBlue 0%, #003561 100%);
+background-image: radial-gradient(center center, circle cover, steelBlue 0%, #003561 100%);
+}
+
+ .team{
+background-color: darkgreen;
+background-image: -moz-radial-gradient(center center, circle cover, #97BF0D 0%, darkgreen 100%);
+background-image: -webkit-radial-gradient(center center, circle cover, #97BF0D 0%, darkgreen 100%);
+background-image: -o-radial-gradient(center center, circle cover, #97BF0D 0%, darkgreen 100%);
+background-image: -ms-radial-gradient(center center, circle cover, #97BF0D 0%, darkgreen 100%);
+background-image: radial-gradient(center center, circle cover, #97BF0D 0%, darkgreen 100%);
+}
+
+.about, .portfolio, .contact {
+	color:#111;
+	background:#fff;
+}
+.accesclients {
+	color:#111;
+	background:#efefef;
+    min-height: 170px; border-bottom: dashed #696969 1px; display: none;
+}
+
+.about a, .portfolio a, .contact a{
+	color:#111;
+}
+.about a.button, .portfolio a.button, .contact a.button{
+	color:#fff;
+}
+.about a.button:hover, .portfolio a.button:hover, .contact a.button:hover{
+	color:#111;
+}
+
+.about .bbot1 , .about .btop1, .about .bdot, 
+.portfolio .bbot1, .portfolio .btop1, .portfolio .bdot, 
+.contact .bbot1 , .contact .btop1, .contact .bdot, ul.blog-news li {
+	border-color:rgba(0,0,0,0.5);
+}
+.contact-form input[type="text"], .contact-form textarea{
+	border:1px dashed #999;
+}
+/* Testimonials section */
+#testimonials{
+	background: #121B26;
+	color: #D9C896;
+}
+#testimonials h5{
+	color: #44545E;
+}

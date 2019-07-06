@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" EnableViewState="false" Inherits="CPointSoftware.ECommerce.Tools.ECommerceMaster" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
+<head runat="server">
+    <title></title>
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <ecom:CanonicalLink ID="CanonicalLink2" runat="server" />
+    <ecom:OpenGraphMeta ID="OpenGraphMeta2" runat="server" />
+    <ecom:MetaRobots ID="MetaRobots2" runat="server" />
+
+    <ecom:ThemablePanelControl runat="server" SkinID="HeadStylesPanel"
+        RenderWithNoTag="true" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <ecom:ThemablePanelControl runat="server" ID="headTheme" SkinID="HeadThemablePanel"
+        RenderWithNoTag="true" />
+    <ecom:ThemablePanelControl runat="server" ID="ThemablePanelControl1" SkinID="WinTaskbarPanel"
+        RenderWithNoTag="true">
+        <Content>
+            <ecom:WinTaskbarMainMeta ID="WinTaskbarMainMeta1" runat="server" />
+            <ecom:WinTaskbarMagasinsMeta ID="WinTaskbarMagasinsMeta2" runat="server" />
+            <ecom:WinTaskbarTaskMeta ID="WinTaskbarMagasinsMeta1" runat="server" Name="Votre compte client"
+                Link="~/my/" />
+        </Content>
+    </ecom:ThemablePanelControl>
+    <ecom:XmlRpcMeta ID="XmlRpcMeta1" runat="server" />
+    <ecom:ThemeCssLink ID="ThemeCssLink1" runat="server" />
+
+    <ecom:ScriptLinkControl ID="ScriptLinkControl1" runat="server" ScriptFilePath="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.0.0.min.js" />
+    <ecom:ScriptLinkControl ID="ScriptLinkControl2" runat="server" ScriptFilePath="~/tools/smple_more.debug.js" />
+    <ecom:ScriptForDesignTime ID="ScriptForDesignTime1" runat="server">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.0.0.min.js" type="text/javascript"></script>
+        <script src="../tools/smple_more.debug.js" type="text/javascript"></script>
+    </ecom:ScriptForDesignTime>
+
+    <ecom:GoogleUniversalAnalytics  runat="server" ID="tagGoogleUniv" Position="EndOfHead" />
+    <ecom:CustomTrackers runat="server" Position="EndOfHead" />
+    <ecom:FacebookPixel runat="server" ID="tagFacebookPixel"/>
+
+</head>
+<body>
+
+    <ecom:GoogleUniversalAnalytics  runat="server" ID="GoogleUniversalAnalytics1" Position="StartOfBody" />
+    <ecom:CustomTrackers runat="server" Position="StartOfBody" />
+
+
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ToolkitScriptManager1" runat="server">
+            <Services>
+            </Services>
+            <Scripts>
+                <asp:ScriptReference Path="~/tools/focus.js" />
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="webSiteHeaderContent">
+            <ecom:ThemablePanelControl ID="ThemablePanelControl4" runat="server" SkinID="BeforeContentStart" />
+            <asp:ContentPlaceHolder ID="BeforeContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <ecom:ThemablePanelControl ID="ThemablePanelControl2" runat="server" SkinID="BeforeContentEnd" />
+        </div>
+
+        <div class="webSiteMainContent">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="webSiteFooterContent">
+            <ecom:ThemablePanelControl ID="ThemablePanelControl5" runat="server" SkinID="AfterContentStart" />
+            <asp:ContentPlaceHolder ID="AfterContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <ecom:ThemablePanelControl ID="ThemablePanelControl3" runat="server" SkinID="AfterContentEnd" />
+        </div>
+
+        <div class="Trackers">
+            <asp:ContentPlaceHolder ID="TrackersAffiliation" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+
+    <ecom:CustomTrackers runat="server" Position="EndOfBody" />
+    <ecom:GoogleUniversalAnalytics  runat="server" ID="GoogleUniversalAnalytics2" Position="EndOfBody" />
+
+</body>
+</html>

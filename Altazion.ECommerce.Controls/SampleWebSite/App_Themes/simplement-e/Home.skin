@@ -1,0 +1,266 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="HomePagePanel">
+<Content>
+
+    <div id="mask"></div>
+    <table class="loader">
+        <tr>
+            <td>
+                <asp:image runat="server" ImageUrl="images/loading.gif" alt="loading please wait.." /></td>
+        </tr>
+    </table>
+
+   
+    <div id="page" class="container">
+
+        <!--BEGIN MAIN SECTION -->
+        <div class="section first-section" id="home">
+            <div class="container">
+                <section class="main">
+                    <h2 class="cs-text"><span class="cs-text-cut">SIMPLEMENT-E</span> <span class="cs-text-mid">WELCOME TO THE PHYGITAL WORLD</span> <span class="cs-text-cut medium">Solutions pour le commerce intégré</span> </h2>
+                    <span class="clear pbot30 ptop30 mbot30"></span>
+                    <div class="block-3 column">
+                        <a href="#e-commerce">
+                            <div class="home-features align-center">
+                                <asp:image runat="server" ImageUrl="images/icons/idea-alt.png" alt="inspiration" />
+                                <h2 class="mbot10 ptop5">01. E-COMMERCE</h2>
+
+                                <p>Profitez de nos dix années d&quot;expérience dans la vente en ligne pour vous lancer facilement et rapidement dans le e-commerce avec une solution simple et performante.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="block-3 column">
+                        <a href="#point-de-ventes">
+                            <div class="home-features align-center">
+                                <asp:image runat="server" ImageUrl="images/icons/cashregister.png" alt="interavtive" />
+                                <h2 class="mbot10 ptop5">02. POINTS DE VENTE</h2>
+
+                                <p>Bientôt disponible.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="block-3 column">
+                        <a href="#crosscanal">
+                            <div class="home-features align-center">
+                                <asp:image runat="server" ImageUrl="images/icons/share.png" alt="branding" />
+
+                                <h2 class="mbot10 ptop5">03. CROSS CANAL</h2>
+
+                                <p>L&quot;ère du commerce intégré, alliant e-commerce et points de vente, est commencée ! Découvrez comment notre solution peut vous aider à entrer dans le monde phygital.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+            </div>
+        </div>
+        <!-- END MAIN SECTION -->
+
+        <!--BEGIN ABOUT US SECTION -->
+        <div class="section about" id="e-commerce">
+            <div class="container">
+                <div class="header">
+                    <div class="header-text">E-commerce</div>
+                </div>
+                <div class="clear pbot30"></div>
+                <h2 class="c-font-80 mbot5 pbot10 ptop0 align-center">vendre en ligne, simplement</h2>
+                <h2 class="caption align-center btop1 bbot1 pbot20">L&quot;e-commerce est un canal de vente en perpétuelle évolution. Avec simplement-e, optimisez votre présence sur Internet gâce à notre solution composée à la fois d&quot;une gestion commerciale complète et d&quot;un module de ventes en ligne.</h2>
+                <div class="one_half column">
+                    <h3>Découvrez notre solution</h3>
+                    <p>Simplement-e vous offre la possibilité de gérer en temps réel votre plateforme e-commerce. Notre solution vous accompagne pour développer au mieux votre productivité, vous simplifie le suivi clientèle de la prospection à la fidélisation.</p>
+
+                    <h5 class="mtop30">Quelques fonctionnalités:</h5>
+                    <p class="mbot5">Gestion avancée des frais de ports</p>
+                    <p class="mbot5">Moteur de promotions et avantages</p>
+                    <p class="mbot5">Paiement sécurisé</p>
+                    <p class="mbot5">Site mobile et/ou responsive</p>
+                    <p class="mbot5">Optimisation pour les moteurs de recherche</p>
+                    <p class="mbot5">Site entièrement personnalisable</p>
+                    <p class="mbot5">Espace client complet</p>
+                    <p class="mbot5">Navigation produit multi-critères</p>
+                    <p class="mbot5">Programmes de fidélité</p>
+                    <p class="mbot5">Animation commerciale</p>
+                    <p class="mbot5"></p>
+                    <p class="mbot5"></p>
+                    <p class="mbot5"></p>
+                    <p class="mbot5"></p>
+
+                    <p class="mtop30"><asp:Hyperlink cssclass="button" runat="server" navigateurl="~/e-commerce/">En savoir plus</asp:Hyperlink></p>
+
+                </div>
+
+                <div class="one_half column last">
+                    <h3>Coup d&quot;oeil sur...</h3>
+                    <p class="blog-thumb  mbot10">
+
+                        <asp:hyperlink navigateurl="~/e-commerce/client-king-jouet.htm" runat="server" ImageUrl="images/king-jouet.png" />
+                    </p>
+                    <p class="blog-thumb  mbot10">
+                        <asp:hyperlink navigateurl="~/e-commerce/campagnes-et-operations-commerciales.htm" runat="server" ImageUrl="images/campagnes.png" />
+                    </p>
+                </div>
+
+                <span class="clear"></span>
+
+
+
+            </div>
+
+            <div class="clear"></div>
+        </div>
+        <!--END ABOUT US SECTION -->
+
+        <!--BEGIN TESTIMONIALS SECTION -->
+        <div class="section testimonials" id="testimonials">
+            <div class="container">
+                <h2 class="ptop40 align-center testimonial">lancez vous facilement dans le e-commerce et gérez votre activité en toute simplicité.</h2>
+                <!--<h5 class="align-center">-- Founder &amp; CEO, John Doe Company </h5>-->
+            </div>
+        </div>
+        <!-- END TESTIMONIALS SECTION -->
+
+
+
+        <!--BEGIN PORTFOLIO SECTION -->
+        <div class="section portfolio" id="point-de-ventes">
+            <div class="container">
+                <div class="header">
+                    <div class="header-text">Points de vente</div>
+                </div>
+                <h2 class="align-center caption">Bientôt disponible. </h2>
+
+                <div class="column last">
+                    <asp:image runat="server" ImageUrl="images/Announce/home-caisse-surface.PNG"
+                        style="width: 100%; margin-top: 50px;" />
+                </div>
+
+                <!--  <div class="clear divider"></div>
+                <div class="portfolio-sub-container">
+                    <div class="port-frame block-3 column">
+                        <div class="port">
+                            <a href="images/portfolio/full/portfolio.jpg" title="Lorem Ipsum"><span class="roll"></span>
+                                <asp:image runat="server" ImageUrl="images/portfolio/thumbs/portfolio.jpg" alt="portfolio" /></a>
+                        </div>
+                        <span>Sone estere doloremque nunc</span>
+                        <p>Illustration / Wallpaper </p>
+                    </div>
+                    <div class="port-frame block-3 column">
+                        <div class="port">
+                            <a href="images/portfolio/full/portfolio.jpg" title="Lorem Ipsum"><span class="roll"></span>
+                                <asp:image runat="server" ImageUrl="images/portfolio/thumbs/portfolio.jpg" alt="portfolio" /></a>
+                        </div>
+                        <span>Webus estere doloremque</span>
+                        <p>Wallpaper / Print </p>
+                    </div>
+                </div>-->
+                <div class="clear divider"></div>
+            </div>
+        </div>
+        <!--END PORTFOLIO SECTION -->
+
+
+        <!--BEGIN OUR TEAM SECTION -->
+        <div class="section team" id="team">
+            <div class="container">
+                <h2 class="ptop40 align-center testimonial">Bientôt disponible.</h2>
+                <!--<h5 class="align-center">-- Founder &amp; CEO, John Doe Company </h5>-->
+            </div>
+        </div>
+        <!--END OUR TEAM SECTION -->
+
+        <div class="section portfolio crosscanal" id="crosscanal">
+            <div class="container">
+                <div class="header">
+                    <div class="header-text">Cross canal</div>
+                </div>
+                <h2 class="align-center caption">Internet a radicalement modifié les habitudes d&quot;achats. Avec simplement-e, entrez dans le monde du commerce connecté et proposez à vos clients
+                    une expérience combinant digital et lieux physiques.
+                </h2>
+
+
+                <div class="clear divider"></div>
+                <div class="portfolio-sub-container">
+                    <div class="port-frame block-3 column">
+                        <div class="port">
+                            <asp:image runat="server" ImageUrl="images/portfolio/thumbs/phonesmall.png" style="border: dashed 1px #dcdcdc" alt="mobile commerce" />
+                        </div>
+                        <span>Commerce mobile</span>
+                        <p>Donnez à vos clients les bonnes informations, où qu&quot;ils soient.</p>
+                    </div>
+                    <div class="port-frame block-3 column">
+                        <div class="port">
+                            <a href="images/portfolio/full/portfolio.jpg" title="Lorem Ipsum"><span class="roll"></span>
+                                <asp:image runat="server" ImageUrl="images/portfolio/thumbs/portfolio.jpg" alt="portfolio" /></a>
+                        </div>
+                        <span>Digital Signage</span>
+                        <p>Déployez des écrans informatifs ou des bornes interactives dans vos magasins.</p>
+                    </div>
+                    <div class="port-frame block-3 column">
+                        <div class="port">
+                            <asp:image runat="server" ImageUrl="images/portfolio/thumbs/parcours.jpg" style="border: dashed 1px #dcdcdc" alt="parcours client" />
+                        </div>
+                        <span>Parcours clients</span>
+                        <p>Suivez le parcours cross-canal de vos clients pour les servir au mieux.</p>
+                    </div>
+                </div>
+
+                <div class="two_third column exemple">
+                    <h3 class="mtop30">e-resa et drives chez king-jouet</h3>
+                    <p class="blog-thumb  mbot10 left">
+                        <asp:image runat="server" ImageUrl="images/kingdrive-small.png" />
+                    </p>
+
+                    <p class="mtop10">Depuis 2010, <b>king-jouet utilise notre solution</b> pour le commerce intégré afin de proposer à ses clients de réserver de produits en ligne puis de passer les récupérer dans l&quot;un des 200 magasins de l&quot;enseigne.<br />Et avec plusieurs milliers de réservations par semaines, le succès est au rendez-vous ! </p>
+                    <p><asp:hyperlink runat="server" navigateurl='~/e-commerce/client-king-jouet.htm#e-resa' class="button">En savoir plus</asp:hyperlink></p>
+                </div>
+
+
+                <div class="one_third column last message">
+                <h2 class="c-font-30 mbot5 pbot10 ptop0 align-center" style="margin-top:50px;">proposez à vos clients un parcours d&quot;achats innovant et adapté à leurs besoins</h2>
+<!--                    <h3 class="mtop30 icon-question-sign">Quelles possibilités ?</h3>
+                    <ul>
+                        <li>Lorem ipsum</li>
+                    </ul>-->
+                </div>
+
+                <div class="clear divider"></div>
+            </div>
+        </div>
+
+        <!--BEGIN TESTIMONIALS SECTION -->
+        <div class="section testimonials" id="testimonials">
+            <div class="container">
+                <h2 class="ptop40 align-center testimonial">participez à la révolution du commerce mobile, connecté et social.</h2>
+                <!--<h5 class="align-center">-- Founder &amp; CEO, John Doe Company </h5>-->
+            </div>
+        </div>
+        <!-- END TESTIMONIALS SECTION -->
+
+
+        <!--BEGIN CONTACT SECTION -->
+        <div class="section contact" id="contact">
+            <div class="container">
+                <!--      <div class="header">
+        <div class="header-text">Contact Us</div>
+      </div> -->
+
+                <div class="block-2 column contact-address" style="margin-top: 50px;">
+                    <h3 class="icon-map-marker">Nous contacter.</h3>
+                    <p class="icon-phone">Tél: +33 811 955 960</p>
+                    <p class="icon-print">Fax: +33 972 119 545 </p>
+                    <!--<p class="icon-envelope">E-mail: contact@simplement-e.com</p>-->
+                    <p class="icon-external-link">Website: www.simplement-e.com </p>
+
+
+                </div>
+
+               
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--END CONTACT SECTION -->
+
+       
+
+    </div>
+</Content>
+</ecom:ThemablePanelControl>

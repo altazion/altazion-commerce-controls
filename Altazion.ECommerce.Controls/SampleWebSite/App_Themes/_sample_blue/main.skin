@@ -1,0 +1,7 @@
+﻿<ecom:ThemablePanelControl SkinID="CategoriesMenuPanel" runat="server">
+    <Content>
+        <ul><li>
+            <asp:Hyperlink ImageUrl="~/images/segments/_sample_blue_acceuil.png" NavigateUrl="~/" runat="server" />
+        </li></ul>
+    </Content>
+</ecom:ThemablePanelControl>

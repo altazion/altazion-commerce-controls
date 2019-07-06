@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Theme xmlns="http://simplement-e.com/ecommerce/theme/theme.xsd">
+  <Name>Miam-Miam Corp : thème de démonstration</Name>
+  <Description>Theme de démonstration</Description>
+  <Author>(c) CPoint - 2009 - 2010</Author>
+  <Thumbnail>thumb_1.png</Thumbnail>
+  <Thumbnail>thumb_2.png</Thumbnail>
+  <Banner background="Dark">banner.png</Banner>
+
+
+
+  <Publicites>
+    <Publicite code="HOME" libelle="Animation sur la home"
+               description="Bandeau principal sur la home"
+               classeClient=""
+               classeServeur="CPointSoftware.Equihira.Business.Crm.TypeOperationHtmlPublicite">
+      <Composant>
+        <Entete>
+          <![CDATA[<section id="slides">
+  <div class="slides-container">]]>
+        </Entete>
+        <Pied>
+          <![CDATA[  </div><!-- end slides-container -->
+ 
+  <div class="slides-navigation">
+   <a class="prev" href="#"> <i class="fa fa-chevron-left"></i></a>
+   <a class="next" href="#"> <i class="fa fa-chevron-right"></i></a>
+  </div><!-- end slides-navigation --> 
+</section>
+<script type="text/javascript">$("#slides .slide A").click(function(e) { var self=$(this); E.InternalTools.googleAnalyticsEvent('Publicite', 'click', self.attr('data-event')); });</script>
+
+]]>
+        </Pied>
+        <Contenu kind="HTML" code="MAIN" libelle="Page classique">
+          <![CDATA[
+        <div class="slide">
+          <img src="{{Image}}" alt="slide" class="" />
+          <div class="slide-caption">
+            <a href="{{Url}}" data-event="{{Title}}">
+              <div class="container">
+                <h3 class="hidden-sm hidden-xs">
+                  <i class="fa fa-heart"></i><span></span>{{Title}}
+                </h3>
+                <h1>{{Texte}}</h1>
+              </div>
+            </a>
+          </div>
+        </div>]]>
+        </Contenu>
+        <Variable code="Image" kind="ImageUrl" />
+        <Variable code="Texte" kind="HtmlLine" />
+        <Variable code="Title" kind="HtmlLine" />
+        <Variable code="Url" kind="SearchUrl" />
+      </Composant>
+    </Publicite>
+  </Publicites>
+
+  <Produits>
+    <Template code="CHOCOLAT" skinId="ProduitItemDetailsChocolat" libelle="Fou de chocolat" />
+  </Produits>
+
+  <Options>
+    <Search classeCssMiseEnAvant="MisEnAvant" nbMiseEnAvant="1" />
+  </Options>
+
+</Theme>

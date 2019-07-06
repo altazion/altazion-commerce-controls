@@ -1,0 +1,130 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="RecuContent" >
+<Content>
+<section class="page-b page-process">
+  <div class="container">
+    <div class="row page-b-titre">
+      <h1 class="rouge">Votre reçu de commande
+        <div class="trait"></div>
+      </h1>
+    </div>
+  </div>
+</section>
+
+
+<section class="Panier-mag page-process page-recu">
+  <ecom:PanierPanelMagasinAssocie runat="server" cssclass="container">
+    <div class="row panier-header">
+      <div class="col-md-12 col-xs-12 col-sm-12">
+        <div class="icon-panier">
+          <span class="icon-2 bg-orange blanc"></span>
+        </div>
+        <h2 class="orange no-margin">Réservation en magasin</h2>
+        <p class=" no-margin ">Votre réservation magasin <span class="orange">N° : <ecom:CommandeNumero runat="server" /> </span> a bien été prise en compte. Merci !</p>
+      </div>
+    </div>
+    <div class="panier-table">
+      <div class="col-md-5 bg-orange recu-mag recu-verif">
+        <p class="titre">Mon magasin</p>
+        <p class="recu-adresse">
+          <ecom:MagasinAssocieLibelle runat="server"  class="nom" /><br />
+          <ecom:MagasinAssocieAdresse runat="server"  /><br />
+          <ecom:MagasinAssocieCP runat="server" /> <ecom:magasinAssocieVille runat="server"  />
+        </p>
+        <p class="recu-tel">
+          <i class="fa fa-phone blanc"></i><ecom:MagasinAssocieTel runat="server"  /><br />
+          <span class="icon-5 blanc"></span><ecom:MagasinAssocieGoogleMapLink runat="server"  /> 
+        </p>
+        <p class="nom-retrait">
+          Nom de la personne qui retire le colis :
+        </p>
+        <p class="nom-retrait-detail"><ecom:PanierNomLivraison runat="server" /></p>  
+      </div>
+      <div class="col-md-7 recu-panier">
+        <p class="titre orange">Récapitulatif des articles à retirer et payer en magasin
+        </p>
+        <ecom:PanierLignes runat="server" ShowAs="Repeater" AssociesMagasin="true" Type="Produit" IsEditable="false" />
+
+        <div class="panier-ligne-total panier-ligne  ">
+          <div class="col-md-12">
+            <p class="prix-total">
+              Total à régler en magasin : <ecom:PanierTotalLabel runat="server" Format="0.00€" AssocieMagasin="true" Cssclass="orange"/>            
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </ecom:PanierPanelMagasinAssocie>
+</section>
+<section class="Panier-web page-process page-recu">
+  <ecom:PanierPanelSansMagasinAssocie runat="server" class="container">
+    <div class="row panier-header">
+      <div class="col-md-12">
+        <div class="icon-panier">
+          <span class="icon-1 bg-rouge blanc"></span>
+        </div>
+        <h2 class="rouge no-margin">Achat en ligne</h2>
+        <p class=" no-margin hidden-xs">Votre réservation magasin <span class="rouge">N° : <ecom:CommandeNumero runat="server" /> </span> a bien été prise en compte. Merci !</p>
+      </div>
+    </div>
+    <div class="recu-confirmation">
+      <p>Un e-mail de confirmation vous sera envoyé dans les prochaines minutes.<br />
+        Vous pouvez dès maintenant vous connecter à votre compte client en utilisant votre identifiant et votre mot de passe.
+      </p>
+      <p><b>Afin que votre commande soit validée, merci de nous faire parvenir au plus vite votre règlement par chèque à l'adresse suivante :   Miam Miam  -  BP 197   -   38505 Voiron </b><br />
+        N'oubliez pas de noter le numéro de commande au dos de votre chèque.
+      </p>
+    </div>
+    <div class="panier-table">
+      <div class="col-md-5 bg-rouge recu-web recu-verif">
+        <p class="titre">Ma livraison</p>
+        <p class="recu-liv">
+          <span class="nom"><ecom:LivraisonMode runat="server" />
+          </span><br />Prévue le <ecom:LivraisonDelai runat="server" />
+        </p>
+        <p class="titre">Adresse de livraison :</p>
+        <p class="recu-ad-liv">
+         <ecom:AdresseChoisie runat="server" RenderAs="InlineWithBr" TypeAdresse="AdresseLivraison"  />
+        </p>
+       
+      </div>
+      <div class="col-md-7 recu-panier">
+        <p class="titre rouge">Récapitulatif de votre commande
+        </p>
+<ecom:PanierLignes runat="server" ShowAs="Repeater" AssociesMagasin="false" Type="Produit" IsEditable="false" />
+        <div class="panier-ligne-liv ">
+              <div class="col-md-9 col-sm-9 col-xs-8">
+                <p class="no-margin">Frais de livraison</p>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-4 prix-total">
+                <span class="rouge"> <ecom:LivraisonMontant runat="server" format="0.00€" /></span>
+              </div>
+              <div class="clear"></div>
+        </div>
+
+        <div class="panier-ligne-total panier-ligne  ">
+          <div class="col-md-12">
+            <p class="prix-total">
+              Total à régler en magasin ou en ligne :<ecom:PanierTotalLabel runat="server" Format="0.00€" AssocieMagasin="false" Cssclass="rouge"/>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="clear"></div>
+    </div>
+  </ecom:PanierPanelSansMagasinAssocie>
+</section>
+-->
+<div class="container page-recu">
+  <div class="row btn-cta">
+          <div class="col-md-12">
+          <a class="btn btn btn-gris-fonce btn-espace pull-left hidden-xs" href="#"><i class="fa fa-user"></i>Votre espace</a>
+          <a class="btn btn btn-gris-fonce btn-print pull-left hidden-xs" href="#"><i class="fa fa-print blanc"></i></i>Imprimer </a>
+          <a class="btn btn-gris-fonce pull-right" href="#">Retour à la boutique <i class="fa fa-chevron-right"></i></a>
+          </div>
+  </div>
+</div>
+
+</Content>
+</ecom:ThemablePanelControl>

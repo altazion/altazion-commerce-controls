@@ -1,0 +1,23 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="ClientsHomeHeader">
+            <Content>
+                       
+            </Content>
+        </ecom:ThemablePanelControl>    
+ <ecom:ThemablePanelControl runat="server" SkinID="ClientsHome">
+<Content>
+    <div class="container">
+        <div class="block-2 column">
+            <h2>Vos licences</h2>
+            <ecom:IsvListeLicencesClient runat="server" LicenceTemplateSkinId="LicenceClientHomeMy" />
+        </div>
+        <div class="block-2 column last">
+            <h2>Votre espace client</h2>
+            <ul>
+                <li><asp:hyperlink runat="server" navigateurl="~/my/devis.htm">Vos devis</asp:hyperlink></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="clear"></div>
+</Content>
+</ecom:ThemablePanelControl>

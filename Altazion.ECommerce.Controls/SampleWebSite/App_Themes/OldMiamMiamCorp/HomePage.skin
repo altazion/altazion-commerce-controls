@@ -1,0 +1,29 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="HomePagePanel">
+<Content>
+
+
+    <div class="container_16">
+        <div class="grid_7 welcome suffix_1">
+            <div class="header"></div>
+        Miam-Miam-Corp.com est un site de démonstration utilisant la solu-tion gestion commerciale et de vente en ligne simplement-e.com</div>
+        <div class="grid_8 publicites">
+        <ecom:CampagnePublicite TypeOperation="HomePage" runat="server" DefaultImage="pub_home_haut_sans.jpg" />
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="container_16 suggestions">
+    
+        <div class="leftPub">
+            <ecom:CampagnePublicite runat="server" Format="NonStandard"  TypeOperation="HOMELEFT" DefaultMimeType="Image" />
+        </div>
+
+        <div class="rightPub">
+            <ecom:CampagnePublicite runat="server" Format="NonStandard"  TypeOperation="HOMERIGHT" DefaultMimeType="Image" />
+        </div>
+
+    </div>
+
+</Content>
+</ecom:ThemablePanelControl>

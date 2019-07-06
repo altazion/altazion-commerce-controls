@@ -1,0 +1,72 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="RecuContent">
+    <Content>
+<div class="panier recu tunnel  sport">
+    <section class="main">
+        <div class="container-fluid">
+            <div class=" page-main ">
+
+                
+               
+                <div class="row panier-content justify-content-center">
+                  <div class="col-12 recu-txt">
+                    <a href="" class="d-bloc-md d-lg-none"><i class="fas fa-arrow-left"></i></a>
+                    <span>
+                      <h1 class="trait">Merci !</h1>
+                      <p>
+                          Votre commande n°<ecom:CommandeNumero runat="server" /> a bien été prise en compte.
+                                </p>
+ </span>
+
+                    
+
+                  </div>
+                  <div class="col-lg-7 col-xl-7 col-12 px-0 panier-left">
+                      <div class="titre ">
+                          <h2 class="commande">Ma commande</h2>
+                      </div>
+                      <div class="tableau-panier">
+                          <div class="ligne-th ligne">
+                              <div class="bloc1">
+                                  <div class="bloc-img">
+                                      Article
+                                  </div>
+                              </div>
+                              <div class="bloc-content-2-3-4">
+                                  <div class="bloc2"></div>
+                                  <div class="bloc2-2">
+                                      Prix unitaire
+                                  </div>
+                                  <div class=" bloc3 choix-qt">
+                                      Quantité
+                                  </div>
+                                  <div class="bloc4 prix">
+                                      Montant total
+                                  </div>
+                              </div>
+                          </div>
+            <ecom:PanierLignes runat="server" ShowAs="Repeater" 
+                AssociesMagasin="false" Type="Produit" IsEditable="false" />
+        </div>
+                      
+                  </div>          
+                  <div class="col-lg-4 col-xl-3 col-12 panier-right">
+                      <h2>Adresse de livraison</h2>
+                      <div class="adresse-liv">
+        <p><ecom:AdresseChoisie runat="server" RenderAs="InlineWithBr" TypeAdresse="AdresseLivraison"  />
+</p>
+  </div>
+                      
+                  </div>
+                  <div class="col-12 bloc-cta">
+                    <a href="/" class="btn btn-75 btn-lg-65 btn-md-50">retour à la boutique</a>
+
+                  </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+    </Content>
+</ecom:ThemablePanelControl>

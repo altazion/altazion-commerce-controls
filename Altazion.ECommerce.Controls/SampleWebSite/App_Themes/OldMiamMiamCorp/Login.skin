@@ -1,0 +1,59 @@
+﻿<%--
+    Commun
+--%>
+
+ <ecom:ThemablePanelControl runat="server" SkinID="LoginProcessHeader">
+            <Content>
+                <h1><span>Connexion</span></h1>
+    </Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="LoginBoxHeader">
+<Content>
+    <p class="authFacebook">
+        <span class="logo"></span>
+        <ecom:FacebookLoginLink runat="server" ID="lnkFacebook">Connectez vous grâce à votre compte facebook</ecom:FacebookLoginLink>
+    </p>
+
+    <p class="authPaypal">
+        <span class="logo"></span>
+        <ecom:PaypalLoginLink runat="server" ID="lnkPaypal">Connectez vous grâce à votre compte facebook</ecom:PaypalLoginLink>
+    </p>
+
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="LoginCreationBoxHeader">
+    <Content>
+    <p class="Title">C'est votre première commande ?</p>
+    </Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="LoginCreationBox">
+                            <Content>
+                                				<ecom:CreationComptePanel runat="server" ValidationGroup="CompteCreation"> 
+					<div class="adresse">
+					<asp:Panel runat="server" id="ErrorMessage" Visible="false">
+						<p style='color:firebrick; margin:0px 50px 0px 50px;'>Impossible d'utiliser cette adresse e-mail.Vérifiez que
+						vous n'avez pas déjà créé un compte.</p>
+					</asp:Panel>
+				    <table>
+				    <ecom:CompteCreation runat="server" SansTableTag="true" />
+				    <ecom:CompteCreationAdresse runat="server" SansTableTag="true" />
+					</table>
+                    </div>
+				    
+				    
+				    <asp:LinkButton class="valider" runat="server" CommandName="save" ValidationGroup="CompteCreation" Text="Continuer"  />
+				</div>
+				    
+				</ecom:CreationComptePanel>
+
+                            </Content>
+                        </ecom:ThemablePanelControl>
+
+
+<%--
+    Page de login hors process
+--%>

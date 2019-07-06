@@ -1,0 +1,36 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="RecuContent">
+    <Content>
+
+        <div class="content">
+            <section class="main">
+                <div class="contenu-recu">
+                    <div class="container">
+                        <div class="row recu-content">
+                            <div class="col-md-12">
+                                <h1>Merci pour votre commande !</h1>
+                                <p>
+                                    Votre commande n°<ecom:CommandeNumero runat="server" /> a bien été prise en compte.
+                                </p>
+ <div class="row">
+    <div class="col-lg-5 col-md-6 col-sm-12  offset-lg-1 detail-commande">
+        <h2>Votre commande</h2>
+        <div class="bloc-commande">
+            <ecom:PanierLignes runat="server" ShowAs="Repeater" 
+                AssociesMagasin="false" Type="Produit" IsEditable="false" />
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-6 col-sm-12 recu-adresse" >
+        <h2>Votre adresse de livraison</h2>
+        <ecom:AdresseChoisie runat="server" RenderAs="InlineWithBr" TypeAdresse="AdresseLivraison"  />
+    </div>
+
+                            </div>
+                        </div>
+                    </div>
+</div>
+                </div>
+            </section>
+        </div>
+
+    </Content>
+</ecom:ThemablePanelControl>

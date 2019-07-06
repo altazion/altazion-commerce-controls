@@ -1,0 +1,139 @@
+﻿
+<ecom:ThemablePanelControl runat="server" SkinID="ClientsHome">
+                <Content>
+    <div class="content">
+      <section class="main">
+        <div class="produit1">
+          <div class="container">
+              <div class="row compte-row">
+                    <div class="col-md-4 col-lg-3 px-0
+                    menu-compte compte-bloc-2">
+                        <ul>
+                            <li class="active">
+                                <a href="">Accueil mon compte</a>
+                            </li>
+<%--
+                            <li>
+                                <a href="">Mes informationspersonnelles</a>
+                            </li>
+                            <li>
+                                <a href="">Mon carnet d’adresses</a>
+                            </li>
+--%>
+                            <li>
+                                <a href="/my/commandes.htm">
+                                Mes commandes</a>
+                            </li>
+<%--
+                            <li>
+                                <a href="">
+                                Mes points fidélité</a>
+                            </li>
+--%>
+                            <li>
+                                <a href="/newsletter.htm">
+                                Newsletter</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-8 col-lg-9 compte-bloc-1 px-0" >
+                        <div class="welcome">
+                            <div class="welcome1">
+                                    <div class="bloc-img">
+                                            <img src="/App_Themes/LaPlaza/img/icon-compte-h.svg" height="70" alt="">
+                                        </div>
+                                        <div class="hi">Bonjour <ecom:ClientNom runat="server" /></div>
+                            </div>
+                           
+                            <ecom:LoginStatus runat="server" LogoutPageUrl="~/" class="deco" LogoutText="<div class='off'><div class='bloc-off'><img src='/App_Themes/LaPlaza/img/icon-off.svg' width='24' alt=''></div></div><span>DECONNEXION</span>" />
+                            
+                        </div>
+                        <div class="bloc-txt">
+                            <p>Votre compte personnel enregistre en toute sécurité l'ensemble de vos informations personnelles, préférences afin que vous profitiez pleinement  de votre expérience d'achat sur www.laplaza.fr</p>
+                        </div>
+                    
+                    </div>
+<%--
+                    <div class="col-md-8 col-lg-9 compte-bloc-3 px-0">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-4 accueil-comm">
+                                <div class="titre-compte">
+                                    <h3>Vos commandes</h3>
+                                </div>
+                                <div class="accueil-com-nb">
+                                    <div class="nb-comm">
+                                        <div class="date">DEPUIS<br />12 MOIS</div>
+                                        <span class="nb">
+                                            5
+                                        </span>
+                                        <span>commandes</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-8 accueil-dernier">
+                                <div class="titre-compte">
+                                    <h3>Vos derniers articles consultés</h3>
+                                </div>
+                                <div class="accueil-dernier-comm">
+                                        <div class="ligne row">
+                                            <div class="bloc1 col-md-3 px-0">
+                                                <div class="bloc-img">
+                                                    <a href="">
+                                                    <img src="/App_Themes/LaPlaza/img/prod1.jpg" alt="" class="img-fluid">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="bloc2 col-md-9">
+                                                <h2 class="libelle">  <a href="">Huile d’olive Lorem ipsum</a></h2>
+                                                <span class="poids">5 litres</span>
+                                            </div>
+                                        </div>
+                                        <div class="ligne row">
+                                            <div class="bloc1 col-md-3 px-0">
+                                                <div class="bloc-img">
+                                                    <a href="">
+                                                    <img src="/App_Themes/LaPlaza/img/prod2.jpg" alt="" class="img-fluid">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="bloc2 col-md-9">
+                                                <h2 class="libelle">  <a href="">Huile d’olive Lorem ipsum</a></h2>
+                                                <span class="poids">5 litres</span>
+                                            </div>
+                                        </div>
+                                        <div class="ligne row">
+                                            <div class="bloc1 col-md-3 px-0">
+                                                <div class="bloc-img">
+                                                    <a href="">
+                                                    <img src="/App_Themes/LaPlaza/img/prod3.jpg" alt="" class="img-fluid">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="bloc2 col-md-9">
+                                                <h2 class="libelle">  <a href="">Huile d’olive Lorem ipsum</a></h2>
+                                                <span class="poids">5 litres</span>
+                                            </div>
+                                        </div>
+                                  
+
+
+
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+--%>
+                    <div class="clear"></div>
+              </div>
+           
+         
+          </div>
+        </div>
+      
+      </section>
+
+</Content>
+</ecom:ThemablePanelControl>

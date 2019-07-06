@@ -1,0 +1,39 @@
+﻿
+
+<ecom:ThemablePanelControl runat="server" SkinID="ModeReglementChequeFerme"
+    RenderWithNoTag="true">
+<Content>
+    <div class="panel panel-default paiement-detail ">
+        <div id="headingOne" role="tab">
+            <h3>
+                <ecom:ReglementOuvrirLinkButton runat="server" class="butt1" role="button">
+                    <i></i>Par chèque bancaire
+                </ecom:ReglementOuvrirLinkButton>
+            </h3>
+        </div>
+    </div>
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="ModeReglementChequeOuvert"
+    RenderWithNoTag="true">
+<Content>
+    <div class="panel panel-default active paiement-detail ">
+        <div id="headingOne" role="tab">
+            <h3>
+                <a class="butt1" aria-controls="collapseOne" aria-expanded="true" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" role="button">
+                    <i></i>Par chèque bancaire
+                </a>
+            </h3>
+        </div>
+        <div aria-labelledby="headingOne" role="tabpanel" class="panel-collapse collapse in" id="collapseOne">
+            <div class="paiement-detail-2">
+                <p>Envoyez votre chèque pour valider votre commande.</strong></p>
+                <div class="btn-cta">
+                    <ecom:ReglementChoisirLinkButton runat="server" cssclass="btn  btn-info ">Validez<span class="visible-xs"><br /></span> mon panier <i class="fa fa-chevron-right"></i></ecom:ReglementChoisirLinkButton>
+                </div>
+            </div>
+        </div>
+    </div>
+</Content>
+</ecom:ThemablePanelControl>

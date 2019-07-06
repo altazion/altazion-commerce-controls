@@ -1,0 +1,883 @@
+﻿
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;
+	vertical-align: baseline;
+}
+
+p, div, blockquote, h1, h2, h3, h4, h5, h6, ul
+{
+	color: #444444;	
+}
+
+b, strong
+{
+	color:#333333;
+	font-family:Tahoma SemiBold, Arial, Tahoma, Sans-Serif;
+	font-weight:600;
+}
+
+i, em
+{
+	font-style:italic;
+}
+
+h2
+{
+	margin-top: 30px;
+	font-size: 24px;
+	padding-bottom: 14px;
+	font-family: Tahoma, Arial;
+	font-weight: 100;
+}
+
+h3
+{
+	margin-top: 12px;
+	font-size: 16px;
+	padding-bottom: 12px;
+	font-family: Tahoma, Arial;
+	font-weight: 100;
+}
+
+h4
+{
+	text-transform:uppercase;
+}
+
+
+.pageTitle
+{
+	padding-bottom:0;
+	margin-bottom:3px;
+}
+
+.pageSubTitle
+{
+	padding:0 0 15px 0!important;
+	margin:3px 0 0px 0!important;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+{
+	display: block;
+}
+body
+{
+	line-height: 1;
+	color: #292929;
+}
+ol, ul
+{
+	list-style: none;
+}
+blockquote, q
+{
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after
+{
+	content: '';
+	content: none;
+}
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear
+{
+	clear: both;
+}
+
+
+body
+{
+	font-family: Tahoma, Arial, Sans-Serif;
+}
+
+#PageContent
+{
+	min-height: 500px;
+	line-height: 24px;		
+}
+
+.accesClient
+{
+	display:none;
+	float: right;
+	margin-top:-8px;
+}
+
+.accesClient A
+{
+	color: white !important;
+	display: block;
+	background: url(https://egestcom.blob.core.windows.net/simplementesite/theme/gfx/allgfx.png) #0071c2 no-repeat -250px -30px;
+	left: 50%;
+	top: 0;
+	width: 70px;
+	height: 16px;
+	padding: 6px 15px 5px 30px;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+
+#PageHeader
+{
+	margin-top: 10px;
+	height: 20px;
+}
+
+
+#PageHeader A
+{
+	text-transform: lowercase;
+	color: #494949;
+	text-decoration: none;
+}
+
+
+/* le contenu */
+
+#PageMainZoneHeader
+{
+}
+
+
+#PageMainZoneHeader .breadcrumb
+{
+	font-size: 10px;
+}
+
+#PageMainZoneHeader .breadcrumb ul
+{
+	list-style-type: none;
+}
+
+#PageMainZoneHeader .breadcrumb li
+{
+	display: inline;
+}
+
+
+/* La home */
+.homepage .zone2
+{
+	margin: 30px 0px 15px 0px;
+	height: 350px;
+}
+
+.homepage .zone2 h2, .homepage .zone3 h2
+{
+	min-width: 140px;
+	letter-spacing: -1px;
+}
+.homepage .zone2 A
+{
+	text-decoration: none;
+}
+.homepage .zone2 h3
+{
+	text-transform: lowercase;
+	color: #292929;
+	margin: 8px 0px 4px 3px;
+	font-size: 18px;
+	font-family: Tahoma, Arial, Sans-Serif;
+	padding-right: 7px;
+	padding:0;
+}
+
+.homepage .zone2 ul .puce
+{
+	clear: both;
+	width: 220px;
+	height: 160px;
+	background: #282D32;
+	margin-right: 20px;
+	border:solid 1px #dcdcdc;
+}
+
+.homepage .zone2 ul a:hover .puce 
+{
+	opacity:0.75;
+}
+
+.homepage .zone2 ul .gestion-commerciale .puce
+{
+	background:url(https://egestcom.blob.core.windows.net/simplementesite/theme/gfx/allgfx.png) #0071c2 no-repeat -5px -345px;
+}
+
+.homepage .zone2 ul .e-commerce .puce
+{
+	background:url(https://egestcom.blob.core.windows.net/simplementesite/theme/gfx/allgfx.png) #0071c2 no-repeat -5px -5px;
+}
+
+.homepage .zone2 ul .points-de-vente .puce
+{
+	background:url(https://egestcom.blob.core.windows.net/simplementesite/theme/gfx/allgfx.png) #0071c2 no-repeat -5px -176px;
+}
+
+.homepage .zone2 ul .puce span
+{
+	display: none;
+}
+.homepage .zone2 ul li
+{
+	display: inline-block;
+	float: left;
+	width: 220px;
+	margin-right: 20px;
+}
+
+.homepage .zone2 ul li.crm
+{
+	opacity: 0.75;
+}
+
+
+.homepage .zone2 .description
+{
+	font-size: 12px;
+	font-family: Arial, Sans-Serif;
+	color: #777777;
+	line-height: 18px;
+	margin: 0px 4px;
+	height: 36px;
+}
+
+.homepage .zone3
+{
+	opacity: 0.5;	
+	margin: 25px 0px 0px 0px;
+	padding: 25px 0px 0px 0px;
+	border-top: solid 1px #dcdcdc;
+	clear: both;
+	height: 225px;
+	line-height:14px;
+}
+
+.homepage .zone3 h2
+{
+	float: left;
+	padding:0 15px 0 0;
+	margin:8px 0 40px 0;
+}
+
+.homepage .zone3 .moreInfos
+{
+	font-size: 12px !important;
+	color: #494949;
+	text-decoration: none;
+	padding: 15px 10px 0 0px;
+	font-family: Tahoma, Arial, Sans-Serif;
+	font-weight: lighter;
+	text-transform: none;
+}
+
+.homepage .zone3 h3
+{
+	text-transform: uppercase;
+	color: #292929;
+	margin: 0;
+	font-size: 14px;
+	padding:0 0 10px 0;
+	font-family: Tahoma, Arial, Sans-Serif;
+}
+.homepage .zone3 p
+{
+}
+
+
+.homepage .zone3 ul
+{
+	clear: both;
+}
+
+
+.homepage .zone3 ul .moreInfos
+{
+	padding: 0px 10px 0px 7px;
+}
+
+.homepage .zone3 ul li
+{
+	background: #ffffff;
+	height: 115px;
+}
+
+.homepage .zone3 ul li.saas, .homepage .zone3 ul li.onpremise
+{
+	width: 460px;
+	padding: 0 20px 0 0;
+	float: left;
+}
+
+.homepage .zone3 ul .puce
+{
+	float: left;
+	width: 110px;
+	height: 110px;
+	background: #282D32;
+	margin-right: 20px;
+}
+
+.homepage .zone3 ul .puce span
+{
+	display: none;
+}
+
+.homepage .zone3 ul .lead
+{
+	font-size: 9px;
+	color: #0071c2;
+	text-transform: uppercase;
+	margin: 0 0 3px 0;
+}
+
+.homepage .zone3 .description
+{
+	font-size: 12px;
+	font-family: Arial, Sans-Serif;
+	color: #999999;
+	line-height: 18px;
+	height: 36px;
+}
+
+.homepage .zone3 .links a
+{
+	display: block;
+	float: left;
+	padding-top: 7px;
+	height: 21px;
+	font-size: 13px;
+	width: 142px;
+	text-align: center;
+	text-transform: uppercase;
+	background: #0071c2;
+	color: #ffffff;
+	margin-top: 5px;
+}
+
+.customPage .leftColumn 
+{
+	float:left;
+	width:210px;
+	margin-top:45px;
+	padding:24px 0 25px 0;
+	min-height:300px;
+	border-right:solid 1px #efefef;
+}
+
+.customPage .leftColumn UL 
+{
+	display:none;
+}
+
+.customPage .leftColumn UL LI
+{
+	display:block;
+	clear:both;
+}
+
+.customPage .leftColumn UL LI A 
+{
+	text-decoration:none;
+	color:#444444;
+	line-height:14px;
+}
+
+.customPage .leftColumn UL LI .description
+{
+	font-size:12px;
+	text-transform:uppercase;
+}
+
+.customPage .leftColumn UL LI .puce
+{
+	display: block;
+	float: left;
+	width: 35px;
+	height: 35px;
+	margin: 0px 10px;
+}
+
+.customPage .leftColumn  UL LI.home .puce
+{
+	background: url(https://egestcom.blob.core.windows.net/simplementesite/theme/gfx/allgfx.png) no-repeat -310px -290px ;
+}
+
+.customPage .leftColumn  UL LI.puce1 .puce
+{
+	background: url(https://egestcom.blob.core.windows.net/simplementesite/theme/gfx/allgfx.png) no-repeat -310px -127px ;
+}
+
+.gestion-commerciale .leftColumn UL.gestion-commerciale,
+.e-commerce .leftColumn UL.e-commerce
+{
+	display:block;
+}
+
+.e-commmerce .leftColumn  UL LI.home .description,
+.gestion-commerciale .leftColumn  UL LI.home .description
+{
+	display:block;
+	float:left;
+	padding-top:5px;
+}
+
+
+.customContent
+{
+	float: right;
+	width: 715px;
+	padding:0px 0px 15px 30px;
+	margin: 30px 0px;
+	font-size: 13px;
+}
+
+.customContent A
+{
+	color:#0071c2;
+	text-decoration:none;
+}
+ 
+.customContent A:hover
+{
+	text-decoration:underline;
+}
+
+.customContent h1 span
+{
+	display: none;
+}
+
+.customContent p,
+.customContent ul,
+.customContent ol
+{
+	margin:12px 0px;
+}
+
+.customContent ul
+{
+	list-style-type:disc;
+	margin-left:24px;	
+}
+
+
+.customContent blockquote
+{
+	padding-bottom: 12px;
+}
+
+.customContent blockquote h2
+{
+	font-family: Tahoma, Arial, Sans-Serif;
+	font-size: 30px;
+	color: #0071c2;
+}
+
+.customContent blockquote h2:first-line
+{
+	color: #292929;
+	font-family: Tahoma, Arial, Sans-Serif;
+	font-weight: 100;
+}
+
+
+/* espace client */
+
+.my .breadcrumb
+{
+	display: none;
+}
+
+.clientMenu
+{
+	border-bottom: solid 1px #dcdcdc;
+	clear: both;
+	padding: 5px 10px;
+	height: 20px;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin: 0 0 10px 0;
+}
+.clientMenu A
+{
+	text-decoration: none;
+	color: #696969 !important;
+}
+.clientMenu ul
+{
+	margin: 0;
+	padding: 0;
+	line-height: 1em;
+}
+.clientMenu LI
+{
+	display: inline-block;
+	padding: 5px 11px 5px 8px;
+}
+
+.isvLicenceHome
+{
+	width: 470px;
+	float: left;
+}
+.isvLicenceHomeMain
+{
+	margin: 0px 0px 10px 0px;
+	padding: 15px 10px;
+	background: #dcdcdc;
+	height: 150px;
+}
+.isvLicenceHomeMain .libelle
+{
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.isvLicenceHomeMain .code .entete, .isvLicenceHomeMain .install
+{
+	font-size: 11px;
+}
+.isvLicenceHomeMain .code .value
+{
+	display: block;
+	font-size: 32px;
+	color: #393939;
+	text-align: center;
+	margin: 12px 0px 17px 0px;
+}
+.isvLicenceHomeMore
+{
+	width: 225px;
+	margin: 0px 10px 10px 0px;
+	float: left;
+	font-size: 11px !important;
+}
+.isvLicenceHomeHorsGarantie
+{
+	background: #EBEBEB;
+	padding: 13px 10px 10px 10px;
+	margin: 0px 0px 10px 0px;
+	height: 27px;
+}
+.isvLicenceHomeEnGarantie
+{
+	background: #EBEBEB;
+	padding: 10px 10px;
+	margin: 0px 0px 10px 0px;
+	height: 30px;
+}
+.ivsLicenceHomeAddIns
+{
+	padding: 13px 10px 10px 10px;
+	background: #EBEBEB;
+	height: 27px;
+}
+.isvLicenceHomeDownload
+{
+	width: 215px;
+	margin: 0px 0px 0px 0px;
+	float: left;
+	background: #0071C2;
+	padding: 10px 10px;
+	height: 90px;
+}
+.isvLicenceHomeDownload A
+{
+	color: #efefef;
+	font-size: 22px;
+	padding: 20px 35px 0px 35px;
+	display: block;
+	text-align:center;
+	text-decoration:none;
+}
+
+
+/* page de login */
+.LoginBox
+{
+	margin-top: 25px;
+	float: left;
+	width: 408px;
+}
+
+.LoginBox input[type=text], .LoginBox input[type=password]
+{
+	width: 290px;
+}
+
+.LoginBox table
+{
+	margin-bottom: 15px;
+}
+
+.LoginBox td
+{
+	text-align: left;
+	padding-bottom: 5px;
+}
+
+.LoginBox td A
+{
+	color: #494949;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+
+
+.LoginBox td.Title
+{
+	padding-top:12px;
+	font-size: 36px;
+	padding-bottom: 40px;
+	font-family: Tahoma, Arial;
+	font-weight: 100;
+}
+
+.LoginBox td.Instructions
+{
+	padding: 0px 0 15px 0;
+	font-size: 12px;
+}
+
+.LoginBox td Label
+{
+	font-size: 12px;
+	padding-right: 15px;
+}
+
+.LoginBox .LoginButton
+{
+	background: #0071c2;
+	color: White;
+	padding: 3px 15px;
+	text-align: right;
+	float: right;
+	text-decoration: none;
+	font-size: 12px;
+	margin: 7px 7px;
+}
+
+.LoginRight
+{
+	margin-top: 25px;
+	float: right;
+	width: 480px;
+	padding: 0px 10px;
+	min-height: 220px;
+	font-size: 12px;
+}
+
+.LoginRight h3
+{
+	font-size: 36px;
+	padding-bottom: 40px;
+	font-family: Tahoma, Arial;
+	font-weight: 100;
+}
+
+
+/* les pages de formulaire : declarations de base */
+
+.formulaire .contenuFormulaire
+{
+}
+
+.formulaire .instructions
+{
+}
+
+.formulaire input[type=text], .formulaire textArea, .formulaire input[type=password]
+{
+	width: 282px;
+	margin: 5px 0px;
+	border: solid 1px #a0a0a0;
+	padding: 2px;
+}
+
+.formulaire input[type=text].EnErreur, .formulaire textArea.EnErreur, .formulaire input[type=password].EnErreur
+{
+	border: solid 1px #990000;
+	padding: 2px;
+}
+
+.formulaire input[type=text].Valide, .formulaire textArea.Valide, .formulaire input[type=password].Valide
+{
+	border: solid 1px #009900;
+	padding: 2px;
+}
+
+
+.formulaire span.Entete, .formulaire label.Entete
+{
+	width: 120px;
+	margin: 8px 0px;
+	font-size: 12px;
+	display: block;
+	float: left;
+	clear: both;
+}
+
+.formulaire .Error
+{
+	font-size: 12px;
+	display: block;
+	position: absolute;
+	margin-top: -22px;
+	margin-left: 425px;
+}
+
+.formulaire .Error span
+{
+	display: block;
+	border: solid 1px #990000;
+	background: white;
+	padding: 3px 8px;
+	color: #990000 !important;
+}
+
+.formulaire .submit A
+{
+	background: #0071c2;
+	color: White;
+	padding: 3px 15px;
+	text-decoration: none;
+	font-size: 12px;
+	display: block;
+	width: 100px;
+	text-align: center;
+	margin: 15px 7px 7px 280px;
+}
+
+/* celui de contact */
+
+.formulaireContact .contenuFormulaire
+{
+	margin-top: 25px;
+	float: left;
+	width: 408px;
+}
+
+.formulaireContact .instructions
+{
+	margin-top: 25px;
+	float: right;
+	width: 480px;
+	padding: 0px 10px;
+	min-height: 220px;
+}
+
+.formulaireContact .ContactNumCommande
+{
+	display: none;
+}
+
+.formulaireContact .finFormulaire
+{
+	clear: both;
+}
+
+/* les définitions globales pour "my" */
+
+.my h1
+{
+	margin-top: 20px;
+	font-size: 36px;
+	padding-bottom: 24px;
+	font-family: Tahoma, Arial;
+	font-weight: 100;
+}
+
+.my h2
+{
+	margin-top: 12px;
+	font-size: 24px;
+	padding-bottom: 12px;
+	font-family: Tahoma, Arial;
+	font-weight: 100;
+}
+
+
+
+/* la page "devis" du compte */
+.my #ClientsDevis .validerDevis
+{
+	position:fixed;
+	top:0; left:0;
+	width:100%;
+	height:100%;
+}
+
+.my #ClientsDevis .validerDevis .background
+{
+	opacity:0.5;
+	width:100%;
+	height:100%;
+	background:#efefef;
+}
+
+.my #ClientsDevis .validerDevis P
+{
+	position:fixed;
+	top:150px; left:50%;
+	margin-left:-300px;
+	width:450px;
+	height:175px;
+	background:#ffffff;
+	border:solid 1px #dcdcdc;
+	padding:25px 80px;
+}
+
+.my #ClientsDevis .validerDevis A
+{
+	background:#0071c2;
+	color:#ffffff!important;
+	text-decoration:none;
+	margin-right:15px;
+	padding:5px 15px;
+	font-size:12px;
+}
+
+.my #ClientsDevis .title
+{
+	display:block;
+	font-size:18px;
+}
+
+.my #ClientsDevis input
+{
+	display:block;
+	font-size:32px;
+	margin-bottom:20px;
+}
+
+.my #ClientsDevis TD
+{
+	padding:0px 7px;
+}
+
+/* la page factures */
+
+.my #ClientsFactures TD
+{
+	padding:0px 7px;
+}

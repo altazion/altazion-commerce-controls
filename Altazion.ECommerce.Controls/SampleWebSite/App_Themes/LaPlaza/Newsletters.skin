@@ -1,0 +1,40 @@
+﻿<ecom:ThemablePanelControl SkinID="NewsletterHeader" runat="server">
+<Content>
+
+<div class="content">
+    <section class="main">
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl SkinID="NewsletterFooter" runat="server">
+<Content>
+                </div>
+            </div>
+        </div>
+    </section> 
+</div>
+
+</Content>
+</ecom:ThemablePanelControl>
+
+
+    <ecom:ThemablePanelControl runat="server" SkinID="NewsletterSubscribeHeader">
+        <Content>
+            <h1>
+                Abonnez-vous à notre newsletter</h1>
+        </Content>
+    </ecom:ThemablePanelControl>
+
+
+<asp:LinkButton SkinID="NewsletterInscriptionOkButton" Text="M'abonner"
+    CssClass="btn btn-secondary"
+    runat="server"  />
+
+<asp:LinkButton SkinID="NewsletterDesinscriptionOkButton" Text="Me désabonner"
+    CssClass="btn btn-secondary"
+    runat="server"  />

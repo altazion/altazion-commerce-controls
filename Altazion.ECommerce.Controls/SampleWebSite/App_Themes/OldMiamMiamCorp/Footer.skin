@@ -1,0 +1,40 @@
+﻿<ecom:ThemablePanelControl SkinID="PageFooterPanel" runat="server">
+<Content>
+    <div class="clear"></div>
+    <div class="container_16">
+
+        <div class="grid_4 FooterServices">
+        <h4>Nos Services</h4>
+        <ul>
+        <li><asp:hyperlink runat="server" navigateurl="~/aide/livraison.htm" text="Livraison" /></li>
+        <li><asp:hyperlink runat="server" navigateurl="~/aide/paiementsecurise.htm"  text="Paiement sécurisé" /></li>
+        <li><asp:hyperlink runat="server" navigateurl="~/aide/satisfaitourembourse.htm"  text="Satisfait ou remboursé" /></li>
+        </div>
+        <div class="grid_4 FooterAppliMobile">
+            <asp:hyperlink runat="server" navigateurl="~/aide/">
+                <span>Application mobile pour Android, iPhone et Windows Phone</span>
+            </asp:hyperlink>
+        </div>
+        <div class="grid_4 FooterAide">
+            <h4>Aide</h4>
+            <ul>
+            <li><asp:hyperlink runat="server" navigateurl="~/aide/" text="Besoin d'aide ?" /></li>
+            <li><asp:hyperlink runat="server" navigateurl="~/aide/" text="Par téléphone" /></li>
+            <li><asp:hyperlink runat="server" navigateurl="~/exec/contact.aspx" text="Envoyer un e-mail" /></li>
+
+            </ul>
+        </div>
+        <div class="grid_4 FooterNotreEntreprise">
+                    <h4>Notre entreprise</h4>
+            <ul>
+            <li><asp:hyperlink runat="server" navigateurl="~/magasins/" text="Nos magasins" /></li>
+            <li><asp:hyperlink runat="server" navigateurl="~/aide/" text="Twitter / Facebook" /></li>
+            <li><asp:hyperlink runat="server" navigateurl="~/aide/" text="Qui sommes-nous ?" /></li>
+
+            </ul>
+        </div>
+        
+
+    </div>
+</Content>
+</ecom:ThemablePanelControl>

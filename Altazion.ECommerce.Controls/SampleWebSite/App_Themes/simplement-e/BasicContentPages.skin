@@ -1,0 +1,84 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="LegalPagePanel">
+<Content>
+    <div class="pageContent container">
+        <div class="column one_half">
+            <h1>Informations légales</h1>
+            <p class="mtop20">Le présent site est géré par Creo Ignem SARL, en son nom et au nom de ses partenaires directs.</p>
+<p><strong>Creo Ignem</strong><br />
+<span style="font-size:smaller; color:#494949; line-height:15px;">Sàrl au capital de 7500€<br/>
+22 rue du Dr CLERCQ<br />
+02260 La Capelle<br />
+RCS : Saint Quentin (02)<br />
+sous le numéro 478229636 <br />
+tel: 0 811 955 960</span>
+<p>Directeur de la publication : M. Michael CARBENAY, gérant de Creo Ignem</p>
+</p>
+<h5>Hébergement</h5>
+<p>Hébergement de ce site et de tous les sites attenants à la solution simplement-e par Microsoft Windows Azure <br />
+(<a style="color:#0071c2" href="http://www.windowsazure.com">http://www.windowsazure.com</a>)</p>
+<p>Microsoft France<br />
+<span style="font-size:smaller; color:#494949; line-height:15px;">
+39, quai du Président Roosevelt<br />
+92130 Issy-les-Moulineaux<br /></span>
+</p>
+        </div>
+    </div>
+
+<div class="clear"></div>
+</Content>
+</ecom:ThemablePanelControl>
+        
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="CustomPageBeforeContent">
+<Content>
+    <div class="pageContent container">
+        <div class="column">
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="CustomPageAfterContent">
+<Content>
+        </div>
+    </div>
+    <div class="clear"></div>
+</Content>
+</ecom:ThemablePanelControl>
+
+<%-- LOGIN PAGE --%>
+
+<ecom:ThemablePanelControl runat="server" SkinID="LoginContent">
+<Content>
+<div class="container">
+    <div class="block-2 column" >
+        <div class="appLogin">
+            <h3>Vous connecter à l'application</h3>
+            <p>
+                <a href="https://app.simplement-e.com" class="button">Connexion</a>
+            </p>
+        </div>
+
+        <div class="downloadApp">
+            <h5>Télécharger la gestion commerciale</h5>
+            <p>
+                <a href="http://download.simplement-e.com" class="button">Télécharger</a>
+            </p>
+        </div>
+    </div>
+    <div class="block-2 column connexion LoginBox last" >
+        <h3>Accéder à votre espace client</h3>
+        <asp:Panel ID="Panel1" runat="server" DefaultButton="Login1$LoginLinkButton">
+            <asp:Login ID="Login1" runat="server" TitleText="Saisissez vos identifants"
+            TitleTextStyle-CssClass="Title"
+            TextBoxStyle-CssClass="TextBox" CheckBoxStyle-CssClass="CheckBox" UserNameLabelText="E-mail :"
+            DisplayRememberMe="false" LoginButtonType="Link" LoginButtonStyle-CssClass="LoginButton"
+            PasswordRecoveryText="" >
+            </asp:Login>
+        </asp:Panel>
+    </div>
+</div>
+<div class="clear"></div>
+</Content>
+</ecom:ThemablePanelControl>
+
+

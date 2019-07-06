@@ -1,0 +1,33 @@
+﻿    <ecom:ThemablePanelControl runat="server" SkinID="ClientsHomeHeader">
+            <Content>
+                <h1><span>Votre espace client</span></h1>
+            <h2>Bienvenue <ecom:ClientNom runat="server" /></h2>
+            </Content>
+
+        </ecom:ThemablePanelControl>
+ 
+         <ecom:ThemablePanelControl runat="server" SkinID="EtatCommandesHeader">
+            <Content>
+                <h1><span>Vos commandes</span></h1>
+            </Content>
+        </ecom:ThemablePanelControl>
+
+ <ecom:ThemablePanelControl runat="server" SkinID="ClientsEnCoursHeader">
+            <Content>
+                <h1><span>
+                    Vos avoirs et bons d'achats</span></h1>
+            </Content>
+        </ecom:ThemablePanelControl>
+
+ <ecom:ThemablePanelControl runat="server" SkinID="ClientsHome">
+<Content>
+    <ul>
+        <li class="mesCommandes">
+            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/my/commandes.htm" Text="Mes commandes" /></li>
+        <li class="mesAvoirs">
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/my/encours.htm" Text="Mes avoirs" /></li>
+    </ul>
+    <ecom:LoginStatus runat="server" ID="Login" LogoutPageUrl="~/" LogoutAction="Redirect"
+        CssClass="logOut" />
+</Content>
+</ecom:ThemablePanelControl>

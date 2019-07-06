@@ -1,0 +1,359 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="ConfirmationCommandeContent" >
+<Content>
+
+    <script src="/tools/knockout-2.2.0.js"></script>
+
+
+  <section class="main">
+        <div class="container-fluid">
+            <div class=" page-main ">
+                <div class="row ariane justify-content-center">
+                    <div class="col-12 col-xl-6 col-lg-7  px-0 ">
+                        <ul class="row">
+                            <li class="active active-past col-4 px-0">
+                                <a href="/exec/panier.aspx"><span class="nbrInfo ">1- commande</span></a>
+                            </li>
+                            <li class="active col-4 px-0"><span class="nbrInfo">2- Adresse</span></li>
+                            <li class="col-4 px-0 "><span class="nbrInfo">3 - paiement</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row liv-row justify-content-center">
+                    <div class="col-lg-3 col-xl-3 col-12  px-0 tunnel-left">
+                        <div class="adresse-liv">
+                            <div class="adresse-bloc">
+                                <div class="titre">
+                                    <h2>adresse de livraison</h2>
+                                </div>
+                                <div class="adresse-txt">
+                                    <p>
+                                        <ecom:AdresseChoisie CssClassForName="nom-brand" runat="server" />
+                                    </p>
+                                    <ecom:AdressePanel runat="server" AfficherSiPointRelais="false">
+                                        <a href="#" class="changer  " data-toggle="modal" data-target="#changer-adresse">changer
+                                            d’adresse</a>
+                                    </ecom:AdressePanel>
+                                    <div class="adresse-mobile d-block d-lg-none">                      
+                                      <a href="#" data-toggle="collapse" data-target="#ad-fact" class="voir-ad" > voir l’adresse de facturation</a>
+                                      <div class="addresse-fact  collapse "  id="ad-fact">
+                                        <div class="adresse">
+                                            <div class="titre">
+                                                <h2>adresse de facturation</h2>
+                                            </div>
+                                            <div class="adresse-txt">
+                                              <p>
+                                                 <ecom:AdresseChoisie CssClassForName="nom-brand" runat="server" typeadresse="AdresseFacturation" />
+                                              </p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="addresse-fact d-none d-lg-block">
+                          <div class="adresse">
+                            <div class="titre">
+                                <h2>adresse de facturation</h2>
+                            </div>
+                            <div class="adresse-txt">
+                              <p>
+                                <ecom:AdresseChoisie CssClassForName="nom-brand" runat="server" typeadresse="AdresseFacturation" />
+                              </p>
+                            </div>
+                        </div>
+
+                      </div>
+
+
+                        <div class="bloc-btn d-none d-lg-block">
+                            <a class="btn btn-noir btn-45" href="/exec/panier.aspx"><i class="fas fa-arrow-left"></i>
+                                retour</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 col-xl-7 col-12 px-0 tunnel-right choix-liv">
+                        <div class="titre">
+                            <h2>choix du mode de livraison</h2>
+                        </div>
+                        <ecom:LivraisonChoix runat="server" Mode="Repeater" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <div class="modal fade modal-changer-adresse" id="changer-adresse">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close" data-dismiss="modal">
+                        <span></span>
+                        <span></span>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="mes-adresses">
+                            <div class="titre titre-header">
+                                <h3>Mes adresses</h3>
+                            </div>
+                            <div class="box-adresse" data-bind="ifnot: adresses == null">
+                                <div class="adresse" data-bind="foreach: adresses">
+                                    <div class="bloc-mon-adresse">
+                                        <p class="nom-brand"><span data-bind="text: Nom"></span></p>
+                                        <p><span data-bind="text: Adresse"></span><br><span data-bind="text: CP"></span> <span data-bind="    text: Ville"></span>
+                                        </p> 
+
+                                         <a href="#" class="btn btn-primary btn-40" data-bind="attr: { 'data-e-adc-guid': Guid }, click: setLivraison">Choisir cette adresse
+                                        </a>
+                                        
+                                    </div> 
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="ajout">
+                            <div class="titre ">
+                                <h3>Ajouter une nouvelle adresse</h3>
+                            </div>
+                            <div class="form">
+                                
+                                    <vo7:saisieadresse runat="server" />
+                                    
+                                   
+                                    <div class="cta-modal">
+                                        <a href="#" id="lnkCreationValider" class="btn btn-primary">
+                                             Valider & continuer
+                                        </a>
+                                    </div>
+
+
+
+
+
+
+
+
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+      
+     
+  
+             
+        
+            </div>
+        </div>
+    </div>
+
+<script>
+        
+
+ $(document).ready(function () {
+        var dataAdresseLiv = { adresses: ko.observableArray() };
+        ko.applyBindings(dataAdresseLiv, $("#changer-adresse").get()[0]);
+        $.ajax({ url: "/api/process/nui?action=getadresseslivraison", cache: false }).done(function (data) {
+            dataAdresseLiv.adresses(data);
+        }).fail(function (e) {
+        });
+
+        $("#lnkModifierAdr").click(function () {
+            $("#divChoixLivraisonBackground").fadeIn("fast", function () {
+                $("#divChoixLivraison").fadeIn();
+            });
+            return false;
+        });
+
+
+        $("#acceptCgv").change(function() {
+                changeCGV();
+            });
+        var isChecked = $("#acceptCgv").is(":checked");
+        if(isChecked)  {
+            $("#lnkSuivant").removeAttr("disabled");
+            $("#lnkSuivant").removeClass("disabled");
+        }
+        else {
+            $("#lnkSuivant").attr("disabled", "disabled");
+            $("#lnkSuivant").addClass("disabled");
+        }
+        SaisieAdresse(false, "#lnkCreationValider", function (adresse) {
+            $("#divChoixLivraison").addClass("loading");
+           
+                E.Process.creerAdresseLivraison(adresse.email, adresse.password, adresse.civilite, adresse.nom, adresse.prenom, adresse.adresse1,
+                        adresse.adresse2, adresse.cp, adresse.ville, "FRA", adresse.telephone, adresse.mobile,
+                        null, function () {
+                            var s = E.InternalTools.getParameterByName("ReturnUrl");
+                            if (s == "") {
+								s = E.InternalTools.getParameterByName("returnurl");
+							}
+							if (s == "")								
+                                s = "/exec/process/ConfirmationCommande.aspx";
+                            else
+                                s = decodeURIComponent(s);
+                            window.location.href = s;
+                        }, function () {
+                            $("#divErreurCreation").show();
+                           ReactiverSaisieAdresse(false);
+                        }, "#lnkCreationValider");
+
+
+            return false;
+        });
+
+        if ($('#CPCustomInput').length >0)
+        {
+            $('#CPCustomInput').val($('#hdnCodePostalPanier').val());
+        }
+        
+    }); 
+
+    function showRechercheGoogleMap(){
+        $('#txtCodePostal').val($('#CPCustomInput').val());
+        $('#btDoSearch').click();
+        initRechercheGoogleMap('#txtCodePostal','#errorCodePostal','#btDoSearch','', getDetailMapAffichage);
+        $('.adresse-relais').removeClass('relais-active');
+        $('#rgmContent').removeClass('detail-relais-active');
+        $('.detail-relais').hide();
+        $('#masque-detail').hide();
+
+    }
+
+    function setLivraison(data) {
+        $("#divChoixLivraison").addClass("loading");
+        $("#divChoixLivraisonBackground a").attr("disabled", "disabled");
+        var g = data.Guid;
+        $.ajax({ url: "/api/process/nui?action=setadresselivraison&id=" + g, cache: false }).done(function () {
+            $("#divChoixLivraison").removeClass("loading");
+            document.location.reload();
+        }).fail(function (e) {
+            $("#divChoixLivraison").removeClass("loading");
+            $("#divChoixLivraisonBackground a").removeAttr("disabled");
+            window.alert("Impossible de modifier votre adresse pour le moment, veuillez ré-essayer dans quelques instants");
+        });
+    }
+
+    function changeCGV() {
+        $("#lnkSuivant").attr("disabled", "disabled");
+        var isChecked = $("#acceptCgv").is(":checked");
+        if(isChecked) {
+            $.ajax({url : '/api/process/addtag?tag=CGV', cache:false}).always(function() {
+                $("#lnkSuivant").removeAttr("disabled");
+                $("#lnkSuivant").removeClass("disabled");
+            });
+        }
+        else {
+            $("#lnkSuivant").attr("disabled", "disabled");
+            $.ajax({url : '/api/process/removetag?tag=CGV', cache:false}).always(function() {
+                $("#lnkSuivant").attr("disabled", "disabled");
+                $("#lnkSuivant").addClass("disabled");
+            });
+        }
+    }
+        
+
+</script>
+
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="ModesLivraisonsRepeaterItem">
+<Content>
+<ecom:ModeLivraisonPourTransporteurPanel runat="server" PrestataireId="18"
+ cssclass="choix-liv-ligne"  CssClassIfSelected="choix-liv-ligne active" ShowIfPointsLivraison="false">
+    <div class="  col-md-3 col-12 px-0 ">
+        <ecom:ModeLivraisonSelectionLink runat="server" cssclass="intitule">
+            <span class="radio"></span>
+            <span class="intitule-content">
+            <h4><ecom:ModeLivraisonLibelle runat="server" /></h4>
+            <img src="/app_themes/vo7/imgs/colissimo.png" alt="">
+            </span>
+        </ecom:ModeLivraisonSelectionLink>
+    </div>
+
+    <div class="detail  col-md-3  col-12">
+                      <a href="#" class="d-sm-block d-md-none" data-toggle="collapse" data-target="#info-plus">+ d'info</a>
+
+                      <div id="info-plus" class="info-plus collapse in show ">
+                        <p>48h à 72h à partir de l'expédition du colis
+                              Le meilleur prix et la livraison la plus rapide</p>
+                      </div>
+
+    </div>
+    <div class="price  col-md-3 col-12 ">
+        <p><ecom:ModeLivraisonMontantTtc runat="server" Format="{0:0.00}€" MessageSiOffert="Gratuit" /></p>
+    </div>
+    <ecom:ModeLivraisonPourTransporteurPanel runat="server" PrestataireId="18" 
+        ShowOnlyIfSelected="false" cssclass="col-md-3 col-12 cta px-0">
+        <ecom:ModeLivraisonSelectionLink runat="server" class="btn btn-primary  btn-45  btn-ombre btn-block ">choisir </ecom:ModeLivraisonSelectionLink>
+    </ecom:ModeLivraisonPourTransporteurPanel>
+
+    <ecom:ModeLivraisonPourTransporteurPanel runat="server" PrestataireId="18" 
+        ShowOnlyIfSelected="true" cssclass="col-md-3 col-12 cta px-0">
+<div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="acceptCgv" "><i class="helper"></i>
+                                    <span>  Lire et accepter  <a href="/fr/cgv.htm" target="_blank">nos CGV</a></span>  
+                                </label>
+                        </div>
+        <a href="/exec/process/confirmationcommandepaiement.aspx" disabled="disabled"  id="lnkSuivant" 
+            class="btn btn-primary btn-50  btn-ombre btn-block disabled">valider</a>
+
+    </ecom:ModeLivraisonPourTransporteurPanel>
+
+</ecom:ModeLivraisonPourTransporteurPanel>
+
+<ecom:ModeLivraisonPourTransporteurPanel runat="server" PrestataireId="19" cssclass="choix-liv-ligne" CssClassIfSelected="choix-liv-ligne active" ShowIfPointsLivraison="true">
+    <a href="#" onclick="showRechercheGoogleMap()" data-toggle="modal" data-target="#choix-relais"
+            class="choix-mobile"></a>
+    <div class="col-md-3 col-12 px-0 ">
+        <ecom:ModeLivraisonSelectionLink runat="server" cssclass="intitule">
+        </ecom:ModeLivraisonSelectionLink>
+<a href="#" class="intitule" onclick="showRechercheGoogleMap()" data-toggle="modal" data-target="#choix-relais">
+            <span class="radio"></span>
+            <span class="intitule-content">
+                <h4><ecom:ModeLivraisonLibelle runat="server" /></h4>
+                <img src="/app_themes/vo7/imgs/colissimo.png" alt="">
+            </span>
+</a>
+    </div>
+    <div class="detail  col-md-3  col-12">
+        <a href="#" class="d-sm-block d-md-none" data-toggle="collapse" data-target="#info-plus">+ d'info</a>
+        <div id="info-plus" class="info-plus collapse in show ">
+            <p>48h à 72h à partir de l'expédition du colis. <br /> Faites vous livrer <br />  dans l'un des relais <br /></p>
+        </div>
+    </div>
+</a>
+    <div class="price  col-md-3 col-12 ">
+        <p><ecom:ModeLivraisonMontantTtc runat="server" Format="{0:0.00}€" MessageSiOffert="Gratuit" /></p>
+    </div>
+    <ecom:ModeLivraisonPourTransporteurPanel runat="server" PrestataireId="19" ShowOnlyIfSelected="false" class="col-md-3 col-12 cta px-0">
+    <div class="form-45">
+        <input type="number" placeholder="Code Postal" id="CPCustomInput">
+    </div>
+        <a href="#" onclick="showRechercheGoogleMap()" data-toggle="modal" data-target="#choix-relais"
+            class="btn btn-primary btn-45  btn-ombre btn-block">choisir</a>
+    </ecom:ModeLivraisonPourTransporteurPanel>
+        <ecom:RechercheGoogleMap runat="server"  />
+    <ecom:ModeLivraisonPourTransporteurPanel runat="server" PrestataireId="19" ShowOnlyIfSelected="true" cssclass="col-md-3 col-12 cta px-0">     
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" id="acceptCgv"><i class="helper"></i>
+                <span>  Lire et accepter  <a href="/fr/cgv.htm" target="_blank">nos CGV</a></span>  
+            </label>
+        </div>
+    <a href="/exec/process/confirmationcommandepaiement.aspx" disabled="disabled"  id="lnkSuivant" class="btn btn-primary btn-50  btn-ombre btn-block disabled">valider</a>
+   </ecom:ModeLivraisonPourTransporteurPanel>
+</ecom:ModeLivraisonPourTransporteurPanel>
+
+
+
+</Content>
+</ecom:ThemablePanelControl>

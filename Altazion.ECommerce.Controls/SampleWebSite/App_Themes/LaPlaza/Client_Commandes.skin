@@ -1,0 +1,22 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="EtatCommandesListeHeader">
+<Content>
+    <div class="content">
+    <section class="main">
+        <div class="liste-commandes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="EtatCommandesListeFooter">
+<Content>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</Content>
+</ecom:ThemablePanelControl>

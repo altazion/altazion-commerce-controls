@@ -1,0 +1,94 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="BeforeContentStart">
+<Content>
+     <header class="navigation">
+        
+        <div id="accesclients" class="section accesclients">
+            <div class="container">
+                <div class="block-2 column" style="margin-top: 10px;">
+                    <div class="appLogin">
+                        <h3>Vous connecter à l'application</h3>
+                        <p>
+                            <a href="https://app.simplement-e.com" class="button">Connexion</a>
+                        </p>
+                    </div>
+
+                    <div class="downloadApp">
+                        <h5>Télécharger la gestion commerciale</h5>
+                        <p>
+                            <a href="http://download.simplement-e.com" class="button">Télécharger</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="block-2 column connexion" style="margin-top: 10px;">
+                    <h3>Accéder à votre espace client</h3>
+<asp:LoginView runat="server">
+<AnonymousTemplate>
+    <asp:hyperlink runat="server" navigateurl="~/my/" cssClass="button">Connexion</asp:hyperlink>
+<%--
+                    <p>
+                        <label for="name">E-mail *</label>
+                        <input type="email" id="email" name="contact[email]" class="" />
+                    </p>
+                    <p>
+                        <label for="name">Mot de passe *</label>
+                        <input type="password" id="pwd" name="contact[email]" class="" />
+                    </p>
+                    <p>
+                        <a href="https://app.simplement-e.com" class="button">Connexion</a>
+                    </p>
+--%>
+</AnonymousTemplate>
+<LoggedInTemplate>
+                        <p>
+                            <asp:hyperlink runat="server" navigateurl="~/my/" class="button">Votre espace client</asp:hyperlink>
+                        </p>
+</LoggedInTemplate>
+</asp:LoginView>
+
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="container">
+            <ecom:PanelPageSpecifique  runat="server" SaufPour="HomePage" VisibiliteParDefaut="false">
+            <div class="logo">
+                <a href="#home">
+                    <asp:image runat="server" ImageUrl="images/logo.png" alt="logo" /></a>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="nav-active icon-home"><span>Accueil</span></a></li>
+                <li><a href="#e-commerce" class="icon-globe"><span>e-commerce</span></a> </li>
+                <li><a href="#point-de-ventes" class="icon-shopping-cart"><span>points de vente</span></a> </li>
+                <li><a href="#crosscanal" class="icon-map-marker"><span>cross-canal</span></a> </li>
+                <%--<li><a href="#news" class="icon-asterisk"><span>News</span></a> </li>--%>
+                <li><a id="lnkAccesClient" href="#accesclients" class="icon-lock"><span>Acces clients</span></a> </li>
+            </ul>
+            </ecom:PanelPageSpecifique>
+
+            <ecom:PanelPageSpecifique runat="server" SaufPour="HomePage" VisibiliteParDefaut="true">
+            <div class="logo">
+                <asp:hyperlink runat="server" navigateUrl="~/">
+                    <asp:image runat="server" ImageUrl="images/logo.png" alt="logo" /></asp:hyperlink>
+            </div>
+            <ul class="nav">
+                <li><a href="/" class="nav-active icon-home"><span>Accueil</span></a></li>
+                <li><a href="/e-commerce/" class="icon-globe"><span>e-commerce</span></a> </li>
+                <li><a href="/points-de-ventes/" class="icon-shopping-cart"><span>points de vente</span></a> </li>
+                <li><a href="/crosscanal/" class="icon-map-marker"><span>cross-canal</span></a> </li>
+                <%--<li><a href="/#news" class="icon-asterisk"><span>News</span></a> </li>--%>
+                <li><a id="lnkAccesClient" href="#accesclients" class="icon-lock"><span>Acces clients</span></a> </li>
+            </ul>
+            </ecom:PanelPageSpecifique>
+
+        </div>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="BeforeContentEnd">
+<Content>
+    </header>
+</Content>
+</ecom:ThemablePanelControl>
+

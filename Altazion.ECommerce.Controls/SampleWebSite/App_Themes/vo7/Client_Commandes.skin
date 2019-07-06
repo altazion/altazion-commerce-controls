@@ -1,0 +1,230 @@
+﻿<ecom:ThemablePanelControl runat="server" SkinID="EtatCommandesContentHeader">
+<Content>
+    <section class="main">
+        <div class="container-fluid">
+<div class=" page-main ">
+            <div class="row compte-row justify-content-center">
+                <div class="container">
+                    <div class="row">
+
+                      <div class="col-md-4 col-lg-3 px-0
+                      menu-compte compte-bloc-2">
+                        <ul>
+                            <li >
+                                <a href="/my/">Accueil mon compte</a>
+                            </li>
+                            <li>
+                                <a href="/my/compte.htm">Mon mot de passe</a>
+                            </li>
+                            <li>
+                                <a href="/my/adresses.htm">Mon carnet d’adresses</a>
+                            </li>
+                            <li class="active">
+                                <a href="/my/commandes.aspx">
+                                Mes commandes</a>
+                            </li>
+                            <li><a href="/newsletter.aspx">Newsletter</a></li>
+
+                            <li><ecom:LoginStatus runat="server" LogoutPageUrl="~/" LogoutText="se deconnecter" LogoutAction="Redirect" /></li>
+                        </ul>
+                      </div>
+                        <div class="col-md-8 col-lg-9 compte-bloc-1 px-0">
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="EtatCommandesContentFooter">
+<Content>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="EtatCommandesListeHeader">
+<Content>
+                            <div class="titre"><a href="#" class="accueil-home d-md-none"><i class="fas fa-arrow-left"></i></a>
+                                <h1>historique des commandes</h1>
+                            </div>
+                            <div class="histo">
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:ThemablePanelControl runat="server" SkinID="EtatCommandesListeFooter">
+<Content>
+</div>
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:EtatsCommandesGridView runat="server" Visible="false" />
+
+ <ecom:EtatsCommandesRepeater runat="server" SkinID="EtatCommandesRepeater" Visible="true">
+<ItemTemplate>
+<div class="ligne-comm">
+                                    <div class="picto">
+                                            <i class="fas fa-sync"></i><br />
+                                        <span><asp:Literal runat="server" Text='<%# Eval("EtatGeneral")%>' /></span>    
+                                    </div>
+                                    <div class="ligne-comm-1">
+                                        <div class="comm-txt-1">
+                                                <p><span>N°<asp:Literal runat="server" Text='<%# Eval("Numero")%>' /></span><br />
+                                                    <span>Commande passée le <asp:Literal runat="server" Text='<%# Eval("Date", "{0:dd MMM yyyy}")%>' /></span>
+                                                </p>
+                                            </div>
+                                            <div class="comm-txt-2">
+                                                <p><span>TOTAL COMMANDE :</span>
+                                                    <span><asp:Literal runat="server" Text='<%# Eval("MontantTtc", "{0:0.00€}")%>' /></span>
+                                                    
+                                                </p>
+                                            </div>
+                                        <div class="cta-comm">
+                                            <asp:LinkButton runat="server" CommandeName="select" 
+                                                CommandArgument='<%# Eval("Guid")%>'
+                                                class="btn btn-45 btn-noir">Détail</asp:LinkButton>
+                                        </div>
+                                    </div>
+
+                                </div>
+</ItemTemplate>
+</ecom:EtatsCommandesRepeater>
+
+<ecom:ThemablePanelControl runat="server" SkinID="EtatCommandesInfoHeader">
+<Content>
+
+
+
+</Content>
+</ecom:ThemablePanelControl>
+
+
+<ecom:EtatsCommandesDetailView
+    runat="server">
+    <ItemTemplate>
+    <div class="titre">
+        <a href="#" class="accueil-home d-md-none"><i class="fas fa-arrow-left"></i></a>
+        <h1>détail de la commande N°<asp:Literal runat="server" Text='<%# Eval("Numero")%>' /></h1>
+    </div>
+    <div class="comm-detail">
+        <div class="comm-detail-1 row">
+            <div class="col-lg-4 col-12">
+                <div class="comm-detail-2">
+                    <div class="picto ">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="comm-txt-1">
+                        <p>
+                            <span>COMMANDE PASS&Eacute;E LE</span>
+                            <br />
+                            <span><asp:Literal runat="server" Text='<%# Eval("Date", "{0:dd MMMM yyyy}")%>' /></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="comm-detail-2">
+                    <div class="picto ">
+                        <i class="fas fa-euro-sign"></i>
+                    </div>
+                    <div class="comm-txt-1">
+                        <p>
+                            <span>TITAL COMMANDE :</span>
+                            <br />
+                            <span><asp:Literal runat="server" Text='<%# Eval("MontantTtc", "{0:0.00€}")%>' /></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="comm-detail-2">
+                    <div class="picto ">
+                        <i class="fas fa-check success"></i>
+                    </div>
+                    <div class="comm-txt-1">
+                        <p>
+                            <span>ETAT</span>
+                            <br />
+                            <span><asp:Literal runat="server" Text='<%# Eval("EtatGeneral")%>' /></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ItemTemplate>
+</ecom:EtatsCommandesDetailView>
+
+
+<ecom:ThemablePanelControl  runat="server" SkinID="EtatCommandesLignesHeader">
+<Content>
+    <h2>Articles</h2>
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:EtatsCommandesLignesView runat="server" Visible="false" />
+<ecom:EtatsCommandesLignesRepeater Visible="true" runat="server">
+<HeaderTemplate>
+    <div class="tableau-panier">
+</HeaderTemplate>
+    <ItemTemplate>
+
+    <div class="ligne">
+        <div class="bloc1">
+            <div class="bloc-img">
+                <asp:Image runat="server" ImageUrl='<%#Eval("Image")%>' alternativeText='<%#Eval("ArticleLibelle")%>' class="img-fluid" />
+            </div>
+        </div>
+        <div class="bloc-content-2-3-4">
+            <div class="bloc2">
+                <h3 class="libelle"><asp:Literal runat="server" Text='<%#Eval("ArticleLibelle")%>' /></h3>
+                <!--<span class="taille">Taille : <span>44</span></span>-->
+            </div>
+            <div class="bloc2-2 choix-qt">
+                <div class="choix-qt-detail">
+                    <asp:Literal runat="server" Text='<%# Eval("Quantite", "{0:0}")%>' />
+                </div>                
+            </div>
+            <div class=" bloc3 choix-qt">
+                <div class="choix-qt-detail">
+                    <asp:Literal runat="server" Text='<%# Eval("QuantiteExpediee", "{0:0}")%>' />
+                </div>
+            </div>
+            <div class="bloc4 prix">
+                <div class="prix-normal">
+                    <asp:Literal runat="server" Text='<%# Eval("Montant", "{0:0.00€}")%>' />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </ItemTemplate>
+<FooterTemplate>
+    </div>
+</FooterTemplate>
+</ecom:EtatsCommandesLignesRepeater>
+
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="EtatCommandesFacturesHeader">
+<Content>
+    
+</Content>
+</ecom:ThemablePanelControl>
+<ecom:EtatsCommandesFacturesView runat="server" Visible="false" />
+
+
+<ecom:ThemablePanelControl runat="server" SkinID="EtatCommandesBPHeader" Visible="false" />
+<asp:GridView SkinID="EtatsCommandesBonPrepaView" Visible="false" runat="server" />
+
+<ecom:ThemablePanelControl runat="server" SkinID="EtatCommandesColisHeader">
+<Content>
+    <h2>Colis</h2>
+</Content>
+</ecom:ThemablePanelControl>
+
+<ecom:DemandeRemboursementCommandeView runat="server" Visible="false" />

@@ -1,0 +1,378 @@
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+input[disabled=disabled], a[disabled=disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+body.login {
+    background: #f9bf3b;
+    color: #191919;
+    font-size: 12px;
+}
+
+    body.login article {
+        width: 320px;
+        margin: 80px auto;
+        line-height: 16px;
+    }
+
+        body.login article a {
+            text-decoration: none;
+            color: #191919;
+        }
+
+    body.login h1 {
+        font-size: 2em;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding-top: 370px;
+        text-align: center;
+        background: url('logo-c-hub.png') no-repeat top center;
+    }
+
+    body.login .entete {
+        display: inline-block;
+        width: 100px;
+    }
+
+    body.login h2 {
+        margin-top: 20px;
+        text-transform: uppercase;
+        opacity: 0.8;
+        font-weight: 700;
+        display: none;
+    }
+
+    body.login .loginBox a {
+        display: inline-block;
+        background: #191919;
+        color: #f9bf3b;
+        border: solid 1px #191919;
+        padding: 4px 10px 6px 10px;
+        border-radius: 6px;
+        font-weight: 600;
+    }
+
+        body.login .loginBox a:hover {
+            background: #f9bf3b;
+            color: #191919;
+        }
+
+    body.login .loginBox p {
+        margin: 8px 0;
+    }
+
+    body.login .loginBox input {
+        padding: 4px;
+    }
+
+    body.login .loginBox .instructions {
+        padding-bottom: 12px;
+    }
+
+    body.login .loginBox .title {
+        margin: 8px 0;
+        padding: 8px 0;
+        text-transform: uppercase;
+        text-align: center;
+        border-top: solid 1px #191919;
+        border-bottom: solid 1px #191919;
+    }
+
+@media screen and (min-width:600px) {
+    body.login article {
+        height: 420px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -330px 0 0 -130px;
+    }
+
+    body.login ul.commands {
+        display: block;
+    }
+
+    body.login h2 {
+        display: block;
+    }
+}
+
+
+body.adminPage header {
+    background: #f9bf3b;
+    color: #191919;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+    body.adminPage header h1 {
+        font-size: 24px;
+        margin: 7px 0 0 10px;
+        text-transform: uppercase;
+        font-weight: 100;
+        float: left;
+    }
+
+        body.adminPage header h1 a {
+            text-decoration: none;
+            color: #191919;
+        }
+
+    body.adminPage header nav {
+        float: right;
+        margin: 6px 12px 0 0;
+    }
+
+        body.adminPage header nav a,body.adminPage a.command {
+            display: inline-block;
+            background: #191919;
+            color: #f9bf3b;
+            border: solid 1px #191919;
+            padding: 4px 10px 6px 10px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+body.adminPage a.command {
+    color:#efefef;
+}
+            body.adminPage header nav a:hover,body.adminPage a.command:hover {
+                background: #f9bf3b;
+                color: #191919;
+            }
+
+
+body.adminPage h3 {
+    font-size: 42px;
+    padding: 40px 0 32px 0;
+}
+
+body.adminPage h4 {
+    text-transform:uppercase;
+    margin:36px 0 12px 0;
+    font-weight:bold;
+}
+
+    body.adminPage h4:first-of-type {
+        margin-top:0;
+    }
+
+
+body.adminPage pre {
+    font-family:'Courier New', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#404142;
+}
+
+
+body.adminPage p {
+    margin:12px 0;
+}
+
+
+body.adminPage .pageContent {
+    max-width: 960px;
+    margin: 40px 10px;
+}
+
+body.adminPage .loginPage {
+    padding-top: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+    body.adminPage .loginPage h2 {
+        font-size: 16px;
+        margin: 7px 0 10px 0px;
+        text-transform: uppercase;
+        color: #f9bf3b;
+    }
+
+    body.adminPage .loginPage .entete {
+        font-size: 12px;
+        color: #696969;
+        display: inline-block;
+        margin: 5px 0;
+    }
+
+    body.adminPage .loginPage select,
+    body.adminPage .loginPage input {
+        display: block;
+        min-width: 280px;
+        border: solid 1px #c0c0c0;
+        padding: 5px 3px;
+    }
+
+#lnkLogin, #lnkChooseDevice {
+    display: inline-block;
+    background: #f9bf3b;
+    color: #191919;
+    padding: 8px 15px 10px 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+body.adminPage .devicePage nav {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 120px;
+    height: 100%;
+    background: #292929;
+    color: #efefef;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+
+    body.adminPage .devicePage nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        body.adminPage .devicePage nav ul li {
+            padding: 5px 3px;
+            border-bottom: solid 1px #393939;
+        }
+
+            body.adminPage .devicePage nav ul li.category {
+                text-transform: uppercase;
+                color: #898989;
+                font-weight: 600;
+                border-bottom: none;
+                margin: 10px 0 5px 0;
+            }
+
+                body.adminPage .devicePage nav ul li.category:first-of-type {
+                    margin-top: 0;
+                }
+
+
+            body.adminPage .devicePage nav ul li.feature a {
+                color: #efefef;
+                font-size: 12px;
+                text-decoration: none;
+            }
+
+body.adminPage .devicePage aside {
+    position: fixed;
+    top: 40px;
+    left: 140px;
+    width: 140px;
+    height: 100%;
+    background: #efefef;
+    padding: 20px 10px;
+    font-size: 12px;
+    color: #808080;
+}
+
+    body.adminPage .devicePage aside .actionButton {
+        display: block;
+        width: calc(100% - 20px);
+        clear: both;
+        background: #f9bf3b;
+        color: #191919;
+        text-decoration: none;
+        padding: 9px 5px;
+        margin: 15px 0;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    body.adminPage .devicePage aside h2 {
+        color: #F79D20;
+        margin: 40px 0 15px 0;
+        text-transform: uppercase;
+    }
+
+        body.adminPage .devicePage aside h2:first-of-type,
+        body.adminPage .devicePage aside #divCatalogueDescente h2 {
+            margin-top: 0;
+        }
+
+
+    body.adminPage .devicePage aside input {
+        width: 120px;
+        padding: 5px;
+    }
+
+    body.adminPage .devicePage aside textarea {
+        width: 120px;
+        padding: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body.adminPage .devicePage aside p {
+        margin-bottom: 5px;
+    }
+
+
+
+body.adminPage .devicePage article {
+    white-space: pre;
+    font-family: monospace;
+    margin: 0 10px 0 300px;
+}
+
+    body.adminPage .devicePage article.error {
+        color: firebrick;
+    }

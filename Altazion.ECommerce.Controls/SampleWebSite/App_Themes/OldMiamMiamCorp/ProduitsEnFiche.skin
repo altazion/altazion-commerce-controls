@@ -1,0 +1,129 @@
+﻿<ecom:ProductPanel runat="server" SkinID="ProductItemInDetail" CssClass="FicheProduit hproduct">
+<Content>
+    <p class="titreSection"><ecom:ProduitSegment runat="server" NiveauSegmentation="2" /></p>
+    <ecom:FilAriane runat="server" Header="Vous êtes ici : " CssClass="MainBreadcrumb" />    
+
+    <div class="ficheMain">
+        <div class="mainImage">
+            <ecom:ProduitImageLink runat="server" ImageType="Intermediaire" 
+            CssClass="ficheProduitMainImage photo"
+            LinkType="HighSlideZoom " ImageUrlIfNone="https://egestcom.blob.core.windows.net/data-miam-2/site/theme/miam-no-img.gif" />
+        </div>
+    
+        <div class="center">
+            <h1><ecom:ProduitLibelle runat="server" CssClass="fn name" /></h1>
+            <ecom:MarquePanel runat="server"><Content> 
+            <p class="marque">Marque : <ecom:ProduitMarqueLink runat="server" CssClass="brand" /></span>
+            </Content></ecom:MarquePanel>
+            <p class="avisResume"><ecom:ProduitAvisResume runat="server" EtoileComplete="etoile-pleine.png" EtoileVide="etoile-vide.png" EtoileDemi="etoile-demi.png" /><a href="#">donnez votre avis</a></p>
+            <div class="imagesSupp">
+                <ecom:ProduitMultiImages runat="server" />
+                <ecom:ProduitVideoList runat="server"  />
+            </div>
+            <p><ecom:ProduitDescriptif runat="server" CssClass="description" /></p>
+            <p class="social">
+                    <span>Partagez sur : </span>
+                    <ecom:ProduitFacebookLink runat="server" CssClass="facebook" Title="facebook" />
+                    <ecom:ProduitTwitterLink runat="server" CssClass="twitter" Title="twitter" />
+            </p>
+            <div class="clear">
+            </div>
+            <div class="zonePanier">
+                <ecom:ProductPanel runat="server" AfficherSiDispo="false" AfficherSiGenerique="false" CssClass="pasPromo" CssClassSiEnPromo="enPromo">
+                <Content>
+                    <div class="blocPanierFull">
+                        <p class="prix">
+                    	    <ecom:ProduitPrix  class="prix" FormatPrix="{0:###,##0.00}€" runat="server" />
+                    	    <ecom:ProduitPrixHorsPromo CssClass="remise" FormatPrix="au lieu de {0:###,##0.00}€" runat="server" />
+                        </p>
+                            <span class="ajoutPanierNonDispo">Non disponible</span>
+                    </div>
+                </Content></ecom:ProductPanel>
+
+                <ecom:ProductPanel runat="server" AfficherSiNonDispo="false" AfficherSiGenerique="false" CssClass="pasPromo" CssClassSiEnPromo="enPromo" >
+                <Content>
+                    <div class="blocPanierFull">
+                            <p class="prix">
+						    <ecom:ProduitPrix CssClass="prix" CssClssSiEnPromo="prix" FormatPrix="{0:###,##0.00}€" runat="server" />
+						    <ecom:ProduitPrixHorsPromo CssClass="remise" FormatPrix="au lieu de {0:###,##0.00}€" runat="server" />
+                            </p>
+                            <ecom:PanierAjouterScriptLink runat="server" class="ajoutPanier" text="Ajouter au panier" />
+                    </div>
+               </Content> </ecom:ProductPanel>
+                <ecom:ProductPanel runat="server" AfficherSiNonGenerique="false" CssClass="pasPromo" CssClassSiEnPromo="enPromo">
+                <Content>
+                    <div class="blocGeneriqueHalf"><p class="entete">Tailles diponibles :</p><p>
+                        <ecom:ProduitSimpleInstanceSelect runat="server" />
+                        </p>
+                    </div>
+                    <div class="blocPanierHalf">
+
+                      <ecom:ProduitInstancesList runat="server">
+					        <ItemTemplate>
+					        <ecom:ProductPanel runat="server" CssClass="uneInstance" ><Content>
+                            <p class="prix">
+                            <ecom:ProduitPrix class="prix" FormatPrix="{0:###,##0.00}€" runat="server" />
+						    <ecom:ProduitPrixHorsPromo CssClass="remise" FormatPrix="au lieu de {0:###,##0.00}€" runat="server" />
+                            </p><p>
+                            <ecom:PanierAjouterScriptLink runat="server" NonDispoCssClass="ajoutPanierNonDispo" NonDispoText="Non disponible" CssClass="ajoutPanier" text="Ajouter au panier" />
+                            </p>
+                            </Content></ecom:ProductPanel>
+					        </ItemTemplate>
+				        </ecom:ProduitInstancesList>
+                    </div>
+                    </Content>
+                </ecom:ProductPanel>
+            </div>
+        </div>
+
+        <div class="right">
+        <div class="rassurance">
+            <div class="bottomLine disponibilite">
+                <h4><span>Disponibilité</span></h4>
+                <ecom:ProductPanel runat="server" AfficherSiNonDispo="false"><Content>
+                    <p class="enStock">En stock</p>
+                </Content></ecom:ProductPanel>
+                <ecom:ProductPanel runat="server" AfficherSiDispo="false"><Content>
+                    <p class="nonDispo">Non dispo.</p>
+                    <%--<ecom:ProduitDateDispo runat="server" />--%>
+                </Content></ecom:ProductPanel>
+            </div>
+            <div class="bottomLine paiement">
+                <h4><span>Paiement sécurisé</span></h4>
+                <ul>
+                <li> <a href="/aide/paiementsecurise.htm">Carte bancaire</a></li>
+                <li><a href="/aide/paiementsecurise.htm">Paypal</a></li>
+                <li><a href="/aide/paiementsecurise.htm">Chèques</a></li>
+                </ul>
+            </div>
+            <div class="livraison">
+                <h4><span>Livraison</span></h4>
+                <p>
+                Livraison par chronopost dès le lendemain pour toute commande passée avant 16h
+                </p>
+                <%--                
+                    <ecom:ProduitModeLivraisonLink modeGuid="{9B9F0A18-3573-4436-8D1D-4F80F62A919F}" runat="server" Text="Livraison par coursier" PopupClientFunction="livraisonCoursier" />
+                    <ecom:ProduitModeLivraisonLink modeGuid="{560F9A7C-9DE5-44F7-883E-C4F9F0ED9F6F}" runat="server" Text="Livraison Chronopost" PopupClientFunction="livraisonChronopost" />
+                --%>
+            </div>
+        </div>
+    </div>
+
+    <div class="clear">
+    </div>
+
+            <div class="enMagasin">
+            </div>
+
+        <div class="publicité">
+            <ecom:CampagnePublicite TypeOperation="FicheProduit" runat="server" />
+        </div>
+
+        <div class="services">
+        </div>
+
+    </div>
+
+</Content>
+</ecom:ProductPanel>
+
