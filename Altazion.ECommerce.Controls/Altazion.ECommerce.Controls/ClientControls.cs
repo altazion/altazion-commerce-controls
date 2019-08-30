@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Web.UI.WebControls;
 using CPointSoftware.ECommerce.Tools;
+using CPointSoftware.Equihira.Business.Common;
 
 namespace Altazion.ECommerce.Controls
 {
     /// <summary>
     /// Affiche un span avec le prénom du client, si il est connecté
     /// </summary>
-    [CPointSoftware.Equihira.Business.Common.AideCodeControl(CPointSoftware.Equihira.Business.Common.AideCodeControlKind.ECommerce)]
+    [AideCodeControl(AideCodeControlKind.ECommerce)]
     public class ClientNom : Label
     {
         /// <summary>
