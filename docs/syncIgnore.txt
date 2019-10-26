@@ -1,0 +1,7 @@
+index.md
+.gitignore
+_site\*
+_layout\*
+_includes\*
+_sass\*
+.jekyll-metadata

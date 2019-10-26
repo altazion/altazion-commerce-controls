@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A0D86925-434B-4552-84C0-994403A5E51D}</ProjectGuid>
+    <ProjectGuid>{23AEBA0C-E1F5-40D1-AB26-F289C50DEEE6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Altazion.ECommerce.Controls</RootNamespace>
@@ -12,6 +12,12 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,6 +27,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Altazion.ECommerce.Controls.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -37,101 +44,20 @@
     <AssemblyOriginatorKeyFile>AltazionCommerceControls.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CPoint.Equihira.CPoint.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\simplement-e-server.19.6.2.15\lib\net45\CPoint.Equihira.CPoint.Business.dll</HintPath>
-    </Reference>
-    <Reference Include="CPointSoftware.DocBase.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\CPointSoftware-DocBase.18.9.30.11\lib\CPointSoftware.DocBase.Business.dll</HintPath>
-    </Reference>
-    <Reference Include="CPointSoftware.DocBase.Extensibility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\CPointSoftware-DocBase.18.9.30.11\lib\CPointSoftware.DocBase.Extensibility.dll</HintPath>
-    </Reference>
-    <Reference Include="CPointSoftware.ECommerce.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\simplement-e-server.19.6.2.15\lib\net45\CPointSoftware.ECommerce.Business.dll</HintPath>
-    </Reference>
-    <Reference Include="CPointSoftware.ECommerce.Tools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\simplement-e-commerce.19.6.2.15\lib\net45\CPointSoftware.ECommerce.Tools.dll</HintPath>
-    </Reference>
-    <Reference Include="CPointSoftware.Equihira.Business.Common, Version=3.0.255.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\simplement-e-basebusiness.19.6.2.15\lib\net45\CPointSoftware.Equihira.Business.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="CPointSoftware.Equihira.Business.GestCom, Version=3.0.255.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\simplement-e-gestcom.19.6.2.15\lib\net45\CPointSoftware.Equihira.Business.GestCom.dll</HintPath>
-    </Reference>
-    <Reference Include="CPointSoftware.Equihira.Business.Legal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\simplement-e-server.19.6.2.15\lib\net45\CPointSoftware.Equihira.Business.Legal.dll</HintPath>
-    </Reference>
-    <Reference Include="CPointSoftware.Equihira.Business.Logistique, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\simplement-e-server.19.6.2.15\lib\net45\CPointSoftware.Equihira.Business.Logistique.dll</HintPath>
-    </Reference>
-    <Reference Include="CPointSoftware.Equihira.Business.PointOfSale, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\simplement-e-server.19.6.2.15\lib\net45\CPointSoftware.Equihira.Business.PointOfSale.dll</HintPath>
-    </Reference>
-    <Reference Include="CPointSoftware.Equihira.Common, Version=3.0.255.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\simplement-e-core.19.6.2.15\lib\net45\CPointSoftware.Equihira.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="CPointSoftware.Equihira.Extensibility, Version=3.55.0.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\simplement-e-core.19.6.2.15\lib\net45\CPointSoftware.Equihira.Extensibility.dll</HintPath>
-    </Reference>
-    <Reference Include="CPointSoftware.Faneon.Business, Version=3.0.255.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\simplement-e-server.19.6.2.15\lib\net45\CPointSoftware.Faneon.Business.dll</HintPath>
-    </Reference>
     <Reference Include="CPointSoftware.Framework, Version=1.2.113.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\CPointSoftware-Framework.17.4.11.13\lib\CPointSoftware.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="CPointSoftware.Framework.Web, Version=1.1.255.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\simplement-e-server.19.6.2.15\lib\net45\CPointSoftware.Framework.Web.dll</HintPath>
+      <HintPath>..\..\..\packages\CPointSoftware-Framework.19.5.1.11\lib\net45\CPointSoftware.Framework.dll</HintPath>
     </Reference>
     <Reference Include="CPointSoftware.Tools, Version=1.2.114.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\CPointSoftware-Framework.17.4.11.13\lib\CPointSoftware.Tools.dll</HintPath>
-    </Reference>
-    <Reference Include="ImageResizer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\simplement-e-gestcom.19.6.2.15\lib\net45\ImageResizer.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ApplicationInsights, Version=2.5.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.2.5.1\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Data.Edm, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Data.Edm.5.6.2\lib\net40\Microsoft.Data.Edm.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Data.OData, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Data.OData.5.6.2\lib\net40\Microsoft.Data.OData.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Data.Services.Client, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Data.Services.Client.5.6.2\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.2.0.3\lib\net40\Microsoft.WindowsAzure.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.WindowsAzure.Storage, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\WindowsAzure.Storage.4.3.0\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
-    </Reference>
-    <Reference Include="MongoDB.Bson, Version=0.0.6356.21636, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\mongo-db-driver-creo.2.4.3\lib\MongoDB.Bson.dll</HintPath>
-    </Reference>
-    <Reference Include="MongoDB.Driver, Version=0.0.6356.21643, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\mongo-db-driver-creo.2.4.3\lib\MongoDB.Driver.dll</HintPath>
-    </Reference>
-    <Reference Include="MongoDB.Driver.Core, Version=0.0.6356.21639, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
-      <HintPath>..\packages\mongo-db-driver-creo.2.4.3\lib\MongoDB.Driver.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\..\packages\CPointSoftware-Framework.19.5.1.11\lib\net45\CPointSoftware.Tools.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.2.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Spatial, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Spatial.5.6.2\lib\net40\System.Spatial.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -140,14 +66,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlternatesLinks.cs" />
     <Compile Include="ClientControls.cs" />
-    <Compile Include="LivraisonLabels.cs" />
+    <Compile Include="LivraisonLabel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".gitignore" />
     <None Include="AltazionCommerceControls.snk" />
+    <None Include="api\.gitignore" />
     <None Include="app.config" />
+    <None Include="docfx.json" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Equihira\e-commerce\dev\CPointSoftware.ECommerce.Business\CPointSoftware.Equihira.Business.ECommerce.csproj">
+      <Project>{03e9c7b4-da37-4c04-a013-7b9ecd722f83}</Project>
+      <Name>CPointSoftware.Equihira.Business.ECommerce</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Equihira\GestionCommerciale\dev\CPointSoftware.Equihira.Business.Common\CPointSoftware.Equihira.Business.Common.csproj">
+      <Project>{79924b22-0a50-4a6a-ae41-2246720f332b}</Project>
+      <Name>CPointSoftware.Equihira.Business.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Equihira\GestionCommerciale\dev\CPointSoftware.Equihira.Business.GestCom\CPointSoftware.Equihira.Business.GestCom.csproj">
+      <Project>{49366874-63c2-467a-96ed-fa3624ddcb86}</Project>
+      <Name>CPointSoftware.Equihira.Business.GestCom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Equihira\GestionCommerciale\dev\CPointSoftware.Equihira.Business.Legal\CPointSoftware.Equihira.Business.Legal.csproj">
+      <Project>{10df09a9-3ed5-459e-aaa0-158ceccabece}</Project>
+      <Name>CPointSoftware.Equihira.Business.Legal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Equihira\GestionCommerciale\dev\CPointSoftware.Equihira.Business.Logistique\CPointSoftware.Equihira.Business.Logistique.csproj">
+      <Project>{ff859f60-4009-424b-b0aa-f929c9a4ffb2}</Project>
+      <Name>CPointSoftware.Equihira.Business.Logistique</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Equihira\GestionCommerciale\dev\CPointSoftware.Equihira.Business.PointOfSale\CPointSoftware.Equihira.Business.PointOfSale.csproj">
+      <Project>{4eb3326f-3e43-44e1-87c9-60adb287da00}</Project>
+      <Name>CPointSoftware.Equihira.Business.PointOfSale</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Equihira\GestionCommerciale\dev\CPointSoftware.Equihira.Common\CPointSoftware.Equihira.Common.csproj">
+      <Project>{4501bd88-68fa-4c06-925e-eaa980c46884}</Project>
+      <Name>CPointSoftware.Equihira.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Equihira\GestionCommerciale\dev\CPointSoftware.Equihira.Extensibility\CPointSoftware.Equihira.Extensibility.csproj">
+      <Project>{444cabad-0e43-49fd-b7cc-11789bad5830}</Project>
+      <Name>CPointSoftware.Equihira.Extensibility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CPointSoftware.ECommerce.Tools\CPointSoftware.ECommerce.Tools.csproj">
+      <Project>{9fb9ffc7-118f-4c26-909b-79336e5faa84}</Project>
+      <Name>CPointSoftware.ECommerce.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CPointSofware.ECommerce.Glimpse\CPointSofware.ECommerce.Glimpse.csproj">
+      <Project>{8735c6b9-34f2-4127-b43f-719c0cb15ed1}</Project>
+      <Name>CPointSofware.ECommerce.Glimpse</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="syncIgnore.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\..\packages\docfx.console.2.45.1\build\docfx.console.targets" Condition="Exists('..\..\..\packages\docfx.console.2.45.1\build\docfx.console.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\packages\docfx.console.2.45.1\build\docfx.console.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\docfx.console.2.45.1\build\docfx.console.targets'))" />
+  </Target>
 </Project>
