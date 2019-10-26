@@ -14,10 +14,12 @@ namespace Altazion.ECommerce.Controls
     /// </summary>
     public class LivraisonMontant : Label
     {
-        /// <summary>
-        /// Format d'affichage du montant
-        /// </summary>
-        /// <remarks>Valeur par défaut : {0:0.00}</remarks>
+
+        public string MessageSiOffert { get; set; }
+
+
+
+
         [Bindable(true)]
         [Category("Appearance")]
         [DefaultValue("")]
@@ -39,9 +41,6 @@ namespace Altazion.ECommerce.Controls
             }
         }
 
-        /// <summary>
-        /// Surchargé pour binder le texte
-        /// </summary>
         public override void DataBind()
         {
             base.DataBind();
@@ -63,10 +62,14 @@ namespace Altazion.ECommerce.Controls
             PanierProvider prv = ECommerceServer.Panier;
             if (prv == null || prv.FraisPort == null)
                 this.Text = "";
+            else if (prv.FraisPort.MontantTTC == 0 && !string.IsNullOrEmpty(MessageSiOffert))
+            {
+                this.Text = MessageSiOffert;
+            }
             else if (!string.IsNullOrEmpty(Format))
                 this.Text = prv.FraisPort.MontantTTC.ToString(Format);
             else
-                this.Text = prv.FraisPort.MontantTTC.ToString("{0:0.00}");
+                this.Text = prv.FraisPort.MontantTTC.ToString();
         }
     }
 
@@ -76,13 +79,10 @@ namespace Altazion.ECommerce.Controls
     /// </summary>
     public class LivraisonLibelle : Label
     {
-        /// <summary>
-        /// Surchargé pour afficher le libellé du mode de livraison
-        /// </summary>
         public override void DataBind()
         {
             base.DataBind();
-        
+
             PanierProvider prv = ECommerceServer.Panier;
             if (prv == null || prv.FraisPort == null)
                 this.Text = "";
