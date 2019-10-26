@@ -5,3 +5,4 @@ _layout\*
 _includes\*
 _sass\*
 .jekyll-metadata
+images\*
