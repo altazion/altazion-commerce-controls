@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aide développeurs</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo:300,400" rel="stylesheet">
+
+    <style>
+        body,
+        p,
+        table,
+        td,
+        div {
+            font-family: 'Exo', sans-serif;
+            line-height: 1.4285;
+        }
+
+        .jumbotron {
+            background: #36274c no-repeat;
+            padding: 10px 0 13px 24px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        main {
+            padding: 0 20px;
+        }
+
+        h1 { margin:24px 0 14px 0;}
+h2 { font-size:1.4rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+        .container {
+            max-width: 1170px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: auto;
+        }
+
+        main .container {
+            max-width: 1130px;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+
+        .tiers {
+    display:inline-block;
+            width: calc(33% - 48px);
+            border:solid 1px #dcdcdc;
+            background:#fcfcfc;
+            padding:0 14px 0 14px;
+            margin: 10px;
+        }
+
+        .description {
+            font-size:small;
+            color:#292929;
+            height: 112px;
+        }
+.callToAction {
+    text-align:right;
+    margin:10px 0;
+}
+
+.callToAction A {
+    display:inline-block;
+    padding:8px 14px;
+    background:#36274c;
+    color:#efefef;
+    text-decoration: none;
+}
+
+@media (max-width:940px) {
+    .tiers {
+            width: calc(50% - 54px);
+    }
+}
+
+@media (max-width:640px) {
+    .tiers {
+    display:block;
+            width: calc(100% - 24px);
+            padding:0 12px 0 12px;
+            margin: 10px 0;
+    }
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <img src="/altazion-commerce-controls/images/logo.png" />
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="container">
+          {{ content }}
+        </div>
+    </main>
+</body>
+
+</html>
