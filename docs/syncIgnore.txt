@@ -1,7 +1,7 @@
 index.md
 .gitignore
 _site\*
-_layout\*
+_layouts\*
 _includes\*
 _sass\*
 .jekyll-metadata
