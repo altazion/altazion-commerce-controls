@@ -12,7 +12,7 @@
           "hash": "ZZKEy+rb4bw91N2xhW9sHw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -24,7 +24,7 @@
           "hash": "nGV/oiUHJGcLDbLl8T+VaQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -36,7 +36,7 @@
           "hash": "g+J+UHZ733YRO5fZnrR0LQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -48,7 +48,7 @@
           "hash": "qNMlI21iLVejj8QJDOhKrw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -60,7 +60,595 @@
           "hash": "y1YXNJ05OG1+K7hVqmD+qg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProductDataHiddenField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProductDataHiddenField.html",
+          "hash": "MbPdFwK9b4WKnPcNAurfjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProductJsonLD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProductJsonLD.html",
+          "hash": "nyg96PZmVtR7QhS1jIihmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProductLivraison.TypePreference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProductLivraison.TypePreference.html",
+          "hash": "CDSlAUfF8Lr4CbDw3tz4Nw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProductLivraison.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProductLivraison.html",
+          "hash": "KxHT+88WyPG7mJsWv4+Hbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProductLivraisonLibelle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProductLivraisonLibelle.html",
+          "hash": "KdlknVmwwxptmKfGNGJ4pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProductVideo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProductVideo.html",
+          "hash": "jcTpXXYaYyGSrlZ2bHeWNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitAttributBoolPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributBoolPanel.html",
+          "hash": "9tIHfozmFhW2NYpWTuMTvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitAttributLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributLink.html",
+          "hash": "hOD/aaqAJrhb3tYQZ4X1Qg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitAttributLiteralValeur.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributLiteralValeur.html",
+          "hash": "bDpm7zAMgtowqR0CcYo7Qg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitAttributPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributPanel.html",
+          "hash": "FdSp7ZBPiMil9RE3HcN2MQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitAttributRepeater.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributRepeater.html",
+          "hash": "P1FOdxM4Kopko23Zvf75Jw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.ProduitAttributRepeaterItemFieldKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.ProduitAttributRepeaterItemFieldKind.html",
+          "hash": "rPs9cn/ljAMsOpxQUgRv/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.html",
+          "hash": "xVy7WwzF4kOiCUyqlHBJcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitAttributTemplate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributTemplate.html",
+          "hash": "L1gywb+IgMD4zy+7PUNeXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitAttributValeur.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributValeur.html",
+          "hash": "TwL/d9LGGoh4aINH0ghHPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitAttributValeurTexte.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributValeurTexte.html",
+          "hash": "s7AnkY85bHTl7dWA+o6Yqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitAttributsPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributsPanel.html",
+          "hash": "hjj2lpccf64lCr5tWi/Prw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitDescriptif.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitDescriptif.html",
+          "hash": "rajpgAbF/1dzbnWbDT9A7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitDimensions.Dimension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitDimensions.Dimension.html",
+          "hash": "EeKACGXDAk+cE53FbUqzPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitDimensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitDimensions.html",
+          "hash": "GhSsNkdE2EGcj84TEePCUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitEan13.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitEan13.html",
+          "hash": "q/nHDuJPaWY7XcgZiqtM5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitImage.html",
+          "hash": "wqGhThQgJiTqNlelh0k+ww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitImageLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitImageLink.html",
+          "hash": "nyF6esBbn0uX7Tjr/8p3zQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitInstanceDifferentiant1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitInstanceDifferentiant1.html",
+          "hash": "hwnnu7yOk8i61yEnoLHfHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitLibelle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitLibelle.html",
+          "hash": "U4aH5uBdL7/X3kKfSBaDvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitLibelleLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitLibelleLink.html",
+          "hash": "R78Yi8FyQ9QbMQDvL0A5SA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitLink.html",
+          "hash": "yG0v4jZRWdqS0JXcWHSR1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitMailToLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitMailToLink.html",
+          "hash": "5adQjq2VtLB/Qb7pjHzcnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitMarque.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitMarque.html",
+          "hash": "r3V53P2LqQyIAFej2WqEMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitMarqueLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitMarqueLink.html",
+          "hash": "Hc1B05MQFD0Y5r6XOe2yOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitMultiImages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitMultiImages.html",
+          "hash": "80hEJh1BbamBr/xoeF1jhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.html",
+          "hash": "JrLRxEH1HKaVmC0299VAHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitPreparationInternePanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitPreparationInternePanel.html",
+          "hash": "lRy2RV/pRbVuzHEd6cnzcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitPreparationLibelle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitPreparationLibelle.html",
+          "hash": "uUUUIyZVYjtsSn1x/NUAww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitPreparationSpecifiquePanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitPreparationSpecifiquePanel.html",
+          "hash": "SVgtAd9CiW3lfj9keI4qew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitPrix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrix.html",
+          "hash": "zLDPwUA8Y240QG5rgJs0Cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitPrixConseille.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrixConseille.html",
+          "hash": "qolwncMh2HuR7fQqDUR3Rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitPrixHorsPromo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrixHorsPromo.html",
+          "hash": "P2omCAAS9RbKFzl0KsjDUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitPrixPromo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrixPromo.html",
+          "hash": "XoMvnGqWudDM7onpx7/2PQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitPrixValeurPromo.TypeAffichePromo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrixValeurPromo.TypeAffichePromo.html",
+          "hash": "TZLW9yyAqjJTUfSOcdgJxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitPrixValeurPromo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrixValeurPromo.html",
+          "hash": "voTYyzJwH+CHnYAfcBe/HA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.TypeAffichePromo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.TypeAffichePromo.html",
+          "hash": "BDYENLudKSyHLCTIXoSizQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.html",
+          "hash": "VdqE3MKQsCEZ4ZGUrRIskQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitReference.html",
+          "hash": "2xiY1snN98FhpVmiFyAFtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitSegment.html",
+          "hash": "qUohlhgzfbiSN5cN+Ntefw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitSegmentLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitSegmentLink.html",
+          "hash": "3oMj+xgABWR5yLozAyg2lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitTagsEtLabels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitTagsEtLabels.html",
+          "hash": "N53jVnNZk3C190hwBTXDLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitTotalTaxes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitTotalTaxes.html",
+          "hash": "1iGBRBHtW8Urz9ptRWB+wQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ProduitVideoList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ProduitVideoList.html",
+          "hash": "F32sVanp7lc6VEsbZDMQXw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +657,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.html",
-          "hash": "hp/EWjB+qQOY1+1x6UcZuA=="
+          "hash": "QZ1xOU6CPyTMiiBBcRPYpQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ne7sgMeUyqSFDAnnQelKcA=="
+          "hash": "v9VnTiH32Pfv4+ykqk6xxg=="
         }
       },
       "is_incremental": false,
@@ -107,8 +695,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 6,
-          "skipped_file_count": 6
+          "total_file_count": 55,
+          "skipped_file_count": 5
         }
       }
     },

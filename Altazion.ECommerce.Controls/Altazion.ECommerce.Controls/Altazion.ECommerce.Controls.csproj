@@ -50,6 +50,9 @@
     <Reference Include="CPointSoftware.Tools, Version=1.2.114.0, Culture=neutral, PublicKeyToken=7f98878649f439c2, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\CPointSoftware-Framework.19.5.1.11\lib\net45\CPointSoftware.Tools.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Configuration" />
@@ -69,6 +72,14 @@
     <Compile Include="AlternatesLinks.cs" />
     <Compile Include="ClientControls.cs" />
     <Compile Include="LivraisonLabel.cs" />
+    <Compile Include="ProductDataHiddenField.cs" />
+    <Compile Include="ProductDelaiLivraison.cs" />
+    <Compile Include="ProductImage.cs" />
+    <Compile Include="ProductJsonLD.cs" />
+    <Compile Include="ProductLabels.cs" />
+    <Compile Include="ProductLinks.cs" />
+    <Compile Include="ProductMultiImage.cs" />
+    <Compile Include="ProductVideo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
