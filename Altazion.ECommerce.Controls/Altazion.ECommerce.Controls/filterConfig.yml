@@ -1,0 +1,19 @@
+﻿apiRules:
+- exclude:
+      uidRegex: ^System\.Object
+      type: Type
+- exclude:
+      uidRegex: ^System\.Web\.UI\.Control
+      type: Type
+- exclude:
+      uidRegex: ^CPointSoftware\.ECommerce\.Tools\.MouseOverHyperlink
+      type: Type
+- exclude:
+      uidRegex: ^System\.ComponentModel\.IComponent
+      type: Type
+- exclude:
+      uidRegex: ^System\.Web\.UI\.WebControls
+      type: Namespace
+- exclude:
+      uidRegex: ^System\.Web\.UI
+      type: Namespace

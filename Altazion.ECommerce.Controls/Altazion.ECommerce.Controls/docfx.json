@@ -1,6 +1,7 @@
 {
   "metadata": [
     {
+      "filter": "filterConfig.yml",
       "src": [
         {
           "files": [
@@ -62,7 +63,8 @@
     ],
     "dest": "_site",
     "template": [
-      "default"
+      "default",
+      "templates/altazion"
     ]
   }
 }

@@ -20,6 +20,18 @@ namespace Altazion.ECommerce.Controls
     /// affiche un lien (pointant sur la fiche produit par défaut) avec l'image
     /// du produit
     /// </summary>
+    /// <remarks>
+    /// <para>Pour afficher l'image d'un produit, ce contrôle doit être dans un <see cref="ProductPanel"/>. 
+    /// Il s'utilise comme ceci :</para>
+    /// <para><code>
+    /// &lt;ecom:ProductPanel runat="server"&gt;
+    /// 
+    ///     &lt;ecom:ProduitImageLink runat="server" LinkType="Detail" ImageType="Intermediaire" /&gt;
+    /// 
+    /// &lt;/ecom:ProductPanel&gt;
+    /// </code></para>
+    /// </remarks>
+
     [ToolboxData("<{0}:ProduitImageLink runat=server></{0}:ProduitImageLink>")]
     public class ProduitImageLink : MouseOverHyperlink, IEquihiraBindable
     {

@@ -88,7 +88,10 @@
     <None Include="api\.gitignore" />
     <None Include="app.config" />
     <None Include="docfx.json" />
+    <None Include="filterConfig.yml" />
     <None Include="packages.config" />
+    <None Include="templates\altazion\partials\footer.tmpl.partial" />
+    <None Include="templates\altazion\partials\logo.tmpl.partial" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Equihira\e-commerce\dev\CPointSoftware.ECommerce.Business\CPointSoftware.Equihira.Business.ECommerce.csproj">
@@ -134,6 +137,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="syncIgnore.txt" />
+    <Content Include="templates\altazion\favicon.ico" />
+    <Content Include="templates\altazion\styles\main.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\..\packages\docfx.console.2.45.1\build\docfx.console.targets" Condition="Exists('..\..\..\packages\docfx.console.2.45.1\build\docfx.console.targets')" />
