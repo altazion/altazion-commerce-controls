@@ -69,9 +69,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdresseChoisirLink.cs" />
+    <Compile Include="AdressePanel.cs" />
     <Compile Include="AlternatesLinks.cs" />
+    <Compile Include="AmpBoilerplate.cs" />
+    <Compile Include="AmpProductControls.cs" />
+    <Compile Include="AnimationArreterTestLinkButton.cs" />
+    <Compile Include="AnimationEnTestPanel.cs" />
+    <Compile Include="AvantageLabel.cs" />
+    <Compile Include="AvisLabels.cs" />
+    <Compile Include="BonsAchatsControls.cs" />
+    <Compile Include="CanonicalLink.cs" />
     <Compile Include="ClientControls.cs" />
+    <Compile Include="CommandeLabels.cs" />
+    <Compile Include="FacebookLoginLink.cs" />
+    <Compile Include="FilAriane.cs" />
+    <Compile Include="FilArianeCategories.cs" />
     <Compile Include="LivraisonLabel.cs" />
+    <Compile Include="MagasinsControls.cs" />
+    <Compile Include="PanelConditionnelLivraison.cs" />
+    <Compile Include="PanelConditionnelReglement.cs" />
+    <Compile Include="PanelCrossCanal.cs" />
+    <Compile Include="PanelPageSpecifique.cs" />
+    <Compile Include="PanelsGuest.cs" />
     <Compile Include="ProductDataHiddenField.cs" />
     <Compile Include="ProductDelaiLivraison.cs" />
     <Compile Include="ProductImage.cs" />
