@@ -16,3 +16,8 @@ body, p, table, td, div {
 .sidefilter {
     top: 110px;
 }
+
+
+.inheritance, .implements {
+    display: none;
+}

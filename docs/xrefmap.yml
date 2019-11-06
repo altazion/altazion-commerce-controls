@@ -26,19 +26,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.AdresseChoisirLink.AdresseGuid
   nameWithType: AdresseChoisirLink.AdresseGuid
-- uid: Altazion.ECommerce.Controls.AdresseChoisirLink.DataBind
-  name: DataBind()
-  href: api/Altazion.ECommerce.Controls.AdresseChoisirLink.html#Altazion_ECommerce_Controls_AdresseChoisirLink_DataBind
-  commentId: M:Altazion.ECommerce.Controls.AdresseChoisirLink.DataBind
-  fullName: Altazion.ECommerce.Controls.AdresseChoisirLink.DataBind()
-  nameWithType: AdresseChoisirLink.DataBind()
-- uid: Altazion.ECommerce.Controls.AdresseChoisirLink.DataBind*
-  name: DataBind
-  href: api/Altazion.ECommerce.Controls.AdresseChoisirLink.html#Altazion_ECommerce_Controls_AdresseChoisirLink_DataBind_
-  commentId: Overload:Altazion.ECommerce.Controls.AdresseChoisirLink.DataBind
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AdresseChoisirLink.DataBind
-  nameWithType: AdresseChoisirLink.DataBind
 - uid: Altazion.ECommerce.Controls.AdresseChoisirLink.TypeAdresse
   name: TypeAdresse
   href: api/Altazion.ECommerce.Controls.AdresseChoisirLink.html#Altazion_ECommerce_Controls_AdresseChoisirLink_TypeAdresse
@@ -84,19 +71,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.AdressePanel.AfficherSiPointRelais
   nameWithType: AdressePanel.AfficherSiPointRelais
-- uid: Altazion.ECommerce.Controls.AdressePanel.OnLoad(System.EventArgs)
-  name: OnLoad(EventArgs)
-  href: api/Altazion.ECommerce.Controls.AdressePanel.html#Altazion_ECommerce_Controls_AdressePanel_OnLoad_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.AdressePanel.OnLoad(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.AdressePanel.OnLoad(System.EventArgs)
-  nameWithType: AdressePanel.OnLoad(EventArgs)
-- uid: Altazion.ECommerce.Controls.AdressePanel.OnLoad*
-  name: OnLoad
-  href: api/Altazion.ECommerce.Controls.AdressePanel.html#Altazion_ECommerce_Controls_AdressePanel_OnLoad_
-  commentId: Overload:Altazion.ECommerce.Controls.AdressePanel.OnLoad
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AdressePanel.OnLoad
-  nameWithType: AdressePanel.OnLoad
 - uid: Altazion.ECommerce.Controls.AdressePanel.TypeAffichage
   name: TypeAffichage
   href: api/Altazion.ECommerce.Controls.AdressePanel.html#Altazion_ECommerce_Controls_AdressePanel_TypeAffichage
@@ -198,51 +172,12 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.AlternatesLinks.Alternates
   nameWithType: AlternatesLinks.Alternates
-- uid: Altazion.ECommerce.Controls.AlternatesLinks.OnInit(System.EventArgs)
-  name: OnInit(EventArgs)
-  href: api/Altazion.ECommerce.Controls.AlternatesLinks.html#Altazion_ECommerce_Controls_AlternatesLinks_OnInit_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.AlternatesLinks.OnInit(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.AlternatesLinks.OnInit(System.EventArgs)
-  nameWithType: AlternatesLinks.OnInit(EventArgs)
-- uid: Altazion.ECommerce.Controls.AlternatesLinks.OnInit*
-  name: OnInit
-  href: api/Altazion.ECommerce.Controls.AlternatesLinks.html#Altazion_ECommerce_Controls_AlternatesLinks_OnInit_
-  commentId: Overload:Altazion.ECommerce.Controls.AlternatesLinks.OnInit
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AlternatesLinks.OnInit
-  nameWithType: AlternatesLinks.OnInit
-- uid: Altazion.ECommerce.Controls.AlternatesLinks.Render(System.Web.UI.HtmlTextWriter)
-  name: Render(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.AlternatesLinks.html#Altazion_ECommerce_Controls_AlternatesLinks_Render_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.AlternatesLinks.Render(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.AlternatesLinks.Render(System.Web.UI.HtmlTextWriter)
-  nameWithType: AlternatesLinks.Render(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.AlternatesLinks.Render*
-  name: Render
-  href: api/Altazion.ECommerce.Controls.AlternatesLinks.html#Altazion_ECommerce_Controls_AlternatesLinks_Render_
-  commentId: Overload:Altazion.ECommerce.Controls.AlternatesLinks.Render
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AlternatesLinks.Render
-  nameWithType: AlternatesLinks.Render
 - uid: Altazion.ECommerce.Controls.AmpBoilerplate
   name: AmpBoilerplate
   href: api/Altazion.ECommerce.Controls.AmpBoilerplate.html
   commentId: T:Altazion.ECommerce.Controls.AmpBoilerplate
   fullName: Altazion.ECommerce.Controls.AmpBoilerplate
   nameWithType: AmpBoilerplate
-- uid: Altazion.ECommerce.Controls.AmpBoilerplate.Render(System.Web.UI.HtmlTextWriter)
-  name: Render(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.AmpBoilerplate.html#Altazion_ECommerce_Controls_AmpBoilerplate_Render_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.AmpBoilerplate.Render(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.AmpBoilerplate.Render(System.Web.UI.HtmlTextWriter)
-  nameWithType: AmpBoilerplate.Render(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.AmpBoilerplate.Render*
-  name: Render
-  href: api/Altazion.ECommerce.Controls.AmpBoilerplate.html#Altazion_ECommerce_Controls_AmpBoilerplate_Render_
-  commentId: Overload:Altazion.ECommerce.Controls.AmpBoilerplate.Render
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AmpBoilerplate.Render
-  nameWithType: AmpBoilerplate.Render
 - uid: Altazion.ECommerce.Controls.AmpProductImagesCarousel
   name: AmpProductImagesCarousel
   href: api/Altazion.ECommerce.Controls.AmpProductImagesCarousel.html
@@ -262,19 +197,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.AmpProductImagesCarousel.AmpProductImagesCarousel
   nameWithType: AmpProductImagesCarousel.AmpProductImagesCarousel
-- uid: Altazion.ECommerce.Controls.AmpProductImagesCarousel.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.AmpProductImagesCarousel.html#Altazion_ECommerce_Controls_AmpProductImagesCarousel_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.AmpProductImagesCarousel.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.AmpProductImagesCarousel.BindTo(System.Object)
-  nameWithType: AmpProductImagesCarousel.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.AmpProductImagesCarousel.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.AmpProductImagesCarousel.html#Altazion_ECommerce_Controls_AmpProductImagesCarousel_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.AmpProductImagesCarousel.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AmpProductImagesCarousel.BindTo
-  nameWithType: AmpProductImagesCarousel.BindTo
 - uid: Altazion.ECommerce.Controls.AmpProductImagesCarousel.CssClass
   name: CssClass
   href: api/Altazion.ECommerce.Controls.AmpProductImagesCarousel.html#Altazion_ECommerce_Controls_AmpProductImagesCarousel_CssClass
@@ -314,19 +236,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.AmpProductImagesCarousel.Interval
   nameWithType: AmpProductImagesCarousel.Interval
-- uid: Altazion.ECommerce.Controls.AmpProductImagesCarousel.Render(System.Web.UI.HtmlTextWriter)
-  name: Render(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.AmpProductImagesCarousel.html#Altazion_ECommerce_Controls_AmpProductImagesCarousel_Render_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.AmpProductImagesCarousel.Render(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.AmpProductImagesCarousel.Render(System.Web.UI.HtmlTextWriter)
-  nameWithType: AmpProductImagesCarousel.Render(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.AmpProductImagesCarousel.Render*
-  name: Render
-  href: api/Altazion.ECommerce.Controls.AmpProductImagesCarousel.html#Altazion_ECommerce_Controls_AmpProductImagesCarousel_Render_
-  commentId: Overload:Altazion.ECommerce.Controls.AmpProductImagesCarousel.Render
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AmpProductImagesCarousel.Render
-  nameWithType: AmpProductImagesCarousel.Render
 - uid: Altazion.ECommerce.Controls.AmpProductImagesCarousel.Width
   name: Width
   href: api/Altazion.ECommerce.Controls.AmpProductImagesCarousel.html#Altazion_ECommerce_Controls_AmpProductImagesCarousel_Width
@@ -346,19 +255,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.AmpProduitImage
   fullName: Altazion.ECommerce.Controls.AmpProduitImage
   nameWithType: AmpProduitImage
-- uid: Altazion.ECommerce.Controls.AmpProduitImage.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.AmpProduitImage.html#Altazion_ECommerce_Controls_AmpProduitImage_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.AmpProduitImage.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.AmpProduitImage.BindTo(System.Object)
-  nameWithType: AmpProduitImage.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.AmpProduitImage.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.AmpProduitImage.html#Altazion_ECommerce_Controls_AmpProduitImage_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.AmpProduitImage.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AmpProduitImage.BindTo
-  nameWithType: AmpProduitImage.BindTo
 - uid: Altazion.ECommerce.Controls.AmpProduitImage.Height
   name: Height
   href: api/Altazion.ECommerce.Controls.AmpProduitImage.html#Altazion_ECommerce_Controls_AmpProduitImage_Height
@@ -411,19 +307,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.AmpProduitImage.LinkType
   nameWithType: AmpProduitImage.LinkType
-- uid: Altazion.ECommerce.Controls.AmpProduitImage.Render(System.Web.UI.HtmlTextWriter)
-  name: Render(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.AmpProduitImage.html#Altazion_ECommerce_Controls_AmpProduitImage_Render_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.AmpProduitImage.Render(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.AmpProduitImage.Render(System.Web.UI.HtmlTextWriter)
-  nameWithType: AmpProduitImage.Render(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.AmpProduitImage.Render*
-  name: Render
-  href: api/Altazion.ECommerce.Controls.AmpProduitImage.html#Altazion_ECommerce_Controls_AmpProduitImage_Render_
-  commentId: Overload:Altazion.ECommerce.Controls.AmpProduitImage.Render
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AmpProduitImage.Render
-  nameWithType: AmpProduitImage.Render
 - uid: Altazion.ECommerce.Controls.AmpProduitImage.Width
   name: Width
   href: api/Altazion.ECommerce.Controls.AmpProduitImage.html#Altazion_ECommerce_Controls_AmpProduitImage_Width
@@ -539,19 +422,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.AvisDate.AvisDate
   nameWithType: AvisDate.AvisDate
-- uid: Altazion.ECommerce.Controls.AvisDate.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.AvisDate.html#Altazion_ECommerce_Controls_AvisDate_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.AvisDate.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.AvisDate.BindTo(System.Object)
-  nameWithType: AvisDate.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.AvisDate.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.AvisDate.html#Altazion_ECommerce_Controls_AvisDate_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.AvisDate.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AvisDate.BindTo
-  nameWithType: AvisDate.BindTo
 - uid: Altazion.ECommerce.Controls.AvisDate.Format
   name: Format
   href: api/Altazion.ECommerce.Controls.AvisDate.html#Altazion_ECommerce_Controls_AvisDate_Format
@@ -584,19 +454,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.AvisMessage
   fullName: Altazion.ECommerce.Controls.AvisMessage
   nameWithType: AvisMessage
-- uid: Altazion.ECommerce.Controls.AvisMessage.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.AvisMessage.html#Altazion_ECommerce_Controls_AvisMessage_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.AvisMessage.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.AvisMessage.BindTo(System.Object)
-  nameWithType: AvisMessage.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.AvisMessage.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.AvisMessage.html#Altazion_ECommerce_Controls_AvisMessage_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.AvisMessage.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AvisMessage.BindTo
-  nameWithType: AvisMessage.BindTo
 - uid: Altazion.ECommerce.Controls.AvisMessage.OnDataBinding(System.EventArgs)
   name: OnDataBinding(EventArgs)
   href: api/Altazion.ECommerce.Controls.AvisMessage.html#Altazion_ECommerce_Controls_AvisMessage_OnDataBinding_System_EventArgs_
@@ -616,19 +473,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.AvisNom
   fullName: Altazion.ECommerce.Controls.AvisNom
   nameWithType: AvisNom
-- uid: Altazion.ECommerce.Controls.AvisNom.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.AvisNom.html#Altazion_ECommerce_Controls_AvisNom_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.AvisNom.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.AvisNom.BindTo(System.Object)
-  nameWithType: AvisNom.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.AvisNom.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.AvisNom.html#Altazion_ECommerce_Controls_AvisNom_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.AvisNom.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AvisNom.BindTo
-  nameWithType: AvisNom.BindTo
 - uid: Altazion.ECommerce.Controls.AvisNom.OnDataBinding(System.EventArgs)
   name: OnDataBinding(EventArgs)
   href: api/Altazion.ECommerce.Controls.AvisNom.html#Altazion_ECommerce_Controls_AvisNom_OnDataBinding_System_EventArgs_
@@ -648,19 +492,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.AvisNote
   fullName: Altazion.ECommerce.Controls.AvisNote
   nameWithType: AvisNote
-- uid: Altazion.ECommerce.Controls.AvisNote.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.AvisNote.html#Altazion_ECommerce_Controls_AvisNote_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.AvisNote.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.AvisNote.BindTo(System.Object)
-  nameWithType: AvisNote.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.AvisNote.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.AvisNote.html#Altazion_ECommerce_Controls_AvisNote_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.AvisNote.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AvisNote.BindTo
-  nameWithType: AvisNote.BindTo
 - uid: Altazion.ECommerce.Controls.AvisNote.OnDataBinding(System.EventArgs)
   name: OnDataBinding(EventArgs)
   href: api/Altazion.ECommerce.Controls.AvisNote.html#Altazion_ECommerce_Controls_AvisNote_OnDataBinding_System_EventArgs_
@@ -693,19 +524,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.BonAchatsAmountGridColumn
   nameWithType: BonAchatsAmountGridColumn.BonAchatsAmountGridColumn
-- uid: Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.CreateField
-  name: CreateField()
-  href: api/Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.html#Altazion_ECommerce_Controls_BonAchatsAmountGridColumn_CreateField
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.CreateField
-  fullName: Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.CreateField()
-  nameWithType: BonAchatsAmountGridColumn.CreateField()
-- uid: Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.CreateField*
-  name: CreateField
-  href: api/Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.html#Altazion_ECommerce_Controls_BonAchatsAmountGridColumn_CreateField_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.CreateField
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.CreateField
-  nameWithType: BonAchatsAmountGridColumn.CreateField
 - uid: Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.Format
   name: Format
   href: api/Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.html#Altazion_ECommerce_Controls_BonAchatsAmountGridColumn_Format
@@ -719,83 +537,18 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.Format
   nameWithType: BonAchatsAmountGridColumn.Format
-- uid: Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  name: InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-  href: api/Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.html#Altazion_ECommerce_Controls_BonAchatsAmountGridColumn_InitializeCell_System_Web_UI_WebControls_DataControlFieldCell_System_Web_UI_WebControls_DataControlCellType_System_Web_UI_WebControls_DataControlRowState_System_Int32_
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  fullName: Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell, System.Web.UI.WebControls.DataControlCellType, System.Web.UI.WebControls.DataControlRowState, System.Int32)
-  nameWithType: BonAchatsAmountGridColumn.InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-- uid: Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.InitializeCell*
-  name: InitializeCell
-  href: api/Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.html#Altazion_ECommerce_Controls_BonAchatsAmountGridColumn_InitializeCell_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.InitializeCell
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.InitializeCell
-  nameWithType: BonAchatsAmountGridColumn.InitializeCell
 - uid: Altazion.ECommerce.Controls.BonAchatsArticleGridColumn
   name: BonAchatsArticleGridColumn
   href: api/Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.html
   commentId: T:Altazion.ECommerce.Controls.BonAchatsArticleGridColumn
   fullName: Altazion.ECommerce.Controls.BonAchatsArticleGridColumn
   nameWithType: BonAchatsArticleGridColumn
-- uid: Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.CreateField
-  name: CreateField()
-  href: api/Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.html#Altazion_ECommerce_Controls_BonAchatsArticleGridColumn_CreateField
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.CreateField
-  fullName: Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.CreateField()
-  nameWithType: BonAchatsArticleGridColumn.CreateField()
-- uid: Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.CreateField*
-  name: CreateField
-  href: api/Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.html#Altazion_ECommerce_Controls_BonAchatsArticleGridColumn_CreateField_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.CreateField
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.CreateField
-  nameWithType: BonAchatsArticleGridColumn.CreateField
-- uid: Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  name: InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-  href: api/Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.html#Altazion_ECommerce_Controls_BonAchatsArticleGridColumn_InitializeCell_System_Web_UI_WebControls_DataControlFieldCell_System_Web_UI_WebControls_DataControlCellType_System_Web_UI_WebControls_DataControlRowState_System_Int32_
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  fullName: Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell, System.Web.UI.WebControls.DataControlCellType, System.Web.UI.WebControls.DataControlRowState, System.Int32)
-  nameWithType: BonAchatsArticleGridColumn.InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-- uid: Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.InitializeCell*
-  name: InitializeCell
-  href: api/Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.html#Altazion_ECommerce_Controls_BonAchatsArticleGridColumn_InitializeCell_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.InitializeCell
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.InitializeCell
-  nameWithType: BonAchatsArticleGridColumn.InitializeCell
 - uid: Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn
   name: BonAchatsConditionsGridColumn
   href: api/Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.html
   commentId: T:Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn
   fullName: Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn
   nameWithType: BonAchatsConditionsGridColumn
-- uid: Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.CreateField
-  name: CreateField()
-  href: api/Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.html#Altazion_ECommerce_Controls_BonAchatsConditionsGridColumn_CreateField
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.CreateField
-  fullName: Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.CreateField()
-  nameWithType: BonAchatsConditionsGridColumn.CreateField()
-- uid: Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.CreateField*
-  name: CreateField
-  href: api/Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.html#Altazion_ECommerce_Controls_BonAchatsConditionsGridColumn_CreateField_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.CreateField
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.CreateField
-  nameWithType: BonAchatsConditionsGridColumn.CreateField
-- uid: Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  name: InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-  href: api/Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.html#Altazion_ECommerce_Controls_BonAchatsConditionsGridColumn_InitializeCell_System_Web_UI_WebControls_DataControlFieldCell_System_Web_UI_WebControls_DataControlCellType_System_Web_UI_WebControls_DataControlRowState_System_Int32_
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  fullName: Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell, System.Web.UI.WebControls.DataControlCellType, System.Web.UI.WebControls.DataControlRowState, System.Int32)
-  nameWithType: BonAchatsConditionsGridColumn.InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-- uid: Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.InitializeCell*
-  name: InitializeCell
-  href: api/Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.html#Altazion_ECommerce_Controls_BonAchatsConditionsGridColumn_InitializeCell_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.InitializeCell
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.InitializeCell
-  nameWithType: BonAchatsConditionsGridColumn.InitializeCell
 - uid: Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn
   name: BonAchatsDateMaxGridColumn
   href: api/Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.html
@@ -815,19 +568,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.BonAchatsDateMaxGridColumn
   nameWithType: BonAchatsDateMaxGridColumn.BonAchatsDateMaxGridColumn
-- uid: Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.CreateField
-  name: CreateField()
-  href: api/Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.html#Altazion_ECommerce_Controls_BonAchatsDateMaxGridColumn_CreateField
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.CreateField
-  fullName: Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.CreateField()
-  nameWithType: BonAchatsDateMaxGridColumn.CreateField()
-- uid: Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.CreateField*
-  name: CreateField
-  href: api/Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.html#Altazion_ECommerce_Controls_BonAchatsDateMaxGridColumn_CreateField_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.CreateField
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.CreateField
-  nameWithType: BonAchatsDateMaxGridColumn.CreateField
 - uid: Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.Format
   name: Format
   href: api/Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.html#Altazion_ECommerce_Controls_BonAchatsDateMaxGridColumn_Format
@@ -841,19 +581,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.Format
   nameWithType: BonAchatsDateMaxGridColumn.Format
-- uid: Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  name: InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-  href: api/Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.html#Altazion_ECommerce_Controls_BonAchatsDateMaxGridColumn_InitializeCell_System_Web_UI_WebControls_DataControlFieldCell_System_Web_UI_WebControls_DataControlCellType_System_Web_UI_WebControls_DataControlRowState_System_Int32_
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  fullName: Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell, System.Web.UI.WebControls.DataControlCellType, System.Web.UI.WebControls.DataControlRowState, System.Int32)
-  nameWithType: BonAchatsDateMaxGridColumn.InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-- uid: Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.InitializeCell*
-  name: InitializeCell
-  href: api/Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.html#Altazion_ECommerce_Controls_BonAchatsDateMaxGridColumn_InitializeCell_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.InitializeCell
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.InitializeCell
-  nameWithType: BonAchatsDateMaxGridColumn.InitializeCell
 - uid: Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn
   name: BonAchatsDateMinGridColumn
   href: api/Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.html
@@ -873,19 +600,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.BonAchatsDateMinGridColumn
   nameWithType: BonAchatsDateMinGridColumn.BonAchatsDateMinGridColumn
-- uid: Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.CreateField
-  name: CreateField()
-  href: api/Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.html#Altazion_ECommerce_Controls_BonAchatsDateMinGridColumn_CreateField
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.CreateField
-  fullName: Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.CreateField()
-  nameWithType: BonAchatsDateMinGridColumn.CreateField()
-- uid: Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.CreateField*
-  name: CreateField
-  href: api/Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.html#Altazion_ECommerce_Controls_BonAchatsDateMinGridColumn_CreateField_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.CreateField
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.CreateField
-  nameWithType: BonAchatsDateMinGridColumn.CreateField
 - uid: Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.Format
   name: Format
   href: api/Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.html#Altazion_ECommerce_Controls_BonAchatsDateMinGridColumn_Format
@@ -899,51 +613,12 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.Format
   nameWithType: BonAchatsDateMinGridColumn.Format
-- uid: Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  name: InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-  href: api/Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.html#Altazion_ECommerce_Controls_BonAchatsDateMinGridColumn_InitializeCell_System_Web_UI_WebControls_DataControlFieldCell_System_Web_UI_WebControls_DataControlCellType_System_Web_UI_WebControls_DataControlRowState_System_Int32_
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  fullName: Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell, System.Web.UI.WebControls.DataControlCellType, System.Web.UI.WebControls.DataControlRowState, System.Int32)
-  nameWithType: BonAchatsDateMinGridColumn.InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-- uid: Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.InitializeCell*
-  name: InitializeCell
-  href: api/Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.html#Altazion_ECommerce_Controls_BonAchatsDateMinGridColumn_InitializeCell_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.InitializeCell
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.InitializeCell
-  nameWithType: BonAchatsDateMinGridColumn.InitializeCell
 - uid: Altazion.ECommerce.Controls.BonAchatsLabelGridColumn
   name: BonAchatsLabelGridColumn
   href: api/Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.html
   commentId: T:Altazion.ECommerce.Controls.BonAchatsLabelGridColumn
   fullName: Altazion.ECommerce.Controls.BonAchatsLabelGridColumn
   nameWithType: BonAchatsLabelGridColumn
-- uid: Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.CreateField
-  name: CreateField()
-  href: api/Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.html#Altazion_ECommerce_Controls_BonAchatsLabelGridColumn_CreateField
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.CreateField
-  fullName: Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.CreateField()
-  nameWithType: BonAchatsLabelGridColumn.CreateField()
-- uid: Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.CreateField*
-  name: CreateField
-  href: api/Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.html#Altazion_ECommerce_Controls_BonAchatsLabelGridColumn_CreateField_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.CreateField
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.CreateField
-  nameWithType: BonAchatsLabelGridColumn.CreateField
-- uid: Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  name: InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-  href: api/Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.html#Altazion_ECommerce_Controls_BonAchatsLabelGridColumn_InitializeCell_System_Web_UI_WebControls_DataControlFieldCell_System_Web_UI_WebControls_DataControlCellType_System_Web_UI_WebControls_DataControlRowState_System_Int32_
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  fullName: Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell, System.Web.UI.WebControls.DataControlCellType, System.Web.UI.WebControls.DataControlRowState, System.Int32)
-  nameWithType: BonAchatsLabelGridColumn.InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-- uid: Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.InitializeCell*
-  name: InitializeCell
-  href: api/Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.html#Altazion_ECommerce_Controls_BonAchatsLabelGridColumn_InitializeCell_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.InitializeCell
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.InitializeCell
-  nameWithType: BonAchatsLabelGridColumn.InitializeCell
 - uid: Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn
   name: BonAchatsOriginalAmountGridColumn
   href: api/Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.html
@@ -963,19 +638,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.BonAchatsOriginalAmountGridColumn
   nameWithType: BonAchatsOriginalAmountGridColumn.BonAchatsOriginalAmountGridColumn
-- uid: Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.CreateField
-  name: CreateField()
-  href: api/Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.html#Altazion_ECommerce_Controls_BonAchatsOriginalAmountGridColumn_CreateField
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.CreateField
-  fullName: Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.CreateField()
-  nameWithType: BonAchatsOriginalAmountGridColumn.CreateField()
-- uid: Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.CreateField*
-  name: CreateField
-  href: api/Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.html#Altazion_ECommerce_Controls_BonAchatsOriginalAmountGridColumn_CreateField_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.CreateField
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.CreateField
-  nameWithType: BonAchatsOriginalAmountGridColumn.CreateField
 - uid: Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.Format
   name: Format
   href: api/Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.html#Altazion_ECommerce_Controls_BonAchatsOriginalAmountGridColumn_Format
@@ -989,19 +651,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.Format
   nameWithType: BonAchatsOriginalAmountGridColumn.Format
-- uid: Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  name: InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-  href: api/Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.html#Altazion_ECommerce_Controls_BonAchatsOriginalAmountGridColumn_InitializeCell_System_Web_UI_WebControls_DataControlFieldCell_System_Web_UI_WebControls_DataControlCellType_System_Web_UI_WebControls_DataControlRowState_System_Int32_
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  fullName: Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell, System.Web.UI.WebControls.DataControlCellType, System.Web.UI.WebControls.DataControlRowState, System.Int32)
-  nameWithType: BonAchatsOriginalAmountGridColumn.InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-- uid: Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.InitializeCell*
-  name: InitializeCell
-  href: api/Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.html#Altazion_ECommerce_Controls_BonAchatsOriginalAmountGridColumn_InitializeCell_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.InitializeCell
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.InitializeCell
-  nameWithType: BonAchatsOriginalAmountGridColumn.InitializeCell
 - uid: Altazion.ECommerce.Controls.BonAchatsRecupereLink
   name: BonAchatsRecupereLink
   href: api/Altazion.ECommerce.Controls.BonAchatsRecupereLink.html
@@ -1052,32 +701,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn
   fullName: Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn
   nameWithType: BonAchatsUtiliserGridColumn
-- uid: Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.CreateField
-  name: CreateField()
-  href: api/Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.html#Altazion_ECommerce_Controls_BonAchatsUtiliserGridColumn_CreateField
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.CreateField
-  fullName: Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.CreateField()
-  nameWithType: BonAchatsUtiliserGridColumn.CreateField()
-- uid: Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.CreateField*
-  name: CreateField
-  href: api/Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.html#Altazion_ECommerce_Controls_BonAchatsUtiliserGridColumn_CreateField_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.CreateField
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.CreateField
-  nameWithType: BonAchatsUtiliserGridColumn.CreateField
-- uid: Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  name: InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-  href: api/Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.html#Altazion_ECommerce_Controls_BonAchatsUtiliserGridColumn_InitializeCell_System_Web_UI_WebControls_DataControlFieldCell_System_Web_UI_WebControls_DataControlCellType_System_Web_UI_WebControls_DataControlRowState_System_Int32_
-  commentId: M:Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)
-  fullName: Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell, System.Web.UI.WebControls.DataControlCellType, System.Web.UI.WebControls.DataControlRowState, System.Int32)
-  nameWithType: BonAchatsUtiliserGridColumn.InitializeCell(DataControlFieldCell, DataControlCellType, DataControlRowState, Int32)
-- uid: Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.InitializeCell*
-  name: InitializeCell
-  href: api/Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.html#Altazion_ECommerce_Controls_BonAchatsUtiliserGridColumn_InitializeCell_
-  commentId: Overload:Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.InitializeCell
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.InitializeCell
-  nameWithType: BonAchatsUtiliserGridColumn.InitializeCell
 - uid: Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.Text
   name: Text
   href: api/Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.html#Altazion_ECommerce_Controls_BonAchatsUtiliserGridColumn_Text
@@ -1235,19 +858,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.BonsAchatsGridView.BonAchatData
   fullName: Altazion.ECommerce.Controls.BonsAchatsGridView.BonAchatData
   nameWithType: BonsAchatsGridView.BonAchatData
-- uid: Altazion.ECommerce.Controls.BonsAchatsGridView.BonAchatData.CompareTo(System.Object)
-  name: CompareTo(Object)
-  href: api/Altazion.ECommerce.Controls.BonsAchatsGridView.BonAchatData.html#Altazion_ECommerce_Controls_BonsAchatsGridView_BonAchatData_CompareTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.BonsAchatsGridView.BonAchatData.CompareTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.BonsAchatsGridView.BonAchatData.CompareTo(System.Object)
-  nameWithType: BonsAchatsGridView.BonAchatData.CompareTo(Object)
-- uid: Altazion.ECommerce.Controls.BonsAchatsGridView.BonAchatData.CompareTo*
-  name: CompareTo
-  href: api/Altazion.ECommerce.Controls.BonsAchatsGridView.BonAchatData.html#Altazion_ECommerce_Controls_BonsAchatsGridView_BonAchatData_CompareTo_
-  commentId: Overload:Altazion.ECommerce.Controls.BonsAchatsGridView.BonAchatData.CompareTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonsAchatsGridView.BonAchatData.CompareTo
-  nameWithType: BonsAchatsGridView.BonAchatData.CompareTo
 - uid: Altazion.ECommerce.Controls.BonsAchatsGridView.BonAchatData.Conditions
   name: Conditions
   href: api/Altazion.ECommerce.Controls.BonsAchatsGridView.BonAchatData.html#Altazion_ECommerce_Controls_BonsAchatsGridView_BonAchatData_Conditions
@@ -1525,19 +1135,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.CanonicalLink
   fullName: Altazion.ECommerce.Controls.CanonicalLink
   nameWithType: CanonicalLink
-- uid: Altazion.ECommerce.Controls.CanonicalLink.Render(System.Web.UI.HtmlTextWriter)
-  name: Render(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.CanonicalLink.html#Altazion_ECommerce_Controls_CanonicalLink_Render_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.CanonicalLink.Render(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.CanonicalLink.Render(System.Web.UI.HtmlTextWriter)
-  nameWithType: CanonicalLink.Render(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.CanonicalLink.Render*
-  name: Render
-  href: api/Altazion.ECommerce.Controls.CanonicalLink.html#Altazion_ECommerce_Controls_CanonicalLink_Render_
-  commentId: Overload:Altazion.ECommerce.Controls.CanonicalLink.Render
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.CanonicalLink.Render
-  nameWithType: CanonicalLink.Render
 - uid: Altazion.ECommerce.Controls.ClickNMortarHomeLink
   name: ClickNMortarHomeLink
   href: api/Altazion.ECommerce.Controls.ClickNMortarHomeLink.html
@@ -1614,19 +1211,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.FacebookLoginLink
   fullName: Altazion.ECommerce.Controls.FacebookLoginLink
   nameWithType: FacebookLoginLink
-- uid: Altazion.ECommerce.Controls.FacebookLoginLink.OnLoad(System.EventArgs)
-  name: OnLoad(EventArgs)
-  href: api/Altazion.ECommerce.Controls.FacebookLoginLink.html#Altazion_ECommerce_Controls_FacebookLoginLink_OnLoad_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.FacebookLoginLink.OnLoad(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.FacebookLoginLink.OnLoad(System.EventArgs)
-  nameWithType: FacebookLoginLink.OnLoad(EventArgs)
-- uid: Altazion.ECommerce.Controls.FacebookLoginLink.OnLoad*
-  name: OnLoad
-  href: api/Altazion.ECommerce.Controls.FacebookLoginLink.html#Altazion_ECommerce_Controls_FacebookLoginLink_OnLoad_
-  commentId: Overload:Altazion.ECommerce.Controls.FacebookLoginLink.OnLoad
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.FacebookLoginLink.OnLoad
-  nameWithType: FacebookLoginLink.OnLoad
 - uid: Altazion.ECommerce.Controls.FacebookLoginLink.OnPreRender(System.EventArgs)
   name: OnPreRender(EventArgs)
   href: api/Altazion.ECommerce.Controls.FacebookLoginLink.html#Altazion_ECommerce_Controls_FacebookLoginLink_OnPreRender_System_EventArgs_
@@ -1724,19 +1308,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.FilAriane.LastItemCssClass
   nameWithType: FilAriane.LastItemCssClass
-- uid: Altazion.ECommerce.Controls.FilAriane.Render(System.Web.UI.HtmlTextWriter)
-  name: Render(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.FilAriane.html#Altazion_ECommerce_Controls_FilAriane_Render_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.FilAriane.Render(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.FilAriane.Render(System.Web.UI.HtmlTextWriter)
-  nameWithType: FilAriane.Render(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.FilAriane.Render*
-  name: Render
-  href: api/Altazion.ECommerce.Controls.FilAriane.html#Altazion_ECommerce_Controls_FilAriane_Render_
-  commentId: Overload:Altazion.ECommerce.Controls.FilAriane.Render
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.FilAriane.Render
-  nameWithType: FilAriane.Render
 - uid: Altazion.ECommerce.Controls.FilAriane.Separator
   name: Separator
   href: api/Altazion.ECommerce.Controls.FilAriane.html#Altazion_ECommerce_Controls_FilAriane_Separator
@@ -1769,19 +1340,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.LivraisonLibelle
   fullName: Altazion.ECommerce.Controls.LivraisonLibelle
   nameWithType: LivraisonLibelle
-- uid: Altazion.ECommerce.Controls.LivraisonLibelle.DataBind
-  name: DataBind()
-  href: api/Altazion.ECommerce.Controls.LivraisonLibelle.html#Altazion_ECommerce_Controls_LivraisonLibelle_DataBind
-  commentId: M:Altazion.ECommerce.Controls.LivraisonLibelle.DataBind
-  fullName: Altazion.ECommerce.Controls.LivraisonLibelle.DataBind()
-  nameWithType: LivraisonLibelle.DataBind()
-- uid: Altazion.ECommerce.Controls.LivraisonLibelle.DataBind*
-  name: DataBind
-  href: api/Altazion.ECommerce.Controls.LivraisonLibelle.html#Altazion_ECommerce_Controls_LivraisonLibelle_DataBind_
-  commentId: Overload:Altazion.ECommerce.Controls.LivraisonLibelle.DataBind
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.LivraisonLibelle.DataBind
-  nameWithType: LivraisonLibelle.DataBind
 - uid: Altazion.ECommerce.Controls.LivraisonLibelle.OnPreRender(System.EventArgs)
   name: OnPreRender(EventArgs)
   href: api/Altazion.ECommerce.Controls.LivraisonLibelle.html#Altazion_ECommerce_Controls_LivraisonLibelle_OnPreRender_System_EventArgs_
@@ -1801,19 +1359,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.LivraisonMontant
   fullName: Altazion.ECommerce.Controls.LivraisonMontant
   nameWithType: LivraisonMontant
-- uid: Altazion.ECommerce.Controls.LivraisonMontant.DataBind
-  name: DataBind()
-  href: api/Altazion.ECommerce.Controls.LivraisonMontant.html#Altazion_ECommerce_Controls_LivraisonMontant_DataBind
-  commentId: M:Altazion.ECommerce.Controls.LivraisonMontant.DataBind
-  fullName: Altazion.ECommerce.Controls.LivraisonMontant.DataBind()
-  nameWithType: LivraisonMontant.DataBind()
-- uid: Altazion.ECommerce.Controls.LivraisonMontant.DataBind*
-  name: DataBind
-  href: api/Altazion.ECommerce.Controls.LivraisonMontant.html#Altazion_ECommerce_Controls_LivraisonMontant_DataBind_
-  commentId: Overload:Altazion.ECommerce.Controls.LivraisonMontant.DataBind
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.LivraisonMontant.DataBind
-  nameWithType: LivraisonMontant.DataBind
 - uid: Altazion.ECommerce.Controls.LivraisonMontant.Format
   name: Format
   href: api/Altazion.ECommerce.Controls.LivraisonMontant.html#Altazion_ECommerce_Controls_LivraisonMontant_Format
@@ -2135,19 +1680,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.MagasinAssociePanel
   fullName: Altazion.ECommerce.Controls.MagasinAssociePanel
   nameWithType: MagasinAssociePanel
-- uid: Altazion.ECommerce.Controls.MagasinAssociePanel.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.MagasinAssociePanel.html#Altazion_ECommerce_Controls_MagasinAssociePanel_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.MagasinAssociePanel.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.MagasinAssociePanel.BindTo(System.Object)
-  nameWithType: MagasinAssociePanel.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.MagasinAssociePanel.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.MagasinAssociePanel.html#Altazion_ECommerce_Controls_MagasinAssociePanel_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.MagasinAssociePanel.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.MagasinAssociePanel.BindTo
-  nameWithType: MagasinAssociePanel.BindTo
 - uid: Altazion.ECommerce.Controls.MagasinAssociePanel.CacherSiAssocieMagasin
   name: CacherSiAssocieMagasin
   href: api/Altazion.ECommerce.Controls.MagasinAssociePanel.html#Altazion_ECommerce_Controls_MagasinAssociePanel_CacherSiAssocieMagasin
@@ -2174,19 +1706,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.MagasinAssociePanel.CacherSiNonAssocieMagasin
   nameWithType: MagasinAssociePanel.CacherSiNonAssocieMagasin
-- uid: Altazion.ECommerce.Controls.MagasinAssociePanel.OnLoad(System.EventArgs)
-  name: OnLoad(EventArgs)
-  href: api/Altazion.ECommerce.Controls.MagasinAssociePanel.html#Altazion_ECommerce_Controls_MagasinAssociePanel_OnLoad_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.MagasinAssociePanel.OnLoad(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.MagasinAssociePanel.OnLoad(System.EventArgs)
-  nameWithType: MagasinAssociePanel.OnLoad(EventArgs)
-- uid: Altazion.ECommerce.Controls.MagasinAssociePanel.OnLoad*
-  name: OnLoad
-  href: api/Altazion.ECommerce.Controls.MagasinAssociePanel.html#Altazion_ECommerce_Controls_MagasinAssociePanel_OnLoad_
-  commentId: Overload:Altazion.ECommerce.Controls.MagasinAssociePanel.OnLoad
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.MagasinAssociePanel.OnLoad
-  nameWithType: MagasinAssociePanel.OnLoad
 - uid: Altazion.ECommerce.Controls.MagasinAssociePays
   name: MagasinAssociePays
   href: api/Altazion.ECommerce.Controls.MagasinAssociePays.html
@@ -2495,32 +2014,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.PanelPageSpecifique.OnPreRender
   nameWithType: PanelPageSpecifique.OnPreRender
-- uid: Altazion.ECommerce.Controls.PanelPageSpecifique.RenderBeginTag(System.Web.UI.HtmlTextWriter)
-  name: RenderBeginTag(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.PanelPageSpecifique.html#Altazion_ECommerce_Controls_PanelPageSpecifique_RenderBeginTag_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.PanelPageSpecifique.RenderBeginTag(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.PanelPageSpecifique.RenderBeginTag(System.Web.UI.HtmlTextWriter)
-  nameWithType: PanelPageSpecifique.RenderBeginTag(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.PanelPageSpecifique.RenderBeginTag*
-  name: RenderBeginTag
-  href: api/Altazion.ECommerce.Controls.PanelPageSpecifique.html#Altazion_ECommerce_Controls_PanelPageSpecifique_RenderBeginTag_
-  commentId: Overload:Altazion.ECommerce.Controls.PanelPageSpecifique.RenderBeginTag
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.PanelPageSpecifique.RenderBeginTag
-  nameWithType: PanelPageSpecifique.RenderBeginTag
-- uid: Altazion.ECommerce.Controls.PanelPageSpecifique.RenderEndTag(System.Web.UI.HtmlTextWriter)
-  name: RenderEndTag(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.PanelPageSpecifique.html#Altazion_ECommerce_Controls_PanelPageSpecifique_RenderEndTag_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.PanelPageSpecifique.RenderEndTag(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.PanelPageSpecifique.RenderEndTag(System.Web.UI.HtmlTextWriter)
-  nameWithType: PanelPageSpecifique.RenderEndTag(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.PanelPageSpecifique.RenderEndTag*
-  name: RenderEndTag
-  href: api/Altazion.ECommerce.Controls.PanelPageSpecifique.html#Altazion_ECommerce_Controls_PanelPageSpecifique_RenderEndTag_
-  commentId: Overload:Altazion.ECommerce.Controls.PanelPageSpecifique.RenderEndTag
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.PanelPageSpecifique.RenderEndTag
-  nameWithType: PanelPageSpecifique.RenderEndTag
 - uid: Altazion.ECommerce.Controls.PanelPageSpecifique.SaufPour
   name: SaufPour
   href: api/Altazion.ECommerce.Controls.PanelPageSpecifique.html#Altazion_ECommerce_Controls_PanelPageSpecifique_SaufPour
@@ -2566,19 +2059,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.OnPreRender
   nameWithType: PanierEncartMagasinAssocie.OnPreRender
-- uid: Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.Render(System.Web.UI.HtmlTextWriter)
-  name: Render(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.html#Altazion_ECommerce_Controls_PanierEncartMagasinAssocie_Render_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.Render(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.Render(System.Web.UI.HtmlTextWriter)
-  nameWithType: PanierEncartMagasinAssocie.Render(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.Render*
-  name: Render
-  href: api/Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.html#Altazion_ECommerce_Controls_PanierEncartMagasinAssocie_Render_
-  commentId: Overload:Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.Render
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.Render
-  nameWithType: PanierEncartMagasinAssocie.Render
 - uid: Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta
   name: PanierPanelConditionnelAfficherPresta
   href: api/Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta.html
@@ -2713,19 +2193,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.ProductDataHiddenField
   fullName: Altazion.ECommerce.Controls.ProductDataHiddenField
   nameWithType: ProductDataHiddenField
-- uid: Altazion.ECommerce.Controls.ProductDataHiddenField.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProductDataHiddenField.html#Altazion_ECommerce_Controls_ProductDataHiddenField_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProductDataHiddenField.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProductDataHiddenField.BindTo(System.Object)
-  nameWithType: ProductDataHiddenField.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProductDataHiddenField.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProductDataHiddenField.html#Altazion_ECommerce_Controls_ProductDataHiddenField_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProductDataHiddenField.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProductDataHiddenField.BindTo
-  nameWithType: ProductDataHiddenField.BindTo
 - uid: Altazion.ECommerce.Controls.ProductDataHiddenField.OnDataBinding(System.EventArgs)
   name: OnDataBinding(EventArgs)
   href: api/Altazion.ECommerce.Controls.ProductDataHiddenField.html#Altazion_ECommerce_Controls_ProductDataHiddenField_OnDataBinding_System_EventArgs_
@@ -2758,19 +2225,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProductFilArianeCategories.ProductFilArianeCategories
   nameWithType: ProductFilArianeCategories.ProductFilArianeCategories
-- uid: Altazion.ECommerce.Controls.ProductFilArianeCategories.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProductFilArianeCategories.html#Altazion_ECommerce_Controls_ProductFilArianeCategories_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProductFilArianeCategories.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProductFilArianeCategories.BindTo(System.Object)
-  nameWithType: ProductFilArianeCategories.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProductFilArianeCategories.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProductFilArianeCategories.html#Altazion_ECommerce_Controls_ProductFilArianeCategories_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProductFilArianeCategories.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProductFilArianeCategories.BindTo
-  nameWithType: ProductFilArianeCategories.BindTo
 - uid: Altazion.ECommerce.Controls.ProductFilArianeCategories.FirstItemCssClass
   name: FirstItemCssClass
   href: api/Altazion.ECommerce.Controls.ProductFilArianeCategories.html#Altazion_ECommerce_Controls_ProductFilArianeCategories_FirstItemCssClass
@@ -2849,19 +2303,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProductFilArianeCategories.OnPreRender
   nameWithType: ProductFilArianeCategories.OnPreRender
-- uid: Altazion.ECommerce.Controls.ProductFilArianeCategories.Render(System.Web.UI.HtmlTextWriter)
-  name: Render(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.ProductFilArianeCategories.html#Altazion_ECommerce_Controls_ProductFilArianeCategories_Render_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.ProductFilArianeCategories.Render(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.ProductFilArianeCategories.Render(System.Web.UI.HtmlTextWriter)
-  nameWithType: ProductFilArianeCategories.Render(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.ProductFilArianeCategories.Render*
-  name: Render
-  href: api/Altazion.ECommerce.Controls.ProductFilArianeCategories.html#Altazion_ECommerce_Controls_ProductFilArianeCategories_Render_
-  commentId: Overload:Altazion.ECommerce.Controls.ProductFilArianeCategories.Render
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProductFilArianeCategories.Render
-  nameWithType: ProductFilArianeCategories.Render
 - uid: Altazion.ECommerce.Controls.ProductFilArianeCategories.Separator
   name: Separator
   href: api/Altazion.ECommerce.Controls.ProductFilArianeCategories.html#Altazion_ECommerce_Controls_ProductFilArianeCategories_Separator
@@ -2907,19 +2348,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.ProductFilArianeJsonLd
   nameWithType: ProductFilArianeJsonLd.ProductFilArianeJsonLd
-- uid: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProductFilArianeJsonLd.html#Altazion_ECommerce_Controls_ProductFilArianeJsonLd_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProductFilArianeJsonLd.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.BindTo(System.Object)
-  nameWithType: ProductFilArianeJsonLd.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProductFilArianeJsonLd.html#Altazion_ECommerce_Controls_ProductFilArianeJsonLd_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProductFilArianeJsonLd.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.BindTo
-  nameWithType: ProductFilArianeJsonLd.BindTo
 - uid: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.BreadCrumbItemJson
   name: ProductFilArianeJsonLd.BreadCrumbItemJson
   href: api/Altazion.ECommerce.Controls.ProductFilArianeJsonLd.BreadCrumbItemJson.html
@@ -3010,38 +2438,12 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.OnPreRender
   nameWithType: ProductFilArianeJsonLd.OnPreRender
-- uid: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.Render(System.Web.UI.HtmlTextWriter)
-  name: Render(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.ProductFilArianeJsonLd.html#Altazion_ECommerce_Controls_ProductFilArianeJsonLd_Render_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.ProductFilArianeJsonLd.Render(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.Render(System.Web.UI.HtmlTextWriter)
-  nameWithType: ProductFilArianeJsonLd.Render(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.Render*
-  name: Render
-  href: api/Altazion.ECommerce.Controls.ProductFilArianeJsonLd.html#Altazion_ECommerce_Controls_ProductFilArianeJsonLd_Render_
-  commentId: Overload:Altazion.ECommerce.Controls.ProductFilArianeJsonLd.Render
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.Render
-  nameWithType: ProductFilArianeJsonLd.Render
 - uid: Altazion.ECommerce.Controls.ProductJsonLD
   name: ProductJsonLD
   href: api/Altazion.ECommerce.Controls.ProductJsonLD.html
   commentId: T:Altazion.ECommerce.Controls.ProductJsonLD
   fullName: Altazion.ECommerce.Controls.ProductJsonLD
   nameWithType: ProductJsonLD
-- uid: Altazion.ECommerce.Controls.ProductJsonLD.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProductJsonLD.html#Altazion_ECommerce_Controls_ProductJsonLD_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProductJsonLD.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProductJsonLD.BindTo(System.Object)
-  nameWithType: ProductJsonLD.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProductJsonLD.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProductJsonLD.html#Altazion_ECommerce_Controls_ProductJsonLD_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProductJsonLD.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProductJsonLD.BindTo
-  nameWithType: ProductJsonLD.BindTo
 - uid: Altazion.ECommerce.Controls.ProductJsonLD.OnDataBinding(System.EventArgs)
   name: OnDataBinding(EventArgs)
   href: api/Altazion.ECommerce.Controls.ProductJsonLD.html#Altazion_ECommerce_Controls_ProductJsonLD_OnDataBinding_System_EventArgs_
@@ -3055,19 +2457,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProductJsonLD.OnDataBinding
   nameWithType: ProductJsonLD.OnDataBinding
-- uid: Altazion.ECommerce.Controls.ProductJsonLD.Render(System.Web.UI.HtmlTextWriter)
-  name: Render(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.ProductJsonLD.html#Altazion_ECommerce_Controls_ProductJsonLD_Render_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.ProductJsonLD.Render(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.ProductJsonLD.Render(System.Web.UI.HtmlTextWriter)
-  nameWithType: ProductJsonLD.Render(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.ProductJsonLD.Render*
-  name: Render
-  href: api/Altazion.ECommerce.Controls.ProductJsonLD.html#Altazion_ECommerce_Controls_ProductJsonLD_Render_
-  commentId: Overload:Altazion.ECommerce.Controls.ProductJsonLD.Render
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProductJsonLD.Render
-  nameWithType: ProductJsonLD.Render
 - uid: Altazion.ECommerce.Controls.ProductLivraison
   name: ProductLivraison
   href: api/Altazion.ECommerce.Controls.ProductLivraison.html
@@ -3087,19 +2476,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProductLivraison.ProductLivraison
   nameWithType: ProductLivraison.ProductLivraison
-- uid: Altazion.ECommerce.Controls.ProductLivraison.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProductLivraison.html#Altazion_ECommerce_Controls_ProductLivraison_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProductLivraison.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProductLivraison.BindTo(System.Object)
-  nameWithType: ProductLivraison.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProductLivraison.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProductLivraison.html#Altazion_ECommerce_Controls_ProductLivraison_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProductLivraison.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProductLivraison.BindTo
-  nameWithType: ProductLivraison.BindTo
 - uid: Altazion.ECommerce.Controls.ProductLivraison.Format
   name: Format
   href: api/Altazion.ECommerce.Controls.ProductLivraison.html#Altazion_ECommerce_Controls_ProductLivraison_Format
@@ -3273,19 +2649,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProductVideo.PlayerUrl
   nameWithType: ProductVideo.PlayerUrl
-- uid: Altazion.ECommerce.Controls.ProductVideo.Render(System.Web.UI.HtmlTextWriter)
-  name: Render(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.ProductVideo.html#Altazion_ECommerce_Controls_ProductVideo_Render_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.ProductVideo.Render(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.ProductVideo.Render(System.Web.UI.HtmlTextWriter)
-  nameWithType: ProductVideo.Render(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.ProductVideo.Render*
-  name: Render
-  href: api/Altazion.ECommerce.Controls.ProductVideo.html#Altazion_ECommerce_Controls_ProductVideo_Render_
-  commentId: Overload:Altazion.ECommerce.Controls.ProductVideo.Render
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProductVideo.Render
-  nameWithType: ProductVideo.Render
 - uid: Altazion.ECommerce.Controls.ProductVideo.VideoUrl
   name: VideoUrl
   href: api/Altazion.ECommerce.Controls.ProductVideo.html#Altazion_ECommerce_Controls_ProductVideo_VideoUrl
@@ -3318,32 +2681,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitAttributBoolPanel.AttributeGuid
   nameWithType: ProduitAttributBoolPanel.AttributeGuid
-- uid: Altazion.ECommerce.Controls.ProduitAttributBoolPanel.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitAttributBoolPanel.html#Altazion_ECommerce_Controls_ProduitAttributBoolPanel_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitAttributBoolPanel.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitAttributBoolPanel.BindTo(System.Object)
-  nameWithType: ProduitAttributBoolPanel.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitAttributBoolPanel.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitAttributBoolPanel.html#Altazion_ECommerce_Controls_ProduitAttributBoolPanel_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitAttributBoolPanel.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitAttributBoolPanel.BindTo
-  nameWithType: ProduitAttributBoolPanel.BindTo
-- uid: Altazion.ECommerce.Controls.ProduitAttributBoolPanel.OnLoad(System.EventArgs)
-  name: OnLoad(EventArgs)
-  href: api/Altazion.ECommerce.Controls.ProduitAttributBoolPanel.html#Altazion_ECommerce_Controls_ProduitAttributBoolPanel_OnLoad_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.ProduitAttributBoolPanel.OnLoad(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.ProduitAttributBoolPanel.OnLoad(System.EventArgs)
-  nameWithType: ProduitAttributBoolPanel.OnLoad(EventArgs)
-- uid: Altazion.ECommerce.Controls.ProduitAttributBoolPanel.OnLoad*
-  name: OnLoad
-  href: api/Altazion.ECommerce.Controls.ProduitAttributBoolPanel.html#Altazion_ECommerce_Controls_ProduitAttributBoolPanel_OnLoad_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitAttributBoolPanel.OnLoad
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitAttributBoolPanel.OnLoad
-  nameWithType: ProduitAttributBoolPanel.OnLoad
 - uid: Altazion.ECommerce.Controls.ProduitAttributBoolPanel.ShowIfFalse
   name: ShowIfFalse
   href: api/Altazion.ECommerce.Controls.ProduitAttributBoolPanel.html#Altazion_ECommerce_Controls_ProduitAttributBoolPanel_ShowIfFalse
@@ -3389,19 +2726,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitAttributLink.AttributeGuid
   nameWithType: ProduitAttributLink.AttributeGuid
-- uid: Altazion.ECommerce.Controls.ProduitAttributLink.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitAttributLink.html#Altazion_ECommerce_Controls_ProduitAttributLink_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitAttributLink.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitAttributLink.BindTo(System.Object)
-  nameWithType: ProduitAttributLink.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitAttributLink.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitAttributLink.html#Altazion_ECommerce_Controls_ProduitAttributLink_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitAttributLink.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitAttributLink.BindTo
-  nameWithType: ProduitAttributLink.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitAttributLink.Format
   name: Format
   href: api/Altazion.ECommerce.Controls.ProduitAttributLink.html#Altazion_ECommerce_Controls_ProduitAttributLink_Format
@@ -3447,19 +2771,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitAttributLiteralValeur.AttributeGuid
   nameWithType: ProduitAttributLiteralValeur.AttributeGuid
-- uid: Altazion.ECommerce.Controls.ProduitAttributLiteralValeur.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitAttributLiteralValeur.html#Altazion_ECommerce_Controls_ProduitAttributLiteralValeur_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitAttributLiteralValeur.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitAttributLiteralValeur.BindTo(System.Object)
-  nameWithType: ProduitAttributLiteralValeur.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitAttributLiteralValeur.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitAttributLiteralValeur.html#Altazion_ECommerce_Controls_ProduitAttributLiteralValeur_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitAttributLiteralValeur.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitAttributLiteralValeur.BindTo
-  nameWithType: ProduitAttributLiteralValeur.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitAttributLiteralValeur.Format
   name: Format
   href: api/Altazion.ECommerce.Controls.ProduitAttributLiteralValeur.html#Altazion_ECommerce_Controls_ProduitAttributLiteralValeur_Format
@@ -3505,19 +2816,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitAttributPanel.AttributeGuid
   nameWithType: ProduitAttributPanel.AttributeGuid
-- uid: Altazion.ECommerce.Controls.ProduitAttributPanel.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitAttributPanel.html#Altazion_ECommerce_Controls_ProduitAttributPanel_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitAttributPanel.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitAttributPanel.BindTo(System.Object)
-  nameWithType: ProduitAttributPanel.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitAttributPanel.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitAttributPanel.html#Altazion_ECommerce_Controls_ProduitAttributPanel_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitAttributPanel.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitAttributPanel.BindTo
-  nameWithType: ProduitAttributPanel.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitAttributPanel.VisibleSiVide
   name: VisibleSiVide
   href: api/Altazion.ECommerce.Controls.ProduitAttributPanel.html#Altazion_ECommerce_Controls_ProduitAttributPanel_VisibleSiVide
@@ -3537,23 +2835,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.ProduitAttributRepeater
   fullName: Altazion.ECommerce.Controls.ProduitAttributRepeater
   nameWithType: ProduitAttributRepeater
-- uid: Altazion.ECommerce.Controls.ProduitAttributRepeater.CPointSoftware#ECommerce#Tools#IEquihiraBindable#BindTo(System.Object)
-  name: IEquihiraBindable.BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitAttributRepeater.html#Altazion_ECommerce_Controls_ProduitAttributRepeater_CPointSoftware_ECommerce_Tools_IEquihiraBindable_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitAttributRepeater.CPointSoftware#ECommerce#Tools#IEquihiraBindable#BindTo(System.Object)
-  name.vb: CPointSoftware.ECommerce.Tools.IEquihiraBindable.BindTo(Object)
-  fullName: Altazion.ECommerce.Controls.ProduitAttributRepeater.CPointSoftware.ECommerce.Tools.IEquihiraBindable.BindTo(System.Object)
-  nameWithType: ProduitAttributRepeater.IEquihiraBindable.BindTo(Object)
-  nameWithType.vb: ProduitAttributRepeater.CPointSoftware.ECommerce.Tools.IEquihiraBindable.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitAttributRepeater.CPointSoftware#ECommerce#Tools#IEquihiraBindable#BindTo*
-  name: IEquihiraBindable.BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitAttributRepeater.html#Altazion_ECommerce_Controls_ProduitAttributRepeater_CPointSoftware_ECommerce_Tools_IEquihiraBindable_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitAttributRepeater.CPointSoftware#ECommerce#Tools#IEquihiraBindable#BindTo
-  isSpec: "True"
-  name.vb: CPointSoftware.ECommerce.Tools.IEquihiraBindable.BindTo
-  fullName: Altazion.ECommerce.Controls.ProduitAttributRepeater.CPointSoftware.ECommerce.Tools.IEquihiraBindable.BindTo
-  nameWithType: ProduitAttributRepeater.IEquihiraBindable.BindTo
-  nameWithType.vb: ProduitAttributRepeater.CPointSoftware.ECommerce.Tools.IEquihiraBindable.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField
   name: ProduitAttributRepeaterItemField
   href: api/Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.html
@@ -3636,19 +2917,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitAttributsPanel.AttributeGuid
   nameWithType: ProduitAttributsPanel.AttributeGuid
-- uid: Altazion.ECommerce.Controls.ProduitAttributsPanel.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitAttributsPanel.html#Altazion_ECommerce_Controls_ProduitAttributsPanel_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitAttributsPanel.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitAttributsPanel.BindTo(System.Object)
-  nameWithType: ProduitAttributsPanel.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitAttributsPanel.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitAttributsPanel.html#Altazion_ECommerce_Controls_ProduitAttributsPanel_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitAttributsPanel.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitAttributsPanel.BindTo
-  nameWithType: ProduitAttributsPanel.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitAttributsPanel.VisibleSiVide
   name: VisibleSiVide
   href: api/Altazion.ECommerce.Controls.ProduitAttributsPanel.html#Altazion_ECommerce_Controls_ProduitAttributsPanel_VisibleSiVide
@@ -3694,32 +2962,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitAttributTemplate.AttributeGuid
   nameWithType: ProduitAttributTemplate.AttributeGuid
-- uid: Altazion.ECommerce.Controls.ProduitAttributTemplate.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitAttributTemplate.html#Altazion_ECommerce_Controls_ProduitAttributTemplate_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitAttributTemplate.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitAttributTemplate.BindTo(System.Object)
-  nameWithType: ProduitAttributTemplate.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitAttributTemplate.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitAttributTemplate.html#Altazion_ECommerce_Controls_ProduitAttributTemplate_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitAttributTemplate.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitAttributTemplate.BindTo
-  nameWithType: ProduitAttributTemplate.BindTo
-- uid: Altazion.ECommerce.Controls.ProduitAttributTemplate.Render(System.Web.UI.HtmlTextWriter)
-  name: Render(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.ProduitAttributTemplate.html#Altazion_ECommerce_Controls_ProduitAttributTemplate_Render_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.ProduitAttributTemplate.Render(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.ProduitAttributTemplate.Render(System.Web.UI.HtmlTextWriter)
-  nameWithType: ProduitAttributTemplate.Render(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.ProduitAttributTemplate.Render*
-  name: Render
-  href: api/Altazion.ECommerce.Controls.ProduitAttributTemplate.html#Altazion_ECommerce_Controls_ProduitAttributTemplate_Render_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitAttributTemplate.Render
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitAttributTemplate.Render
-  nameWithType: ProduitAttributTemplate.Render
 - uid: Altazion.ECommerce.Controls.ProduitAttributTemplate.Template
   name: Template
   href: api/Altazion.ECommerce.Controls.ProduitAttributTemplate.html#Altazion_ECommerce_Controls_ProduitAttributTemplate_Template
@@ -3778,19 +3020,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitAttributValeur.AttributeGuid
   nameWithType: ProduitAttributValeur.AttributeGuid
-- uid: Altazion.ECommerce.Controls.ProduitAttributValeur.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitAttributValeur.html#Altazion_ECommerce_Controls_ProduitAttributValeur_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitAttributValeur.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitAttributValeur.BindTo(System.Object)
-  nameWithType: ProduitAttributValeur.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitAttributValeur.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitAttributValeur.html#Altazion_ECommerce_Controls_ProduitAttributValeur_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitAttributValeur.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitAttributValeur.BindTo
-  nameWithType: ProduitAttributValeur.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitAttributValeur.Format
   name: Format
   href: api/Altazion.ECommerce.Controls.ProduitAttributValeur.html#Altazion_ECommerce_Controls_ProduitAttributValeur_Format
@@ -3849,19 +3078,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitAttributValeurTexte.AttributeGuid
   nameWithType: ProduitAttributValeurTexte.AttributeGuid
-- uid: Altazion.ECommerce.Controls.ProduitAttributValeurTexte.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitAttributValeurTexte.html#Altazion_ECommerce_Controls_ProduitAttributValeurTexte_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitAttributValeurTexte.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitAttributValeurTexte.BindTo(System.Object)
-  nameWithType: ProduitAttributValeurTexte.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitAttributValeurTexte.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitAttributValeurTexte.html#Altazion_ECommerce_Controls_ProduitAttributValeurTexte_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitAttributValeurTexte.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitAttributValeurTexte.BindTo
-  nameWithType: ProduitAttributValeurTexte.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitAttributValeurTexte.Format
   name: Format
   href: api/Altazion.ECommerce.Controls.ProduitAttributValeurTexte.html#Altazion_ECommerce_Controls_ProduitAttributValeurTexte_Format
@@ -3894,19 +3110,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.ProduitDescriptif
   fullName: Altazion.ECommerce.Controls.ProduitDescriptif
   nameWithType: ProduitDescriptif
-- uid: Altazion.ECommerce.Controls.ProduitDescriptif.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitDescriptif.html#Altazion_ECommerce_Controls_ProduitDescriptif_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitDescriptif.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitDescriptif.BindTo(System.Object)
-  nameWithType: ProduitDescriptif.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitDescriptif.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitDescriptif.html#Altazion_ECommerce_Controls_ProduitDescriptif_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitDescriptif.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitDescriptif.BindTo
-  nameWithType: ProduitDescriptif.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitDescriptif.Data
   name: Data
   href: api/Altazion.ECommerce.Controls.ProduitDescriptif.html#Altazion_ECommerce_Controls_ProduitDescriptif_Data
@@ -3946,19 +3149,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitDescriptif.MaxLength
   nameWithType: ProduitDescriptif.MaxLength
-- uid: Altazion.ECommerce.Controls.ProduitDescriptif.Render(System.Web.UI.HtmlTextWriter)
-  name: Render(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.ProduitDescriptif.html#Altazion_ECommerce_Controls_ProduitDescriptif_Render_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.ProduitDescriptif.Render(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.ProduitDescriptif.Render(System.Web.UI.HtmlTextWriter)
-  nameWithType: ProduitDescriptif.Render(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.ProduitDescriptif.Render*
-  name: Render
-  href: api/Altazion.ECommerce.Controls.ProduitDescriptif.html#Altazion_ECommerce_Controls_ProduitDescriptif_Render_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitDescriptif.Render
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitDescriptif.Render
-  nameWithType: ProduitDescriptif.Render
 - uid: Altazion.ECommerce.Controls.ProduitDimensions
   name: ProduitDimensions
   href: api/Altazion.ECommerce.Controls.ProduitDimensions.html
@@ -3978,19 +3168,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitDimensions.ProduitDimensions
   nameWithType: ProduitDimensions.ProduitDimensions
-- uid: Altazion.ECommerce.Controls.ProduitDimensions.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitDimensions.html#Altazion_ECommerce_Controls_ProduitDimensions_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitDimensions.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitDimensions.BindTo(System.Object)
-  nameWithType: ProduitDimensions.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitDimensions.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitDimensions.html#Altazion_ECommerce_Controls_ProduitDimensions_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitDimensions.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitDimensions.BindTo
-  nameWithType: ProduitDimensions.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitDimensions.Dimension
   name: ProduitDimensions.Dimension
   href: api/Altazion.ECommerce.Controls.ProduitDimensions.Dimension.html
@@ -4072,19 +3249,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitEan13.ProduitEan13
   nameWithType: ProduitEan13.ProduitEan13
-- uid: Altazion.ECommerce.Controls.ProduitEan13.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitEan13.html#Altazion_ECommerce_Controls_ProduitEan13_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitEan13.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitEan13.BindTo(System.Object)
-  nameWithType: ProduitEan13.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitEan13.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitEan13.html#Altazion_ECommerce_Controls_ProduitEan13_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitEan13.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitEan13.BindTo
-  nameWithType: ProduitEan13.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitEan13.Format
   name: Format
   href: api/Altazion.ECommerce.Controls.ProduitEan13.html#Altazion_ECommerce_Controls_ProduitEan13_Format
@@ -4104,19 +3268,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.ProduitImage
   fullName: Altazion.ECommerce.Controls.ProduitImage
   nameWithType: ProduitImage
-- uid: Altazion.ECommerce.Controls.ProduitImage.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitImage.html#Altazion_ECommerce_Controls_ProduitImage_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitImage.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitImage.BindTo(System.Object)
-  nameWithType: ProduitImage.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitImage.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitImage.html#Altazion_ECommerce_Controls_ProduitImage_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitImage.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitImage.BindTo
-  nameWithType: ProduitImage.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitImage.ImageType
   name: ImageType
   href: api/Altazion.ECommerce.Controls.ProduitImage.html#Altazion_ECommerce_Controls_ProduitImage_ImageType
@@ -4162,19 +3313,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.ProduitImageLink
   fullName: Altazion.ECommerce.Controls.ProduitImageLink
   nameWithType: ProduitImageLink
-- uid: Altazion.ECommerce.Controls.ProduitImageLink.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitImageLink.html#Altazion_ECommerce_Controls_ProduitImageLink_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitImageLink.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitImageLink.BindTo(System.Object)
-  nameWithType: ProduitImageLink.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitImageLink.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitImageLink.html#Altazion_ECommerce_Controls_ProduitImageLink_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitImageLink.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitImageLink.BindTo
-  nameWithType: ProduitImageLink.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitImageLink.CacherSiAucunZoom
   name: CacherSiAucunZoom
   href: api/Altazion.ECommerce.Controls.ProduitImageLink.html#Altazion_ECommerce_Controls_ProduitImageLink_CacherSiAucunZoom
@@ -4298,19 +3436,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitInstanceDifferentiant1.ProduitInstanceDifferentiant1
   nameWithType: ProduitInstanceDifferentiant1.ProduitInstanceDifferentiant1
-- uid: Altazion.ECommerce.Controls.ProduitInstanceDifferentiant1.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitInstanceDifferentiant1.html#Altazion_ECommerce_Controls_ProduitInstanceDifferentiant1_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitInstanceDifferentiant1.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitInstanceDifferentiant1.BindTo(System.Object)
-  nameWithType: ProduitInstanceDifferentiant1.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitInstanceDifferentiant1.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitInstanceDifferentiant1.html#Altazion_ECommerce_Controls_ProduitInstanceDifferentiant1_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitInstanceDifferentiant1.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitInstanceDifferentiant1.BindTo
-  nameWithType: ProduitInstanceDifferentiant1.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitInstanceDifferentiant1.MaxLength
   name: MaxLength
   href: api/Altazion.ECommerce.Controls.ProduitInstanceDifferentiant1.html#Altazion_ECommerce_Controls_ProduitInstanceDifferentiant1_MaxLength
@@ -4343,19 +3468,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitLibelle.ProduitLibelle
   nameWithType: ProduitLibelle.ProduitLibelle
-- uid: Altazion.ECommerce.Controls.ProduitLibelle.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitLibelle.html#Altazion_ECommerce_Controls_ProduitLibelle_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitLibelle.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitLibelle.BindTo(System.Object)
-  nameWithType: ProduitLibelle.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitLibelle.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitLibelle.html#Altazion_ECommerce_Controls_ProduitLibelle_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitLibelle.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitLibelle.BindTo
-  nameWithType: ProduitLibelle.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitLibelle.MaxLength
   name: MaxLength
   href: api/Altazion.ECommerce.Controls.ProduitLibelle.html#Altazion_ECommerce_Controls_ProduitLibelle_MaxLength
@@ -4388,32 +3500,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitLibelleLink.ProduitLibelleLink
   nameWithType: ProduitLibelleLink.ProduitLibelleLink
-- uid: Altazion.ECommerce.Controls.ProduitLibelleLink.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitLibelleLink.html#Altazion_ECommerce_Controls_ProduitLibelleLink_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitLibelleLink.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitLibelleLink.BindTo(System.Object)
-  nameWithType: ProduitLibelleLink.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitLibelleLink.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitLibelleLink.html#Altazion_ECommerce_Controls_ProduitLibelleLink_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitLibelleLink.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitLibelleLink.BindTo
-  nameWithType: ProduitLibelleLink.BindTo
-- uid: Altazion.ECommerce.Controls.ProduitLibelleLink.DataBind
-  name: DataBind()
-  href: api/Altazion.ECommerce.Controls.ProduitLibelleLink.html#Altazion_ECommerce_Controls_ProduitLibelleLink_DataBind
-  commentId: M:Altazion.ECommerce.Controls.ProduitLibelleLink.DataBind
-  fullName: Altazion.ECommerce.Controls.ProduitLibelleLink.DataBind()
-  nameWithType: ProduitLibelleLink.DataBind()
-- uid: Altazion.ECommerce.Controls.ProduitLibelleLink.DataBind*
-  name: DataBind
-  href: api/Altazion.ECommerce.Controls.ProduitLibelleLink.html#Altazion_ECommerce_Controls_ProduitLibelleLink_DataBind_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitLibelleLink.DataBind
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitLibelleLink.DataBind
-  nameWithType: ProduitLibelleLink.DataBind
 - uid: Altazion.ECommerce.Controls.ProduitLibelleLink.Format
   name: Format
   href: api/Altazion.ECommerce.Controls.ProduitLibelleLink.html#Altazion_ECommerce_Controls_ProduitLibelleLink_Format
@@ -4446,19 +3532,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.ProduitLink
   fullName: Altazion.ECommerce.Controls.ProduitLink
   nameWithType: ProduitLink
-- uid: Altazion.ECommerce.Controls.ProduitLink.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitLink.html#Altazion_ECommerce_Controls_ProduitLink_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitLink.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitLink.BindTo(System.Object)
-  nameWithType: ProduitLink.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitLink.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitLink.html#Altazion_ECommerce_Controls_ProduitLink_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitLink.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitLink.BindTo
-  nameWithType: ProduitLink.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitLink.LinkType
   name: LinkType
   href: api/Altazion.ECommerce.Controls.ProduitLink.html#Altazion_ECommerce_Controls_ProduitLink_LinkType
@@ -4517,19 +3590,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitMailToLink.ProduitMailToLink
   nameWithType: ProduitMailToLink.ProduitMailToLink
-- uid: Altazion.ECommerce.Controls.ProduitMailToLink.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitMailToLink.html#Altazion_ECommerce_Controls_ProduitMailToLink_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitMailToLink.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitMailToLink.BindTo(System.Object)
-  nameWithType: ProduitMailToLink.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitMailToLink.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitMailToLink.html#Altazion_ECommerce_Controls_ProduitMailToLink_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitMailToLink.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitMailToLink.BindTo
-  nameWithType: ProduitMailToLink.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitMailToLink.Content
   name: Content
   href: api/Altazion.ECommerce.Controls.ProduitMailToLink.html#Altazion_ECommerce_Controls_ProduitMailToLink_Content
@@ -4562,61 +3622,18 @@ references:
   commentId: T:Altazion.ECommerce.Controls.ProduitMarque
   fullName: Altazion.ECommerce.Controls.ProduitMarque
   nameWithType: ProduitMarque
-- uid: Altazion.ECommerce.Controls.ProduitMarque.CPointSoftware#ECommerce#Tools#IEquihiraBindable#BindTo(System.Object)
-  name: IEquihiraBindable.BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitMarque.html#Altazion_ECommerce_Controls_ProduitMarque_CPointSoftware_ECommerce_Tools_IEquihiraBindable_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitMarque.CPointSoftware#ECommerce#Tools#IEquihiraBindable#BindTo(System.Object)
-  name.vb: CPointSoftware.ECommerce.Tools.IEquihiraBindable.BindTo(Object)
-  fullName: Altazion.ECommerce.Controls.ProduitMarque.CPointSoftware.ECommerce.Tools.IEquihiraBindable.BindTo(System.Object)
-  nameWithType: ProduitMarque.IEquihiraBindable.BindTo(Object)
-  nameWithType.vb: ProduitMarque.CPointSoftware.ECommerce.Tools.IEquihiraBindable.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitMarque.CPointSoftware#ECommerce#Tools#IEquihiraBindable#BindTo*
-  name: IEquihiraBindable.BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitMarque.html#Altazion_ECommerce_Controls_ProduitMarque_CPointSoftware_ECommerce_Tools_IEquihiraBindable_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitMarque.CPointSoftware#ECommerce#Tools#IEquihiraBindable#BindTo
-  isSpec: "True"
-  name.vb: CPointSoftware.ECommerce.Tools.IEquihiraBindable.BindTo
-  fullName: Altazion.ECommerce.Controls.ProduitMarque.CPointSoftware.ECommerce.Tools.IEquihiraBindable.BindTo
-  nameWithType: ProduitMarque.IEquihiraBindable.BindTo
-  nameWithType.vb: ProduitMarque.CPointSoftware.ECommerce.Tools.IEquihiraBindable.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitMarqueLink
   name: ProduitMarqueLink
   href: api/Altazion.ECommerce.Controls.ProduitMarqueLink.html
   commentId: T:Altazion.ECommerce.Controls.ProduitMarqueLink
   fullName: Altazion.ECommerce.Controls.ProduitMarqueLink
   nameWithType: ProduitMarqueLink
-- uid: Altazion.ECommerce.Controls.ProduitMarqueLink.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitMarqueLink.html#Altazion_ECommerce_Controls_ProduitMarqueLink_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitMarqueLink.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitMarqueLink.BindTo(System.Object)
-  nameWithType: ProduitMarqueLink.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitMarqueLink.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitMarqueLink.html#Altazion_ECommerce_Controls_ProduitMarqueLink_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitMarqueLink.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitMarqueLink.BindTo
-  nameWithType: ProduitMarqueLink.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitMultiImages
   name: ProduitMultiImages
   href: api/Altazion.ECommerce.Controls.ProduitMultiImages.html
   commentId: T:Altazion.ECommerce.Controls.ProduitMultiImages
   fullName: Altazion.ECommerce.Controls.ProduitMultiImages
   nameWithType: ProduitMultiImages
-- uid: Altazion.ECommerce.Controls.ProduitMultiImages.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitMultiImages.html#Altazion_ECommerce_Controls_ProduitMultiImages_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitMultiImages.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitMultiImages.BindTo(System.Object)
-  nameWithType: ProduitMultiImages.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitMultiImages.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitMultiImages.html#Altazion_ECommerce_Controls_ProduitMultiImages_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitMultiImages.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitMultiImages.BindTo
-  nameWithType: ProduitMultiImages.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitMultiImages.ImageCssClass
   name: ImageCssClass
   href: api/Altazion.ECommerce.Controls.ProduitMultiImages.html#Altazion_ECommerce_Controls_ProduitMultiImages_ImageCssClass
@@ -4630,19 +3647,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitMultiImages.ImageCssClass
   nameWithType: ProduitMultiImages.ImageCssClass
-- uid: Altazion.ECommerce.Controls.ProduitMultiImages.Render(System.Web.UI.HtmlTextWriter)
-  name: Render(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.ProduitMultiImages.html#Altazion_ECommerce_Controls_ProduitMultiImages_Render_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.ProduitMultiImages.Render(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.ProduitMultiImages.Render(System.Web.UI.HtmlTextWriter)
-  nameWithType: ProduitMultiImages.Render(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.ProduitMultiImages.Render*
-  name: Render
-  href: api/Altazion.ECommerce.Controls.ProduitMultiImages.html#Altazion_ECommerce_Controls_ProduitMultiImages_Render_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitMultiImages.Render
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitMultiImages.Render
-  nameWithType: ProduitMultiImages.Render
 - uid: Altazion.ECommerce.Controls.ProduitMultiImagesRepeater
   name: ProduitMultiImagesRepeater
   href: api/Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.html
@@ -4662,19 +3666,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.ProduitMultiImagesRepeater
   nameWithType: ProduitMultiImagesRepeater.ProduitMultiImagesRepeater
-- uid: Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.html#Altazion_ECommerce_Controls_ProduitMultiImagesRepeater_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.BindTo(System.Object)
-  nameWithType: ProduitMultiImagesRepeater.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.html#Altazion_ECommerce_Controls_ProduitMultiImagesRepeater_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.BindTo
-  nameWithType: ProduitMultiImagesRepeater.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.OnDataBinding(System.EventArgs)
   name: OnDataBinding(EventArgs)
   href: api/Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.html#Altazion_ECommerce_Controls_ProduitMultiImagesRepeater_OnDataBinding_System_EventArgs_
@@ -4694,38 +3685,12 @@ references:
   commentId: T:Altazion.ECommerce.Controls.ProduitPreparationInternePanel
   fullName: Altazion.ECommerce.Controls.ProduitPreparationInternePanel
   nameWithType: ProduitPreparationInternePanel
-- uid: Altazion.ECommerce.Controls.ProduitPreparationInternePanel.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitPreparationInternePanel.html#Altazion_ECommerce_Controls_ProduitPreparationInternePanel_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitPreparationInternePanel.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitPreparationInternePanel.BindTo(System.Object)
-  nameWithType: ProduitPreparationInternePanel.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitPreparationInternePanel.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitPreparationInternePanel.html#Altazion_ECommerce_Controls_ProduitPreparationInternePanel_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitPreparationInternePanel.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitPreparationInternePanel.BindTo
-  nameWithType: ProduitPreparationInternePanel.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitPreparationLibelle
   name: ProduitPreparationLibelle
   href: api/Altazion.ECommerce.Controls.ProduitPreparationLibelle.html
   commentId: T:Altazion.ECommerce.Controls.ProduitPreparationLibelle
   fullName: Altazion.ECommerce.Controls.ProduitPreparationLibelle
   nameWithType: ProduitPreparationLibelle
-- uid: Altazion.ECommerce.Controls.ProduitPreparationLibelle.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitPreparationLibelle.html#Altazion_ECommerce_Controls_ProduitPreparationLibelle_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitPreparationLibelle.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitPreparationLibelle.BindTo(System.Object)
-  nameWithType: ProduitPreparationLibelle.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitPreparationLibelle.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitPreparationLibelle.html#Altazion_ECommerce_Controls_ProduitPreparationLibelle_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitPreparationLibelle.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitPreparationLibelle.BindTo
-  nameWithType: ProduitPreparationLibelle.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitPreparationLibelle.PrefixeCssClass
   name: PrefixeCssClass
   href: api/Altazion.ECommerce.Controls.ProduitPreparationLibelle.html#Altazion_ECommerce_Controls_ProduitPreparationLibelle_PrefixeCssClass
@@ -4758,19 +3723,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.ProduitPreparationSpecifiquePanel
   fullName: Altazion.ECommerce.Controls.ProduitPreparationSpecifiquePanel
   nameWithType: ProduitPreparationSpecifiquePanel
-- uid: Altazion.ECommerce.Controls.ProduitPreparationSpecifiquePanel.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitPreparationSpecifiquePanel.html#Altazion_ECommerce_Controls_ProduitPreparationSpecifiquePanel_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitPreparationSpecifiquePanel.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitPreparationSpecifiquePanel.BindTo(System.Object)
-  nameWithType: ProduitPreparationSpecifiquePanel.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitPreparationSpecifiquePanel.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitPreparationSpecifiquePanel.html#Altazion_ECommerce_Controls_ProduitPreparationSpecifiquePanel_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitPreparationSpecifiquePanel.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitPreparationSpecifiquePanel.BindTo
-  nameWithType: ProduitPreparationSpecifiquePanel.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitPrix
   name: ProduitPrix
   href: api/Altazion.ECommerce.Controls.ProduitPrix.html
@@ -4803,19 +3755,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitPrix.AssocierAuMagasin
   nameWithType: ProduitPrix.AssocierAuMagasin
-- uid: Altazion.ECommerce.Controls.ProduitPrix.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitPrix.html#Altazion_ECommerce_Controls_ProduitPrix_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitPrix.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitPrix.BindTo(System.Object)
-  nameWithType: ProduitPrix.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitPrix.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitPrix.html#Altazion_ECommerce_Controls_ProduitPrix_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitPrix.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitPrix.BindTo
-  nameWithType: ProduitPrix.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitPrix.CssClassSiPromo
   name: CssClassSiPromo
   href: api/Altazion.ECommerce.Controls.ProduitPrix.html#Altazion_ECommerce_Controls_ProduitPrix_CssClassSiPromo
@@ -4900,19 +3839,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitPrixConseille.AfficherSiInferieurPrixVente
   nameWithType: ProduitPrixConseille.AfficherSiInferieurPrixVente
-- uid: Altazion.ECommerce.Controls.ProduitPrixConseille.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitPrixConseille.html#Altazion_ECommerce_Controls_ProduitPrixConseille_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitPrixConseille.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitPrixConseille.BindTo(System.Object)
-  nameWithType: ProduitPrixConseille.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitPrixConseille.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitPrixConseille.html#Altazion_ECommerce_Controls_ProduitPrixConseille_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitPrixConseille.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitPrixConseille.BindTo
-  nameWithType: ProduitPrixConseille.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitPrixConseille.CssClassSiPromo
   name: CssClassSiPromo
   href: api/Altazion.ECommerce.Controls.ProduitPrixConseille.html#Altazion_ECommerce_Controls_ProduitPrixConseille_CssClassSiPromo
@@ -4984,19 +3910,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitPrixHorsPromo.AssocierAuMagasin
   nameWithType: ProduitPrixHorsPromo.AssocierAuMagasin
-- uid: Altazion.ECommerce.Controls.ProduitPrixHorsPromo.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitPrixHorsPromo.html#Altazion_ECommerce_Controls_ProduitPrixHorsPromo_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitPrixHorsPromo.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitPrixHorsPromo.BindTo(System.Object)
-  nameWithType: ProduitPrixHorsPromo.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitPrixHorsPromo.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitPrixHorsPromo.html#Altazion_ECommerce_Controls_ProduitPrixHorsPromo_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitPrixHorsPromo.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitPrixHorsPromo.BindTo
-  nameWithType: ProduitPrixHorsPromo.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitPrixHorsPromo.FormatPrix
   name: FormatPrix
   href: api/Altazion.ECommerce.Controls.ProduitPrixHorsPromo.html#Altazion_ECommerce_Controls_ProduitPrixHorsPromo_FormatPrix
@@ -5055,19 +3968,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitPrixPromo.AssocierAuMagasin
   nameWithType: ProduitPrixPromo.AssocierAuMagasin
-- uid: Altazion.ECommerce.Controls.ProduitPrixPromo.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitPrixPromo.html#Altazion_ECommerce_Controls_ProduitPrixPromo_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitPrixPromo.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitPrixPromo.BindTo(System.Object)
-  nameWithType: ProduitPrixPromo.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitPrixPromo.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitPrixPromo.html#Altazion_ECommerce_Controls_ProduitPrixPromo_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitPrixPromo.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitPrixPromo.BindTo
-  nameWithType: ProduitPrixPromo.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitPrixPromo.CacherSiNonPromo
   name: CacherSiNonPromo
   href: api/Altazion.ECommerce.Controls.ProduitPrixPromo.html#Altazion_ECommerce_Controls_ProduitPrixPromo_CacherSiNonPromo
@@ -5139,19 +4039,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitPrixValeurPromo.AssocierAuMagasin
   nameWithType: ProduitPrixValeurPromo.AssocierAuMagasin
-- uid: Altazion.ECommerce.Controls.ProduitPrixValeurPromo.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitPrixValeurPromo.html#Altazion_ECommerce_Controls_ProduitPrixValeurPromo_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitPrixValeurPromo.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitPrixValeurPromo.BindTo(System.Object)
-  nameWithType: ProduitPrixValeurPromo.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitPrixValeurPromo.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitPrixValeurPromo.html#Altazion_ECommerce_Controls_ProduitPrixValeurPromo_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitPrixValeurPromo.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitPrixValeurPromo.BindTo
-  nameWithType: ProduitPrixValeurPromo.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitPrixValeurPromo.CacherSiHorsPromo
   name: CacherSiHorsPromo
   href: api/Altazion.ECommerce.Controls.ProduitPrixValeurPromo.html#Altazion_ECommerce_Controls_ProduitPrixValeurPromo_CacherSiHorsPromo
@@ -5273,19 +4160,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.AfficheHT
   nameWithType: ProduitPrixValeurRemiseSurConseille.AfficheHT
-- uid: Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.html#Altazion_ECommerce_Controls_ProduitPrixValeurRemiseSurConseille_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.BindTo(System.Object)
-  nameWithType: ProduitPrixValeurRemiseSurConseille.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.html#Altazion_ECommerce_Controls_ProduitPrixValeurRemiseSurConseille_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.BindTo
-  nameWithType: ProduitPrixValeurRemiseSurConseille.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.FormatPourcentage
   name: FormatPourcentage
   href: api/Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.html#Altazion_ECommerce_Controls_ProduitPrixValeurRemiseSurConseille_FormatPourcentage
@@ -5368,38 +4242,12 @@ references:
   commentId: T:Altazion.ECommerce.Controls.ProduitReference
   fullName: Altazion.ECommerce.Controls.ProduitReference
   nameWithType: ProduitReference
-- uid: Altazion.ECommerce.Controls.ProduitReference.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitReference.html#Altazion_ECommerce_Controls_ProduitReference_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitReference.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitReference.BindTo(System.Object)
-  nameWithType: ProduitReference.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitReference.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitReference.html#Altazion_ECommerce_Controls_ProduitReference_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitReference.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitReference.BindTo
-  nameWithType: ProduitReference.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitSegment
   name: ProduitSegment
   href: api/Altazion.ECommerce.Controls.ProduitSegment.html
   commentId: T:Altazion.ECommerce.Controls.ProduitSegment
   fullName: Altazion.ECommerce.Controls.ProduitSegment
   nameWithType: ProduitSegment
-- uid: Altazion.ECommerce.Controls.ProduitSegment.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitSegment.html#Altazion_ECommerce_Controls_ProduitSegment_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitSegment.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitSegment.BindTo(System.Object)
-  nameWithType: ProduitSegment.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitSegment.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitSegment.html#Altazion_ECommerce_Controls_ProduitSegment_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitSegment.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitSegment.BindTo
-  nameWithType: ProduitSegment.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitSegment.NiveauSegmentation
   name: NiveauSegmentation
   href: api/Altazion.ECommerce.Controls.ProduitSegment.html#Altazion_ECommerce_Controls_ProduitSegment_NiveauSegmentation
@@ -5419,19 +4267,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.ProduitSegmentLink
   fullName: Altazion.ECommerce.Controls.ProduitSegmentLink
   nameWithType: ProduitSegmentLink
-- uid: Altazion.ECommerce.Controls.ProduitSegmentLink.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitSegmentLink.html#Altazion_ECommerce_Controls_ProduitSegmentLink_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitSegmentLink.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitSegmentLink.BindTo(System.Object)
-  nameWithType: ProduitSegmentLink.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitSegmentLink.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitSegmentLink.html#Altazion_ECommerce_Controls_ProduitSegmentLink_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitSegmentLink.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitSegmentLink.BindTo
-  nameWithType: ProduitSegmentLink.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitSegmentLink.TextIfEmpty
   name: TextIfEmpty
   href: api/Altazion.ECommerce.Controls.ProduitSegmentLink.html#Altazion_ECommerce_Controls_ProduitSegmentLink_TextIfEmpty
@@ -5451,19 +4286,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.ProduitTagsEtLabels
   fullName: Altazion.ECommerce.Controls.ProduitTagsEtLabels
   nameWithType: ProduitTagsEtLabels
-- uid: Altazion.ECommerce.Controls.ProduitTagsEtLabels.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitTagsEtLabels.html#Altazion_ECommerce_Controls_ProduitTagsEtLabels_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitTagsEtLabels.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitTagsEtLabels.BindTo(System.Object)
-  nameWithType: ProduitTagsEtLabels.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitTagsEtLabels.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitTagsEtLabels.html#Altazion_ECommerce_Controls_ProduitTagsEtLabels_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitTagsEtLabels.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitTagsEtLabels.BindTo
-  nameWithType: ProduitTagsEtLabels.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitTagsEtLabels.TagContainerCssClass
   name: TagContainerCssClass
   href: api/Altazion.ECommerce.Controls.ProduitTagsEtLabels.html#Altazion_ECommerce_Controls_ProduitTagsEtLabels_TagContainerCssClass
@@ -5496,19 +4318,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitTotalTaxes.AfficheHT
   nameWithType: ProduitTotalTaxes.AfficheHT
-- uid: Altazion.ECommerce.Controls.ProduitTotalTaxes.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitTotalTaxes.html#Altazion_ECommerce_Controls_ProduitTotalTaxes_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitTotalTaxes.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitTotalTaxes.BindTo(System.Object)
-  nameWithType: ProduitTotalTaxes.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitTotalTaxes.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitTotalTaxes.html#Altazion_ECommerce_Controls_ProduitTotalTaxes_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitTotalTaxes.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitTotalTaxes.BindTo
-  nameWithType: ProduitTotalTaxes.BindTo
 - uid: Altazion.ECommerce.Controls.ProduitTotalTaxes.CssClassSiPromo
   name: CssClassSiPromo
   href: api/Altazion.ECommerce.Controls.ProduitTotalTaxes.html#Altazion_ECommerce_Controls_ProduitTotalTaxes_CssClassSiPromo
@@ -5522,19 +4331,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitTotalTaxes.CssClassSiPromo
   nameWithType: ProduitTotalTaxes.CssClassSiPromo
-- uid: Altazion.ECommerce.Controls.ProduitTotalTaxes.DataBind
-  name: DataBind()
-  href: api/Altazion.ECommerce.Controls.ProduitTotalTaxes.html#Altazion_ECommerce_Controls_ProduitTotalTaxes_DataBind
-  commentId: M:Altazion.ECommerce.Controls.ProduitTotalTaxes.DataBind
-  fullName: Altazion.ECommerce.Controls.ProduitTotalTaxes.DataBind()
-  nameWithType: ProduitTotalTaxes.DataBind()
-- uid: Altazion.ECommerce.Controls.ProduitTotalTaxes.DataBind*
-  name: DataBind
-  href: api/Altazion.ECommerce.Controls.ProduitTotalTaxes.html#Altazion_ECommerce_Controls_ProduitTotalTaxes_DataBind_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitTotalTaxes.DataBind
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitTotalTaxes.DataBind
-  nameWithType: ProduitTotalTaxes.DataBind
 - uid: Altazion.ECommerce.Controls.ProduitTotalTaxes.FormatGammePrix
   name: FormatGammePrix
   href: api/Altazion.ECommerce.Controls.ProduitTotalTaxes.html#Altazion_ECommerce_Controls_ProduitTotalTaxes_FormatGammePrix
@@ -5567,32 +4363,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.ProduitVideoList
   fullName: Altazion.ECommerce.Controls.ProduitVideoList
   nameWithType: ProduitVideoList
-- uid: Altazion.ECommerce.Controls.ProduitVideoList.BindTo(System.Object)
-  name: BindTo(Object)
-  href: api/Altazion.ECommerce.Controls.ProduitVideoList.html#Altazion_ECommerce_Controls_ProduitVideoList_BindTo_System_Object_
-  commentId: M:Altazion.ECommerce.Controls.ProduitVideoList.BindTo(System.Object)
-  fullName: Altazion.ECommerce.Controls.ProduitVideoList.BindTo(System.Object)
-  nameWithType: ProduitVideoList.BindTo(Object)
-- uid: Altazion.ECommerce.Controls.ProduitVideoList.BindTo*
-  name: BindTo
-  href: api/Altazion.ECommerce.Controls.ProduitVideoList.html#Altazion_ECommerce_Controls_ProduitVideoList_BindTo_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitVideoList.BindTo
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitVideoList.BindTo
-  nameWithType: ProduitVideoList.BindTo
-- uid: Altazion.ECommerce.Controls.ProduitVideoList.Render(System.Web.UI.HtmlTextWriter)
-  name: Render(HtmlTextWriter)
-  href: api/Altazion.ECommerce.Controls.ProduitVideoList.html#Altazion_ECommerce_Controls_ProduitVideoList_Render_System_Web_UI_HtmlTextWriter_
-  commentId: M:Altazion.ECommerce.Controls.ProduitVideoList.Render(System.Web.UI.HtmlTextWriter)
-  fullName: Altazion.ECommerce.Controls.ProduitVideoList.Render(System.Web.UI.HtmlTextWriter)
-  nameWithType: ProduitVideoList.Render(HtmlTextWriter)
-- uid: Altazion.ECommerce.Controls.ProduitVideoList.Render*
-  name: Render
-  href: api/Altazion.ECommerce.Controls.ProduitVideoList.html#Altazion_ECommerce_Controls_ProduitVideoList_Render_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitVideoList.Render
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitVideoList.Render
-  nameWithType: ProduitVideoList.Render
 - uid: Altazion.ECommerce.Controls.ProduitVideoList.VideoCssClass
   name: VideoCssClass
   href: api/Altazion.ECommerce.Controls.ProduitVideoList.html#Altazion_ECommerce_Controls_ProduitVideoList_VideoCssClass

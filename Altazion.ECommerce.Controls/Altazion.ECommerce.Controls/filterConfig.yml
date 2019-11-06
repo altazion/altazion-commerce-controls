@@ -17,3 +17,36 @@
 - exclude:
       uidRegex: ^System\.Web\.UI
       type: Namespace
+- exclude:
+      uidRegex: ^.*\.BindTo
+      type: Method
+- exclude:
+      uidRegex: ^.*\.Render
+      type: Method
+- exclude:
+      uidRegex: ^.*\.RenderChildren
+      type: Method
+- exclude:
+      uidRegex: ^.*\.InitializeCell
+      type: Method
+- exclude:
+      uidRegex: ^.*\.CreateField
+      type: Method
+- exclude:
+      uidRegex: ^.*\.CompareTo
+      type: Method
+- exclude:
+      uidRegex: ^.*\.CompareTo
+      type: Method
+- exclude:
+      uidRegex: ^.*\.DataBind
+      type: Method
+- exclude:
+      uidRegex: ^.*\.OnLoad
+      type: Method
+- exclude:
+      uidRegex: ^.*\.OnInit
+      type: Method
+- exclude:
+      uidRegex: ^.*\.DataBind
+      type: Method
