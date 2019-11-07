@@ -73,78 +73,75 @@
   
   <h1 id="Altazion_ECommerce_Controls_MagasinAssocieLibelle" data-uid="Altazion.ECommerce.Controls.MagasinAssocieLibelle" class="text-break">Class MagasinAssocieLibelle
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary summary"><p>Affiche un span avec le nom du magasin associé
+à la session utilisateur</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
-    <h5>Inheritance</h5>
+    <h5>H&#233;ritage</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">System.Web.UI.Control</span></div>
     <div class="level2"><span class="xref">System.Web.UI.WebControls.WebControl</span></div>
     <div class="level3"><span class="xref">System.Web.UI.WebControls.Label</span></div>
     <div class="level4"><span class="xref">MagasinAssocieLibelle</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
-  </div>
   <!--<h6><strong>Namespace</strong>: <xref uid="Altazion.ECommerce.Controls" text="Altazion.ECommerce.Controls" alt="Altazion.ECommerce.Controls"/></h6>
   <h6><strong>Assembly</strong>: Altazion.ECommerce.Controls.dll</h6>-->
-  <h5 id="Altazion_ECommerce_Controls_MagasinAssocieLibelle_syntax">Syntax</h5>
+  <h5 id="Altazion_ECommerce_Controls_MagasinAssocieLibelle_syntax">Syntaxe</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class MagasinAssocieLibelle : Label, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, IAttributeAccessor, ITextControl</code></pre>
   </div>
+  <h5 id="Altazion_ECommerce_Controls_MagasinAssocieLibelle_remarks"><strong>Remarques</strong></h5>
+  <div class="markdown level0 remarks"><p>Exemple d&apos;utilisation :</p>
+<pre><code>&lt;ecom:MagasinAssocieLibelle runat=&quot;server&quot; /></code></pre>
+<p>Ce qui produira l&apos;html suivant :</p>
+<pre><code>&lt;span>[le nom du magasin]&lt;/span></code></pre>
+<p>Si la session actuelle n&apos;est pas associée
+à un magasin, le contrôle ne sera pas ajouté à l&apos;html
+de la page</p></div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Altazion_ECommerce_Controls_MagasinAssocieLibelle__ctor_" data-uid="Altazion.ECommerce.Controls.MagasinAssocieLibelle.#ctor*"></a>
   <h4 id="Altazion_ECommerce_Controls_MagasinAssocieLibelle__ctor" data-uid="Altazion.ECommerce.Controls.MagasinAssocieLibelle.#ctor">MagasinAssocieLibelle()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructeur par défaut</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public MagasinAssocieLibelle()</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="properties">Propri&#233;t&#233;s
   </h3>
   
   
   <a id="Altazion_ECommerce_Controls_MagasinAssocieLibelle_Format_" data-uid="Altazion.ECommerce.Controls.MagasinAssocieLibelle.Format*"></a>
   <h4 id="Altazion_ECommerce_Controls_MagasinAssocieLibelle_Format" data-uid="Altazion.ECommerce.Controls.MagasinAssocieLibelle.Format">Format</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Format d&apos;affichage du code postal du magasin, sous la forme {0}</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Format { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
+  <h5 id="Altazion_ECommerce_Controls_MagasinAssocieLibelle_Format_remarks">Remarques</h5>
+  <div class="markdown level1 remarks"><p>La valeur par défaut est {0}</p>
+</div>
+  <h3 id="methods">M&#233;thodes
   </h3>
   
   
   <a id="Altazion_ECommerce_Controls_MagasinAssocieLibelle_OnPreRender_" data-uid="Altazion.ECommerce.Controls.MagasinAssocieLibelle.OnPreRender*"></a>
   <h4 id="Altazion_ECommerce_Controls_MagasinAssocieLibelle_OnPreRender_System_EventArgs_" data-uid="Altazion.ECommerce.Controls.MagasinAssocieLibelle.OnPreRender(System.EventArgs)">OnPreRender(EventArgs)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Prépare l&apos;affichage du contrôle</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnPreRender(EventArgs e)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="parameters">Param&#232;tres</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>

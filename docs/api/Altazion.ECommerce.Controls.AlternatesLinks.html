@@ -73,65 +73,88 @@
   
   <h1 id="Altazion_ECommerce_Controls_AlternatesLinks" data-uid="Altazion.ECommerce.Controls.AlternatesLinks" class="text-break">Class AlternatesLinks
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary summary"><p>Ajoute des &lt;link ... /&gt; pour chaque 
+alternative de langue</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
-    <h5>Inheritance</h5>
+    <h5>H&#233;ritage</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">System.Web.UI.Control</span></div>
     <div class="level2"><span class="xref">System.Web.UI.WebControls.WebControl</span></div>
     <div class="level3"><span class="xref">AlternatesLinks</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
-  </div>
   <!--<h6><strong>Namespace</strong>: <xref uid="Altazion.ECommerce.Controls" text="Altazion.ECommerce.Controls" alt="Altazion.ECommerce.Controls"/></h6>
   <h6><strong>Assembly</strong>: Altazion.ECommerce.Controls.dll</h6>-->
-  <h5 id="Altazion_ECommerce_Controls_AlternatesLinks_syntax">Syntax</h5>
+  <h5 id="Altazion_ECommerce_Controls_AlternatesLinks_syntax">Syntaxe</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AlternatesLinks : WebControl, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, IAttributeAccessor</code></pre>
   </div>
+  <h5 id="Altazion_ECommerce_Controls_AlternatesLinks_remarks"><strong>Remarques</strong></h5>
+  <div class="markdown level0 remarks"><p><p>Les urls pointées par les balises link sont
+consituées de l&apos;url racine correspondant à 
+chaque langue, complétée du path courant.</p>
+<p>Par exemple, pour l&apos;url 
+<a href="https://demo.ecommerce-server.fr/produits/descente-categorie/page1.htm">https://demo.ecommerce-server.fr/produits/descente-categorie/page1.htm</a>, 
+le contrôle suivant :</p></p>
+<pre><code>&lt;ecom:AlternatesLinks runat=&quot;server&quot;>
+    &lt;Alternates>
+        &lt;ecom:AlternateLinkInfo 
+            Langue=&quot;fr-fr&quot; 
+            UrlRacine=&quot;https://demo.ecommerce-server.fr/&quot; />
+        &lt;ecom:AlternateLinkInfo 
+            Langue=&quot;en-us-ch&quot; 
+            UrlRacine=&quot;https://demo-us.ecommerce-server.com/&quot; />
+    &lt;/Alternates>
+&lt;/ecom:AlternatesLinks></code></pre>
+<p><p>calculera les urls pour la version française et américaine sous la forme :</p></p>
+<pre><code>&lt;link rel=&apos;alternate&apos; hreflang=&apos;fr-fr&apos; 
+   href=&apos;https://demo.ecommerce-server.fr/produits/descente-categorie/page1.htm&apos; />
+&lt;link rel=&apos;alternate&apos; hreflang=&apos;fr-ch&apos; 
+   href=&apos;https://demo-us.ecommerce-server.com/produits/descente-categorie/page1.htm&apos; /></code></pre>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Altazion_ECommerce_Controls_AlternatesLinks__ctor_" data-uid="Altazion.ECommerce.Controls.AlternatesLinks.#ctor*"></a>
   <h4 id="Altazion_ECommerce_Controls_AlternatesLinks__ctor" data-uid="Altazion.ECommerce.Controls.AlternatesLinks.#ctor">AlternatesLinks()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructeur par défaut</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public AlternatesLinks()</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="properties">Propri&#233;t&#233;s
   </h3>
   
   
   <a id="Altazion_ECommerce_Controls_AlternatesLinks_Alternates_" data-uid="Altazion.ECommerce.Controls.AlternatesLinks.Alternates*"></a>
   <h4 id="Altazion_ECommerce_Controls_AlternatesLinks_Alternates" data-uid="Altazion.ECommerce.Controls.AlternatesLinks.Alternates">Alternates</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtient ou définit la liste des alternates sous forme d&apos;une liste
+de <a class="xref" href="Altazion.ECommerce.Controls.AlternateLinkInfo.html">AlternateLinkInfo</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[PersistenceMode(PersistenceMode.InnerDefaultProperty)]
 public ArrayList Alternates { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.ArrayList</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 id="Altazion_ECommerce_Controls_AlternatesLinks_Alternates_remarks">Remarques</h5>
+  <div class="markdown level1 remarks"><p><p>En asp.net, vous pouvez inclure les différentes valeurs sous
+formes de &quot;sous noeud&quot; du contrôle, par exemple :</p></p>
+<pre><code>&lt;ecom:AlternatesLinks runat=&quot;server&quot;>
+    &lt;Alternates>
+        &lt;ecom:AlternateLinkInfo 
+            Langue=&quot;fr-fr&quot; 
+            UrlRacine=&quot;https://demo.ecommerce-server.fr/&quot; />
+        &lt;ecom:AlternateLinkInfo 
+            Langue=&quot;en-us-ch&quot; 
+            UrlRacine=&quot;https://demo-us.ecommerce-server.com/&quot; />
+    &lt;/Alternates>
+&lt;/ecom:AlternatesLinks></code></pre>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.IDisposable</span>

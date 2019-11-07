@@ -50,3 +50,9 @@
 - exclude:
       uidRegex: ^.*\.DataBind
       type: Method
+exclude:
+      uidRegex: ^.*\.OnPreRender
+      type: Method
+clude:
+      uidRegex: ^.*\.OnDataBinding
+      type: Method      

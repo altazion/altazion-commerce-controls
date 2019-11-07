@@ -1135,6 +1135,25 @@ references:
   commentId: T:Altazion.ECommerce.Controls.CanonicalLink
   fullName: Altazion.ECommerce.Controls.CanonicalLink
   nameWithType: CanonicalLink
+- uid: Altazion.ECommerce.Controls.ClearIntentionLinkButton
+  name: ClearIntentionLinkButton
+  href: api/Altazion.ECommerce.Controls.ClearIntentionLinkButton.html
+  commentId: T:Altazion.ECommerce.Controls.ClearIntentionLinkButton
+  fullName: Altazion.ECommerce.Controls.ClearIntentionLinkButton
+  nameWithType: ClearIntentionLinkButton
+- uid: Altazion.ECommerce.Controls.ClearIntentionLinkButton.RedirectTo
+  name: RedirectTo
+  href: api/Altazion.ECommerce.Controls.ClearIntentionLinkButton.html#Altazion_ECommerce_Controls_ClearIntentionLinkButton_RedirectTo
+  commentId: P:Altazion.ECommerce.Controls.ClearIntentionLinkButton.RedirectTo
+  fullName: Altazion.ECommerce.Controls.ClearIntentionLinkButton.RedirectTo
+  nameWithType: ClearIntentionLinkButton.RedirectTo
+- uid: Altazion.ECommerce.Controls.ClearIntentionLinkButton.RedirectTo*
+  name: RedirectTo
+  href: api/Altazion.ECommerce.Controls.ClearIntentionLinkButton.html#Altazion_ECommerce_Controls_ClearIntentionLinkButton_RedirectTo_
+  commentId: Overload:Altazion.ECommerce.Controls.ClearIntentionLinkButton.RedirectTo
+  isSpec: "True"
+  fullName: Altazion.ECommerce.Controls.ClearIntentionLinkButton.RedirectTo
+  nameWithType: ClearIntentionLinkButton.RedirectTo
 - uid: Altazion.ECommerce.Controls.ClickNMortarHomeLink
   name: ClickNMortarHomeLink
   href: api/Altazion.ECommerce.Controls.ClickNMortarHomeLink.html

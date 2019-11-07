@@ -73,29 +73,25 @@
   
   <h1 id="Altazion_ECommerce_Controls_AdressePanel" data-uid="Altazion.ECommerce.Controls.AdressePanel" class="text-break">Class AdressePanel
   </h1>
-  <div class="markdown level0 summary"><p>²Ce panel (div) est un conteneur d&apos;adresse
+  <div class="markdown level0 summary summary"><p>Ce panel (div) est un conteneur d&apos;adresse
 et s&apos;affichera si nécessaire en fonction du type d&apos;affichage</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
-    <h5>Inheritance</h5>
+    <h5>H&#233;ritage</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">System.Web.UI.Control</span></div>
     <div class="level2"><span class="xref">System.Web.UI.WebControls.WebControl</span></div>
     <div class="level3"><span class="xref">System.Web.UI.WebControls.Panel</span></div>
     <div class="level4"><span class="xref">AdressePanel</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
-  </div>
   <!--<h6><strong>Namespace</strong>: <xref uid="Altazion.ECommerce.Controls" text="Altazion.ECommerce.Controls" alt="Altazion.ECommerce.Controls"/></h6>
   <h6><strong>Assembly</strong>: Altazion.ECommerce.Controls.dll</h6>-->
-  <h5 id="Altazion_ECommerce_Controls_AdressePanel_syntax">Syntax</h5>
+  <h5 id="Altazion_ECommerce_Controls_AdressePanel_syntax">Syntaxe</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AdressePanel : Panel, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, IAttributeAccessor</code></pre>
   </div>
-  <h5 id="Altazion_ECommerce_Controls_AdressePanel_remarks"><strong>Remarks</strong></h5>
+  <h5 id="Altazion_ECommerce_Controls_AdressePanel_remarks"><strong>Remarques</strong></h5>
   <div class="markdown level0 remarks"><p>Les différents types d&apos;affichages sont :
 <ul><li>ToutLeTempsLe panel s&apos;affichera tout le temps</li><li>UniquementSiDifferentesLe panel s&apos;affichera uniquement si l&apos;adresse de facturation
 et l&apos;adresse de livraison sont différentes</li><li>UniquementSiIdentiquesLe panel s&apos;affichera uniquement si l&apos;adresse de facturation
@@ -110,37 +106,30 @@ est aussi l&apos;adresse de livraison</li></ul></p>
   <div class="markdown level1 summary"><p>Initialise une instance de <a class="xref" href="Altazion.ECommerce.Controls.AdressePanel.html">AdressePanel</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public AdressePanel()</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="properties">Propri&#233;t&#233;s
   </h3>
   
   
   <a id="Altazion_ECommerce_Controls_AdressePanel_AfficherSiPointRelais_" data-uid="Altazion.ECommerce.Controls.AdressePanel.AfficherSiPointRelais*"></a>
   <h4 id="Altazion_ECommerce_Controls_AdressePanel_AfficherSiPointRelais" data-uid="Altazion.ECommerce.Controls.AdressePanel.AfficherSiPointRelais">AfficherSiPointRelais</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtient ou définit un booléen précisant si le panel
+s&apos;affiche en cas de point relais</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool? AfficherSiPointRelais { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 id="Altazion_ECommerce_Controls_AdressePanel_AfficherSiPointRelais_remarks">Remarques</h5>
+  <div class="markdown level1 remarks"><p>Utilisez : true pour n&apos;afficher qu&apos;en cas de point relai,
+false pour n&apos;afficher qu&apos;en cas de livraison domicile
+ou null (ne pas mettre l&apos;attribut) pour s&apos;afficher 
+dans tous les cas</p>
+</div>
   
   
   <a id="Altazion_ECommerce_Controls_AdressePanel_TypeAffichage_" data-uid="Altazion.ECommerce.Controls.AdressePanel.TypeAffichage*"></a>
@@ -148,25 +137,10 @@ est aussi l&apos;adresse de livraison</li></ul></p>
   <div class="markdown level1 summary"><p>Obtient ou définit les conditions d&apos;affichage de l&apos;adresse</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public AdressePanel.TypeAffichageAdresses TypeAffichage { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Altazion.ECommerce.Controls.AdressePanel.TypeAffichageAdresses.html">AdressePanel.TypeAffichageAdresses</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.IDisposable</span>

@@ -21,3 +21,15 @@ body, p, table, td, div {
 .inheritance, .implements {
     display: none;
 }
+
+.level0.summary {
+    padding: 0.5rem 0 1.5rem 0;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+    color: #36274c;
+}
+
+h3, .h3 {
+    font-size:22px;
+}

@@ -13,16 +13,16 @@ using CPointSoftware.ECommerce.Tools;
 namespace Altazion.ECommerce.Controls
 {
     /// <summary>
-    /// ²Ce panel (div) est un conteneur d'adresse
+    /// Ce panel (div) est un conteneur d'adresse
     /// et s'affichera si nécessaire en fonction du type d'affichage
     /// </summary>
     /// <remarks>
     /// Les différents types d'affichages sont :
     /// <list type="bullet">
-    /// <item><term>ToutLeTemps</term><description>Le panel s'affichera tout le temps</description></item>
-    /// <item><term>UniquementSiDifferentes</term><description>Le panel s'affichera uniquement si l'adresse de facturation
+    /// <item><term>ToutLeTemps</term> <description>Le panel s'affichera tout le temps</description></item>
+    /// <item><term>UniquementSiDifferentes</term> <description>Le panel s'affichera uniquement si l'adresse de facturation
     /// et l'adresse de livraison sont différentes</description></item>
-    /// <item><term>UniquementSiIdentiques</term><description>Le panel s'affichera uniquement si l'adresse de facturation
+    /// <item><term>UniquementSiIdentiques</term> <description>Le panel s'affichera uniquement si l'adresse de facturation
     /// est aussi l'adresse de livraison</description></item>
     /// </list>
     /// </remarks>
@@ -40,8 +40,19 @@ namespace Altazion.ECommerce.Controls
         /// </summary>
         public enum TypeAffichageAdresses
         {
+            /// <summary>
+            /// Le panel s'affichera tout le temps
+            /// </summary>
             ToutLeTemps,
+            /// <summary>
+            /// Le panel s'affichera uniquement si l'adresse de facturation
+            /// et l'adresse de livraison sont différentes
+            /// </summary>
             UniquementSiDifferentes,
+            /// <summary>
+            /// Le panel s'affichera uniquement si l'adresse de facturation
+            /// est aussi l'adresse de livraison
+            /// </summary>
             UniquementSiIdentiques
         }
 
@@ -50,6 +61,15 @@ namespace Altazion.ECommerce.Controls
         /// </summary>
         public TypeAffichageAdresses TypeAffichage { get; set; }
 
+        /// <summary>
+        /// Obtient ou définit un booléen précisant si le panel
+        /// s'affiche en cas de point relais
+        /// </summary>
+        /// <remarks>
+        /// Utilisez : true pour n'afficher qu'en cas de point relai,
+        /// false pour n'afficher qu'en cas de livraison domicile
+        /// ou null (ne pas mettre l'attribut) pour s'afficher 
+        /// dans tous les cas</remarks>
         public bool? AfficherSiPointRelais { get; set; }
 
         /// <summary>

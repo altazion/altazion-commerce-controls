@@ -73,29 +73,25 @@
   
   <h1 id="Altazion_ECommerce_Controls_FilAriane" data-uid="Altazion.ECommerce.Controls.FilAriane" class="text-break">Class FilAriane
   </h1>
-  <div class="markdown level0 summary"><p>affiche un ul représentant le fil d&apos;Ariane</p>
+  <div class="markdown level0 summary summary"><p>affiche un ul représentant le fil d&apos;Ariane</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
-    <h5>Inheritance</h5>
+    <h5>H&#233;ritage</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">System.Web.UI.Control</span></div>
     <div class="level2"><span class="xref">System.Web.UI.WebControls.WebControl</span></div>
     <div class="level3"><span class="xref">FilAriane</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
-  </div>
   <!--<h6><strong>Namespace</strong>: <xref uid="Altazion.ECommerce.Controls" text="Altazion.ECommerce.Controls" alt="Altazion.ECommerce.Controls"/></h6>
   <h6><strong>Assembly</strong>: Altazion.ECommerce.Controls.dll</h6>-->
-  <h5 id="Altazion_ECommerce_Controls_FilAriane_syntax">Syntax</h5>
+  <h5 id="Altazion_ECommerce_Controls_FilAriane_syntax">Syntaxe</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class FilAriane : WebControl, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, IAttributeAccessor</code></pre>
   </div>
-  <h5 id="Altazion_ECommerce_Controls_FilAriane_remarks"><strong>Remarks</strong></h5>
+  <h5 id="Altazion_ECommerce_Controls_FilAriane_remarks"><strong>Remarques</strong></h5>
   <div class="markdown level0 remarks"><p>La structure du fil d&apos;ariane est la suivante : 
-<ul><li></li><li></li><li></li><li></li></ul></p>
+<ul><li>un UL contient tout le fil d&apos;ariane</li><li>le noeud &apos;acceuil&apos; est dans un a dans un li</li><li>toutes les pages permettant de &quot;remonter&quot; sont dans a, dans des li avec un marquage rdfa</li><li>la page courante est dans un li simple</li></ul></p>
 </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -103,189 +99,105 @@
   
   <a id="Altazion_ECommerce_Controls_FilAriane__ctor_" data-uid="Altazion.ECommerce.Controls.FilAriane.#ctor*"></a>
   <h4 id="Altazion_ECommerce_Controls_FilAriane__ctor" data-uid="Altazion.ECommerce.Controls.FilAriane.#ctor">FilAriane()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructeur par défaut</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public FilAriane()</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="properties">Propri&#233;t&#233;s
   </h3>
   
   
   <a id="Altazion_ECommerce_Controls_FilAriane_FirstItemCssClass_" data-uid="Altazion.ECommerce.Controls.FilAriane.FirstItemCssClass*"></a>
   <h4 id="Altazion_ECommerce_Controls_FilAriane_FirstItemCssClass" data-uid="Altazion.ECommerce.Controls.FilAriane.FirstItemCssClass">FirstItemCssClass</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtient ou définit la classe CSS spécifique du premier élément</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string FirstItemCssClass { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 id="Altazion_ECommerce_Controls_FilAriane_FirstItemCssClass_remarks">Remarques</h5>
+  <div class="markdown level1 remarks"><p>Cette valeur est utilisée pour le premier item 
+et <a class="xref" href="Altazion.ECommerce.Controls.FilAriane.html#Altazion_ECommerce_Controls_FilAriane_ItemCssClass">ItemCssClass</a> est ignorée</p>
+</div>
   
   
   <a id="Altazion_ECommerce_Controls_FilAriane_Header_" data-uid="Altazion.ECommerce.Controls.FilAriane.Header*"></a>
   <h4 id="Altazion_ECommerce_Controls_FilAriane_Header" data-uid="Altazion.ECommerce.Controls.FilAriane.Header">Header</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtient ou définit l&apos;entete du fil d&apos;ariane</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Header { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Altazion_ECommerce_Controls_FilAriane_HeaderCssClass_" data-uid="Altazion.ECommerce.Controls.FilAriane.HeaderCssClass*"></a>
   <h4 id="Altazion_ECommerce_Controls_FilAriane_HeaderCssClass" data-uid="Altazion.ECommerce.Controls.FilAriane.HeaderCssClass">HeaderCssClass</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtient ou définit la classe CSS de l&apos;entête</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string HeaderCssClass { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Altazion_ECommerce_Controls_FilAriane_ItemCssClass_" data-uid="Altazion.ECommerce.Controls.FilAriane.ItemCssClass*"></a>
   <h4 id="Altazion_ECommerce_Controls_FilAriane_ItemCssClass" data-uid="Altazion.ECommerce.Controls.FilAriane.ItemCssClass">ItemCssClass</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtient ou définit la classe CSS des éléments</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string ItemCssClass { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Altazion_ECommerce_Controls_FilAriane_LastItemCssClass_" data-uid="Altazion.ECommerce.Controls.FilAriane.LastItemCssClass*"></a>
   <h4 id="Altazion_ECommerce_Controls_FilAriane_LastItemCssClass" data-uid="Altazion.ECommerce.Controls.FilAriane.LastItemCssClass">LastItemCssClass</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtient ou défiit la classe CSS spécifique du dernier élément</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string LastItemCssClass { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 id="Altazion_ECommerce_Controls_FilAriane_LastItemCssClass_remarks">Remarques</h5>
+  <div class="markdown level1 remarks"><p>Cette valeur est utilisée pour le dernier item 
+et <a class="xref" href="Altazion.ECommerce.Controls.FilAriane.html#Altazion_ECommerce_Controls_FilAriane_ItemCssClass">ItemCssClass</a> est ignorée</p>
+</div>
   
   
   <a id="Altazion_ECommerce_Controls_FilAriane_Separator_" data-uid="Altazion.ECommerce.Controls.FilAriane.Separator*"></a>
   <h4 id="Altazion_ECommerce_Controls_FilAriane_Separator" data-uid="Altazion.ECommerce.Controls.FilAriane.Separator">Separator</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtient ou définit le séparateur entre les items</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Separator { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 id="Altazion_ECommerce_Controls_FilAriane_Separator_remarks">Remarques</h5>
+  <div class="markdown level1 remarks"><p>Par défaut &gt; est utilisé</p>
+</div>
   
   
   <a id="Altazion_ECommerce_Controls_FilAriane_UsePageTitleIfEmpty_" data-uid="Altazion.ECommerce.Controls.FilAriane.UsePageTitleIfEmpty*"></a>
   <h4 id="Altazion_ECommerce_Controls_FilAriane_UsePageTitleIfEmpty" data-uid="Altazion.ECommerce.Controls.FilAriane.UsePageTitleIfEmpty">UsePageTitleIfEmpty</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtient ou définit un booléen précisant si le
+dernier item doit prendre la valeur du titre
+de la page si sa valeur spécifique est vide</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool UsePageTitleIfEmpty { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.IDisposable</span>

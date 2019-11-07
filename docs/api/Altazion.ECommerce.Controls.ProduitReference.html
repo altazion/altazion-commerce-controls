@@ -73,29 +73,29 @@
   
   <h1 id="Altazion_ECommerce_Controls_ProduitReference" data-uid="Altazion.ECommerce.Controls.ProduitReference" class="text-break">Class ProduitReference
   </h1>
-  <div class="markdown level0 summary"><p>A utiliser dans un contrôle bindé sur un produit : affiche un span
+  <div class="markdown level0 summary summary"><p>A utiliser dans un contrôle bindé sur un produit : affiche un span
 avec la référence du produit</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
-    <h5>Inheritance</h5>
+    <h5>H&#233;ritage</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">System.Web.UI.Control</span></div>
     <div class="level2"><span class="xref">System.Web.UI.WebControls.WebControl</span></div>
     <div class="level3"><span class="xref">System.Web.UI.WebControls.Label</span></div>
     <div class="level4"><span class="xref">ProduitReference</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
-    <div><span class="xref">CPointSoftware.ECommerce.Tools.IEquihiraBindable</span></div>
-  </div>
   <!--<h6><strong>Namespace</strong>: <xref uid="Altazion.ECommerce.Controls" text="Altazion.ECommerce.Controls" alt="Altazion.ECommerce.Controls"/></h6>
   <h6><strong>Assembly</strong>: Altazion.ECommerce.Controls.dll</h6>-->
-  <h5 id="Altazion_ECommerce_Controls_ProduitReference_syntax">Syntax</h5>
+  <h5 id="Altazion_ECommerce_Controls_ProduitReference_syntax">Syntaxe</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class ProduitReference : Label, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, IAttributeAccessor, ITextControl, IEquihiraBindable</code></pre>
   </div>
+  <h5 id="Altazion_ECommerce_Controls_ProduitReference_remarks"><strong>Remarques</strong></h5>
+  <div class="markdown level0 remarks"><p>Le controle s&apos;affiche sous la forme d&apos;un span: 
+<pre><code>&lt;span>[La ref du produit]&lt;span></code></pre></p>
+<p>Si vous avez activé RDFa, le span sera modifié
+pour ajouter une attribut itemprop=&quot;identifier&quot; et un content=&quot;mnp:[La ref}&quot;.</p></div>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.IDisposable</span>

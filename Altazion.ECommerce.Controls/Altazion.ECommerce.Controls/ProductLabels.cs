@@ -20,19 +20,37 @@ namespace Altazion.ECommerce.Controls
     /// A utiliser dans un contrôle bindé sur un produit : affiche un span
     /// avec le libellé du produit
     /// </summary>
+    /// <remarks>
+    /// <para>Le controle s'affiche sous la forme d'un span: 
+    /// <code>&lt;span&gt;[Le libellé du produit]&lt;span&gt;</code></para>
+    /// <para>Si vous avez activé RDFa, le span sera modifié
+    /// pour ajouter une attribut itemprop="name".</para></remarks>
     [DefaultProperty("Text")]
     [ToolboxData("<{0}:ProduitLibelle runat=server></{0}:ProduitLibelle>")]
     public class ProduitLibelle : Label, IEquihiraBindable
     {
+        /// <summary>
+        /// Construteur du type
+        /// </summary>
         public ProduitLibelle()
         {
             MaxLength = int.MaxValue;
         }
 
 
-
+        /// <summary>
+        /// Taille maximale (en caractères) affichée
+        /// </summary>
+        /// <remarks><para>Si le libellé dépasse cette taille, il sera tronqué et 
+        /// terminé par ....</para>
+        /// <para>Valeur par défaut : pas de limite</para></remarks>
         public int MaxLength { get; set; }
 
+
+        /// <summary>
+        /// Effectue le binding sur l'objet de donnée
+        /// </summary>
+        /// <param name="o"></param>
         public void BindTo(object o)
         {
             if (o == null)
@@ -68,17 +86,39 @@ namespace Altazion.ECommerce.Controls
 
     }
 
+    /// <summary>
+    /// A utiliser dans un contrôle bindé sur un produit :
+    /// affiche la valeur du premier attribut différentiant dans le
+    /// cadre de l'affichage de versions
+    /// </summary>
+    /// <remarks>
+    /// <para>Le controle s'affiche sous la forme d'un span: 
+    /// <code>&lt;span&gt;[Le valeur de l'attribut différentiant]&lt;span&gt;</code></para>
     public class ProduitInstanceDifferentiant1 : Label, IEquihiraBindable
     {
+
+        /// <summary>
+        /// Constructeur par défaut
+        /// </summary>
         public ProduitInstanceDifferentiant1()
         {
             MaxLength = int.MaxValue;
         }
 
 
-
+        /// <summary>
+        /// Taille maximale (en caractères) affichée
+        /// </summary>
+        /// <remarks><para>Si le libellé dépasse cette taille, il sera tronqué et 
+        /// terminé par ....</para>
+        /// <para>Valeur par défaut : pas de limite</para></remarks>
         public int MaxLength { get; set; }
 
+
+        /// <summary>
+        /// Effectue le databinding sur l'objet de données
+        /// </summary>
+        /// <param name="o"></param>
         public void BindTo(object o)
         {
             if (o == null)
@@ -120,19 +160,36 @@ namespace Altazion.ECommerce.Controls
 
     /// <summary>
     /// A utiliser dans un contrôle bindé sur un produit : affiche un span
-    /// avec le libellé du produit
+    /// avec le code EAN13 principal du produit
     /// </summary>
+    /// <remarks>
+    /// <para>Le controle s'affiche sous la forme d'un span: 
+    /// <code>&lt;span&gt;[La référence EAN13]&lt;span&gt;</code></para>
+    /// <para>Si vous avez activé RDFa, le span sera modifié
+    /// pour ajouter une attribut itemprop="gtin13".</para></remarks>
     [DefaultProperty("Text")]
     [ToolboxData("<{0}:ProduitEan13 runat=server></{0}:ProduitLibelle>")]
     public class ProduitEan13 : Label, IEquihiraBindable
     {
+
+        /// <summary>
+        /// Constructeur par défaut
+        /// </summary>
         public ProduitEan13()
         {
             Format = "{0}";
         }
 
+        /// <summary>
+        /// Format d'affichage de l'EAN, sous la forme {0}
+        /// </summary>
         public string Format { get; set; }
 
+
+        /// <summary>
+        /// Effectue le binding sur l'objet de données
+        /// </summary>
+        /// <param name="o"></param>
         public void BindTo(object o)
         {
             if (o == null)
@@ -162,15 +219,22 @@ namespace Altazion.ECommerce.Controls
 
 
 
-/// <summary>
-/// A utiliser dans un contrôle bindé sur un produit : affiche un span
-/// avec la référence du produit
-/// </summary>
-[DefaultProperty("Text")]
+    /// <summary>
+    /// A utiliser dans un contrôle bindé sur un produit : affiche un span
+    /// avec la référence du produit
+    /// </summary>
+    /// <remarks>
+    /// <para>Le controle s'affiche sous la forme d'un span: 
+    /// <code>&lt;span&gt;[La ref du produit]&lt;span&gt;</code></para>
+    /// <para>Si vous avez activé RDFa, le span sera modifié
+    /// pour ajouter une attribut itemprop="identifier" et un content="mnp:[La ref}".</para></remarks>    [DefaultProperty("Text")]
     [ToolboxData("<{0}:ProduitReference runat=server></{0}:ProduitReference>")]
     public class ProduitReference : Label, IEquihiraBindable
     {
-
+        /// <summary>
+        /// Effectue le databinding
+        /// </summary>
+        /// <param name="o"></param>
         public void BindTo(object o)
         {
             if (o == null)
@@ -202,6 +266,8 @@ namespace Altazion.ECommerce.Controls
         }
 
     }
+
+
 
     public class ProduitPreparationSpecifiquePanel : Panel
     {
@@ -488,9 +554,9 @@ namespace Altazion.ECommerce.Controls
                 ArticlesDataSourceResult res = o as ArticlesDataSourceResult;
                 List<ProduitAttributRepeaterItemData> atts = new List<ProduitAttributRepeaterItemData>();
                 var dsAttr = ECommerceServer.DataCache.Attributs;
-                if(res.Attributs!=null)
+                if (res.Attributs != null)
                 {
-                    foreach(var rat in res.Attributs.catalog_articles_attributs)
+                    foreach (var rat in res.Attributs.catalog_articles_attributs)
                     {
                         var rDef = dsAttr.catalog_attributsdefinitions.FindByatd_pk(rat.att_atd_pk);
                         if (rDef == null) continue;
@@ -533,7 +599,7 @@ namespace Altazion.ECommerce.Controls
             ProduitAttributRepeater.ProduitAttributRepeaterItemData val = this.GetBoundObject() as ProduitAttributRepeater.ProduitAttributRepeaterItemData;
             if (val == null)
                 return;
-            if(this.CssClass==null)
+            if (this.CssClass == null)
                 this.CssClass = val.ValeurKind;
             else
                 this.CssClass += " " + val.ValeurKind;
@@ -876,10 +942,10 @@ namespace Altazion.ECommerce.Controls
                 foreach (ArticlesAttributsDS.catalog_articles_attributsRow r in res.Attributs.catalog_articles_attributs)
                 {
                     if (r.att_atd_pk.Equals(AttributeGuid) && !
-                            (r.Isatt_atv_valeurNull() 
+                            (r.Isatt_atv_valeurNull()
                             && r.Isatt_valeur_texteNull()
-                            && r.Isatt_valeur_numNull() 
-                            && r.Isatt_valeur_dateNull() 
+                            && r.Isatt_valeur_numNull()
+                            && r.Isatt_valeur_dateNull()
                             && r.Isatt_valeur_boolNull())
                         )
                     {
@@ -929,10 +995,10 @@ namespace Altazion.ECommerce.Controls
                     foreach (var att in AttributeGuid)
                     {
                         if (r.att_atd_pk.Equals(att) && !
-                                (r.Isatt_atv_valeurNull() 
+                                (r.Isatt_atv_valeurNull()
                                 && r.Isatt_valeur_texteNull()
-                                && r.Isatt_valeur_numNull() 
-                                && r.Isatt_valeur_dateNull() 
+                                && r.Isatt_valeur_numNull()
+                                && r.Isatt_valeur_dateNull()
                                 && r.Isatt_valeur_boolNull()))
                         {
                             found = true;
@@ -940,7 +1006,7 @@ namespace Altazion.ECommerce.Controls
                         }
                     }
                 }
-                if(found)
+                if (found)
                     this.Visible = !VisibleSiVide;
             }
         }
@@ -1492,17 +1558,34 @@ namespace Altazion.ECommerce.Controls
     /// A utiliser dans un contrôle bindé sur un produit : affiche un span
     /// avec la différence entre le prix de vente et le prix conseillé
     /// </summary>
-    [ToolboxData("<{0}:ProduitPrixValeurRemiseSurConseille runat=server></{0}:ProduitPrixValeurRemiseSurConseille>")]
     public class ProduitPrixValeurRemiseSurConseille : Label, IEquihiraBindable
     {
+        /// <summary>
+        /// Type d'affichage des promotions
+        /// </summary>
         public enum TypeAffichePromo
         {
+            /// <summary>
+            /// Toujours affiché en valeur (ex : - 17.50€)
+            /// </summary>
             EnValeur,
+            /// <summary>
+            /// Toujours affiché en pourcentage (ex : -20%)
+            /// </summary>
             EnPourcentage,
+            /// <summary>
+            /// Afficher en pourcentage si le montant
+            /// effectif est inférieur à <see cref="PrixMaxiPourPourcentage"/>
+            /// </summary>
             EnPourcentageSiInferieurA
         }
 
         private string _priceFormat = "{0} € de réduction";
+
+        /// <summary>
+        /// Obtient ou définit le format d'affichage du montant, sous la forme {0:0.00}
+        /// </summary>
+        /// <remarks>Valeur par défaut : {0} € de réduction</remarks>
         [Browsable(true)]
         public string FormatPrix
         {
@@ -1511,6 +1594,11 @@ namespace Altazion.ECommerce.Controls
         }
 
         private string _pctFormat = "{0}% de réduction";
+
+        /// <summary>
+        /// Obtient ou définit le format d'affichage du pourcentage, sous la forme {0:0}
+        /// </summary>
+        /// <remarks>Valeur par défaut : {0}% de réduction</remarks>
         [Browsable(true)]
         public string FormatPourcentage
         {
@@ -1519,6 +1607,9 @@ namespace Altazion.ECommerce.Controls
         }
 
         private TypeAffichePromo _affichePourcentage = TypeAffichePromo.EnValeur;
+        /// <summary>
+        /// Obtient ou définit le format d'affichage de la promotion
+        /// </summary>
         [Browsable(true)]
         public TypeAffichePromo TypeAffichage
         {
@@ -1528,6 +1619,9 @@ namespace Altazion.ECommerce.Controls
 
         private bool _showWithoutVAT = false;
 
+        /// <summary>
+        /// Obtient ou définit un booléen précisant si le montant affichés est HT
+        /// </summary>
         [Browsable(true)]
         public bool AfficheHT
         {
@@ -1536,6 +1630,10 @@ namespace Altazion.ECommerce.Controls
         }
 
         decimal _prixMaxiPct = 10M;
+        /// <summary>
+        /// Obtient ou définit le prix maximal pour un affichage en pourcentage
+        /// lorsque <see cref="TypeAffichage"/> = <see cref="TypeAffichePromo.EnPourcentageSiInferieurA"/>
+        /// </summary>
         [Browsable(true)]
         public decimal PrixMaxiPourPourcentage
         {
@@ -1543,6 +1641,10 @@ namespace Altazion.ECommerce.Controls
             set { _prixMaxiPct = value; }
         }
 
+        /// <summary>
+        /// Databind sur l'objet de donné
+        /// </summary>
+        /// <param name="o"></param>
         public void BindTo(object o)
         {
             if (o == null)

@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AdresseChoisirLink.html",
-          "hash": "CUGZveQDVP002Bx+Tq3+/Q=="
+          "hash": "kO8Hd9jgBixw0I88lH+BdA=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AdressePanel.TypeAffichageAdresses.html",
-          "hash": "N5ykp+MgmM0CvnmIB+u4eg=="
+          "hash": "Az3oRHefBS8wPdCe1scFrQ=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AdressePanel.html",
-          "hash": "xQFy08FaUtou8NMHNOQfsg=="
+          "hash": "PrV33Z8NlzzXexswF+GoLw=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AlternateLinkInfo.html",
-          "hash": "R67LRTZBtjQ07PACLkR4Ng=="
+          "hash": "rYNeLw/xsosJ71PIaYdkaw=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AlternatesLinks.html",
-          "hash": "2EUmEl6TqGcEKAp68LmjpQ=="
+          "hash": "qpG2giouVOnT1aY0/EZsfg=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AmpBoilerplate.html",
-          "hash": "XUttlkjCefUhTqdyRX//Qg=="
+          "hash": "AqIlhqiDDoef3l2kA2uVbA=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AmpProductImagesCarousel.html",
-          "hash": "TCZRxqkCrq/N+kfSlTA/cQ=="
+          "hash": "FGSZbZMSQUB8DxCPYoYMKw=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AmpProduitImage.html",
-          "hash": "A5VBMPXIKctw+9fPW/0J2g=="
+          "hash": "M1R8jDrouUVANmFZSFACzA=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AnimationArreterTestLinkButton.html",
-          "hash": "1KQhqiVYgVX/rFhUxeg0Vw=="
+          "hash": "OclWfdm+YvCnzjdMf4Qs9A=="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AnimationEnTestPanel.html",
-          "hash": "Gx4IvneUoEoqcU0qzOquVQ=="
+          "hash": "e5AETkGCye8Nubk8hiRD+Q=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AvantageLabel.html",
-          "hash": "mt2g2+Bw55GEAAm/Lzfo2A=="
+          "hash": "6Y5410mCfCnxp0E1bYi4rQ=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AvisDate.html",
-          "hash": "0OgwXYrl669ndkdKk9n3jA=="
+          "hash": "DsekGjB8Lomizvrh27PATA=="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AvisMessage.html",
-          "hash": "f95PUwuQ2Abh9AN6wV5mAQ=="
+          "hash": "kVIeI115YxzX5HdQdDG4hA=="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AvisNom.html",
-          "hash": "EHgnBApnjElK3yWq55LBqg=="
+          "hash": "YyfuHAJBnqfNjFp8vL3wjQ=="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AvisNote.html",
-          "hash": "EE8dbGlaXHZyYZIX52a4pw=="
+          "hash": "AknpGXr7cOhdo7yRb0fhKg=="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.html",
-          "hash": "+S4EWWGRZM9z7N6P/2F4Ew=="
+          "hash": "QuBsXRwLM4pAjORQoDfo+Q=="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonAchatsArticleGridColumn.html",
-          "hash": "ZYvUj/nwqDg9TPP8bcdqYQ=="
+          "hash": "7FJIqrcWnbqNEOY8Wvy8+Q=="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonAchatsConditionsGridColumn.html",
-          "hash": "6OY8rhZB7tdtFnFGIzZLTg=="
+          "hash": "4PO8ybzHTWIvAazxjiHenA=="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonAchatsDateMaxGridColumn.html",
-          "hash": "MpPHRP4aebiP98ynTfeCQw=="
+          "hash": "EQrmhzJhBtH+r2EtAcUG/Q=="
         }
       },
       "is_incremental": false,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonAchatsDateMinGridColumn.html",
-          "hash": "+D0QrBSd7H1B9jZ5MzvO5Q=="
+          "hash": "nv8I0kE1AnSmKPDZj1e+xQ=="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonAchatsLabelGridColumn.html",
-          "hash": "HW/yFjCw+7XW6V+95MjZtA=="
+          "hash": "GuK/Lnsse1O/aJASQcJpSQ=="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonAchatsOriginalAmountGridColumn.html",
-          "hash": "DTUoq2T+64g1AcnSA1C+DA=="
+          "hash": "NN51RwT3Sg5EnE2zrz4QUg=="
         }
       },
       "is_incremental": false,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonAchatsRecupereLink.BonsAchatsRecuperationEventArgs.html",
-          "hash": "v72QQuxS12MFOuqt48WjSw=="
+          "hash": "zBH3RtXKlVeMhkrN1FaEEQ=="
         }
       },
       "is_incremental": false,
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonAchatsRecupereLink.html",
-          "hash": "QekMB9/6ULhDfJZLFzRi7w=="
+          "hash": "BlnhhT/vHzpefn6oHJNCDA=="
         }
       },
       "is_incremental": false,
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonAchatsUtiliserGridColumn.html",
-          "hash": "wN7GaP+H/B/CAcI0q951WQ=="
+          "hash": "tICbq8FyH9b3/2ybL4Ul0w=="
         }
       },
       "is_incremental": false,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonsAchatsAjouterLink.BonsAchatsAjoutAjouteEventArgs.html",
-          "hash": "+9FG5lgDAFaUFQh08hMsag=="
+          "hash": "5jszlFSIM67wG7zh/e58BQ=="
         }
       },
       "is_incremental": false,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonsAchatsAjouterLink.BonsAchatsAjoutImpossibleEventArgs.html",
-          "hash": "LjAZj8ZjSAT9D/vEEI/ZQw=="
+          "hash": "q4Z14bU2j0hqKtZs4899VA=="
         }
       },
       "is_incremental": false,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonsAchatsAjouterLink.BonsAchatsAjoutImpossibleRaison.html",
-          "hash": "2tTsVVLyb2WZjJr8+xI3rA=="
+          "hash": "0GSuf5wiI2RlS7VwHydu0w=="
         }
       },
       "is_incremental": false,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonsAchatsAjouterLink.html",
-          "hash": "vjUNK4XWlwwa7sZWT51hbA=="
+          "hash": "/DYTVO4eSQ9GTbzLrvZRGA=="
         }
       },
       "is_incremental": false,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonsAchatsGridView.BonAchatData.html",
-          "hash": "GJk+ofgew+QI/nk3JVJQXw=="
+          "hash": "K16CPWv4tSupUWG7h/+XpQ=="
         }
       },
       "is_incremental": false,
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonsAchatsGridView.BonAchatParsingArgs.html",
-          "hash": "9DSHo5yvkOmNv123+islzQ=="
+          "hash": "P9ZZPUewcDyjQ6o0YcH1CA=="
         }
       },
       "is_incremental": false,
@@ -381,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonsAchatsGridView.BonAchatParsingHandler.html",
-          "hash": "VfC4hOEY51fQxO64MkHW3A=="
+          "hash": "0LL+yvd6+nYDiMZhFBZCrA=="
         }
       },
       "is_incremental": false,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonsAchatsGridView.html",
-          "hash": "kcdKmBjKx49LjEa5X9cyJg=="
+          "hash": "+nxEvPCjPVer4PMRo5Ifcg=="
         }
       },
       "is_incremental": false,
@@ -405,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.html",
-          "hash": "N0Fn585KMe5ZFC/0CeC80Q=="
+          "hash": "8ywJH1rOZxBpwm8UsBU4Cw=="
         }
       },
       "is_incremental": false,
@@ -417,7 +417,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.CanonicalLink.html",
-          "hash": "9SS7if2tjhaN6OPRXQbo8w=="
+          "hash": "JMdTMU0qqSFNcGVuk1AErg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.ClearIntentionLinkButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.ClearIntentionLinkButton.html",
+          "hash": "xhKagbq9ZdXaY2tXe4kJXg=="
         }
       },
       "is_incremental": false,
@@ -429,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ClickNMortarHomeLink.html",
-          "hash": "rabt08HvN2wndr3BF4VdOg=="
+          "hash": "iiQmGtefCibJQs5j2gn84A=="
         }
       },
       "is_incremental": false,
@@ -441,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ClientNom.html",
-          "hash": "0OfT6+9EWUa0MLzbeapixg=="
+          "hash": "xxYd70DjT9h3U4c4lthQJA=="
         }
       },
       "is_incremental": false,
@@ -453,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.CommandeNumero.html",
-          "hash": "YIwZJ8o6YWYiLbiF73FdAQ=="
+          "hash": "thtvmok69zPhceL8/xY6SQ=="
         }
       },
       "is_incremental": false,
@@ -465,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.FacebookLoginLink.html",
-          "hash": "YiSvZCG9V6mgox0VDulz+w=="
+          "hash": "ts6vgZs7N1xKjZKst6LhZQ=="
         }
       },
       "is_incremental": false,
@@ -477,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.FilAriane.html",
-          "hash": "+jYKr460pyhdahJ9bLwhLw=="
+          "hash": "DyLQsm7X0tR+ED5iOTujiA=="
         }
       },
       "is_incremental": false,
@@ -489,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.LivraisonLibelle.html",
-          "hash": "zHgwd8XBsYI1o9XGiIU6Jg=="
+          "hash": "gFXW6jO6Io5Yv5sEuD6mSQ=="
         }
       },
       "is_incremental": false,
@@ -501,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.LivraisonMontant.html",
-          "hash": "Mrq1UOpTw+ZhVKW/SMlPlw=="
+          "hash": "RSYwKcDH1XzMOtkuhEOPgw=="
         }
       },
       "is_incremental": false,
@@ -513,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.MagasinAssocieAdresse.html",
-          "hash": "H0BlOm6Xql7dfz8WTq7ppQ=="
+          "hash": "2ue3L6hR/SbQfop0JA02nA=="
         }
       },
       "is_incremental": false,
@@ -525,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.MagasinAssocieCP.html",
-          "hash": "k85f8pYsGAnRJmkukkb0Cg=="
+          "hash": "zyd390xu/RlBj9IyHAzHjA=="
         }
       },
       "is_incremental": false,
@@ -537,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.MagasinAssocieCode.html",
-          "hash": "xb0TKajgkz4b/9gD/UaoHA=="
+          "hash": "3T4ynemGLlUy3pMmEPD12g=="
         }
       },
       "is_incremental": false,
@@ -549,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.MagasinAssocieGoogleMapLink.html",
-          "hash": "4vOyJ+Cfxn0RvXu3TuBS3A=="
+          "hash": "h8gc1gq0+JBfer8Q4Sy0IQ=="
         }
       },
       "is_incremental": false,
@@ -561,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.MagasinAssocieHorairesDuJour.html",
-          "hash": "0GU2N+JiCdoq0s+9EQ6Ahw=="
+          "hash": "YXB5FObzII8q6xGMG2KC6A=="
         }
       },
       "is_incremental": false,
@@ -573,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.MagasinAssocieLibelle.html",
-          "hash": "C2y5OS7MWodrZ0ZC4Y1E5w=="
+          "hash": "ewV4CaaYb/1b/R7BBZU6jg=="
         }
       },
       "is_incremental": false,
@@ -585,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.MagasinAssocieLink.html",
-          "hash": "Lbyrwr57EULMWA0kUkerjw=="
+          "hash": "NDOiJQLuAUDxEX7WiRj00w=="
         }
       },
       "is_incremental": false,
@@ -597,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.MagasinAssociePanel.html",
-          "hash": "YEGlj7PRSHROPzWn4sPgSw=="
+          "hash": "X8Q46ha6+ipZi/OVQuUVtA=="
         }
       },
       "is_incremental": false,
@@ -609,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.MagasinAssociePays.html",
-          "hash": "nQwtG2M2bSG4RS0f7HlYew=="
+          "hash": "NDnCEDjYfX86kGBiVCsAIw=="
         }
       },
       "is_incremental": false,
@@ -621,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.MagasinAssocieTel.html",
-          "hash": "tnddOr5t6HUjJku217hX2Q=="
+          "hash": "PvVFVLHXFL3j9R/zX1qBxw=="
         }
       },
       "is_incremental": false,
@@ -633,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.MagasinAssocieVille.html",
-          "hash": "qbkVoq1Y0ONv8FNCYw3JWw=="
+          "hash": "FNxQRwpndYq880q+Q96mrw=="
         }
       },
       "is_incremental": false,
@@ -645,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.PanelCacherSiGuest.html",
-          "hash": "IiVsYegMY6+ibU6Gfs5Mow=="
+          "hash": "9LPlNS9rcJ4cASzbeeuXkA=="
         }
       },
       "is_incremental": false,
@@ -657,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.PanelCacherSiNonGuest.html",
-          "hash": "y2IEY7BcKXwfDkyPhe/5Sg=="
+          "hash": "W5Eqh+NRaaPhvkNR3oe4xQ=="
         }
       },
       "is_incremental": false,
@@ -669,7 +681,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.PanelConditionnelLivraison.html",
-          "hash": "QR8C2oTFwcz1IxxtHrsNiA=="
+          "hash": "gH0360KBUV5QYxCZAzUCGQ=="
         }
       },
       "is_incremental": false,
@@ -681,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.PanelConditionnelReglement.html",
-          "hash": "b/Oexvq8hRZ4Ipd/3LwKZg=="
+          "hash": "YZa5A66lnlEDc5GQ5dbFdg=="
         }
       },
       "is_incremental": false,
@@ -693,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.PanelPageSpecifique.html",
-          "hash": "QSw9HE1RN5F8rC06lZarJg=="
+          "hash": "viy9oP8ZTwAWYrp8O64PLQ=="
         }
       },
       "is_incremental": false,
@@ -705,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.html",
-          "hash": "+ziEcbonI9QTdVA13fTsvA=="
+          "hash": "XqZImJPaFfTqOoHWZMEHNA=="
         }
       },
       "is_incremental": false,
@@ -717,7 +729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta.html",
-          "hash": "nOQf/yzppDAHxXc1iBj6+w=="
+          "hash": "Y8vkLYpE5hU6hba6CvcWmQ=="
         }
       },
       "is_incremental": false,
@@ -729,7 +741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.PanierPanelConditionnelCacherPresta.html",
-          "hash": "K/k+Fhg5u5kwIqggt4XqWg=="
+          "hash": "+ZhcfMMjoIBSoWs6AjJ8RA=="
         }
       },
       "is_incremental": false,
@@ -741,7 +753,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.PanierPanelMagasinAssocie.html",
-          "hash": "dOvc+IahyuTYXgNSWx5fNg=="
+          "hash": "w5vsVL68KzcMiEip5Zg55A=="
         }
       },
       "is_incremental": false,
@@ -753,7 +765,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.PanierPanelSansMagasinAssocie.html",
-          "hash": "eXExi230l/pvBmifPFxt2w=="
+          "hash": "xKaxjY6rgYrhlOtwWmi7nw=="
         }
       },
       "is_incremental": false,
@@ -765,7 +777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProductDataHiddenField.html",
-          "hash": "+3MDaJz7bKJqRFTxBR1wQA=="
+          "hash": "WiWothQpi4aMsJLd7KZRVg=="
         }
       },
       "is_incremental": false,
@@ -777,7 +789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProductFilArianeCategories.html",
-          "hash": "faXiNesqa0J8DzwqpXhUqg=="
+          "hash": "zLA71fMBWO73Q86a5RIA0Q=="
         }
       },
       "is_incremental": false,
@@ -789,7 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProductFilArianeJsonLd.BreadCrumbItemJson.html",
-          "hash": "27CGtgC28P07IZdhlkECeQ=="
+          "hash": "KxZjBH2Ph6aYXZH+wL5iCw=="
         }
       },
       "is_incremental": false,
@@ -801,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProductFilArianeJsonLd.Item.html",
-          "hash": "8HM4a1mu0SR5uTJoBOi9Kg=="
+          "hash": "WaAIO3yGdOrtqZsscOSglA=="
         }
       },
       "is_incremental": false,
@@ -813,7 +825,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProductFilArianeJsonLd.html",
-          "hash": "1KkWBmV5fQA0HaVzkICQVA=="
+          "hash": "73Ey4Kk85ePiwZIwyZMcZg=="
         }
       },
       "is_incremental": false,
@@ -825,7 +837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProductJsonLD.html",
-          "hash": "omdHS0a6JH6R9qo9+vi7LQ=="
+          "hash": "N5JpMw205JU2foxq8TWXCA=="
         }
       },
       "is_incremental": false,
@@ -837,7 +849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProductLivraison.TypePreference.html",
-          "hash": "8irkULa272UubhtTMJOf0w=="
+          "hash": "j09c08yI7fMBXxxlerAlTQ=="
         }
       },
       "is_incremental": false,
@@ -849,7 +861,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProductLivraison.html",
-          "hash": "EhaXp9XIvRe2u4YXMegBLg=="
+          "hash": "d2rXsbZxjzWhsQASi84zZw=="
         }
       },
       "is_incremental": false,
@@ -861,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProductLivraisonLibelle.html",
-          "hash": "9Zgl/DjqC2TAjIASPG8a7g=="
+          "hash": "8Hg+rhfBsjz+fg86BhU98Q=="
         }
       },
       "is_incremental": false,
@@ -873,7 +885,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProductVideo.html",
-          "hash": "d2SYrOxEGWQe6v55UdJBvQ=="
+          "hash": "a1DTB0j5Wwv5L17ikplmzg=="
         }
       },
       "is_incremental": false,
@@ -885,7 +897,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributBoolPanel.html",
-          "hash": "6C1gcaw4yHDLrkbcCn90uw=="
+          "hash": "jbIuoDPYg8pdo4XikEGIkw=="
         }
       },
       "is_incremental": false,
@@ -897,7 +909,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributLink.html",
-          "hash": "H0lA813xKvYeI3JuYxQs+Q=="
+          "hash": "eGJTn4tcsVOtHnx5D41Idg=="
         }
       },
       "is_incremental": false,
@@ -909,7 +921,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributLiteralValeur.html",
-          "hash": "Qn7S2YMK3JysWl0OP7QnaA=="
+          "hash": "GjMDS5dLy7xnp5jktlilGw=="
         }
       },
       "is_incremental": false,
@@ -921,7 +933,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributPanel.html",
-          "hash": "1w0UvpX6lCMwC5QRKBbNSQ=="
+          "hash": "oys2kL7s4do2ZN9HCgSbLQ=="
         }
       },
       "is_incremental": false,
@@ -933,7 +945,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributRepeater.html",
-          "hash": "Buyqp+I2bBbDqP0nkGGOEA=="
+          "hash": "8kJdtK1TpgcxqjmgJr1cLg=="
         }
       },
       "is_incremental": false,
@@ -945,7 +957,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.ProduitAttributRepeaterItemFieldKind.html",
-          "hash": "SOBAKL3FuJe+I+LaDXBmyA=="
+          "hash": "l3hsgnHRrEnE7Ss2tjVB3g=="
         }
       },
       "is_incremental": false,
@@ -957,7 +969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.html",
-          "hash": "oFiXpTVmkp+ydRrO5dc4qg=="
+          "hash": "UzhdeiHwXtpYyMJE0WjY4g=="
         }
       },
       "is_incremental": false,
@@ -969,7 +981,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributTemplate.html",
-          "hash": "b6R9CrYIFbVBNDL1UcdnNg=="
+          "hash": "dNbtUt8H8ZHCkw5ClMXqag=="
         }
       },
       "is_incremental": false,
@@ -981,7 +993,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributValeur.html",
-          "hash": "j7S4IEylkp305GwaQaRBJQ=="
+          "hash": "o16imXnfASbTpQ3kDg37lA=="
         }
       },
       "is_incremental": false,
@@ -993,7 +1005,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributValeurTexte.html",
-          "hash": "PRSkDu/V1Z0IOFmXNp/amQ=="
+          "hash": "dUadBcK99UwYzo6UQGu7pA=="
         }
       },
       "is_incremental": false,
@@ -1005,7 +1017,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitAttributsPanel.html",
-          "hash": "//JP9hj2U6BRU7hbQWqD3A=="
+          "hash": "lgZzHOkl0mFq+PoB5MRIEA=="
         }
       },
       "is_incremental": false,
@@ -1017,7 +1029,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitDescriptif.html",
-          "hash": "2XmqK+vxVo//OCP911OCww=="
+          "hash": "+orthGk44VBbI2HFACV8Uw=="
         }
       },
       "is_incremental": false,
@@ -1029,7 +1041,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitDimensions.Dimension.html",
-          "hash": "6mkaJNLFT0Ld/HWZilzVCA=="
+          "hash": "Ljs9/iWDE4rx+DbJ9adFow=="
         }
       },
       "is_incremental": false,
@@ -1041,7 +1053,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitDimensions.html",
-          "hash": "l437gmqcLUz3+c8kGvZ0+g=="
+          "hash": "C62cxXcNggdOMkNsOrH5lg=="
         }
       },
       "is_incremental": false,
@@ -1053,7 +1065,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitEan13.html",
-          "hash": "XD2KTcHAlF6F7KcrmoWAKg=="
+          "hash": "ThEMQmLGX6ysXup4ebZy+w=="
         }
       },
       "is_incremental": false,
@@ -1065,7 +1077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitImage.html",
-          "hash": "GeIPb7UvxP+rVZDscZ+/jg=="
+          "hash": "2RJDsTGqe84qqesSI/5jMw=="
         }
       },
       "is_incremental": false,
@@ -1077,7 +1089,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitImageLink.html",
-          "hash": "8c/ZWHJTIvMv7oF+hk15QA=="
+          "hash": "SDV2/dFFLHG0wC1szc3/cw=="
         }
       },
       "is_incremental": false,
@@ -1089,7 +1101,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitInstanceDifferentiant1.html",
-          "hash": "04X1jjOau8TTgW6IwSNXpA=="
+          "hash": "biPmBEFRTpt3kQMhSKYpqA=="
         }
       },
       "is_incremental": false,
@@ -1101,7 +1113,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitLibelle.html",
-          "hash": "C2IRXCTF7ZlkiuQDaXJs+A=="
+          "hash": "IuPQXrDQUwhunXcfRjW9kw=="
         }
       },
       "is_incremental": false,
@@ -1113,7 +1125,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitLibelleLink.html",
-          "hash": "d0pYYvFABqr/oWhqu3hpFA=="
+          "hash": "cQltohProp2hWM2htAKBoA=="
         }
       },
       "is_incremental": false,
@@ -1125,7 +1137,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitLink.html",
-          "hash": "kEtUEziZWKVdPNhCXq2ejA=="
+          "hash": "G6yOGBTxHfdRFMzRWjr2rg=="
         }
       },
       "is_incremental": false,
@@ -1137,7 +1149,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitMailToLink.html",
-          "hash": "oJFRRPER7GZdPgYZEg2I6w=="
+          "hash": "mqyhVuV2Ai/iU1QyozDQQw=="
         }
       },
       "is_incremental": false,
@@ -1149,7 +1161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitMarque.html",
-          "hash": "7AlP3yQWNFmDdgIkvXQvqQ=="
+          "hash": "oEKYV+d20hLG6RbEo25Y2g=="
         }
       },
       "is_incremental": false,
@@ -1161,7 +1173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitMarqueLink.html",
-          "hash": "ufhQPbJsgNyjso/HckJlQw=="
+          "hash": "meNSWShPdCoFnyZbXXg28Q=="
         }
       },
       "is_incremental": false,
@@ -1173,7 +1185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitMultiImages.html",
-          "hash": "KHfBBdtp46R6Qx155wVX4Q=="
+          "hash": "Rg0qSoeeTpHTiA086w40/A=="
         }
       },
       "is_incremental": false,
@@ -1185,7 +1197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.html",
-          "hash": "t/sY/A8fCfoYZZC0csxsxQ=="
+          "hash": "oz1ix6/zUr7BE1xeAeXXdQ=="
         }
       },
       "is_incremental": false,
@@ -1197,7 +1209,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitPreparationInternePanel.html",
-          "hash": "sXxxR++Y3dQU17YYHGTf+Q=="
+          "hash": "39JtR1PkeJKDQUGKbr5VAQ=="
         }
       },
       "is_incremental": false,
@@ -1209,7 +1221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitPreparationLibelle.html",
-          "hash": "sCT6Q3deZiGzQ1gXBloaEA=="
+          "hash": "RQ1mIzRIIVGvnI8p7YxZ/A=="
         }
       },
       "is_incremental": false,
@@ -1221,7 +1233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitPreparationSpecifiquePanel.html",
-          "hash": "lC00sAZh+mkAOsr30AgCGw=="
+          "hash": "R1NnQXHBSFndufEiFNpE2Q=="
         }
       },
       "is_incremental": false,
@@ -1233,7 +1245,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrix.html",
-          "hash": "7GMIPt7LYCnm0xFKs8SLQw=="
+          "hash": "hmfsMASn5nHcDjB4nZPJiQ=="
         }
       },
       "is_incremental": false,
@@ -1245,7 +1257,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrixConseille.html",
-          "hash": "0erpqMbfurAbPSwhzp7WrA=="
+          "hash": "xll65YVoASNpbt/r9ZjalQ=="
         }
       },
       "is_incremental": false,
@@ -1257,7 +1269,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrixHorsPromo.html",
-          "hash": "GzQNHHo5DnyQJVlJydye3g=="
+          "hash": "7qxYbPeOiIg9RHZWLVnYnQ=="
         }
       },
       "is_incremental": false,
@@ -1269,7 +1281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrixPromo.html",
-          "hash": "lpfyLpcbMIpPK00ybh/P4A=="
+          "hash": "Sbvkp/ZDsJ92PJI3jrBogQ=="
         }
       },
       "is_incremental": false,
@@ -1281,7 +1293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrixValeurPromo.TypeAffichePromo.html",
-          "hash": "AgZ/GKogvDVTERsT13jGvw=="
+          "hash": "SbFFv2qo0bu84mANKumqBg=="
         }
       },
       "is_incremental": false,
@@ -1293,7 +1305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrixValeurPromo.html",
-          "hash": "umbVA9IBW5uMsMK2PrSPFg=="
+          "hash": "Z5widNz3X3evyTPuilkrjw=="
         }
       },
       "is_incremental": false,
@@ -1305,7 +1317,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.TypeAffichePromo.html",
-          "hash": "ucqNYFIsxc+ohZgVX15t6w=="
+          "hash": "pUAODNaximSJRvY0id5zmw=="
         }
       },
       "is_incremental": false,
@@ -1317,7 +1329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitPrixValeurRemiseSurConseille.html",
-          "hash": "YDjVfMdAGjcZuFVi3aeIlw=="
+          "hash": "n0I8xqT/J+GFmuGvmZAXEQ=="
         }
       },
       "is_incremental": false,
@@ -1329,7 +1341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitReference.html",
-          "hash": "zXCsroYTNTg1MN5asknDRQ=="
+          "hash": "+OTcBkty6XXeeXS9KNOlww=="
         }
       },
       "is_incremental": false,
@@ -1341,7 +1353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitSegment.html",
-          "hash": "dzQGWs3Dq+ZmYjc6oIwWFA=="
+          "hash": "Dl+0a0gtyiXZHZswDRhV0g=="
         }
       },
       "is_incremental": false,
@@ -1353,7 +1365,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitSegmentLink.html",
-          "hash": "ibNQdP6toLJHoZvCbgaSNw=="
+          "hash": "4w+NCx2tpQSUGCvVnx3CNg=="
         }
       },
       "is_incremental": false,
@@ -1365,7 +1377,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitTagsEtLabels.html",
-          "hash": "LXdEeDhiid01b38uOPwdxQ=="
+          "hash": "g+RgdbIpxWCEqcDZ9Js1ng=="
         }
       },
       "is_incremental": false,
@@ -1377,7 +1389,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitTotalTaxes.html",
-          "hash": "Rg8IInzoZWpjMv0eR7pocQ=="
+          "hash": "KV1nwk5H2rM1YCVwGD1UKw=="
         }
       },
       "is_incremental": false,
@@ -1389,7 +1401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProduitVideoList.html",
-          "hash": "4gFi/VobynElaXb2PY//hQ=="
+          "hash": "d6lUkOG7oraUS6BGhWUO4w=="
         }
       },
       "is_incremental": false,
@@ -1401,7 +1413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.TousLesMagasinsListeHiddenField.MagasinClicknMortarAvecUrl.html",
-          "hash": "HL+R51LeLUPgx7O80y91gA=="
+          "hash": "JJ1G77kBLIS6jhcdDaRFxQ=="
         }
       },
       "is_incremental": false,
@@ -1413,7 +1425,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.TousLesMagasinsListeHiddenField.html",
-          "hash": "8WDgIRdfeWFo/sp7bHyOZg=="
+          "hash": "Kp6APCrtVPhGliD9CCCIGw=="
         }
       },
       "is_incremental": false,
@@ -1425,7 +1437,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.html",
-          "hash": "NBOZCjktIem6cWa56Cejng=="
+          "hash": "1qu0UgjXqwqdtZBE+T/aUA=="
         }
       },
       "is_incremental": false,
@@ -1437,7 +1449,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "NG0+50cSpXyCRwGZXDob4g=="
+          "hash": "qLan5x7nQSmH01YBOyQjog=="
         }
       },
       "is_incremental": false,
@@ -1463,8 +1475,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 119,
-          "skipped_file_count": 48
+          "total_file_count": 120,
+          "skipped_file_count": 65
         }
       }
     },

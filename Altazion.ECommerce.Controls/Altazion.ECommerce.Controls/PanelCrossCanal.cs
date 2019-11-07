@@ -11,10 +11,30 @@ using CPointSoftware.ECommerce.Tools;
 
 namespace Altazion.ECommerce.Controls
 {
+    /// <summary>
+    /// Panel (div) s'affichant si certain article du panier
+    /// sont des articles à retirer en magasin
+    /// </summary>
     public class PanierPanelMagasinAssocie : Panel
     {
+        /// <summary>
+        /// Obtient ou définit un booléen précisant si il faut
+        /// cacher ce panel lorsque le panier est de type 
+        /// "Click'n'mortar" (commande préparée en magasin)
+        /// </summary>
         public bool CacherSiClickNMortar { get; set; }
+
+        /// <summary>
+        /// Obtient ou définit un booléen précisant si ce panel
+        /// doit être caché lorsque le panier est de type
+        /// "web" (préparé en centrale)
+        /// </summary>
         public bool CacherSiEcommerce { get; set; }
+
+        /// <summary>
+        /// Effectue l'affichage du controle
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnPreRender(EventArgs e)
         {
             base.OnPreRender(e);
@@ -30,8 +50,10 @@ namespace Altazion.ECommerce.Controls
         }
     }
 
+
     public class PanierPanelSansMagasinAssocie : Panel
     {
+
         protected override void OnPreRender(EventArgs e)
         {
             base.OnPreRender(e);
@@ -149,15 +171,43 @@ namespace Altazion.ECommerce.Controls
         }
     }
 
+
+    /// <summary>
+    /// Affiche un span avec le nom du magasin associé
+    /// à la session utilisateur
+    /// </summary>
+    /// <remarks><para>Exemple d'utilisation :</para>
+    /// <code>
+    /// &lt;ecom:MagasinAssocieLibelle runat="server" /&gt;
+    /// </code>
+    /// <para>Ce qui produira l'html suivant :</para>
+    /// <code>
+    /// &lt;span&gt;[le nom du magasin]&lt;/span&gt;
+    /// </code>
+    /// <para>Si la session actuelle n'est pas associée
+    /// à un magasin, le contrôle ne sera pas ajouté à l'html
+    /// de la page</para></remarks>
     public class MagasinAssocieLibelle : Label
     {
+        /// <summary>
+        /// Constructeur par défaut
+        /// </summary>
         public MagasinAssocieLibelle()
         {
             Format = "{0}";
         }
 
+        /// <summary>
+        /// Format d'affichage du code postal du magasin, sous la forme {0}
+        /// </summary>
+        /// <remarks>La valeur par défaut est {0}</remarks>
         public string Format { get; set; }
 
+
+        /// <summary>
+        /// Prépare l'affichage du contrôle
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnPreRender(EventArgs e)
         {
             base.OnPreRender(e);
@@ -245,15 +295,42 @@ namespace Altazion.ECommerce.Controls
         }
     }
 
+    /// <summary>
+    /// Affiche un span avec le code postal du magasin associé
+    /// à la session utilisateur
+    /// </summary>
+    /// <remarks><para>Exemple d'utilisation :</para>
+    /// <code>
+    /// &lt;ecom:MagasinAssocieCP runat="server" /&gt;
+    /// </code>
+    /// <para>Ce qui produira l'html suivant :</para>
+    /// <code>
+    /// &lt;span&gt;[le code postal du magasin]&lt;/span&gt;
+    /// </code>
+    /// <para>Si la session actuelle n'est pas associée
+    /// à un magasin, le contrôle ne sera pas ajouté à l'html
+    /// de la page</para></remarks>
     public class MagasinAssocieCP : Label
     {
+        /// <summary>
+        /// Le constructeur par défaut
+        /// </summary>
         public MagasinAssocieCP()
         {
             Format = "{0}";
         }
 
+        /// <summary>
+        /// Format d'affichage du code postal du magasin, sous la forme {0}
+        /// </summary>
+        /// <remarks>La valeur par défaut est {0}</remarks>
         public string Format { get; set; }
 
+
+        /// <summary>
+        /// Prépare l'affichage du contrôle
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnPreRender(EventArgs e)
         {
             base.OnPreRender(e);
@@ -277,9 +354,27 @@ namespace Altazion.ECommerce.Controls
     }
 
 
-
+    /// <summary>
+    /// Affiche un span avec le pays du magasin associé
+    /// à la session utilisateur
+    /// </summary>
+    /// <remarks><para>Exemple d'utilisation :</para>
+    /// <code>
+    /// &lt;ecom:MagasinAssociePays runat="server" /&gt;
+    /// </code>
+    /// <para>Ce qui produira l'html suivant :</para>
+    /// <code>
+    /// &lt;span&gt;[le pays du magasin]&lt;/span&gt;
+    /// </code>
+    /// <para>Si la session actuelle n'est pas associée
+    /// à un magasin, le contrôle ne sera pas ajouté à l'html
+    /// de la page</para></remarks>
     public class MagasinAssociePays : Label
     {
+        /// <summary>
+        /// Prépare l'affichage du controle
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnPreRender(EventArgs e)
         {
             base.OnPreRender(e);
@@ -314,15 +409,43 @@ namespace Altazion.ECommerce.Controls
 
     }
 
+    /// <summary>
+    /// Affiche un span avec le code du magasin associé
+    /// à la session utilisateur
+    /// </summary>
+    /// <remarks><para>Exemple d'utilisation :</para>
+    /// <code>
+    /// &lt;ecom:MagasinAssocieCode runat="server" /&gt;
+    /// </code>
+    /// <para>Ce qui produira l'html suivant :</para>
+    /// <code>
+    /// &lt;span&gt;[le code du magasin]&lt;/span&gt;
+    /// </code>
+    /// <para>Si la session actuelle n'est pas associée
+    /// à un magasin, le contrôle ne sera pas ajouté à l'html
+    /// de la page</para></remarks>
     public class MagasinAssocieCode : Label
     {
+        /// <summary>
+        /// Constructeur par défaut
+        /// </summary>
         public MagasinAssocieCode()
         {
             Format = "{0}";
         }
 
+
+        /// <summary>
+        /// Format d'affichage du code magasin, sous la forme {0}
+        /// </summary>
+        /// <remarks>La valeur par défaut est {0}</remarks>
         public string Format { get; set; }
 
+
+        /// <summary>
+        /// Prépare l'affichage
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnPreRender(EventArgs e)
         {
             base.OnPreRender(e);

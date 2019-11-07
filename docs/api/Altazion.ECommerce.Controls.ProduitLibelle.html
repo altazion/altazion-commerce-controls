@@ -73,68 +73,59 @@
   
   <h1 id="Altazion_ECommerce_Controls_ProduitLibelle" data-uid="Altazion.ECommerce.Controls.ProduitLibelle" class="text-break">Class ProduitLibelle
   </h1>
-  <div class="markdown level0 summary"><p>A utiliser dans un contrôle bindé sur un produit : affiche un span
+  <div class="markdown level0 summary summary"><p>A utiliser dans un contrôle bindé sur un produit : affiche un span
 avec le libellé du produit</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
-    <h5>Inheritance</h5>
+    <h5>H&#233;ritage</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">System.Web.UI.Control</span></div>
     <div class="level2"><span class="xref">System.Web.UI.WebControls.WebControl</span></div>
     <div class="level3"><span class="xref">System.Web.UI.WebControls.Label</span></div>
     <div class="level4"><span class="xref">ProduitLibelle</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
-    <div><span class="xref">CPointSoftware.ECommerce.Tools.IEquihiraBindable</span></div>
-  </div>
   <!--<h6><strong>Namespace</strong>: <xref uid="Altazion.ECommerce.Controls" text="Altazion.ECommerce.Controls" alt="Altazion.ECommerce.Controls"/></h6>
   <h6><strong>Assembly</strong>: Altazion.ECommerce.Controls.dll</h6>-->
-  <h5 id="Altazion_ECommerce_Controls_ProduitLibelle_syntax">Syntax</h5>
+  <h5 id="Altazion_ECommerce_Controls_ProduitLibelle_syntax">Syntaxe</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class ProduitLibelle : Label, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, IAttributeAccessor, ITextControl, IEquihiraBindable</code></pre>
   </div>
+  <h5 id="Altazion_ECommerce_Controls_ProduitLibelle_remarks"><strong>Remarques</strong></h5>
+  <div class="markdown level0 remarks"><p>Le controle s&apos;affiche sous la forme d&apos;un span: 
+<pre><code>&lt;span>[Le libellé du produit]&lt;span></code></pre></p>
+<p>Si vous avez activé RDFa, le span sera modifié
+pour ajouter une attribut itemprop=&quot;name&quot;.</p></div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Altazion_ECommerce_Controls_ProduitLibelle__ctor_" data-uid="Altazion.ECommerce.Controls.ProduitLibelle.#ctor*"></a>
   <h4 id="Altazion_ECommerce_Controls_ProduitLibelle__ctor" data-uid="Altazion.ECommerce.Controls.ProduitLibelle.#ctor">ProduitLibelle()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Construteur du type</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ProduitLibelle()</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="properties">Propri&#233;t&#233;s
   </h3>
   
   
   <a id="Altazion_ECommerce_Controls_ProduitLibelle_MaxLength_" data-uid="Altazion.ECommerce.Controls.ProduitLibelle.MaxLength*"></a>
   <h4 id="Altazion_ECommerce_Controls_ProduitLibelle_MaxLength" data-uid="Altazion.ECommerce.Controls.ProduitLibelle.MaxLength">MaxLength</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Taille maximale (en caractères) affichée</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int MaxLength { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 id="Altazion_ECommerce_Controls_ProduitLibelle_MaxLength_remarks">Remarques</h5>
+  <div class="markdown level1 remarks"><p>Si le libellé dépasse cette taille, il sera tronqué et 
+    terminé par ....</p>
+<p>Valeur par défaut : pas de limite</p></div>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.IDisposable</span>

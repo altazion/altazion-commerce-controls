@@ -14,34 +14,71 @@ namespace Altazion.ECommerce.Controls
     /// <remarks>
     /// La structure du fil d'ariane est la suivante : 
     /// <list type="bullet">
-    /// <item>un UL contient tout le fil d'ariane</item>
-    /// <item>le noeud 'acceuil' est dans un a dans un li</item>
-    /// <item>toutes les pages permettant de "remonter" sont dans a, dans des li avec un marquage rdfa</item>
-    /// <item>la page courante est dans un li simple</item>
+    /// <item><description>un UL contient tout le fil d'ariane</description></item>
+    /// <item><description>le noeud 'acceuil' est dans un a dans un li</description></item>
+    /// <item><description>toutes les pages permettant de "remonter" sont dans a, dans des li avec un marquage rdfa</description></item>
+    /// <item><description>la page courante est dans un li simple</description></item>
     /// </list>
     /// </remarks>
     public class FilAriane : WebControl
     {
+        /// <summary>
+        /// Constructeur par défaut
+        /// </summary>
         public FilAriane()
         {
             Separator = ">";
         }
 
+        /// <summary>
+        /// Obtient ou définit l'entete du fil d'ariane
+        /// </summary>
         public string Header { get; set; }
+        /// <summary>
+        /// Obtient ou définit la classe CSS de l'entête
+        /// </summary>
         public string HeaderCssClass { get; set; }
 
+        /// <summary>
+        /// Obtient ou définit la classe CSS des éléments
+        /// </summary>
         public string ItemCssClass { get; set; }
+        
+        /// <summary>
+        /// Obtient ou définit la classe CSS spécifique du premier élément
+        /// </summary>
+        /// <remarks>Cette valeur est utilisée pour le premier item 
+        /// et <see cref="ItemCssClass"/> est ignorée</remarks>
         public string FirstItemCssClass { get; set; }
+
+        /// <summary>
+        /// Obtient ou défiit la classe CSS spécifique du dernier élément
+        /// </summary>
+        /// <remarks>Cette valeur est utilisée pour le dernier item 
+        /// et <see cref="ItemCssClass"/> est ignorée</remarks>
         public string LastItemCssClass { get; set; }
 
 
+        /// <summary>
+        /// Obtient ou définit le séparateur entre les items
+        /// </summary>
+        /// <remarks>Par défaut &gt; est utilisé</remarks>
         [DefaultValue(">")]
         public string Separator { get; set; }
 
+        /// <summary>
+        /// Obtient ou définit un booléen précisant si le
+        /// dernier item doit prendre la valeur du titre
+        /// de la page si sa valeur spécifique est vide
+        /// </summary>
         public bool UsePageTitleIfEmpty { get; set; }
 
         int nbRendered;
 
+        /// <summary>
+        /// Effectue l'affichage du contrôle
+        /// </summary>
+        /// <param name="writer"></param>
         protected override void Render(System.Web.UI.HtmlTextWriter writer)
         {
             nbRendered = 0;

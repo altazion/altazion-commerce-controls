@@ -80,6 +80,7 @@
     <Compile Include="AvisLabels.cs" />
     <Compile Include="BonsAchatsControls.cs" />
     <Compile Include="CanonicalLink.cs" />
+    <Compile Include="ClearIntentionLinkButton.cs" />
     <Compile Include="ClientControls.cs" />
     <Compile Include="CommandeLabels.cs" />
     <Compile Include="FacebookLoginLink.cs" />
@@ -113,6 +114,10 @@
     <None Include="templates\altazion\partials\class.header.tmpl.partial" />
     <None Include="templates\altazion\partials\footer.tmpl.partial" />
     <None Include="templates\altazion\partials\logo.tmpl.partial" />
+    <None Include="templates\altazion\search-stopwords.json" />
+    <None Include="templates\altazion\partials\class.tmpl.partial" />
+    <None Include="templates\altazion\toc.html.tmpl" />
+    <None Include="templates\altazion\token.json" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Equihira\e-commerce\dev\CPointSoftware.ECommerce.Business\CPointSoftware.Equihira.Business.ECommerce.csproj">
