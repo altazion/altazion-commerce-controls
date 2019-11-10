@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class BonsAchatsUtiliseMontant
+    <title>Class SeoContent
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class BonsAchatsUtiliseMontant
+    <meta name="title" content="Class SeoContent
    ">
     <meta name="generator" content="docfx 2.45.1.0">
     
@@ -68,67 +68,90 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant">
+            <article class="content wrap" id="_content" data-uid="Altazion.ECommerce.Controls.SeoContent">
   
   
-  <h1 id="Altazion_ECommerce_Controls_BonsAchatsUtiliseMontant" data-uid="Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant" class="text-break">Class BonsAchatsUtiliseMontant
+  <h1 id="Altazion_ECommerce_Controls_SeoContent" data-uid="Altazion.ECommerce.Controls.SeoContent" class="text-break">Class SeoContent
   </h1>
-  <div class="markdown level0 summary summary"><p>Affiche dans un span le montant de bons d&apos;achats utilisé
-dans le règlement du panier actif.</p>
+  <div class="markdown level0 summary summary"><p>Affiche un bloc de contenu pour le SEO ou 
+la personnalisation du contenu des pages</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>H&#233;ritage</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">System.Web.UI.Control</span></div>
-    <div class="level2"><span class="xref">System.Web.UI.WebControls.WebControl</span></div>
-    <div class="level3"><span class="xref">System.Web.UI.WebControls.Label</span></div>
-    <div class="level4"><span class="xref">BonsAchatsUtiliseMontant</span></div>
+    <div class="level2"><span class="xref">System.Web.UI.WebControls.Literal</span></div>
+    <div class="level3"><span class="xref">SeoContent</span></div>
   </div>
   <!--<h6><strong>Namespace</strong>: <xref uid="Altazion.ECommerce.Controls" text="Altazion.ECommerce.Controls" alt="Altazion.ECommerce.Controls"/></h6>
   <h6><strong>Assembly</strong>: Altazion.ECommerce.Controls.dll</h6>-->
-  <h5 id="Altazion_ECommerce_Controls_BonsAchatsUtiliseMontant_syntax">Syntaxe</h5>
+  <h5 id="Altazion_ECommerce_Controls_SeoContent_syntax">Syntaxe</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BonsAchatsUtiliseMontant : Label, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, IAttributeAccessor, ITextControl</code></pre>
+    <pre><code class="lang-csharp hljs">public class SeoContent : Literal, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, ITextControl</code></pre>
   </div>
-  <h5 id="Altazion_ECommerce_Controls_BonsAchatsUtiliseMontant_remarks"><strong>Remarques</strong></h5>
-  <div class="markdown level0 remarks"><p>Ce contrôle ne peut être utilisé que dans le cadre du contrôle
-personnalisé <pre><code>BonsAchatsSelectionnables.ascx</code></pre></p>
+  <h5 id="Altazion_ECommerce_Controls_SeoContent_remarks"><strong>Remarques</strong></h5>
+  <div class="markdown level0 remarks"><p><p>Ce contrôle est destiné à être utilisé dans 
+    un thème personnalisé pour définir un emplacement dont
+    le contenu sera géré via un éditeur CMS dans le back-office.
+    Pour plus d&apos;information, consultez la documentation sur
+    la personnalisation.</p>
+<p>Le contenu SEO est ajouté au code HTML de la page
+tel quel, sans aucun tag englobant. Par exemple :</p></p>
+<pre><code>&lt;ecom:SeoContent runat=&quot;server&quot; 
+   CodeEmplacement=&quot;Footer&quot; 
+   DefaultContent=&quot;&lt;p>Test&lt;/p>&quot; /></code></pre>
+<p><p>affichera le simple code HTML suivant 
+(si aucun contenu n&apos;est définit dans le back office) :</p></p>
+<pre><code>&lt;p>Test&lt;/p></code></pre>
 </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Altazion_ECommerce_Controls_BonsAchatsUtiliseMontant__ctor_" data-uid="Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.#ctor*"></a>
-  <h4 id="Altazion_ECommerce_Controls_BonsAchatsUtiliseMontant__ctor" data-uid="Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.#ctor">BonsAchatsUtiliseMontant()</h4>
-  <div class="markdown level1 summary"><p>Initialise une instance de <a class="xref" href="Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.html">BonsAchatsUtiliseMontant</a>.</p>
+  <a id="Altazion_ECommerce_Controls_SeoContent__ctor_" data-uid="Altazion.ECommerce.Controls.SeoContent.#ctor*"></a>
+  <h4 id="Altazion_ECommerce_Controls_SeoContent__ctor" data-uid="Altazion.ECommerce.Controls.SeoContent.#ctor">SeoContent()</h4>
+  <div class="markdown level1 summary"><p>Constructeur par défaut</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BonsAchatsUtiliseMontant()</code></pre>
+    <pre><code class="lang-csharp hljs">public SeoContent()</code></pre>
   </div>
   <h3 id="properties">Propri&#233;t&#233;s
   </h3>
   
   
-  <a id="Altazion_ECommerce_Controls_BonsAchatsUtiliseMontant_Format_" data-uid="Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.Format*"></a>
-  <h4 id="Altazion_ECommerce_Controls_BonsAchatsUtiliseMontant_Format" data-uid="Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.Format">Format</h4>
-  <div class="markdown level1 summary"><p>Obtient ou définit le format à utiliser pour
-afficher le montant sous la forme {0:0.00} (valeur par défaut)</p>
+  <a id="Altazion_ECommerce_Controls_SeoContent_CodeEmplacement_" data-uid="Altazion.ECommerce.Controls.SeoContent.CodeEmplacement*"></a>
+  <h4 id="Altazion_ECommerce_Controls_SeoContent_CodeEmplacement" data-uid="Altazion.ECommerce.Controls.SeoContent.CodeEmplacement">CodeEmplacement</h4>
+  <div class="markdown level1 summary"><p>Obtient ou définit un code d&apos;emplacement 
+pour identifier la zone à afficher</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">D&#233;claration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Format { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string CodeEmplacement { get; set; }</code></pre>
+  </div>
+  
+  
+  <a id="Altazion_ECommerce_Controls_SeoContent_DefaultContent_" data-uid="Altazion.ECommerce.Controls.SeoContent.DefaultContent*"></a>
+  <h4 id="Altazion_ECommerce_Controls_SeoContent_DefaultContent" data-uid="Altazion.ECommerce.Controls.SeoContent.DefaultContent">DefaultContent</h4>
+  <div class="markdown level1 summary"><p>Obtient ou définit le contenu par défaut pour
+le cas où il ne serait pas définit dans 
+le back-office.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">D&#233;claration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DefaultContent { get; set; }</code></pre>
   </div>
   <h3 id="methods">M&#233;thodes
   </h3>
   
   
-  <a id="Altazion_ECommerce_Controls_BonsAchatsUtiliseMontant_OnPreRender_" data-uid="Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.OnPreRender*"></a>
-  <h4 id="Altazion_ECommerce_Controls_BonsAchatsUtiliseMontant_OnPreRender_System_EventArgs_" data-uid="Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.OnPreRender(System.EventArgs)">OnPreRender(EventArgs)</h4>
-  <div class="markdown level1 summary"><p>Déclenche l&apos;événement <span class="xref">System.Web.UI.Control.PreRender</span>.</p>
+  <a id="Altazion_ECommerce_Controls_SeoContent_OnPreRender_" data-uid="Altazion.ECommerce.Controls.SeoContent.OnPreRender*"></a>
+  <h4 id="Altazion_ECommerce_Controls_SeoContent_OnPreRender_System_EventArgs_" data-uid="Altazion.ECommerce.Controls.SeoContent.OnPreRender(System.EventArgs)">OnPreRender(EventArgs)</h4>
+  <div class="markdown level1 summary"><p>Effectue le calcul de pré-rendu du controle</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">D&#233;claration</h5>
@@ -148,8 +171,7 @@ afficher le montant sous la forme {0:0.00} (valeur par défaut)</p>
       <tr>
         <td><span class="xref">System.EventArgs</span></td>
         <td><span class="parametername">e</span></td>
-        <td><p>Objet <span class="xref">System.EventArgs</span> qui contient les données d&apos;événement.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

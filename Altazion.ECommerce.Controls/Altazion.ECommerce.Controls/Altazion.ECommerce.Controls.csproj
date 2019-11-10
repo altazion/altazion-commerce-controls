@@ -83,6 +83,7 @@
     <Compile Include="ClearIntentionLinkButton.cs" />
     <Compile Include="ClientControls.cs" />
     <Compile Include="CommandeLabels.cs" />
+    <Compile Include="ControlesMarques.cs" />
     <Compile Include="FacebookLoginLink.cs" />
     <Compile Include="FilAriane.cs" />
     <Compile Include="FilArianeCategories.cs" />
@@ -102,6 +103,7 @@
     <Compile Include="ProductMultiImage.cs" />
     <Compile Include="ProductVideo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeoContentControls.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />

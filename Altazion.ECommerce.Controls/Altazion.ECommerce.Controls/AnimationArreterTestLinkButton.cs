@@ -22,7 +22,6 @@ namespace Altazion.ECommerce.Controls
         protected override void OnClick(EventArgs e)
         {
             base.OnClick(e);
-
             ECommerceServer.Animation.ClearModeTest();
         }
     }

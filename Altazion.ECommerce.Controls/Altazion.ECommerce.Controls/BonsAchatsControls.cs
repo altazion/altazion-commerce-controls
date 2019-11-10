@@ -14,7 +14,7 @@ namespace Altazion.ECommerce.Controls
 {
     /// <summary>
     /// Affiche dans un span le montant de bons d'achats utilisé
-    /// dans le règlement de la commande active.
+    /// dans le règlement du panier actif.
     /// </summary>
     /// <remarks>Ce contrôle ne peut être utilisé que dans le cadre du contrôle
     /// personnalisé <code>BonsAchatsSelectionnables.ascx</code></remarks>

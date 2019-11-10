@@ -25,9 +25,8 @@ namespace Altazion.ECommerce.Controls
     /// Il s'utilise comme ceci :</para>
     /// <para><code>
     /// &lt;ecom:ProductPanel runat="server"&gt;
-    /// 
-    ///     &lt;ecom:ProduitImageLink runat="server" LinkType="Detail" ImageType="Intermediaire" /&gt;
-    /// 
+    ///   &lt;ecom:ProduitImageLink runat="server" 
+    ///      LinkType="Detail" ImageType="Intermediaire" /&gt;
     /// &lt;/ecom:ProductPanel&gt;
     /// </code></para>
     /// </remarks>
