@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "c:/a/4/s/EquihiraRelease/ECommerce/e-commerce/dev/Altazion.ECommerce.Controls",
+  "source_base_path": "C:/agent/_work/2/s/EquihiraRelease/ECommerce/e-commerce/dev/Altazion.ECommerce.Controls",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -1493,6 +1493,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.SiteHomePageLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.SiteHomePageLink.html",
+          "hash": "sVkDd8OaW83+peW1hDtNvg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.SiteHomeUrl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.SiteHomeUrl.html",
+          "hash": "Tl6zoVkTpXaQqfY3sMw2Xg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.SiteNom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.SiteNom.html",
+          "hash": "IQsCswx2aceIcKsr1fG+kA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.SiteServiceClientEmail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.SiteServiceClientEmail.html",
+          "hash": "g6ujh1ZYt0xl+q9/5Aa2JQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.SiteServiceClientHoraires.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.SiteServiceClientHoraires.html",
+          "hash": "NlR93lyfiUluBHOoyKngSg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.SiteServiceClientTelephone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.SiteServiceClientTelephone.html",
+          "hash": "7DiMmOi7HrgjFuJpFS87gA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Altazion.ECommerce.Controls.SiteSlogan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Altazion.ECommerce.Controls.SiteSlogan.html",
+          "hash": "VzqLShR3Dsv17P4Uut1vdw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Altazion.ECommerce.Controls.TousLesMagasinsListeHiddenField.MagasinClicknMortarAvecUrl.yml",
       "output": {
         ".html": {
@@ -1521,7 +1605,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.html",
-          "hash": "h/o/pE1KbbOaIGUpuRfieA=="
+          "hash": "uQjjwlrvzzoQWn8KoMA4QQ=="
         }
       },
       "is_incremental": true,
@@ -1533,7 +1617,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "M0JyrtWNni9UsxM7YUJUvg=="
+          "hash": "XtRh1unnsJZBipau539/mQ=="
         }
       },
       "is_incremental": false,
@@ -1549,18 +1633,18 @@
         "skipped_file_count": 0
       },
       "processors": {
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 127,
-          "skipped_file_count": 127
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 134,
+          "skipped_file_count": 134
         }
       }
     },

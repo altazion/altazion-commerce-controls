@@ -113,6 +113,11 @@ namespace Altazion.ECommerce.Controls
                         url = url.Substring(0, url.Length - 9); //"home.html" => 9 chars
                     r = GetContent(url, p, rempl);
                 }
+                if(r == null)
+                {
+                    url = "*";
+                    r = GetContent(url, p, rempl);
+                }
                 if (r == null)
                 {
                     if (!string.IsNullOrEmpty(DefaultContent))
