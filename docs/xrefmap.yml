@@ -345,38 +345,12 @@ references:
   commentId: T:Altazion.ECommerce.Controls.AnimationEnTestPanel
   fullName: Altazion.ECommerce.Controls.AnimationEnTestPanel
   nameWithType: AnimationEnTestPanel
-- uid: Altazion.ECommerce.Controls.AnimationEnTestPanel.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.AnimationEnTestPanel.html#Altazion_ECommerce_Controls_AnimationEnTestPanel_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.AnimationEnTestPanel.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.AnimationEnTestPanel.OnPreRender(System.EventArgs)
-  nameWithType: AnimationEnTestPanel.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.AnimationEnTestPanel.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.AnimationEnTestPanel.html#Altazion_ECommerce_Controls_AnimationEnTestPanel_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.AnimationEnTestPanel.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AnimationEnTestPanel.OnPreRender
-  nameWithType: AnimationEnTestPanel.OnPreRender
 - uid: Altazion.ECommerce.Controls.AvantageLabel
   name: AvantageLabel
   href: api/Altazion.ECommerce.Controls.AvantageLabel.html
   commentId: T:Altazion.ECommerce.Controls.AvantageLabel
   fullName: Altazion.ECommerce.Controls.AvantageLabel
   nameWithType: AvantageLabel
-- uid: Altazion.ECommerce.Controls.AvantageLabel.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.AvantageLabel.html#Altazion_ECommerce_Controls_AvantageLabel_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.AvantageLabel.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.AvantageLabel.OnPreRender(System.EventArgs)
-  nameWithType: AvantageLabel.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.AvantageLabel.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.AvantageLabel.html#Altazion_ECommerce_Controls_AvantageLabel_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.AvantageLabel.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AvantageLabel.OnPreRender
-  nameWithType: AvantageLabel.OnPreRender
 - uid: Altazion.ECommerce.Controls.AvantageLabel.TextIfActive
   name: TextIfActive
   href: api/Altazion.ECommerce.Controls.AvantageLabel.html#Altazion_ECommerce_Controls_AvantageLabel_TextIfActive
@@ -435,76 +409,24 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.AvisDate.Format
   nameWithType: AvisDate.Format
-- uid: Altazion.ECommerce.Controls.AvisDate.OnDataBinding(System.EventArgs)
-  name: OnDataBinding(EventArgs)
-  href: api/Altazion.ECommerce.Controls.AvisDate.html#Altazion_ECommerce_Controls_AvisDate_OnDataBinding_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.AvisDate.OnDataBinding(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.AvisDate.OnDataBinding(System.EventArgs)
-  nameWithType: AvisDate.OnDataBinding(EventArgs)
-- uid: Altazion.ECommerce.Controls.AvisDate.OnDataBinding*
-  name: OnDataBinding
-  href: api/Altazion.ECommerce.Controls.AvisDate.html#Altazion_ECommerce_Controls_AvisDate_OnDataBinding_
-  commentId: Overload:Altazion.ECommerce.Controls.AvisDate.OnDataBinding
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AvisDate.OnDataBinding
-  nameWithType: AvisDate.OnDataBinding
 - uid: Altazion.ECommerce.Controls.AvisMessage
   name: AvisMessage
   href: api/Altazion.ECommerce.Controls.AvisMessage.html
   commentId: T:Altazion.ECommerce.Controls.AvisMessage
   fullName: Altazion.ECommerce.Controls.AvisMessage
   nameWithType: AvisMessage
-- uid: Altazion.ECommerce.Controls.AvisMessage.OnDataBinding(System.EventArgs)
-  name: OnDataBinding(EventArgs)
-  href: api/Altazion.ECommerce.Controls.AvisMessage.html#Altazion_ECommerce_Controls_AvisMessage_OnDataBinding_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.AvisMessage.OnDataBinding(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.AvisMessage.OnDataBinding(System.EventArgs)
-  nameWithType: AvisMessage.OnDataBinding(EventArgs)
-- uid: Altazion.ECommerce.Controls.AvisMessage.OnDataBinding*
-  name: OnDataBinding
-  href: api/Altazion.ECommerce.Controls.AvisMessage.html#Altazion_ECommerce_Controls_AvisMessage_OnDataBinding_
-  commentId: Overload:Altazion.ECommerce.Controls.AvisMessage.OnDataBinding
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AvisMessage.OnDataBinding
-  nameWithType: AvisMessage.OnDataBinding
 - uid: Altazion.ECommerce.Controls.AvisNom
   name: AvisNom
   href: api/Altazion.ECommerce.Controls.AvisNom.html
   commentId: T:Altazion.ECommerce.Controls.AvisNom
   fullName: Altazion.ECommerce.Controls.AvisNom
   nameWithType: AvisNom
-- uid: Altazion.ECommerce.Controls.AvisNom.OnDataBinding(System.EventArgs)
-  name: OnDataBinding(EventArgs)
-  href: api/Altazion.ECommerce.Controls.AvisNom.html#Altazion_ECommerce_Controls_AvisNom_OnDataBinding_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.AvisNom.OnDataBinding(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.AvisNom.OnDataBinding(System.EventArgs)
-  nameWithType: AvisNom.OnDataBinding(EventArgs)
-- uid: Altazion.ECommerce.Controls.AvisNom.OnDataBinding*
-  name: OnDataBinding
-  href: api/Altazion.ECommerce.Controls.AvisNom.html#Altazion_ECommerce_Controls_AvisNom_OnDataBinding_
-  commentId: Overload:Altazion.ECommerce.Controls.AvisNom.OnDataBinding
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AvisNom.OnDataBinding
-  nameWithType: AvisNom.OnDataBinding
 - uid: Altazion.ECommerce.Controls.AvisNote
   name: AvisNote
   href: api/Altazion.ECommerce.Controls.AvisNote.html
   commentId: T:Altazion.ECommerce.Controls.AvisNote
   fullName: Altazion.ECommerce.Controls.AvisNote
   nameWithType: AvisNote
-- uid: Altazion.ECommerce.Controls.AvisNote.OnDataBinding(System.EventArgs)
-  name: OnDataBinding(EventArgs)
-  href: api/Altazion.ECommerce.Controls.AvisNote.html#Altazion_ECommerce_Controls_AvisNote_OnDataBinding_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.AvisNote.OnDataBinding(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.AvisNote.OnDataBinding(System.EventArgs)
-  nameWithType: AvisNote.OnDataBinding(EventArgs)
-- uid: Altazion.ECommerce.Controls.AvisNote.OnDataBinding*
-  name: OnDataBinding
-  href: api/Altazion.ECommerce.Controls.AvisNote.html#Altazion_ECommerce_Controls_AvisNote_OnDataBinding_
-  commentId: Overload:Altazion.ECommerce.Controls.AvisNote.OnDataBinding
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.AvisNote.OnDataBinding
-  nameWithType: AvisNote.OnDataBinding
 - uid: Altazion.ECommerce.Controls.BonAchatsAmountGridColumn
   name: BonAchatsAmountGridColumn
   href: api/Altazion.ECommerce.Controls.BonAchatsAmountGridColumn.html
@@ -1116,19 +1038,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.Format
   nameWithType: BonsAchatsUtiliseMontant.Format
-- uid: Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.html#Altazion_ECommerce_Controls_BonsAchatsUtiliseMontant_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.OnPreRender(System.EventArgs)
-  nameWithType: BonsAchatsUtiliseMontant.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.html#Altazion_ECommerce_Controls_BonsAchatsUtiliseMontant_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.BonsAchatsUtiliseMontant.OnPreRender
-  nameWithType: BonsAchatsUtiliseMontant.OnPreRender
 - uid: Altazion.ECommerce.Controls.CanonicalLink
   name: CanonicalLink
   href: api/Altazion.ECommerce.Controls.CanonicalLink.html
@@ -1173,76 +1082,24 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ClickNMortarHomeLink.ClickNMortarHomeLink
   nameWithType: ClickNMortarHomeLink.ClickNMortarHomeLink
-- uid: Altazion.ECommerce.Controls.ClickNMortarHomeLink.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.ClickNMortarHomeLink.html#Altazion_ECommerce_Controls_ClickNMortarHomeLink_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.ClickNMortarHomeLink.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.ClickNMortarHomeLink.OnPreRender(System.EventArgs)
-  nameWithType: ClickNMortarHomeLink.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.ClickNMortarHomeLink.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.ClickNMortarHomeLink.html#Altazion_ECommerce_Controls_ClickNMortarHomeLink_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.ClickNMortarHomeLink.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ClickNMortarHomeLink.OnPreRender
-  nameWithType: ClickNMortarHomeLink.OnPreRender
 - uid: Altazion.ECommerce.Controls.ClientNom
   name: ClientNom
   href: api/Altazion.ECommerce.Controls.ClientNom.html
   commentId: T:Altazion.ECommerce.Controls.ClientNom
   fullName: Altazion.ECommerce.Controls.ClientNom
   nameWithType: ClientNom
-- uid: Altazion.ECommerce.Controls.ClientNom.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.ClientNom.html#Altazion_ECommerce_Controls_ClientNom_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.ClientNom.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.ClientNom.OnPreRender(System.EventArgs)
-  nameWithType: ClientNom.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.ClientNom.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.ClientNom.html#Altazion_ECommerce_Controls_ClientNom_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.ClientNom.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ClientNom.OnPreRender
-  nameWithType: ClientNom.OnPreRender
 - uid: Altazion.ECommerce.Controls.CommandeNumero
   name: CommandeNumero
   href: api/Altazion.ECommerce.Controls.CommandeNumero.html
   commentId: T:Altazion.ECommerce.Controls.CommandeNumero
   fullName: Altazion.ECommerce.Controls.CommandeNumero
   nameWithType: CommandeNumero
-- uid: Altazion.ECommerce.Controls.CommandeNumero.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.CommandeNumero.html#Altazion_ECommerce_Controls_CommandeNumero_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.CommandeNumero.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.CommandeNumero.OnPreRender(System.EventArgs)
-  nameWithType: CommandeNumero.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.CommandeNumero.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.CommandeNumero.html#Altazion_ECommerce_Controls_CommandeNumero_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.CommandeNumero.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.CommandeNumero.OnPreRender
-  nameWithType: CommandeNumero.OnPreRender
 - uid: Altazion.ECommerce.Controls.FacebookLoginLink
   name: FacebookLoginLink
   href: api/Altazion.ECommerce.Controls.FacebookLoginLink.html
   commentId: T:Altazion.ECommerce.Controls.FacebookLoginLink
   fullName: Altazion.ECommerce.Controls.FacebookLoginLink
   nameWithType: FacebookLoginLink
-- uid: Altazion.ECommerce.Controls.FacebookLoginLink.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.FacebookLoginLink.html#Altazion_ECommerce_Controls_FacebookLoginLink_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.FacebookLoginLink.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.FacebookLoginLink.OnPreRender(System.EventArgs)
-  nameWithType: FacebookLoginLink.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.FacebookLoginLink.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.FacebookLoginLink.html#Altazion_ECommerce_Controls_FacebookLoginLink_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.FacebookLoginLink.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.FacebookLoginLink.OnPreRender
-  nameWithType: FacebookLoginLink.OnPreRender
 - uid: Altazion.ECommerce.Controls.FilAriane
   name: FilAriane
   href: api/Altazion.ECommerce.Controls.FilAriane.html
@@ -1359,19 +1216,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.LivraisonLibelle
   fullName: Altazion.ECommerce.Controls.LivraisonLibelle
   nameWithType: LivraisonLibelle
-- uid: Altazion.ECommerce.Controls.LivraisonLibelle.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.LivraisonLibelle.html#Altazion_ECommerce_Controls_LivraisonLibelle_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.LivraisonLibelle.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.LivraisonLibelle.OnPreRender(System.EventArgs)
-  nameWithType: LivraisonLibelle.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.LivraisonLibelle.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.LivraisonLibelle.html#Altazion_ECommerce_Controls_LivraisonLibelle_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.LivraisonLibelle.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.LivraisonLibelle.OnPreRender
-  nameWithType: LivraisonLibelle.OnPreRender
 - uid: Altazion.ECommerce.Controls.LivraisonMontant
   name: LivraisonMontant
   href: api/Altazion.ECommerce.Controls.LivraisonMontant.html
@@ -1404,19 +1248,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.LivraisonMontant.MessageSiOffert
   nameWithType: LivraisonMontant.MessageSiOffert
-- uid: Altazion.ECommerce.Controls.LivraisonMontant.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.LivraisonMontant.html#Altazion_ECommerce_Controls_LivraisonMontant_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.LivraisonMontant.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.LivraisonMontant.OnPreRender(System.EventArgs)
-  nameWithType: LivraisonMontant.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.LivraisonMontant.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.LivraisonMontant.html#Altazion_ECommerce_Controls_LivraisonMontant_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.LivraisonMontant.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.LivraisonMontant.OnPreRender
-  nameWithType: LivraisonMontant.OnPreRender
 - uid: Altazion.ECommerce.Controls.MagasinAssocieAdresse
   name: MagasinAssocieAdresse
   href: api/Altazion.ECommerce.Controls.MagasinAssocieAdresse.html
@@ -1449,19 +1280,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.MagasinAssocieAdresse.Format
   nameWithType: MagasinAssocieAdresse.Format
-- uid: Altazion.ECommerce.Controls.MagasinAssocieAdresse.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieAdresse.html#Altazion_ECommerce_Controls_MagasinAssocieAdresse_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.MagasinAssocieAdresse.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieAdresse.OnPreRender(System.EventArgs)
-  nameWithType: MagasinAssocieAdresse.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.MagasinAssocieAdresse.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieAdresse.html#Altazion_ECommerce_Controls_MagasinAssocieAdresse_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.MagasinAssocieAdresse.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieAdresse.OnPreRender
-  nameWithType: MagasinAssocieAdresse.OnPreRender
 - uid: Altazion.ECommerce.Controls.MagasinAssocieCode
   name: MagasinAssocieCode
   href: api/Altazion.ECommerce.Controls.MagasinAssocieCode.html
@@ -1494,19 +1312,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.MagasinAssocieCode.Format
   nameWithType: MagasinAssocieCode.Format
-- uid: Altazion.ECommerce.Controls.MagasinAssocieCode.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieCode.html#Altazion_ECommerce_Controls_MagasinAssocieCode_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.MagasinAssocieCode.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieCode.OnPreRender(System.EventArgs)
-  nameWithType: MagasinAssocieCode.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.MagasinAssocieCode.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieCode.html#Altazion_ECommerce_Controls_MagasinAssocieCode_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.MagasinAssocieCode.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieCode.OnPreRender
-  nameWithType: MagasinAssocieCode.OnPreRender
 - uid: Altazion.ECommerce.Controls.MagasinAssocieCP
   name: MagasinAssocieCP
   href: api/Altazion.ECommerce.Controls.MagasinAssocieCP.html
@@ -1539,38 +1344,12 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.MagasinAssocieCP.Format
   nameWithType: MagasinAssocieCP.Format
-- uid: Altazion.ECommerce.Controls.MagasinAssocieCP.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieCP.html#Altazion_ECommerce_Controls_MagasinAssocieCP_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.MagasinAssocieCP.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieCP.OnPreRender(System.EventArgs)
-  nameWithType: MagasinAssocieCP.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.MagasinAssocieCP.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieCP.html#Altazion_ECommerce_Controls_MagasinAssocieCP_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.MagasinAssocieCP.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieCP.OnPreRender
-  nameWithType: MagasinAssocieCP.OnPreRender
 - uid: Altazion.ECommerce.Controls.MagasinAssocieGoogleMapLink
   name: MagasinAssocieGoogleMapLink
   href: api/Altazion.ECommerce.Controls.MagasinAssocieGoogleMapLink.html
   commentId: T:Altazion.ECommerce.Controls.MagasinAssocieGoogleMapLink
   fullName: Altazion.ECommerce.Controls.MagasinAssocieGoogleMapLink
   nameWithType: MagasinAssocieGoogleMapLink
-- uid: Altazion.ECommerce.Controls.MagasinAssocieGoogleMapLink.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieGoogleMapLink.html#Altazion_ECommerce_Controls_MagasinAssocieGoogleMapLink_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.MagasinAssocieGoogleMapLink.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieGoogleMapLink.OnPreRender(System.EventArgs)
-  nameWithType: MagasinAssocieGoogleMapLink.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.MagasinAssocieGoogleMapLink.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieGoogleMapLink.html#Altazion_ECommerce_Controls_MagasinAssocieGoogleMapLink_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.MagasinAssocieGoogleMapLink.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieGoogleMapLink.OnPreRender
-  nameWithType: MagasinAssocieGoogleMapLink.OnPreRender
 - uid: Altazion.ECommerce.Controls.MagasinAssocieHorairesDuJour
   name: MagasinAssocieHorairesDuJour
   href: api/Altazion.ECommerce.Controls.MagasinAssocieHorairesDuJour.html
@@ -1616,19 +1395,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.MagasinAssocieHorairesDuJour.AfficherPm
   nameWithType: MagasinAssocieHorairesDuJour.AfficherPm
-- uid: Altazion.ECommerce.Controls.MagasinAssocieHorairesDuJour.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieHorairesDuJour.html#Altazion_ECommerce_Controls_MagasinAssocieHorairesDuJour_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.MagasinAssocieHorairesDuJour.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieHorairesDuJour.OnPreRender(System.EventArgs)
-  nameWithType: MagasinAssocieHorairesDuJour.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.MagasinAssocieHorairesDuJour.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieHorairesDuJour.html#Altazion_ECommerce_Controls_MagasinAssocieHorairesDuJour_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.MagasinAssocieHorairesDuJour.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieHorairesDuJour.OnPreRender
-  nameWithType: MagasinAssocieHorairesDuJour.OnPreRender
 - uid: Altazion.ECommerce.Controls.MagasinAssocieLibelle
   name: MagasinAssocieLibelle
   href: api/Altazion.ECommerce.Controls.MagasinAssocieLibelle.html
@@ -1661,38 +1427,12 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.MagasinAssocieLibelle.Format
   nameWithType: MagasinAssocieLibelle.Format
-- uid: Altazion.ECommerce.Controls.MagasinAssocieLibelle.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieLibelle.html#Altazion_ECommerce_Controls_MagasinAssocieLibelle_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.MagasinAssocieLibelle.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieLibelle.OnPreRender(System.EventArgs)
-  nameWithType: MagasinAssocieLibelle.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.MagasinAssocieLibelle.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieLibelle.html#Altazion_ECommerce_Controls_MagasinAssocieLibelle_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.MagasinAssocieLibelle.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieLibelle.OnPreRender
-  nameWithType: MagasinAssocieLibelle.OnPreRender
 - uid: Altazion.ECommerce.Controls.MagasinAssocieLink
   name: MagasinAssocieLink
   href: api/Altazion.ECommerce.Controls.MagasinAssocieLink.html
   commentId: T:Altazion.ECommerce.Controls.MagasinAssocieLink
   fullName: Altazion.ECommerce.Controls.MagasinAssocieLink
   nameWithType: MagasinAssocieLink
-- uid: Altazion.ECommerce.Controls.MagasinAssocieLink.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieLink.html#Altazion_ECommerce_Controls_MagasinAssocieLink_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.MagasinAssocieLink.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieLink.OnPreRender(System.EventArgs)
-  nameWithType: MagasinAssocieLink.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.MagasinAssocieLink.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieLink.html#Altazion_ECommerce_Controls_MagasinAssocieLink_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.MagasinAssocieLink.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieLink.OnPreRender
-  nameWithType: MagasinAssocieLink.OnPreRender
 - uid: Altazion.ECommerce.Controls.MagasinAssociePanel
   name: MagasinAssociePanel
   href: api/Altazion.ECommerce.Controls.MagasinAssociePanel.html
@@ -1731,19 +1471,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.MagasinAssociePays
   fullName: Altazion.ECommerce.Controls.MagasinAssociePays
   nameWithType: MagasinAssociePays
-- uid: Altazion.ECommerce.Controls.MagasinAssociePays.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.MagasinAssociePays.html#Altazion_ECommerce_Controls_MagasinAssociePays_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.MagasinAssociePays.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.MagasinAssociePays.OnPreRender(System.EventArgs)
-  nameWithType: MagasinAssociePays.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.MagasinAssociePays.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.MagasinAssociePays.html#Altazion_ECommerce_Controls_MagasinAssociePays_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.MagasinAssociePays.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.MagasinAssociePays.OnPreRender
-  nameWithType: MagasinAssociePays.OnPreRender
 - uid: Altazion.ECommerce.Controls.MagasinAssocieTel
   name: MagasinAssocieTel
   href: api/Altazion.ECommerce.Controls.MagasinAssocieTel.html
@@ -1776,19 +1503,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.MagasinAssocieTel.Format
   nameWithType: MagasinAssocieTel.Format
-- uid: Altazion.ECommerce.Controls.MagasinAssocieTel.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieTel.html#Altazion_ECommerce_Controls_MagasinAssocieTel_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.MagasinAssocieTel.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieTel.OnPreRender(System.EventArgs)
-  nameWithType: MagasinAssocieTel.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.MagasinAssocieTel.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieTel.html#Altazion_ECommerce_Controls_MagasinAssocieTel_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.MagasinAssocieTel.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieTel.OnPreRender
-  nameWithType: MagasinAssocieTel.OnPreRender
 - uid: Altazion.ECommerce.Controls.MagasinAssocieVille
   name: MagasinAssocieVille
   href: api/Altazion.ECommerce.Controls.MagasinAssocieVille.html
@@ -1821,19 +1535,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.MagasinAssocieVille.Format
   nameWithType: MagasinAssocieVille.Format
-- uid: Altazion.ECommerce.Controls.MagasinAssocieVille.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieVille.html#Altazion_ECommerce_Controls_MagasinAssocieVille_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.MagasinAssocieVille.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieVille.OnPreRender(System.EventArgs)
-  nameWithType: MagasinAssocieVille.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.MagasinAssocieVille.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.MagasinAssocieVille.html#Altazion_ECommerce_Controls_MagasinAssocieVille_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.MagasinAssocieVille.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.MagasinAssocieVille.OnPreRender
-  nameWithType: MagasinAssocieVille.OnPreRender
 - uid: Altazion.ECommerce.Controls.MarqueDescription
   name: MarqueDescription
   href: api/Altazion.ECommerce.Controls.MarqueDescription.html
@@ -1928,38 +1629,12 @@ references:
   commentId: T:Altazion.ECommerce.Controls.PanelCacherSiGuest
   fullName: Altazion.ECommerce.Controls.PanelCacherSiGuest
   nameWithType: PanelCacherSiGuest
-- uid: Altazion.ECommerce.Controls.PanelCacherSiGuest.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.PanelCacherSiGuest.html#Altazion_ECommerce_Controls_PanelCacherSiGuest_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.PanelCacherSiGuest.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.PanelCacherSiGuest.OnPreRender(System.EventArgs)
-  nameWithType: PanelCacherSiGuest.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.PanelCacherSiGuest.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.PanelCacherSiGuest.html#Altazion_ECommerce_Controls_PanelCacherSiGuest_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.PanelCacherSiGuest.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.PanelCacherSiGuest.OnPreRender
-  nameWithType: PanelCacherSiGuest.OnPreRender
 - uid: Altazion.ECommerce.Controls.PanelCacherSiNonGuest
   name: PanelCacherSiNonGuest
   href: api/Altazion.ECommerce.Controls.PanelCacherSiNonGuest.html
   commentId: T:Altazion.ECommerce.Controls.PanelCacherSiNonGuest
   fullName: Altazion.ECommerce.Controls.PanelCacherSiNonGuest
   nameWithType: PanelCacherSiNonGuest
-- uid: Altazion.ECommerce.Controls.PanelCacherSiNonGuest.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.PanelCacherSiNonGuest.html#Altazion_ECommerce_Controls_PanelCacherSiNonGuest_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.PanelCacherSiNonGuest.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.PanelCacherSiNonGuest.OnPreRender(System.EventArgs)
-  nameWithType: PanelCacherSiNonGuest.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.PanelCacherSiNonGuest.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.PanelCacherSiNonGuest.html#Altazion_ECommerce_Controls_PanelCacherSiNonGuest_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.PanelCacherSiNonGuest.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.PanelCacherSiNonGuest.OnPreRender
-  nameWithType: PanelCacherSiNonGuest.OnPreRender
 - uid: Altazion.ECommerce.Controls.PanelConditionnelLivraison
   name: PanelConditionnelLivraison
   href: api/Altazion.ECommerce.Controls.PanelConditionnelLivraison.html
@@ -2018,19 +1693,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.PanelConditionnelLivraison.AfficherSiSansLivraison
   nameWithType: PanelConditionnelLivraison.AfficherSiSansLivraison
-- uid: Altazion.ECommerce.Controls.PanelConditionnelLivraison.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.PanelConditionnelLivraison.html#Altazion_ECommerce_Controls_PanelConditionnelLivraison_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.PanelConditionnelLivraison.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.PanelConditionnelLivraison.OnPreRender(System.EventArgs)
-  nameWithType: PanelConditionnelLivraison.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.PanelConditionnelLivraison.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.PanelConditionnelLivraison.html#Altazion_ECommerce_Controls_PanelConditionnelLivraison_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.PanelConditionnelLivraison.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.PanelConditionnelLivraison.OnPreRender
-  nameWithType: PanelConditionnelLivraison.OnPreRender
 - uid: Altazion.ECommerce.Controls.PanelConditionnelReglement
   name: PanelConditionnelReglement
   href: api/Altazion.ECommerce.Controls.PanelConditionnelReglement.html
@@ -2063,19 +1725,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.PanelConditionnelReglement.GuidModeReglementsAEviter
   nameWithType: PanelConditionnelReglement.GuidModeReglementsAEviter
-- uid: Altazion.ECommerce.Controls.PanelConditionnelReglement.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.PanelConditionnelReglement.html#Altazion_ECommerce_Controls_PanelConditionnelReglement_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.PanelConditionnelReglement.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.PanelConditionnelReglement.OnPreRender(System.EventArgs)
-  nameWithType: PanelConditionnelReglement.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.PanelConditionnelReglement.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.PanelConditionnelReglement.html#Altazion_ECommerce_Controls_PanelConditionnelReglement_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.PanelConditionnelReglement.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.PanelConditionnelReglement.OnPreRender
-  nameWithType: PanelConditionnelReglement.OnPreRender
 - uid: Altazion.ECommerce.Controls.PanelPageSpecifique
   name: PanelPageSpecifique
   href: api/Altazion.ECommerce.Controls.PanelPageSpecifique.html
@@ -2108,19 +1757,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.PanelPageSpecifique.InlineContent
   nameWithType: PanelPageSpecifique.InlineContent
-- uid: Altazion.ECommerce.Controls.PanelPageSpecifique.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.PanelPageSpecifique.html#Altazion_ECommerce_Controls_PanelPageSpecifique_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.PanelPageSpecifique.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.PanelPageSpecifique.OnPreRender(System.EventArgs)
-  nameWithType: PanelPageSpecifique.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.PanelPageSpecifique.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.PanelPageSpecifique.html#Altazion_ECommerce_Controls_PanelPageSpecifique_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.PanelPageSpecifique.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.PanelPageSpecifique.OnPreRender
-  nameWithType: PanelPageSpecifique.OnPreRender
 - uid: Altazion.ECommerce.Controls.PanelPageSpecifique.SaufPour
   name: SaufPour
   href: api/Altazion.ECommerce.Controls.PanelPageSpecifique.html#Altazion_ECommerce_Controls_PanelPageSpecifique_SaufPour
@@ -2153,38 +1789,12 @@ references:
   commentId: T:Altazion.ECommerce.Controls.PanierEncartMagasinAssocie
   fullName: Altazion.ECommerce.Controls.PanierEncartMagasinAssocie
   nameWithType: PanierEncartMagasinAssocie
-- uid: Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.html#Altazion_ECommerce_Controls_PanierEncartMagasinAssocie_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.OnPreRender(System.EventArgs)
-  nameWithType: PanierEncartMagasinAssocie.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.html#Altazion_ECommerce_Controls_PanierEncartMagasinAssocie_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.PanierEncartMagasinAssocie.OnPreRender
-  nameWithType: PanierEncartMagasinAssocie.OnPreRender
 - uid: Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta
   name: PanierPanelConditionnelAfficherPresta
   href: api/Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta.html
   commentId: T:Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta
   fullName: Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta
   nameWithType: PanierPanelConditionnelAfficherPresta
-- uid: Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta.html#Altazion_ECommerce_Controls_PanierPanelConditionnelAfficherPresta_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta.OnPreRender(System.EventArgs)
-  nameWithType: PanierPanelConditionnelAfficherPresta.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta.html#Altazion_ECommerce_Controls_PanierPanelConditionnelAfficherPresta_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta.OnPreRender
-  nameWithType: PanierPanelConditionnelAfficherPresta.OnPreRender
 - uid: Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta.PtpPk
   name: PtpPk
   href: api/Altazion.ECommerce.Controls.PanierPanelConditionnelAfficherPresta.html#Altazion_ECommerce_Controls_PanierPanelConditionnelAfficherPresta_PtpPk
@@ -2204,19 +1814,6 @@ references:
   commentId: T:Altazion.ECommerce.Controls.PanierPanelConditionnelCacherPresta
   fullName: Altazion.ECommerce.Controls.PanierPanelConditionnelCacherPresta
   nameWithType: PanierPanelConditionnelCacherPresta
-- uid: Altazion.ECommerce.Controls.PanierPanelConditionnelCacherPresta.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.PanierPanelConditionnelCacherPresta.html#Altazion_ECommerce_Controls_PanierPanelConditionnelCacherPresta_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.PanierPanelConditionnelCacherPresta.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.PanierPanelConditionnelCacherPresta.OnPreRender(System.EventArgs)
-  nameWithType: PanierPanelConditionnelCacherPresta.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.PanierPanelConditionnelCacherPresta.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.PanierPanelConditionnelCacherPresta.html#Altazion_ECommerce_Controls_PanierPanelConditionnelCacherPresta_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.PanierPanelConditionnelCacherPresta.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.PanierPanelConditionnelCacherPresta.OnPreRender
-  nameWithType: PanierPanelConditionnelCacherPresta.OnPreRender
 - uid: Altazion.ECommerce.Controls.PanierPanelConditionnelCacherPresta.PtpPk
   name: PtpPk
   href: api/Altazion.ECommerce.Controls.PanierPanelConditionnelCacherPresta.html#Altazion_ECommerce_Controls_PanierPanelConditionnelCacherPresta_PtpPk
@@ -2262,57 +1859,18 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.PanierPanelMagasinAssocie.CacherSiEcommerce
   nameWithType: PanierPanelMagasinAssocie.CacherSiEcommerce
-- uid: Altazion.ECommerce.Controls.PanierPanelMagasinAssocie.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.PanierPanelMagasinAssocie.html#Altazion_ECommerce_Controls_PanierPanelMagasinAssocie_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.PanierPanelMagasinAssocie.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.PanierPanelMagasinAssocie.OnPreRender(System.EventArgs)
-  nameWithType: PanierPanelMagasinAssocie.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.PanierPanelMagasinAssocie.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.PanierPanelMagasinAssocie.html#Altazion_ECommerce_Controls_PanierPanelMagasinAssocie_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.PanierPanelMagasinAssocie.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.PanierPanelMagasinAssocie.OnPreRender
-  nameWithType: PanierPanelMagasinAssocie.OnPreRender
 - uid: Altazion.ECommerce.Controls.PanierPanelSansMagasinAssocie
   name: PanierPanelSansMagasinAssocie
   href: api/Altazion.ECommerce.Controls.PanierPanelSansMagasinAssocie.html
   commentId: T:Altazion.ECommerce.Controls.PanierPanelSansMagasinAssocie
   fullName: Altazion.ECommerce.Controls.PanierPanelSansMagasinAssocie
   nameWithType: PanierPanelSansMagasinAssocie
-- uid: Altazion.ECommerce.Controls.PanierPanelSansMagasinAssocie.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.PanierPanelSansMagasinAssocie.html#Altazion_ECommerce_Controls_PanierPanelSansMagasinAssocie_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.PanierPanelSansMagasinAssocie.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.PanierPanelSansMagasinAssocie.OnPreRender(System.EventArgs)
-  nameWithType: PanierPanelSansMagasinAssocie.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.PanierPanelSansMagasinAssocie.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.PanierPanelSansMagasinAssocie.html#Altazion_ECommerce_Controls_PanierPanelSansMagasinAssocie_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.PanierPanelSansMagasinAssocie.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.PanierPanelSansMagasinAssocie.OnPreRender
-  nameWithType: PanierPanelSansMagasinAssocie.OnPreRender
 - uid: Altazion.ECommerce.Controls.ProductDataHiddenField
   name: ProductDataHiddenField
   href: api/Altazion.ECommerce.Controls.ProductDataHiddenField.html
   commentId: T:Altazion.ECommerce.Controls.ProductDataHiddenField
   fullName: Altazion.ECommerce.Controls.ProductDataHiddenField
   nameWithType: ProductDataHiddenField
-- uid: Altazion.ECommerce.Controls.ProductDataHiddenField.OnDataBinding(System.EventArgs)
-  name: OnDataBinding(EventArgs)
-  href: api/Altazion.ECommerce.Controls.ProductDataHiddenField.html#Altazion_ECommerce_Controls_ProductDataHiddenField_OnDataBinding_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.ProductDataHiddenField.OnDataBinding(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.ProductDataHiddenField.OnDataBinding(System.EventArgs)
-  nameWithType: ProductDataHiddenField.OnDataBinding(EventArgs)
-- uid: Altazion.ECommerce.Controls.ProductDataHiddenField.OnDataBinding*
-  name: OnDataBinding
-  href: api/Altazion.ECommerce.Controls.ProductDataHiddenField.html#Altazion_ECommerce_Controls_ProductDataHiddenField_OnDataBinding_
-  commentId: Overload:Altazion.ECommerce.Controls.ProductDataHiddenField.OnDataBinding
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProductDataHiddenField.OnDataBinding
-  nameWithType: ProductDataHiddenField.OnDataBinding
 - uid: Altazion.ECommerce.Controls.ProductFilArianeCategories
   name: ProductFilArianeCategories
   href: api/Altazion.ECommerce.Controls.ProductFilArianeCategories.html
@@ -2397,19 +1955,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProductFilArianeCategories.LastItemCssClass
   nameWithType: ProductFilArianeCategories.LastItemCssClass
-- uid: Altazion.ECommerce.Controls.ProductFilArianeCategories.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.ProductFilArianeCategories.html#Altazion_ECommerce_Controls_ProductFilArianeCategories_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.ProductFilArianeCategories.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.ProductFilArianeCategories.OnPreRender(System.EventArgs)
-  nameWithType: ProductFilArianeCategories.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.ProductFilArianeCategories.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.ProductFilArianeCategories.html#Altazion_ECommerce_Controls_ProductFilArianeCategories_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.ProductFilArianeCategories.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProductFilArianeCategories.OnPreRender
-  nameWithType: ProductFilArianeCategories.OnPreRender
 - uid: Altazion.ECommerce.Controls.ProductFilArianeCategories.Separator
   name: Separator
   href: api/Altazion.ECommerce.Controls.ProductFilArianeCategories.html#Altazion_ECommerce_Controls_ProductFilArianeCategories_Separator
@@ -2532,38 +2077,12 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.Item.name
   nameWithType: ProductFilArianeJsonLd.Item.name
-- uid: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.ProductFilArianeJsonLd.html#Altazion_ECommerce_Controls_ProductFilArianeJsonLd_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.ProductFilArianeJsonLd.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.OnPreRender(System.EventArgs)
-  nameWithType: ProductFilArianeJsonLd.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.ProductFilArianeJsonLd.html#Altazion_ECommerce_Controls_ProductFilArianeJsonLd_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.ProductFilArianeJsonLd.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProductFilArianeJsonLd.OnPreRender
-  nameWithType: ProductFilArianeJsonLd.OnPreRender
 - uid: Altazion.ECommerce.Controls.ProductJsonLD
   name: ProductJsonLD
   href: api/Altazion.ECommerce.Controls.ProductJsonLD.html
   commentId: T:Altazion.ECommerce.Controls.ProductJsonLD
   fullName: Altazion.ECommerce.Controls.ProductJsonLD
   nameWithType: ProductJsonLD
-- uid: Altazion.ECommerce.Controls.ProductJsonLD.OnDataBinding(System.EventArgs)
-  name: OnDataBinding(EventArgs)
-  href: api/Altazion.ECommerce.Controls.ProductJsonLD.html#Altazion_ECommerce_Controls_ProductJsonLD_OnDataBinding_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.ProductJsonLD.OnDataBinding(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.ProductJsonLD.OnDataBinding(System.EventArgs)
-  nameWithType: ProductJsonLD.OnDataBinding(EventArgs)
-- uid: Altazion.ECommerce.Controls.ProductJsonLD.OnDataBinding*
-  name: OnDataBinding
-  href: api/Altazion.ECommerce.Controls.ProductJsonLD.html#Altazion_ECommerce_Controls_ProductJsonLD_OnDataBinding_
-  commentId: Overload:Altazion.ECommerce.Controls.ProductJsonLD.OnDataBinding
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProductJsonLD.OnDataBinding
-  nameWithType: ProductJsonLD.OnDataBinding
 - uid: Altazion.ECommerce.Controls.ProductLivraison
   name: ProductLivraison
   href: api/Altazion.ECommerce.Controls.ProductLivraison.html
@@ -2961,19 +2480,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.DataKind
   nameWithType: ProduitAttributRepeaterItemField.DataKind
-- uid: Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.OnDataBinding(System.EventArgs)
-  name: OnDataBinding(EventArgs)
-  href: api/Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.html#Altazion_ECommerce_Controls_ProduitAttributRepeaterItemField_OnDataBinding_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.OnDataBinding(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.OnDataBinding(System.EventArgs)
-  nameWithType: ProduitAttributRepeaterItemField.OnDataBinding(EventArgs)
-- uid: Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.OnDataBinding*
-  name: OnDataBinding
-  href: api/Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.html#Altazion_ECommerce_Controls_ProduitAttributRepeaterItemField_OnDataBinding_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.OnDataBinding
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.OnDataBinding
-  nameWithType: ProduitAttributRepeaterItemField.OnDataBinding
 - uid: Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.ProduitAttributRepeaterItemFieldKind
   name: ProduitAttributRepeaterItemField.ProduitAttributRepeaterItemFieldKind
   href: api/Altazion.ECommerce.Controls.ProduitAttributRepeaterItemField.ProduitAttributRepeaterItemFieldKind.html
@@ -3652,19 +3158,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitLink.LinkType
   nameWithType: ProduitLink.LinkType
-- uid: Altazion.ECommerce.Controls.ProduitLink.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.ProduitLink.html#Altazion_ECommerce_Controls_ProduitLink_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.ProduitLink.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.ProduitLink.OnPreRender(System.EventArgs)
-  nameWithType: ProduitLink.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.ProduitLink.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.ProduitLink.html#Altazion_ECommerce_Controls_ProduitLink_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitLink.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitLink.OnPreRender
-  nameWithType: ProduitLink.OnPreRender
 - uid: Altazion.ECommerce.Controls.ProduitLink.PourPageAmp
   name: PourPageAmp
   href: api/Altazion.ECommerce.Controls.ProduitLink.html#Altazion_ECommerce_Controls_ProduitLink_PourPageAmp
@@ -3773,19 +3266,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.ProduitMultiImagesRepeater
   nameWithType: ProduitMultiImagesRepeater.ProduitMultiImagesRepeater
-- uid: Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.OnDataBinding(System.EventArgs)
-  name: OnDataBinding(EventArgs)
-  href: api/Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.html#Altazion_ECommerce_Controls_ProduitMultiImagesRepeater_OnDataBinding_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.OnDataBinding(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.OnDataBinding(System.EventArgs)
-  nameWithType: ProduitMultiImagesRepeater.OnDataBinding(EventArgs)
-- uid: Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.OnDataBinding*
-  name: OnDataBinding
-  href: api/Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.html#Altazion_ECommerce_Controls_ProduitMultiImagesRepeater_OnDataBinding_
-  commentId: Overload:Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.OnDataBinding
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.ProduitMultiImagesRepeater.OnDataBinding
-  nameWithType: ProduitMultiImagesRepeater.OnDataBinding
 - uid: Altazion.ECommerce.Controls.ProduitPreparationInternePanel
   name: ProduitPreparationInternePanel
   href: api/Altazion.ECommerce.Controls.ProduitPreparationInternePanel.html
@@ -4528,19 +4008,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.SeoContent.DefaultContent
   nameWithType: SeoContent.DefaultContent
-- uid: Altazion.ECommerce.Controls.SeoContent.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.SeoContent.html#Altazion_ECommerce_Controls_SeoContent_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.SeoContent.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.SeoContent.OnPreRender(System.EventArgs)
-  nameWithType: SeoContent.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.SeoContent.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.SeoContent.html#Altazion_ECommerce_Controls_SeoContent_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.SeoContent.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.SeoContent.OnPreRender
-  nameWithType: SeoContent.OnPreRender
 - uid: Altazion.ECommerce.Controls.SeoContentPanel
   name: SeoContentPanel
   href: api/Altazion.ECommerce.Controls.SeoContentPanel.html
@@ -4573,19 +4040,6 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.SeoContentPanel.CodeEmplacement
   nameWithType: SeoContentPanel.CodeEmplacement
-- uid: Altazion.ECommerce.Controls.SeoContentPanel.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.SeoContentPanel.html#Altazion_ECommerce_Controls_SeoContentPanel_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.SeoContentPanel.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.SeoContentPanel.OnPreRender(System.EventArgs)
-  nameWithType: SeoContentPanel.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.SeoContentPanel.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.SeoContentPanel.html#Altazion_ECommerce_Controls_SeoContentPanel_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.SeoContentPanel.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.SeoContentPanel.OnPreRender
-  nameWithType: SeoContentPanel.OnPreRender
 - uid: Altazion.ECommerce.Controls.SeoContentTitle
   name: SeoContentTitle
   href: api/Altazion.ECommerce.Controls.SeoContentTitle.html
@@ -4631,152 +4085,54 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.SeoContentTitle.DefaultContent
   nameWithType: SeoContentTitle.DefaultContent
-- uid: Altazion.ECommerce.Controls.SeoContentTitle.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.SeoContentTitle.html#Altazion_ECommerce_Controls_SeoContentTitle_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.SeoContentTitle.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.SeoContentTitle.OnPreRender(System.EventArgs)
-  nameWithType: SeoContentTitle.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.SeoContentTitle.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.SeoContentTitle.html#Altazion_ECommerce_Controls_SeoContentTitle_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.SeoContentTitle.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.SeoContentTitle.OnPreRender
-  nameWithType: SeoContentTitle.OnPreRender
 - uid: Altazion.ECommerce.Controls.SiteHomePageLink
   name: SiteHomePageLink
   href: api/Altazion.ECommerce.Controls.SiteHomePageLink.html
   commentId: T:Altazion.ECommerce.Controls.SiteHomePageLink
   fullName: Altazion.ECommerce.Controls.SiteHomePageLink
   nameWithType: SiteHomePageLink
-- uid: Altazion.ECommerce.Controls.SiteHomePageLink.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.SiteHomePageLink.html#Altazion_ECommerce_Controls_SiteHomePageLink_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.SiteHomePageLink.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.SiteHomePageLink.OnPreRender(System.EventArgs)
-  nameWithType: SiteHomePageLink.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.SiteHomePageLink.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.SiteHomePageLink.html#Altazion_ECommerce_Controls_SiteHomePageLink_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.SiteHomePageLink.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.SiteHomePageLink.OnPreRender
-  nameWithType: SiteHomePageLink.OnPreRender
 - uid: Altazion.ECommerce.Controls.SiteHomeUrl
   name: SiteHomeUrl
   href: api/Altazion.ECommerce.Controls.SiteHomeUrl.html
   commentId: T:Altazion.ECommerce.Controls.SiteHomeUrl
   fullName: Altazion.ECommerce.Controls.SiteHomeUrl
   nameWithType: SiteHomeUrl
-- uid: Altazion.ECommerce.Controls.SiteHomeUrl.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.SiteHomeUrl.html#Altazion_ECommerce_Controls_SiteHomeUrl_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.SiteHomeUrl.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.SiteHomeUrl.OnPreRender(System.EventArgs)
-  nameWithType: SiteHomeUrl.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.SiteHomeUrl.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.SiteHomeUrl.html#Altazion_ECommerce_Controls_SiteHomeUrl_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.SiteHomeUrl.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.SiteHomeUrl.OnPreRender
-  nameWithType: SiteHomeUrl.OnPreRender
 - uid: Altazion.ECommerce.Controls.SiteNom
   name: SiteNom
   href: api/Altazion.ECommerce.Controls.SiteNom.html
   commentId: T:Altazion.ECommerce.Controls.SiteNom
   fullName: Altazion.ECommerce.Controls.SiteNom
   nameWithType: SiteNom
-- uid: Altazion.ECommerce.Controls.SiteNom.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.SiteNom.html#Altazion_ECommerce_Controls_SiteNom_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.SiteNom.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.SiteNom.OnPreRender(System.EventArgs)
-  nameWithType: SiteNom.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.SiteNom.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.SiteNom.html#Altazion_ECommerce_Controls_SiteNom_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.SiteNom.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.SiteNom.OnPreRender
-  nameWithType: SiteNom.OnPreRender
 - uid: Altazion.ECommerce.Controls.SiteServiceClientEmail
   name: SiteServiceClientEmail
   href: api/Altazion.ECommerce.Controls.SiteServiceClientEmail.html
   commentId: T:Altazion.ECommerce.Controls.SiteServiceClientEmail
   fullName: Altazion.ECommerce.Controls.SiteServiceClientEmail
   nameWithType: SiteServiceClientEmail
-- uid: Altazion.ECommerce.Controls.SiteServiceClientEmail.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.SiteServiceClientEmail.html#Altazion_ECommerce_Controls_SiteServiceClientEmail_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.SiteServiceClientEmail.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.SiteServiceClientEmail.OnPreRender(System.EventArgs)
-  nameWithType: SiteServiceClientEmail.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.SiteServiceClientEmail.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.SiteServiceClientEmail.html#Altazion_ECommerce_Controls_SiteServiceClientEmail_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.SiteServiceClientEmail.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.SiteServiceClientEmail.OnPreRender
-  nameWithType: SiteServiceClientEmail.OnPreRender
+- uid: Altazion.ECommerce.Controls.SiteServiceClientEmailLink
+  name: SiteServiceClientEmailLink
+  href: api/Altazion.ECommerce.Controls.SiteServiceClientEmailLink.html
+  commentId: T:Altazion.ECommerce.Controls.SiteServiceClientEmailLink
+  fullName: Altazion.ECommerce.Controls.SiteServiceClientEmailLink
+  nameWithType: SiteServiceClientEmailLink
 - uid: Altazion.ECommerce.Controls.SiteServiceClientHoraires
   name: SiteServiceClientHoraires
   href: api/Altazion.ECommerce.Controls.SiteServiceClientHoraires.html
   commentId: T:Altazion.ECommerce.Controls.SiteServiceClientHoraires
   fullName: Altazion.ECommerce.Controls.SiteServiceClientHoraires
   nameWithType: SiteServiceClientHoraires
-- uid: Altazion.ECommerce.Controls.SiteServiceClientHoraires.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.SiteServiceClientHoraires.html#Altazion_ECommerce_Controls_SiteServiceClientHoraires_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.SiteServiceClientHoraires.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.SiteServiceClientHoraires.OnPreRender(System.EventArgs)
-  nameWithType: SiteServiceClientHoraires.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.SiteServiceClientHoraires.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.SiteServiceClientHoraires.html#Altazion_ECommerce_Controls_SiteServiceClientHoraires_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.SiteServiceClientHoraires.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.SiteServiceClientHoraires.OnPreRender
-  nameWithType: SiteServiceClientHoraires.OnPreRender
 - uid: Altazion.ECommerce.Controls.SiteServiceClientTelephone
   name: SiteServiceClientTelephone
   href: api/Altazion.ECommerce.Controls.SiteServiceClientTelephone.html
   commentId: T:Altazion.ECommerce.Controls.SiteServiceClientTelephone
   fullName: Altazion.ECommerce.Controls.SiteServiceClientTelephone
   nameWithType: SiteServiceClientTelephone
-- uid: Altazion.ECommerce.Controls.SiteServiceClientTelephone.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.SiteServiceClientTelephone.html#Altazion_ECommerce_Controls_SiteServiceClientTelephone_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.SiteServiceClientTelephone.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.SiteServiceClientTelephone.OnPreRender(System.EventArgs)
-  nameWithType: SiteServiceClientTelephone.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.SiteServiceClientTelephone.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.SiteServiceClientTelephone.html#Altazion_ECommerce_Controls_SiteServiceClientTelephone_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.SiteServiceClientTelephone.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.SiteServiceClientTelephone.OnPreRender
-  nameWithType: SiteServiceClientTelephone.OnPreRender
 - uid: Altazion.ECommerce.Controls.SiteSlogan
   name: SiteSlogan
   href: api/Altazion.ECommerce.Controls.SiteSlogan.html
   commentId: T:Altazion.ECommerce.Controls.SiteSlogan
   fullName: Altazion.ECommerce.Controls.SiteSlogan
   nameWithType: SiteSlogan
-- uid: Altazion.ECommerce.Controls.SiteSlogan.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.SiteSlogan.html#Altazion_ECommerce_Controls_SiteSlogan_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.SiteSlogan.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.SiteSlogan.OnPreRender(System.EventArgs)
-  nameWithType: SiteSlogan.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.SiteSlogan.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.SiteSlogan.html#Altazion_ECommerce_Controls_SiteSlogan_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.SiteSlogan.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.SiteSlogan.OnPreRender
-  nameWithType: SiteSlogan.OnPreRender
 - uid: Altazion.ECommerce.Controls.TousLesMagasinsListeHiddenField
   name: TousLesMagasinsListeHiddenField
   href: api/Altazion.ECommerce.Controls.TousLesMagasinsListeHiddenField.html
@@ -4802,16 +4158,3 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.TousLesMagasinsListeHiddenField.MagasinClicknMortarAvecUrl.Url
   nameWithType: TousLesMagasinsListeHiddenField.MagasinClicknMortarAvecUrl.Url
-- uid: Altazion.ECommerce.Controls.TousLesMagasinsListeHiddenField.OnPreRender(System.EventArgs)
-  name: OnPreRender(EventArgs)
-  href: api/Altazion.ECommerce.Controls.TousLesMagasinsListeHiddenField.html#Altazion_ECommerce_Controls_TousLesMagasinsListeHiddenField_OnPreRender_System_EventArgs_
-  commentId: M:Altazion.ECommerce.Controls.TousLesMagasinsListeHiddenField.OnPreRender(System.EventArgs)
-  fullName: Altazion.ECommerce.Controls.TousLesMagasinsListeHiddenField.OnPreRender(System.EventArgs)
-  nameWithType: TousLesMagasinsListeHiddenField.OnPreRender(EventArgs)
-- uid: Altazion.ECommerce.Controls.TousLesMagasinsListeHiddenField.OnPreRender*
-  name: OnPreRender
-  href: api/Altazion.ECommerce.Controls.TousLesMagasinsListeHiddenField.html#Altazion_ECommerce_Controls_TousLesMagasinsListeHiddenField_OnPreRender_
-  commentId: Overload:Altazion.ECommerce.Controls.TousLesMagasinsListeHiddenField.OnPreRender
-  isSpec: "True"
-  fullName: Altazion.ECommerce.Controls.TousLesMagasinsListeHiddenField.OnPreRender
-  nameWithType: TousLesMagasinsListeHiddenField.OnPreRender

@@ -110,6 +110,7 @@
     <None Include=".gitignore" />
     <None Include="AltazionCommerceControls.snk" />
     <None Include="api\.gitignore" />
+    <None Include="api\controles-groupes.md" />
     <None Include="app.config" />
     <None Include="docfx.json" />
     <None Include="filterConfig.yml" />

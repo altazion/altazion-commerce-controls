@@ -73,56 +73,32 @@
   
   <h1 id="Altazion_ECommerce_Controls_SiteServiceClientHoraires" data-uid="Altazion.ECommerce.Controls.SiteServiceClientHoraires" class="text-break">Class SiteServiceClientHoraires
   </h1>
-  <div class="markdown level0 summary summary"><p>Affiche un span avec les horaires du service client</p>
+  <div class="markdown level0 summary summary"><p>Affiche les horaires du service client</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>H&#233;ritage</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">System.Web.UI.Control</span></div>
-    <div class="level2"><span class="xref">System.Web.UI.WebControls.WebControl</span></div>
-    <div class="level3"><span class="xref">System.Web.UI.WebControls.Label</span></div>
-    <div class="level4"><span class="xref">SiteServiceClientHoraires</span></div>
+    <div class="level2"><span class="xref">System.Web.UI.WebControls.Literal</span></div>
+    <div class="level3"><span class="xref">SiteServiceClientHoraires</span></div>
   </div>
   <!--<h6><strong>Namespace</strong>: <xref uid="Altazion.ECommerce.Controls" text="Altazion.ECommerce.Controls" alt="Altazion.ECommerce.Controls"/></h6>
   <h6><strong>Assembly</strong>: Altazion.ECommerce.Controls.dll</h6>-->
   <h5 id="Altazion_ECommerce_Controls_SiteServiceClientHoraires_syntax">Syntaxe</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SiteServiceClientHoraires : Label, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, IAttributeAccessor, ITextControl</code></pre>
+    <pre><code class="lang-csharp hljs">public class SiteServiceClientHoraires : Literal, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, ITextControl</code></pre>
   </div>
-  <h3 id="methods">M&#233;thodes
-  </h3>
-  
-  
-  <a id="Altazion_ECommerce_Controls_SiteServiceClientHoraires_OnPreRender_" data-uid="Altazion.ECommerce.Controls.SiteServiceClientHoraires.OnPreRender*"></a>
-  <h4 id="Altazion_ECommerce_Controls_SiteServiceClientHoraires_OnPreRender_System_EventArgs_" data-uid="Altazion.ECommerce.Controls.SiteServiceClientHoraires.OnPreRender(System.EventArgs)">OnPreRender(EventArgs)</h4>
-  <div class="markdown level1 summary"><p>Déclenche l&apos;événement <span class="xref">System.Web.UI.Control.PreRender</span>.</p>
+  <h5 id="Altazion_ECommerce_Controls_SiteServiceClientHoraires_remarks"><strong>Remarques</strong></h5>
+  <div class="markdown level0 remarks"><p><p>Ce controle permet d&apos;afficher les horaires
+     du service client depuis les informations paramétrées dans les options
+     du site.</p>
+<p>Il n&apos;y a aucun formatage ou tag html entourant ces horaires et
+aucune vérification n&apos;est faite sur leur validité : le contenu saisi
+dans le back-office est affiché sans aucun traitement</p>
+<p>Exemple d&apos;utilisation : </p></p>
+<pre><code>&lt;ecom:SiteServiceClientHoraires runat=&quot;server&quot; /></code></pre>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">D&#233;claration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void OnPreRender(EventArgs e)</code></pre>
-  </div>
-  <h5 class="parameters">Param&#232;tres</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.EventArgs</span></td>
-        <td><span class="parametername">e</span></td>
-        <td><p>Objet <span class="xref">System.EventArgs</span> qui contient les données d&apos;événement.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Web.UI.Control.OnPreRender(System.EventArgs)</span></div>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.IDisposable</span>
