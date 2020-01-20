@@ -15,6 +15,10 @@ namespace Altazion.ECommerce.Controls
     /// </summary>
     public class AmpBoilerplate : WebControl
     {
+        /// <summary>
+        /// Effectue le rendu du controle sur la page
+        /// </summary>
+        /// <param name="writer"></param>
         protected override void Render(HtmlTextWriter writer)
         {
             writer.Write("<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;");

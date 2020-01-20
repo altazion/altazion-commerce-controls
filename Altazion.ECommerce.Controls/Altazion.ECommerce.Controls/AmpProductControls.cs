@@ -20,6 +20,9 @@ namespace Altazion.ECommerce.Controls
 
     public class AmpProductImagesCarousel : WebControl, IEquihiraBindable
     {
+        /// <summary>
+        /// Initialise une nouvelle instance de la classe
+        /// </summary>
         public AmpProductImagesCarousel()
         {
             Interval = 3000;
@@ -31,20 +34,19 @@ namespace Altazion.ECommerce.Controls
         /// <summary>
         /// Obtient ou définit la classe CSS appliquée au carousel
         /// </summary>
-        public string CssClass { get; set; }
         public int Interval { get; set; }
 
         /// <summary>
         /// Obtient ou définit la largeur du carousel
         /// </summary>
-        public int? Width { get; set; }
+        public new int? Width { get; set; }
 
         /// <summary>
         /// Obtient ou définit la hauteur du carousel
         /// </summary>
-        public int? Height { get; set; }
+        public new int? Height { get; set; }
 
-        public void BindTo(object o)
+        void IEquihiraBindable.BindTo(object o)
         {
             if (o == null) return;
 
@@ -132,8 +134,8 @@ namespace Altazion.ECommerce.Controls
             set { _linkType = value; }
         }
 
-        public int? Width { get; set; }
-        public int? Height { get; set; }
+        public new int? Width { get; set; }
+        public new int? Height { get; set; }
         public string ImageUrlIfNone { get; set; }
 
         protected override void Render(System.Web.UI.HtmlTextWriter writer)
@@ -178,7 +180,7 @@ namespace Altazion.ECommerce.Controls
         private string ProductUrl;
 
 
-        public void BindTo(object o)
+        void IEquihiraBindable.BindTo(object o)
         {
             if (o == null)
                 return;
@@ -191,7 +193,7 @@ namespace Altazion.ECommerce.Controls
             {
                 ArticlesDataSourceResult res = o as ArticlesDataSourceResult;
                 VueArticlesWebDS.ecommerce_articles_webRow r = res.Article.ecommerce_articles_web[0];
-                BindTo(r);
+                (this as IEquihiraBindable).BindTo(r);
             }
             else if (o is VueArticlesWebDS.ecommerce_articles_webRow)
             {

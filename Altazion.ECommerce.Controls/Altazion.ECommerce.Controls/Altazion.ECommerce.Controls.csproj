@@ -84,16 +84,27 @@
     <Compile Include="ClientControls.cs" />
     <Compile Include="CommandeLabels.cs" />
     <Compile Include="ControlesMarques.cs" />
+    <Compile Include="CookiePanel.cs" />
     <Compile Include="FacebookLoginLink.cs" />
     <Compile Include="FilAriane.cs" />
     <Compile Include="FilArianeCategories.cs" />
+    <Compile Include="IncitationControls.cs" />
+    <Compile Include="LivraisonDelai.cs" />
+    <Compile Include="LivraisonDestination.cs" />
     <Compile Include="LivraisonLabel.cs" />
+    <Compile Include="LoginStatus.cs" />
     <Compile Include="MagasinsControls.cs" />
     <Compile Include="PanelConditionnelLivraison.cs" />
     <Compile Include="PanelConditionnelReglement.cs" />
     <Compile Include="PanelCrossCanal.cs" />
     <Compile Include="PanelPageSpecifique.cs" />
     <Compile Include="PanelsGuest.cs" />
+    <Compile Include="PanierLivraisonCodePostal.cs" />
+    <Compile Include="PanierMontantNonRegle.cs" />
+    <Compile Include="PanierNomLivraison.cs" />
+    <Compile Include="PanierProduitField.cs" />
+    <Compile Include="PanierProduitGrid.cs" />
+    <Compile Include="PanierTotalLabel.cs" />
     <Compile Include="ProductDataHiddenField.cs" />
     <Compile Include="ProductDelaiLivraison.cs" />
     <Compile Include="ProductImage.cs" />
@@ -105,6 +116,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeoContentControls.cs" />
     <Compile Include="SiteControls.cs" />
+    <Compile Include="TrustPilotControls.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
