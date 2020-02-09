@@ -1081,6 +1081,96 @@ references:
   commentId: T:Altazion.ECommerce.Controls.CommandeNumero
   fullName: Altazion.ECommerce.Controls.CommandeNumero
   nameWithType: CommandeNumero
+- uid: Altazion.ECommerce.Controls.EvenementCrossCanalDescription
+  name: EvenementCrossCanalDescription
+  href: api/Altazion.ECommerce.Controls.EvenementCrossCanalDescription.html
+  commentId: T:Altazion.ECommerce.Controls.EvenementCrossCanalDescription
+  fullName: Altazion.ECommerce.Controls.EvenementCrossCanalDescription
+  nameWithType: EvenementCrossCanalDescription
+- uid: Altazion.ECommerce.Controls.EvenementCrossCanalDescription.#ctor
+  name: EvenementCrossCanalDescription()
+  href: api/Altazion.ECommerce.Controls.EvenementCrossCanalDescription.html#Altazion_ECommerce_Controls_EvenementCrossCanalDescription__ctor
+  commentId: M:Altazion.ECommerce.Controls.EvenementCrossCanalDescription.#ctor
+  fullName: Altazion.ECommerce.Controls.EvenementCrossCanalDescription.EvenementCrossCanalDescription()
+  nameWithType: EvenementCrossCanalDescription.EvenementCrossCanalDescription()
+- uid: Altazion.ECommerce.Controls.EvenementCrossCanalDescription.#ctor*
+  name: EvenementCrossCanalDescription
+  href: api/Altazion.ECommerce.Controls.EvenementCrossCanalDescription.html#Altazion_ECommerce_Controls_EvenementCrossCanalDescription__ctor_
+  commentId: Overload:Altazion.ECommerce.Controls.EvenementCrossCanalDescription.#ctor
+  isSpec: "True"
+  fullName: Altazion.ECommerce.Controls.EvenementCrossCanalDescription.EvenementCrossCanalDescription
+  nameWithType: EvenementCrossCanalDescription.EvenementCrossCanalDescription
+- uid: Altazion.ECommerce.Controls.EvenementCrossCanalDescription.EventGuid
+  name: EventGuid
+  href: api/Altazion.ECommerce.Controls.EvenementCrossCanalDescription.html#Altazion_ECommerce_Controls_EvenementCrossCanalDescription_EventGuid
+  commentId: P:Altazion.ECommerce.Controls.EvenementCrossCanalDescription.EventGuid
+  fullName: Altazion.ECommerce.Controls.EvenementCrossCanalDescription.EventGuid
+  nameWithType: EvenementCrossCanalDescription.EventGuid
+- uid: Altazion.ECommerce.Controls.EvenementCrossCanalDescription.EventGuid*
+  name: EventGuid
+  href: api/Altazion.ECommerce.Controls.EvenementCrossCanalDescription.html#Altazion_ECommerce_Controls_EvenementCrossCanalDescription_EventGuid_
+  commentId: Overload:Altazion.ECommerce.Controls.EvenementCrossCanalDescription.EventGuid
+  isSpec: "True"
+  fullName: Altazion.ECommerce.Controls.EvenementCrossCanalDescription.EventGuid
+  nameWithType: EvenementCrossCanalDescription.EventGuid
+- uid: Altazion.ECommerce.Controls.EvenementCrossCanalDescription.Format
+  name: Format
+  href: api/Altazion.ECommerce.Controls.EvenementCrossCanalDescription.html#Altazion_ECommerce_Controls_EvenementCrossCanalDescription_Format
+  commentId: P:Altazion.ECommerce.Controls.EvenementCrossCanalDescription.Format
+  fullName: Altazion.ECommerce.Controls.EvenementCrossCanalDescription.Format
+  nameWithType: EvenementCrossCanalDescription.Format
+- uid: Altazion.ECommerce.Controls.EvenementCrossCanalDescription.Format*
+  name: Format
+  href: api/Altazion.ECommerce.Controls.EvenementCrossCanalDescription.html#Altazion_ECommerce_Controls_EvenementCrossCanalDescription_Format_
+  commentId: Overload:Altazion.ECommerce.Controls.EvenementCrossCanalDescription.Format
+  isSpec: "True"
+  fullName: Altazion.ECommerce.Controls.EvenementCrossCanalDescription.Format
+  nameWithType: EvenementCrossCanalDescription.Format
+- uid: Altazion.ECommerce.Controls.EvenementCrossCanalTitle
+  name: EvenementCrossCanalTitle
+  href: api/Altazion.ECommerce.Controls.EvenementCrossCanalTitle.html
+  commentId: T:Altazion.ECommerce.Controls.EvenementCrossCanalTitle
+  fullName: Altazion.ECommerce.Controls.EvenementCrossCanalTitle
+  nameWithType: EvenementCrossCanalTitle
+- uid: Altazion.ECommerce.Controls.EvenementCrossCanalTitle.#ctor
+  name: EvenementCrossCanalTitle()
+  href: api/Altazion.ECommerce.Controls.EvenementCrossCanalTitle.html#Altazion_ECommerce_Controls_EvenementCrossCanalTitle__ctor
+  commentId: M:Altazion.ECommerce.Controls.EvenementCrossCanalTitle.#ctor
+  fullName: Altazion.ECommerce.Controls.EvenementCrossCanalTitle.EvenementCrossCanalTitle()
+  nameWithType: EvenementCrossCanalTitle.EvenementCrossCanalTitle()
+- uid: Altazion.ECommerce.Controls.EvenementCrossCanalTitle.#ctor*
+  name: EvenementCrossCanalTitle
+  href: api/Altazion.ECommerce.Controls.EvenementCrossCanalTitle.html#Altazion_ECommerce_Controls_EvenementCrossCanalTitle__ctor_
+  commentId: Overload:Altazion.ECommerce.Controls.EvenementCrossCanalTitle.#ctor
+  isSpec: "True"
+  fullName: Altazion.ECommerce.Controls.EvenementCrossCanalTitle.EvenementCrossCanalTitle
+  nameWithType: EvenementCrossCanalTitle.EvenementCrossCanalTitle
+- uid: Altazion.ECommerce.Controls.EvenementCrossCanalTitle.EventGuid
+  name: EventGuid
+  href: api/Altazion.ECommerce.Controls.EvenementCrossCanalTitle.html#Altazion_ECommerce_Controls_EvenementCrossCanalTitle_EventGuid
+  commentId: P:Altazion.ECommerce.Controls.EvenementCrossCanalTitle.EventGuid
+  fullName: Altazion.ECommerce.Controls.EvenementCrossCanalTitle.EventGuid
+  nameWithType: EvenementCrossCanalTitle.EventGuid
+- uid: Altazion.ECommerce.Controls.EvenementCrossCanalTitle.EventGuid*
+  name: EventGuid
+  href: api/Altazion.ECommerce.Controls.EvenementCrossCanalTitle.html#Altazion_ECommerce_Controls_EvenementCrossCanalTitle_EventGuid_
+  commentId: Overload:Altazion.ECommerce.Controls.EvenementCrossCanalTitle.EventGuid
+  isSpec: "True"
+  fullName: Altazion.ECommerce.Controls.EvenementCrossCanalTitle.EventGuid
+  nameWithType: EvenementCrossCanalTitle.EventGuid
+- uid: Altazion.ECommerce.Controls.EvenementCrossCanalTitle.Format
+  name: Format
+  href: api/Altazion.ECommerce.Controls.EvenementCrossCanalTitle.html#Altazion_ECommerce_Controls_EvenementCrossCanalTitle_Format
+  commentId: P:Altazion.ECommerce.Controls.EvenementCrossCanalTitle.Format
+  fullName: Altazion.ECommerce.Controls.EvenementCrossCanalTitle.Format
+  nameWithType: EvenementCrossCanalTitle.Format
+- uid: Altazion.ECommerce.Controls.EvenementCrossCanalTitle.Format*
+  name: Format
+  href: api/Altazion.ECommerce.Controls.EvenementCrossCanalTitle.html#Altazion_ECommerce_Controls_EvenementCrossCanalTitle_Format_
+  commentId: Overload:Altazion.ECommerce.Controls.EvenementCrossCanalTitle.Format
+  isSpec: "True"
+  fullName: Altazion.ECommerce.Controls.EvenementCrossCanalTitle.Format
+  nameWithType: EvenementCrossCanalTitle.Format
 - uid: Altazion.ECommerce.Controls.FacebookLoginLink
   name: FacebookLoginLink
   href: api/Altazion.ECommerce.Controls.FacebookLoginLink.html
@@ -1780,6 +1870,12 @@ references:
   isSpec: "True"
   fullName: Altazion.ECommerce.Controls.MagasinAssocieVille.Format
   nameWithType: MagasinAssocieVille.Format
+- uid: Altazion.ECommerce.Controls.MagasinsParticipantsRepeater
+  name: MagasinsParticipantsRepeater
+  href: api/Altazion.ECommerce.Controls.MagasinsParticipantsRepeater.html
+  commentId: T:Altazion.ECommerce.Controls.MagasinsParticipantsRepeater
+  fullName: Altazion.ECommerce.Controls.MagasinsParticipantsRepeater
+  nameWithType: MagasinsParticipantsRepeater
 - uid: Altazion.ECommerce.Controls.MarqueDescription
   name: MarqueDescription
   href: api/Altazion.ECommerce.Controls.MarqueDescription.html

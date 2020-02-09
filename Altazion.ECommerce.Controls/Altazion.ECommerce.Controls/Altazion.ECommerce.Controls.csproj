@@ -85,6 +85,7 @@
     <Compile Include="CommandeLabels.cs" />
     <Compile Include="ControlesMarques.cs" />
     <Compile Include="CookiePanel.cs" />
+    <Compile Include="EvenementCrossCanalLabels.cs" />
     <Compile Include="FacebookLoginLink.cs" />
     <Compile Include="FilAriane.cs" />
     <Compile Include="FilArianeCategories.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="LivraisonLabel.cs" />
     <Compile Include="LoginStatus.cs" />
     <Compile Include="MagasinsControls.cs" />
+    <Compile Include="MagasinsParticipantsRepeater.cs" />
     <Compile Include="PanelConditionnelLivraison.cs" />
     <Compile Include="PanelConditionnelReglement.cs" />
     <Compile Include="PanelCrossCanal.cs" />
