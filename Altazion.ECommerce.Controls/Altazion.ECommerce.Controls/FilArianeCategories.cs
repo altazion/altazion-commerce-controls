@@ -21,26 +21,58 @@ namespace Altazion.ECommerce.Controls
     /// </remarks>
     public class ProductFilArianeCategories : WebControl, IEquihiraBindable
     {
+        /// <summary>
+        /// Initialise une nouvelle instance de <see cref="ProductFilArianeCategories" />
+        /// </summary>
         public ProductFilArianeCategories()
         {
             Separator = ">";
         }
 
+        /// <summary>
+        /// Obtient ou définit le header du fil d'ariane
+        /// </summary>
         public string Header { get; set; }
+
+        /// <summary>
+        /// Obtient ou définit la classe CSS du header
+        /// </summary>
         public string HeaderCssClass { get; set; }
 
+        /// <summary>
+        /// Obtient ou définit la classe CSS à utiliser pour chaque item
+        /// </summary>
         public string ItemCssClass { get; set; }
+
+        /// <summary>
+        /// Obtient ou définit la classe CSS à utiliser pour le premier item
+        /// </summary>
         public string FirstItemCssClass { get; set; }
+
+        /// <summary>
+        /// Obtient ou définit la classe CSS à utiliser pour le dernier item
+        /// </summary>
         public string LastItemCssClass { get; set; }
 
 
+        /// <summary>
+        /// Obtient ou définit le séparateur entre les items
+        /// </summary>
         [DefaultValue(">")]
         public string Separator { get; set; }
 
+        /// <summary>
+        /// Obtient ou définit un booléen spécifiant si le &lt;title&gt; de
+        /// la page doit être utilisé si 
+        /// </summary>
         public bool UsePageTitleIfEmpty { get; set; }
 
         int nbRendered;
 
+        /// <summary>
+        /// Effectue le pré-rendu du contrôle
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnPreRender(EventArgs e)
         {
             base.OnPreRender(e);
@@ -48,6 +80,10 @@ namespace Altazion.ECommerce.Controls
                 this.Visible = false;
         }
 
+        /// <summary>
+        /// Effectue le rendu du contrôle
+        /// </summary>
+        /// <param name="writer"></param>
         protected override void Render(System.Web.UI.HtmlTextWriter writer)
         {
             if (_article == null)
@@ -219,6 +255,10 @@ namespace Altazion.ECommerce.Controls
 
         ArticlesDataSourceResult _article = null;
 
+        /// <summary>
+        /// Effectue le binding sur l'item de données
+        /// </summary>
+        /// <param name="o"></param>
         public void BindTo(object o)
         {
             if (o is ArticlesDataSourceResult)

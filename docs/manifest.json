@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.AmpProduitImage.html",
-          "hash": "M1R8jDrouUVANmFZSFACzA=="
+          "hash": "VyiVryKhpoXqG4rvvnTdYA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -156,7 +156,7 @@
           "hash": "M4RnIo8zRAhOzvCfUCpsJg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -168,7 +168,7 @@
           "hash": "UnifeoZaEUs6i91Td4IAzA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -192,7 +192,7 @@
           "hash": "xE2wgF6Bm+sH5/l6Lnbd1w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -285,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.BonAchatsRecupereLink.BonsAchatsRecuperationEventArgs.html",
-          "hash": "zBH3RtXKlVeMhkrN1FaEEQ=="
+          "hash": "kW0XfvM++mDdP3wvinJq1Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -444,7 +444,7 @@
           "hash": "xhKagbq9ZdXaY2tXe4kJXg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -489,10 +489,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.EvenementCrossCanalDescription.html",
-          "hash": "RlWOIzRwwcGfckJolQoB4Q=="
+          "hash": "kuTSVhJEwIwEoHdWtGfmrQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -501,10 +501,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.EvenementCrossCanalTitle.html",
-          "hash": "GaMKw62IUZCqBPIae9XtOg=="
+          "hash": "NzcfC1ft0Tj/TL8oj27RjQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -873,10 +873,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.NoCookiePanel.html",
-          "hash": "wWUL5l89fr2qhAwzBxED9Q=="
+          "hash": "kjb0vL+9avxxkExvdlp+fQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1353,10 +1353,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.ProductFilArianeCategories.html",
-          "hash": "evwsHJOPdQ1i3VRPB/ewmA=="
+          "hash": "ah1ngx3feQitdpv1squ+sQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1368,7 +1368,7 @@
           "hash": "KxZjBH2Ph6aYXZH+wL5iCw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1380,7 +1380,7 @@
           "hash": "WaAIO3yGdOrtqZsscOSglA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1392,7 +1392,7 @@
           "hash": "sUvsTg93kxQN46NCeMoSaQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2013,10 +2013,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.SetCookieLink.html",
-          "hash": "AUILDeW2t4kzeNcCZb8UcQ=="
+          "hash": "LXWkSz5O2LRXeuGZANKkCw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2181,10 +2181,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Altazion.ECommerce.Controls.html",
-          "hash": "dXwnhMGxr3mqqktcR/eF9w=="
+          "hash": "DPGdI3UJ2FV+NU8V7MqHWw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2209,11 +2209,12 @@
         "skipped_file_count": 0
       },
       "processors": {
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 181,
-          "skipped_file_count": 181
+          "total_file_count": 0,
+          "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
@@ -2221,12 +2222,11 @@
           "total_file_count": 1,
           "skipped_file_count": 1
         },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
+          "total_file_count": 181,
+          "skipped_file_count": 167
         }
       }
     },

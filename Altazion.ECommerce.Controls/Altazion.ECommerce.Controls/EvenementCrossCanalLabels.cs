@@ -8,15 +8,37 @@ using System.Web.UI.WebControls;
 
 namespace Altazion.ECommerce.Controls
 {
+    /// <summary>
+    /// Controle (sans tag) affichant le libellé d'un évènement
+    /// cross canal
+    /// </summary>
     public class EvenementCrossCanalTitle : Literal
     {
+        /// <summary>
+        /// Initialise une nouvelle instance de <see cref="EvenementCrossCanalTitle" />
+        /// </summary>
         public EvenementCrossCanalTitle()
         {
             Format = "{0}";
         }
+
+        /// <summary>
+        /// Obtient ou définit le format d'affichage du titre
+        /// </summary>
+        /// <example><h1>{0}</h1></example>
         public string Format { get; set; }
+
+        /// <summary>
+        /// Obtient ou définit l'identifiant de l'évènement crosscanal
+        /// </summary>
         public Guid EventGuid { get; set; }
 
+
+        /// <summary>
+        /// Effectue le pré-rendu en récupérant les informations de
+        /// l'évènement
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnPreRender(EventArgs e)
         {
             base.OnPreRender(e);
@@ -39,16 +61,37 @@ namespace Altazion.ECommerce.Controls
         }
     }
 
+
+    /// <summary>
+    /// Controle (sans tag) affichant la description (publique) d'un évènement
+    /// cross canal
+    /// </summary>
     public class EvenementCrossCanalDescription : Literal
     {
+        /// <summary>
+        /// Initialise une nouvelle instance de <see cref="EvenementCrossCanalDescription" />
+        /// </summary>
         public EvenementCrossCanalDescription()
         {
             Format = "{0}";
         }
 
+        /// <summary>
+        /// Obtient ou définit le format d'affichage du contenu
+        /// </summary>
+        /// <example><p>{0}</p></example>
         public string Format { get; set; }
+
+        /// <summary>
+        /// Obtient ou définit l'identifiant de l'évènement crosscanal
+        /// </summary>
         public Guid EventGuid { get; set; }
 
+        /// <summary>
+        /// Effectue le pré-rendu en récupérant les informations de
+        /// l'évènement
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnPreRender(EventArgs e)
         {
             base.OnPreRender(e);

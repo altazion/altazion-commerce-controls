@@ -9,15 +9,30 @@ using CPointSoftware.ECommerce.Tools;
 
 namespace Altazion.ECommerce.Controls
 {
+    /// <summary>
+    /// Panel (div) s'affichant jusqu'à ce qu'un cookie spécifique
+    /// soit placé. Permet par exemple d'afficher les messages 
+    /// légaux de gestion des infos personelles
+    /// </summary>
     public class NoCookiePanel : Panel
     {
+        /// <summary>
+        /// Initialise une nouvelle instance de <see cref="NoCookiePanel" />
+        /// </summary>
         public NoCookiePanel()
         {
             CookieName = "Avertissement_cookies";
         }
 
+        /// <summary>
+        /// Obtient ou définit le nom du cookie à vérifier
+        /// </summary>
         public string CookieName { get; set; }
 
+        /// <summary>
+        /// Effectue le pré-rendu du contrôle
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnPreRender(EventArgs e)
         {
             var ck = CookieManager.Get(CookieName);
@@ -35,6 +50,11 @@ namespace Altazion.ECommerce.Controls
             base.OnPreRender(e);
         }
 
+        /// <summary>
+        /// Ajoute le script de gestion de la visibilité après le tag de
+        /// fin du panel
+        /// </summary>
+        /// <param name="writer"></param>
         public override void RenderEndTag(HtmlTextWriter writer)
         {
             base.RenderEndTag(writer);
@@ -42,24 +62,38 @@ namespace Altazion.ECommerce.Controls
             writer.Write("E.checkCookieForPanel('#" + this.ClientID + "', true)");
             writer.Write("});</script>");
         }
-
-        protected override void Render(HtmlTextWriter writer)
-        {
-            base.Render(writer);
-        }
     }
 
+    /// <summary>
+    /// Lien (a) définissant une valeur d'un cookie coté client
+    /// lorsqu'il est cliqué
+    /// </summary>
     public class SetCookieLink : System.Web.UI.HtmlControls.HtmlAnchor
     {
+        /// <summary>
+        /// Initialise une nouvelle instance de <see cref="SetCookieLink" />
+        /// </summary>
         public SetCookieLink()
         {
             CookieName = "Avertissement_cookies";
             CookieValueToSet = "true";
         }
 
+        /// <summary>
+        /// Obtient ou définit le nom du cookie à vérifier
+        /// </summary>
         public string CookieName { get; set; }
+
+        /// <summary>
+        /// Obtient ou définit la valeur à affecter au
+        /// cookie
+        /// </summary>
         public string CookieValueToSet { get; set; }
 
+        /// <summary>
+        /// Effectue le pré-rendu du contrôle
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnPreRender(EventArgs e)
         {
             var c = this.Attributes["data-e_cookiepanel"];

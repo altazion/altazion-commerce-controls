@@ -31,6 +31,10 @@ namespace Altazion.ECommerce.Controls
             }
         }
 
+        /// <summary>
+        /// Effectue le databinding sur la source de données
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnDataBinding(EventArgs e)
         {
             base.OnDataBinding(e);
@@ -75,6 +79,10 @@ namespace Altazion.ECommerce.Controls
             }
         }
 
+        /// <summary>
+        /// Effectue le databinding sur la source de données
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnDataBinding(EventArgs e)
         {
             base.OnDataBinding(e);
@@ -105,6 +113,10 @@ namespace Altazion.ECommerce.Controls
             }
         }
 
+        /// <summary>
+        /// Effectue le databinding sur la source de données
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnDataBinding(EventArgs e)
         {
             base.OnDataBinding(e);
@@ -134,6 +146,10 @@ namespace Altazion.ECommerce.Controls
             }
         }
 
+        /// <summary>
+        /// Effectue le databinding sur la source de données
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnDataBinding(EventArgs e)
         {
             base.OnDataBinding(e);

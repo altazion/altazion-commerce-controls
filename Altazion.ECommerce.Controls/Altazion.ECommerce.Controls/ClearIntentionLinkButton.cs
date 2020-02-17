@@ -22,7 +22,6 @@ namespace Altazion.ECommerce.Controls
     /// <para>Ce contrôle est affiché sous la forme d'un lien 
     /// <code>&lt;a href='javascript....'&gt;[votre contenu]&lt;/a&gt;</code></para>
     /// </remarks>
-    /// <seealso cref="" />
     public class ClearIntentionLinkButton : LinkButton
     {
         /// <summary>

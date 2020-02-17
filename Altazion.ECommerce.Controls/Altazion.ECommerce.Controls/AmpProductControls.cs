@@ -57,6 +57,11 @@ namespace Altazion.ECommerce.Controls
             }
         }
 
+
+        /// <summary>
+        /// Effectue le rendu du contrôle
+        /// </summary>
+        /// <param name="writer"></param>
         protected override void Render(System.Web.UI.HtmlTextWriter writer)
         {
             if (_data == null)
@@ -122,22 +127,43 @@ namespace Altazion.ECommerce.Controls
 #pragma warning disable 0618
 
         TypeProduitImage _typeImage = TypeProduitImage.Petite;
+        /// <summary>
+        /// Obtient ou définit le type d'image à afficher
+        /// </summary>
         public TypeProduitImage ImageType
         {
             get { return _typeImage; }
             set { _typeImage = value; }
         }
         TypeLienProduit _linkType = TypeLienProduit.Detail;
+        /// <summary>
+        /// Obtient ou définit le type de lien (vers la fiche produit, vers l'image grand format)
+        /// </summary>
         public TypeLienProduit LinkType
         {
             get { return _linkType; }
             set { _linkType = value; }
         }
 
+        /// <summary>
+        /// Obtient ou définit la largeur de l'image
+        /// </summary>
         public new int? Width { get; set; }
+
+        /// <summary>
+        /// Obtient ou définit la hauteur de l'image
+        /// </summary>
         public new int? Height { get; set; }
+
+        /// <summary>
+        /// Obtient ou définit l'url de l'image "par défaut" si le produit
+        /// n'a pas d'image
+        /// </summary>
         public string ImageUrlIfNone { get; set; }
 
+        /// <summary>
+        /// Effectue le rendu du contrôle
+        /// </summary>
         protected override void Render(System.Web.UI.HtmlTextWriter writer)
         {
             if (string.IsNullOrEmpty(ImageUrl))

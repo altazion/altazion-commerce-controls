@@ -1239,7 +1239,7 @@ namespace Altazion.ECommerce.Controls
     {
 
         /// <summary>
-        /// Représente les détails pour un événement du type <see cref="Recuperation"/>
+        /// Représente les détails pour un événement du type <see cref="BonsAchatsRecuperationEventArgs"/>
         /// </summary>
         public class BonsAchatsRecuperationEventArgs : EventArgs
         {

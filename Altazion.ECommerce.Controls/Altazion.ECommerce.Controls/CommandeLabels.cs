@@ -14,6 +14,10 @@ namespace Altazion.ECommerce.Controls
     /// </summary>
     public class CommandeNumero  : Label
     {
+        /// <summary>
+        /// Effectue le pré-rendu du contrôle
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnPreRender(EventArgs e)
         {
             base.OnPreRender(e);
