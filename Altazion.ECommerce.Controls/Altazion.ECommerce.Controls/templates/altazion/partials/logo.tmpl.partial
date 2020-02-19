@@ -1,5 +1,9 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
-<a class="navbar-brand" href="https://www.altazion.dev/">
-  <img id="logo" class="svg" src="https://www.altazion.dev/altazion-commerce-controls/images/logo.png" alt="{{_appName}}" >
-</a>
+<ul>
+    <li class="title"><a href="https://www.altazion.dev" ><img src="https://www.altazion.dev/altazion-commerce-controls/images/logo.png" /></a></li>
+    <li class="subtitle"><span>Aide</span></li>
+    <li class="item"><a href="https://aide.altazion.com">Utilisateurs</a></li>
+    <li class="item selected"><a href="https://aide.altazion.dev">Développeurs & administrateur</a></li>
+    <li class="item"><a href="https://www.altazion-learning.com">e-learning</a></li>
+</ul>
