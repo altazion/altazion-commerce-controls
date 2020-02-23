@@ -116,6 +116,7 @@
     <Compile Include="ProductMultiImage.cs" />
     <Compile Include="ProductVideo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RechercherFilArianne.cs" />
     <Compile Include="SeoContentControls.cs" />
     <Compile Include="SiteControls.cs" />
     <Compile Include="TrustPilotControls.cs" />
