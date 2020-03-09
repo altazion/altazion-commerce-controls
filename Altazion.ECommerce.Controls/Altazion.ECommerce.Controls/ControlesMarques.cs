@@ -53,7 +53,13 @@ namespace Altazion.ECommerce.Controls
             /// Un lien vers le site externe 
             /// de la marque
             /// </summary>
-            SiteWeb
+            SiteWeb,
+            /// <summary>
+            /// Un lien vers la page perso si il y en 
+            /// a une de renseignée ou vers le moteur
+            /// si ce n'est pas le cas
+            /// </summary>
+            PagePersoOuMoteur
         }
 
         /// <summary>
@@ -109,6 +115,19 @@ namespace Altazion.ECommerce.Controls
                     this.Text = r.mar_libelle;
                 switch (TypeLien)
                 {
+                    case TypeMarqueLink.PagePersoOuMoteur:
+                        try
+                        {
+                            if(r.Table.Columns.Contains("mar_url_redirection") && !r.IsNull("mar_url_redirection"))
+                            {
+                                this.NavigateUrl = ResolveUrl(r["mar_url_redirection"] as string);
+                            }
+                        }
+                        catch
+                        {
+                            goto case TypeMarqueLink.MoteurDeRecherche;
+                        }
+                        break;
                     case TypeMarqueLink.MoteurDeRecherche:
                         this.NavigateUrl = ECommerceServer.Contexte.GetSearchPagePath(-1,
                             Guid.Empty,
@@ -228,7 +247,7 @@ namespace Altazion.ECommerce.Controls
             else if (o is ArticlesDataSourceResult)
             {
                 ArticlesDataSourceResult res = o as ArticlesDataSourceResult;
-                if (res.Marque!=null && res.Marque.catalog_marques.Count == 1)
+                if (res.Marque != null && res.Marque.catalog_marques.Count == 1)
                 {
                     MarquesDS.catalog_marquesRow r = res.Marque.catalog_marques[0];
                     if (r.Ismar_commentaire_publicNull())

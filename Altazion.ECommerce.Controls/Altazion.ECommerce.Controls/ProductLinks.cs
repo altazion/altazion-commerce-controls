@@ -277,7 +277,13 @@ namespace Altazion.ECommerce.Controls
                 if (r2 != null)
                 {
                     this.Text = r2.mar_libelle;
-                    this.NavigateUrl = ECommerceServer.Contexte.GetSearchPagePath(-1, Guid.Empty, r2.mar_pk, null, null, true);
+
+                    if (r2.Table.Columns.Contains("mar_url_redirection") && !r2.IsNull("mar_url_redirection"))
+                    {
+                        this.NavigateUrl = ResolveUrl(r2["mar_url_redirection"] as string);
+                    }
+                    else
+                        this.NavigateUrl = ECommerceServer.Contexte.GetSearchPagePath(-1, Guid.Empty, r2.mar_pk, null, null, true);
                 }
                 else
                     this.Text = "";
@@ -420,6 +426,8 @@ namespace Altazion.ECommerce.Controls
                 {
                     if (r.att_atd_pk.Equals(AttributeGuid))
                     {
+                        AttributsValeursDS.catalog_attributsvaleursRow rAtt = null;
+
                         if (!r.Isatt_valeur_texteNull())
                             this.Text = r.att_valeur_texte;
                         else if (!r.Isatt_valeur_texte_longNull())
@@ -429,6 +437,19 @@ namespace Altazion.ECommerce.Controls
                         else if (!r.Isatt_valeur_dateNull())
                             this.Text = r.att_valeur_date.ToString(Format);
                         
+                        if(!r.Isatt_atv_valeurNull())
+                        {
+                            rAtt = ECommerceServer.DataCache.GetAttributsValeurs(r.att_atd_pk).catalog_attributsvaleurs.FindByatv_atd_pkatv_valeur(r.att_atd_pk, r.att_atv_valeur);
+                            if(rAtt!=null)
+                            {
+                                if (rAtt.Table.Columns.Contains("atv_url_redirection") && !rAtt.IsNull("atv_url_redirection"))
+                                {
+                                    this.NavigateUrl = ResolveUrl(rAtt["atv_url_redirection"] as string);
+                                    return;
+                                }
+                            }
+                        }
+
                         CriteresDS.catalog_criteresRow crit;
                         crit = ECommerceServer.DataCache.Criteres.catalog_criteres.FindBycri_guidcri_rjs_id(r.att_atd_pk, ECommerceServer.RjsId);
 
@@ -437,6 +458,8 @@ namespace Altazion.ECommerce.Controls
                             this.Visible = false;
                             return;
                         }
+
+                        
 
                         foreach (CriteresDS.catalog_criteresvaleursRow v in crit.Getcatalog_criteresvaleursRows())
                         {

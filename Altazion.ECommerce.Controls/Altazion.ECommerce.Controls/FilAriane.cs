@@ -5,6 +5,7 @@ using System.Text;
 using System.Web.UI.WebControls;
 using System.ComponentModel;
 using CPointSoftware.ECommerce.Tools;
+using Newtonsoft.Json;
 
 namespace Altazion.ECommerce.Controls
 {
@@ -103,7 +104,7 @@ namespace Altazion.ECommerce.Controls
             ContexteBreadCrumbItem[] cur = new ContexteBreadCrumbItem[0];
             if(pg!=null)
                 cur = pg.GetBreadCrumb();
-            if (cur.Length == 0)
+            if (cur.Length == 0 ||  (cur.Length==1 && string.IsNullOrEmpty(cur[0].Label)))
             {
                 if (UsePageTitleIfEmpty && pg != null && !string.IsNullOrEmpty(pg.PageName))
                 {
@@ -209,6 +210,105 @@ namespace Altazion.ECommerce.Controls
             writer.Write("</a></li>");
             nbRendered++;
         }
+    }
+
+    public class FilArianeJsonLd : WebControl
+    {
+        /// <summary>
+        /// Initialise une nouvelle instance de <see cref="RechercherFilArianeJsonLd"/>
+        /// </summary>
+        public FilArianeJsonLd()
+        {
+        }
+
+        /// <summary>
+        /// Effectue le rendu du controle
+        /// </summary>
+        /// <param name="writer"></param>
+        protected override void Render(System.Web.UI.HtmlTextWriter writer)
+        {
+
+            ECommercePage pg = Page as ECommercePage;
+            ContexteProvider prv = ECommerceServer.Contexte;
+
+            writer.Write("<script type='application/ld+json'>{ \"@context\": \"http://schema.org\", \"@type\": \"BreadcrumbList\",");
+            writer.Write("\"itemListElement\": ");
+
+            List<ContexteBreadCrumbItem> cur = new List<ContexteBreadCrumbItem>(pg.GetBreadCrumb());
+            List<BreadCrumbItemJson> items = new List<BreadCrumbItemJson>();
+            if(cur.Count == 1 && string.IsNullOrEmpty(cur[0].Label))
+            {
+                if (!string.IsNullOrEmpty(pg.PageName))
+                {
+                    var j = cur[0];
+                    j.Url = Page.Request.RawUrl;
+                    j.Label = pg.PageName;
+                }
+            }
+            else if (cur.Count == 0)
+            {
+                if (!string.IsNullOrEmpty(pg.PageName))
+                {
+                    var j = new ContexteBreadCrumbItem()
+                    {
+                        Url = Page.Request.RawUrl,
+                        Label = pg.PageName
+                    };
+                    cur.Add(j);
+                }
+            }
+            var it = new BreadCrumbItemJson()
+            {
+                type = "ListItem",
+                position = items.Count + 1,
+                item = new Item()
+                {
+                    id = ECommerceServer.CurrentSite.UrlPrincipale,
+                    name = "Accueil",
+                }
+            };
+            items.Add(it);
+
+            foreach (var c in cur)
+            {
+                it = new BreadCrumbItemJson()
+                {
+                    type = "ListItem",
+                    position = items.Count + 1,
+                    item = new Item()
+                    {
+                        id = ResolveUrl(c.Url),
+                        name = c.Label
+                    }
+                };
+
+                if (it.item.id.StartsWith("/"))
+                    it.item.id = ECommerceServer.CurrentSite.UrlPrincipale + it.item.id.Substring(1);
+
+                items.Add(it);
+            }
+
+            string s = CPointSoftware.Equihira.Business.Common.JsonHelper.Serialize(items);
+            writer.Write(s);
+            writer.Write("}</script>");
+
+        }
+
+        internal class BreadCrumbItemJson
+        {
+            [JsonProperty("@type")]
+            public string type { get; set; }
+            public int position { get; set; }
+            public Item item { get; set; }
+        }
+
+        internal class Item
+        {
+            [JsonProperty("@id")]
+            public string id { get; set; }
+            public string name { get; set; }
+        }
+
     }
 
 }
